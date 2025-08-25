@@ -1,0 +1,53 @@
+# .github/workflows/deploy_enriched_release.yml
+name: Deploy enriched JSON as Release asset
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install --no-cache-dir requests
+
+      - name: Run enrichment and merge
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: |
+          python scripts/enrich.py
+          python - <<'EOF'
+          import json
+          p1 = json.load(open('playlist.enriched.part1.json', encoding='utf-8'))
+          p2 = json.load(open('playlist.enriched.part2.json', encoding='utf-8'))
+          combined = p1 + p2
+          with open('playlist.enriched.json','w', encoding='utf-8') as f:
+              json.dump(combined, f, indent=2, ensure_ascii=False)
+          EOF
+
+      - name: Publish Release (create or update)
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: enriched-playlist
+          name: Enriched Playlist JSON
+          files: playlist.enriched.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
