@@ -1,0 +1,46 @@
+name: Enriquecer Playlist desde TMDB (dividido)
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install --no-cache-dir requests
+
+      - name: Ejecutar script de enriquecimiento
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: |
+          python scripts/enrich.py
+
+      - name: Commit and push partes JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add playlist.enriched.part1.json playlist.enriched.part2.json
+          if ! git diff --cached --exit-code; then
+            git commit -m "Actualizar playlist.enriched.part1.json + part2"
+            git push
+          else
+            echo "No hay cambios en los JSON enriquecidos"
+          fi
