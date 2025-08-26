@@ -1,0 +1,54 @@
+# .github/workflows/merge_enriched_playlist.yml
+name: Merge Playlist Enriched Parts
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Merge JSON parts
+        run: |
+          python <<EOF
+          import json
+
+          # Cargar ambas mitades
+          with open('playlist.enriched.part1.json', encoding='utf-8') as f1:
+              part1 = json.load(f1)
+          with open('playlist.enriched.part2.json', encoding='utf-8') as f2:
+              part2 = json.load(f2)
+
+          # Concatenar arrays
+          combined = part1 + part2
+
+          # Escribir JSON final
+          with open('playlist.enriched.json', 'w', encoding='utf-8') as fout:
+              json.dump(combined, fout, indent=2, ensure_ascii=False)
+          EOF
+
+      - name: Commit and push merged JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add playlist.enriched.json
+          if ! git diff --cached --exit-code; then
+            git commit -m "Merge enriched JSON parts into single playlist.enriched.json"
+            git push
+          else
+            echo "No changes to playlist.enriched.json"
+          fi
