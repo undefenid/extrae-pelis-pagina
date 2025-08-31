@@ -49405,23 +49405,6 @@
         "name": "",
         "samples": [
             {
-                "name": "The foreigner",
-                "url": "http://144.217.70.79/VODS-M/1080P/The%20foreigner%202017.mkv",
-                "icono": "",
-                "iconoHorizontal": "",
-                "iconpng": "",
-                "type": "PELICULA",
-                "descripcion": "",
-                "anio": "2017",
-                "genero": "",
-                "duracion": ""
-            }
-        ]
-    },
-    {
-        "name": "",
-        "samples": [
-            {
                 "name": "The girl in the spiders web",
                 "url": "http://144.217.70.79/VODS-M/1080P/The%20girl%20in%20the%20spiders%20web%202018.mkv",
                 "icono": "",
@@ -51742,6 +51725,23 @@
                 "type": "PELICULA",
                 "descripcion": "",
                 "anio": "2022",
+                "genero": "",
+                "duracion": ""
+            }
+        ]
+    },
+    {
+        "name": "",
+        "samples": [
+            {
+                "name": "Uncle Buck",
+                "url": "http://144.217.70.79/VODS-M/1080P/Uncle%20Buck%201989.mkv",
+                "icono": "",
+                "iconoHorizontal": "",
+                "iconpng": "",
+                "type": "PELICULA",
+                "descripcion": "",
+                "anio": "1989",
                 "genero": "",
                 "duracion": ""
             }
