@@ -1,22 +1,5 @@
 [
   {
-    "name": "Comedia",
-    "samples": [
-      {
-        "name": "Mamá y Papá",
-        "url": "http://144.217.70.79/VODS-M/1080P/Mom%20and%20Dad%202017.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/y9Zp949JZCwDGz4BtBO5h2pHigz.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ozc8RAW9Bwt3T99iUjCrUvL7j1c.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/bNL5NeCmoSVUmCzc9yA2AwA1cF0.png",
-        "type": "PELICULA",
-        "descripcion": "Una misteriosa epidemia en forma de locura masiva provoca que los padres ataquen violentamente a sus hijos. Carly y Joshua tratarán de sobrevivir durante tan aciaga jornada, amenazados por unos progenitores que poseen los rasgos de Nicolas Cage y Selma Blair.",
-        "anio": "2018",
-        "genero": "Comedia, Terror, Suspense",
-        "duracion": "83 min"
-      }
-    ]
-  },
-  {
     "name": "Documental",
     "samples": [
       {
@@ -2233,7 +2216,7 @@
         "name": "La leyenda regresa",
         "url": "http://144.217.70.79/VODS-M/1080P/Old%20Henry%202021.mkv",
         "icono": "https://image.tmdb.org/t/p/original/tlYJPYNkN8AmyPp8F0zjYbQgWEW.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/trINuprFUUpiCNsj1qc8T0Q7ls8.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/1uCX0fpYOdvrTIYulFymWOP08HT.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/bxCxeGwKhsr036FVLe5y9oOR0T8.png",
         "type": "PELICULA",
         "descripcion": "Henry fue una vez el forajido más temido y buscado del Oeste, pero vive una vida tranquila en la granja para proteger a su hijo. Cuando un forastero llega a su tierra amenazando su paz, despertará su verdadera identidad: el vaquero Billy The Kid.",
@@ -2268,7 +2251,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Olympus%20Has%20Fallen%202013.mkv",
         "icono": "https://image.tmdb.org/t/p/original/3AWmaBCfX6x3KTa4w5rGLMevNdU.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/mjYU7EwVeOtM39ArdWHZk78VhYm.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/d66jT00MAtQrNhAe215lnRVjuSz.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/pZilC1fSyF0xrFKHVKGwLgXSY0y.png",
         "type": "PELICULA",
         "descripcion": "Tras un accidente en el que sólo consiguió salvar la vida del Presidente Asher, el agente del Servicio Secreto Mike Banning decide dejar su puesto para trabajar en el Departamento del Tesoro. Pero, cuando un comando norcoreano liderado por Kang ataca la Casa Blanca y toma como rehenes al Presidente y a su equipo, Banning se verá obligado a entrar de nuevo en acción.",
         "anio": "2013",
@@ -2403,7 +2386,7 @@
         "name": "Érase una vez en el Oeste",
         "url": "http://144.217.70.79/VODS-M/1080P/Once%20Upon%20a%20Time%20in%20the%20West%201968.mkv",
         "icono": "https://image.tmdb.org/t/p/original/upiek8u4rHTrOJW9B0woXe4A4h7.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/fccEQecqrOxrczFnq35OxGQfCXi.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/h31SOVlekuHXsMWVGxI8nPPfY82.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/7HgopvSQyPmiBHjNViiDb5SPO4r.png",
         "type": "PELICULA",
         "descripcion": "Mientras los constructores del ferrocarril avanzan imparables por el desierto de Arizona en su camino hacia el mar, Jill llega al pequeño pueblo de Flagstone con la intención de empezar una nueva vida.",
@@ -3134,7 +3117,7 @@
         "name": "La gran fuga",
         "url": "http://144.217.70.79/VODS-M/1080P/Overdrive%202017.mkv",
         "icono": "https://image.tmdb.org/t/p/original/zACGrzQxMs24fJdj45pbaKjRGXC.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/7kihkd0adacT64yqfdDPsANLkij.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ywMkKd0heYn5TOYykSNZnw5xqnh.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/i4oWmPTQPWKvRZqojlDR126Yh6N.png",
         "type": "PELICULA",
         "descripcion": "Dos hermanos especializados en el robo de automóviles viajan al sur de Francia para probar nuevos horizontes.",
@@ -3883,7 +3866,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Percy%20Jackson%20Sea%20of%20Monsters%202013.mkv",
         "icono": "https://image.tmdb.org/t/p/original/akbLEdUzQ5T2R7coc5nOEqk7FjE.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/fvrGb6zfQaQ8RD9pC8o9vv1b7W2.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/yfsxuvmHrpJ6Cw9Y5wxQCzIi3Fv.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/iN8OmQrqH2cGOKc22fMpepbaH0J.png",
         "type": "PELICULA",
         "descripcion": "Percy Jackson no se siente un héroe. El semidiós hijo de Poseidón el dios griego del mar pudo salvar el mundo en una ocasión, pero Percy está empezando a pensar que pudo ser fruto de la casualidad. Y ahora la pregunta es: ¿ha resultado ser un fiasco? Ahora que Percy ha descubierto que tiene un hermanastro que es un monstruo, se pregunta si ser el hijo de Poseidón es una bendición o, más bien, una maldición...",
         "anio": "2013",
@@ -4104,7 +4087,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Phantom%20thread%202017.mkv",
         "icono": "https://image.tmdb.org/t/p/original/qVjtYgbhErZcF6l8fGxlgYH1KPl.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/vpRMzPqHC03I7hPPET4Av2OT8dI.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/jK6KrKXb9PisPLsCFrnVddKIZQT.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/ngJw1zV7BdeFGggMWQrD2VcPsj5.png",
         "type": "PELICULA",
         "descripcion": "En el Londres de la posguerra, en 1950, el famoso modisto Reynolds Woodcock (Daniel Day-Lewis) y su hermana Cyril (Lesley Manville) están a la cabeza de la moda británica, vistiendo a la realeza y a toda mujer elegante de la época. Un día, el soltero Reynolds conoce a Alma (Vicky Krieps), una dulce joven que pronto se convierte en su musa y amante. Y su vida, hasta entonces cuidadosamente controlada y planificada, se ve alterada por la irrupción del amor.",
         "anio": "2017",
@@ -4273,7 +4256,7 @@
         "name": "Pitbull",
         "url": "http://144.217.70.79/VODS-M/1080P/Pitbull%202021.mkv",
         "icono": "https://image.tmdb.org/t/p/original/2LfhNzVlqUfI6hoZ36dzpTpsaUe.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/n7nEZULVUtC0ddFx09DBgTzuMci.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/vXRjGugXoQxC78V2WyK50Bp1PyI.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/qx10ZfZl0BZwjIwg1xEVHaRpyA7.png",
         "type": "PELICULA",
         "descripcion": "",
@@ -4678,16 +4661,16 @@
     "name": "Terror",
     "samples": [
       {
-        "name": "Muerte instantánea",
+        "name": "Polaroid",
         "url": "http://144.217.70.79/VODS-M/1080P/Polaroid%202019.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/ghNua7wru2APolXOutWqO5kpJrI.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/kptx2smAhNvp1K7ln2bYWTeCxxe.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/71QyikuPGWQXqAJ39zbTkADulBy.png",
+        "icono": "https://image.tmdb.org/t/p/original/s2abswphACud7RsUQT65cx1FPiK.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
         "type": "PELICULA",
-        "descripcion": "Una adolescente solitaria, Bird Fitcher, se tropieza con una antigua Polaroid y pronto descubre que la cámara alberga un terrible secreto: cualquiera que se toma una fotografía con ella, tiene un final trágico y violento. Ella y sus amigos deben sobrevivir una noche para resolver el misterio de la cámara “embrujada”. Adaptación cinematográfica del cortometraje homónimo.",
+        "descripcion": "",
         "anio": "2019",
-        "genero": "Terror, Misterio, Suspense",
-        "duracion": "88 min"
+        "genero": "Terror",
+        "duracion": "5 min"
       }
     ]
   },
@@ -4800,7 +4783,7 @@
         "name": "Loca academia de policía",
         "url": "http://144.217.70.79/VODS-M/1080P/Police%20Academy%201984.mkv",
         "icono": "https://image.tmdb.org/t/p/original/wmphZLnqARmCvjFvYkBAMhlsmNl.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/dD87i2WHxrCxBFxr93d1tFKANut.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/6qAYgsvnH4wUS9fAcrxUvUtCM6x.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/wFxqhcQBFcevytrWxr8qy6mXS5X.png",
         "type": "PELICULA",
         "descripcion": "Las nuevas normas dictadas por la alcaldesa significan que el sexo, el peso, la altura y la inteligencia ya no serán factores decisivos para alistarse en las fuerzas del orden. Esto abre las puertas de toda clase de chusma, para disgusto de los instructores, si bien es cierto que no todo el mundo estará ahí por elección, como es el caso de Mahoney cuya alternativa era la prisión, y que intentará por todos los medios que le expulsen hasta que se da cuenta de que le gusta ser cadete de la academia.",
@@ -6783,19 +6766,19 @@
     ]
   },
   {
-    "name": "Familia",
+    "name": "Animación",
     "samples": [
       {
-        "name": "Hasta Pronto Christopher Robin",
+        "name": "Robin Robin",
         "url": "http://144.217.70.79/VODS-M/1080P/Robin%20Robin%202021.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/9O2LoirCUU6Cepph2xvDJ7iaTcK.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/tUVVEGe16K5hfN7jH5MhJYjbCt2.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/wRGiGCRpzKy5VctLWmLPM3WfhP7.png",
+        "icono": "https://image.tmdb.org/t/p/original/bKIdlJbd17rrIm4oZzhXTbmqpon.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/8MRDdTrh0O6iG60d4UoepxVI0lj.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/algOxFh6YQKUCFhEQ3mEHjmDMsu.png",
         "type": "PELICULA",
-        "descripcion": "Entre bastidores la historia de la vida de A.A. Milne y la creación de Winnie ¡Qué va! las historias inspiradas por su hijo Christopher Robin.",
-        "anio": "2017",
-        "genero": "Familia, Historia, Drama",
-        "duracion": "107 min"
+        "descripcion": "",
+        "anio": "2021",
+        "genero": "Animación, Aventura, Familia",
+        "duracion": "30 min"
       }
     ]
   },
@@ -8149,7 +8132,7 @@
         "name": "Serenity",
         "url": "http://144.217.70.79/VODS-M/1080P/Serenity%202005.mkv",
         "icono": "https://image.tmdb.org/t/p/original/zD81lzAEsTeEDl8f1C6t4USRihg.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/f9vGIwNFIfctU7vd4rg85csnMZm.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3aGsZdB5ud6LmU9lppwTLh2fqH1.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/a7w1IrqjJPUURq9CsMlYgCXdx71.png",
         "type": "PELICULA",
         "descripcion": "Siglo XXVI. Tras ganar la guerra Civil Galáctica, las dos grandes potencias mundiales, EE.UU. y China, se unen para formar un gobierno totalitario llamado Alianza Universal. El Capitán Malcolm Reynolds es un curtido veterano de la guerra que se gana la vida alquilando su nave, la Serenity y buscando trabajos al margen de la ley. Su única familia es una pequeña y leal tripulación de disidentes y rebeldes. Cuando Malcom embarca a dos nuevos pasajeros, un médico y su inestable hermana, que está dotada de poderes telepáticos, enseguida descubre que ambos son fugitivos de la Alianza y que ésta no se detendrá hasta dar con la chica. Y, en efecto, la tripulación de la Serenity se verá atrapada entre el poderoso ejército de la Alianza y los Ravers, salvajes bárbaros que vagan por los confines del espacio. Así las cosas, empiezan a darse cuenta de que quizá el mayor peligro se encuentra a bordo de la Serenity.",
@@ -9072,7 +9055,7 @@
         "type": "PELICULA",
         "descripcion": "Cuando un actor convertido en soplón de Las Vegas llamado Buddy Israel decide pasar las pruebas del estado y testificar contra la mafia, parece que a mucha gente le gustaría asegurarse de que ya no respira.",
         "anio": "2006",
-        "genero": "Acción, Comedia, Crimen",
+        "genero": "Acción, Comedia, Crimen, Drama",
         "duracion": "107 min"
       }
     ]
@@ -13622,7 +13605,7 @@
       {
         "name": "El Código Da Vinci",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Da%20Vinci%20Code%202006.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/dpPrVS3I1f6NHIMaVzVt1p5sr3U.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/r5DHVCB5AV7B7GLmXMyA71Y4Yu4.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/vlnSG1EQi0ez2A6MkFfjovPfkES.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/7atZYzonCEiWXGDefQIYcVjhMrO.png",
         "type": "PELICULA",
@@ -13691,7 +13674,7 @@
         "name": "El día después de mañana",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Day%20After%20Tomorrow%202004.mkv",
         "icono": "https://image.tmdb.org/t/p/original/rT70FZPn3DEFB5UdMHlkwaYQWNV.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/fXJhA3pjLMDkHPgZ2GVhRDXA5M3.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/smqQ71MIn1DSdSiQzCzCOV6rgRq.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/jDyak6s6v0EpjttgW55eQvPXeSO.png",
         "type": "PELICULA",
         "descripcion": "Las investigaciones del climatólogo Jack Hall indican que el calentamiento global podría desencadenar un repentino y catastrófico cambio climático de la Tierra. Hall advierte a los dirigentes políticos de la necesidad de adoptar inmediatamente medidas para evitarlo, pero sus advertencias llegan demasiado tarde: una serie de anómalos fenómenos climáticos empiezan a producirse en distintas partes del globo. El calentamiento global ha puesto el planeta al borde de una nueva era glacial. Mientras Jack advierte a la Casa Blanca del inminente cambio climático, su hijo Sam y sus amigos se encuentran atrapados en Nueva York, a donde han ido para participar en un concurso académico entre institutos.",
@@ -14286,7 +14269,7 @@
         "name": "El exorcista: Creyentes",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Exorcist%20Believer%202023.mkv",
         "icono": "https://image.tmdb.org/t/p/original/f0N4Cx0XMbQIHnyAMByLLC0xovm.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/4DpVWbDmYanToTTkTp2SQLQX1p4.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/d7zDEW6AkRCvEOT2Cela4h0F3Nb.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/nsX1VBwcRBtaW36HvvY5Jl0PjGT.png",
         "type": "PELICULA",
         "descripcion": "Cuando sus dos hijas son poseídas por un espíritu demoníaco, un padre desesperado busca la ayuda de Chris MacNeil, cuya hija Regan sobrevivió a una posesión similar en la década de 1970.",
@@ -15475,7 +15458,7 @@
       {
         "name": "El despertar del diablo 2",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Hills%20Have%20Eyes%202%202007.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/4CMvyapWAVUNT5Y93Pg4Pq3Cqhp.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/hDZmMfAVF5D3pyabJvX1mNtJfhX.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/9V529yHwmYay2wmYo0YcgUijeJO.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/bg39T8XXYBCcmiFLYoCMylsbnKU.png",
         "type": "PELICULA",
@@ -15697,12 +15680,12 @@
         "name": "Los juegos del hambre",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Hunger%20Games%202012.mkv",
         "icono": "https://image.tmdb.org/t/p/original/qSEn7KsGchT7qB08HlviyeTPrEr.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/p2i9vE7mu2ZTmwYbEiimgHeKpq5.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/yVBQ65YBYZ9UhzJ4NGdRgeXtyTL.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/28IgVztvlvzVAhLwcmBC5pydYwJ.png",
         "type": "PELICULA",
         "descripcion": "Lo que en el pasado fueron los Estados Unidos, ahora es una nación llamada Panem: un fastuoso Capitolio ejerce un control riguroso sobre los doce distritos que lo rodean y que están aislados entre sí. Cada distrito se ve obligado a enviar anualmente un chico y una chica entre los doce y los dieciocho años para que participen en los Hunger Games, que son transmitidos en directo por la televisión. Se trata de una lucha a muerte, en la que sólo puede haber un superviviente. Katniss Everdeen, una joven de dieciséis años, decide sustituir a su hermana en los juegos; pero para ella, que ya ha visto la muerte de cerca, la lucha por la supervivencia es su segunda naturaleza.",
         "anio": "2012",
-        "genero": "Ciencia ficción, Aventura, Acción",
+        "genero": "Ciencia ficción, Aventura, Acción, Suspense",
         "duracion": "142 min"
       }
     ]
@@ -15714,7 +15697,7 @@
         "name": "Los juegos del hambre: En llamas",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Hunger%20Games%20Catching%20Fire%202013.mkv",
         "icono": "https://image.tmdb.org/t/p/original/oxnKI1qiHz7xC0mNthC7dSqTcot.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/14FK4FjArsTdpmbqwlROrWA4Npl.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/eHaazLxM5LRMh0ySkVy7SK6wUWt.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/dQr1xt53k6pcVcbVsd6nAMSCcAH.png",
         "type": "PELICULA",
         "descripcion": "Cuando Katniss Everdeen regresa sana y salva a casa tras ganar la 74ª edición anual de los Juegos del Hambre, junto a su compañero tributo Peeta Mellark. Ganar significa tener que dejar atrás a su familia y amigos, para emprender una \"Gira de la Victoria\" por los diferentes distritos. Por el camino, Katniss se da cuenta de que está comenzando a gestarse una rebelión, pero el Capitolio sigue manteniéndolo todo perfectamente bajo control, mientras el presidente Snow prepara la 75ª edición anual de los Juegos del Hambre (El Vasallaje de los Veinticinco), una competición que podría cambiar Panem para siempre...",
@@ -15918,7 +15901,7 @@
         "name": "Los increíbles",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Incredibles%202004.mkv",
         "icono": "https://image.tmdb.org/t/p/original/al1jusd4T7JPatZlj4BuYkDDOzr.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/se5Hxz7PArQZOG3Nx2bpfOhLhtV.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/bf5BLoF4IbKx4vn0NbeqCbgBNdi.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/alWRisG0Hh8OOVsSab5ycTTLyrs.png",
         "type": "PELICULA",
         "descripcion": "Una familia de superhéroes encubiertos, mientras intentan vivir la tranquila vida suburbana, se ven obligados a entrar en acción para salvar el mundo.",
@@ -17431,7 +17414,7 @@
         "name": "The Lost Boys",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Lost%20Boys%201987.mkv",
         "icono": "https://image.tmdb.org/t/p/original/w93f1iH59LfCJEpZujk45L6kjWk.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/p5kqFPxWylL6Cp2K7d9oDQBdDcT.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/sSrMPJoHT3qGqdeDPs88mm8ksu5.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/gPMSGojFomNLw63ax36kljTyzWY.png",
         "type": "PELICULA",
         "descripcion": "Sam (Corey Haim) y Michael Emerson (Jason Patric) son dos chicos americanos muy convencionales. Tras el divorcio de sus padres, se instalan con su madre en la tranquila ciudad de Santa Carla (California), donde corren rumores sobre vampiros. La personalidad de Michael cambia sensiblemente cuando empieza a ir con una banda de moteros cuyo líder es el carismático David (Kiefer Sutherland). A su madre no le gustaría nada saber en qué se está convirtiendo.",
@@ -19794,7 +19777,7 @@
         "name": "El tesoro del Amazonas",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Rundown%202003.mkv",
         "icono": "https://image.tmdb.org/t/p/original/32vcJ7Fz03cNWGZt8FD75Z9pCO3.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/oy4NVW7peNLRn0X1DEVz7u6q8NJ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/lvozXln5h8mNqKeL2Uev0N0Y59B.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/eTzBtEqgEeLyxVYwuEFz7nQPkOC.png",
         "type": "PELICULA",
         "descripcion": "Cuando Travis, el hijo mouthy de un criminal, desaparece en el Amazonas en busca de un artefacto atesorado, su padre hace pasar a Beck, que se hace el rival de Travis para los afectos de Mariana, una mujer brasileña misteriosa. Con su disposición acerada, Beck es un hombre de pocas palabras - pero necesita toda la disciplina que puede reunir para trabajar con Travis para agarrar a un tirano que es después del mismo tesoro.",
@@ -20237,7 +20220,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Skull%201965.mkv",
         "icono": "https://image.tmdb.org/t/p/original/zBMT4WHMk4xdYv3puiHTa663Kd5.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/l0ftiZeis1c0b2802XVKGUmMV4Z.jpg",
-        "iconpng": "",
+        "iconpng": "https://image.tmdb.org/t/p/original/4kN7t4lTQJXBxurareNwMCvAD22.png",
         "type": "PELICULA",
         "descripcion": "El profesor Christopher Maitland, un coleccionista de antigüedades con tendencias ocultistas, compra una calavera a Marco, un hombre extraño con el que tiene misteriosos tratos. Según Marco, la calavera fue robada de la tumba del Marqués de Sade. Sir Matthew Philips, amigo de Christopher, le advierte del peligro de tocarla, asegurándole que una vez fue suya, pero que se la robaron. Christopher se obsesiona con la calavera, que acaba apoderándose de él y obligándole a cometer una sucesión de horribles asesinatos.",
         "anio": "1965",
@@ -21171,7 +21154,7 @@
         "name": "Crepúsculo: Luna nueva",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Twilight%20Saga%20New%20Moon%202009.mkv",
         "icono": "https://image.tmdb.org/t/p/original/l5lF8VHTO5QKObAKE3Wp2QQfGZJ.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/1E7kqUJghDRSgYkxDXAyoaVqQ96.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/dF2c20sRDgySZLaLS2OUerL07sz.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/iELGSGDeJxgdgOmYZI3TP09LCpd.png",
         "type": "PELICULA",
         "descripcion": "En esta segunda entrega de la Saga Crepúsculo, Edward Cullen (Robert Pattinson) decide abandonar a Bella Swan (Kristen Stewart) para mantenerla alejada de los peligros del mundo vampírico. Con la ayuda de Jacob Black (Taylor Lautner), su amigo de la infancia y miembro de la misteriosa tribu quileute, Bella intentará superar el abandono de Edward, que la ha dejado sumida en el mayor de los desconsuelos. Pero los peligros siguen acechando a la joven; nuevas y asombrosas criaturas sobrenaturales se cruzarán en su camino, y Bella sólo contará con el apoyo del cada vez más cercano e irresistible Jacob. Repentinamente, Bella se encuentra inmersa en el mundo de los hombres lobo, ancestrales enemigos de los vampiros, y su lealtad es puesta a prueba.",
@@ -21239,7 +21222,7 @@
         "name": "Los Intocables",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Untouchables%201987.mkv",
         "icono": "https://image.tmdb.org/t/p/original/pVcWaUbFDL76ObIsReIBQ5ILMHv.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/rMZMcUchb7et72aVSATxhhO6ppM.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/qJbMgG2ZkWOk7zdMfC4JVfEk10N.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/9Gj3MPa6HzmJkLBvUQz9r9imk98.png",
         "type": "PELICULA",
         "descripcion": "Chicago, años 30. Época de la Ley Seca. El idealista agente federal Eliot Ness persigue implacablemente al gángster Al Capone, amo absoluto del crimen organizado en la ciudad. La falta de pruebas le impide acusarlo de asesinato, extorsión y comercio ilegal de alcohol, pero Ness, con la ayuda de un par de intachables policías reclutados con la ayuda de un astuto agente, intentará encontrar algún medio para inculparlo por otra clase de delitos.",
@@ -22045,23 +22028,6 @@
         "anio": "2018",
         "genero": "Historia, Comedia, Drama",
         "duracion": "120 min"
-      }
-    ]
-  },
-  {
-    "name": "Acción",
-    "samples": [
-      {
-        "name": "El Implacable",
-        "url": "http://144.217.70.79/VODS-M/1080P/The%20foreigner%202017.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/tvJcP62XCRSWD7SxFoeLM89ttuj.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/sDiGcjWhSu42dCw0jQmBInAkDZ9.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/uIO8p4ShzgzAxMaggRVivgdz3nI.png",
-        "type": "PELICULA",
-        "descripcion": "La historia del humilde hombre de negocios Quan, cuyo pasado erupciona en una venganza desenfrenada después de que su hija mueriera en un atentado. En búsqueda de los terroristas, Quan se ve atrapado en un juego del gato y el ratón con un oficial del gobierno británico, cuyo pasado podría tener algo que ver con los asesinos",
-        "anio": "2017",
-        "genero": "Acción, Suspense, Crimen",
-        "duracion": "113 min"
       }
     ]
   },
@@ -22904,8 +22870,8 @@
       {
         "name": "A los trece",
         "url": "http://144.217.70.79/VODS-M/1080P/Thirteen%202003.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/l4kKmReTKF5QiXWGIzmFQa5TEf6.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/7LNTdU9XKIKcMmdNpXygjVN1iWh.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/uzTLlZrNF6rMPBh5mUQu6vLnTtX.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/A9NJhonTbavZ2YIcR84i6whBbnK.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/vptIa3cgt5mB5NSEFQ0y87MvAVj.png",
         "type": "PELICULA",
         "descripcion": "Cuando Tracy, una chica normal de 13 años, se hace amiga de Evie, la chica más popular de la escuela, el mundo de Tracy se pone patas arriba cuando Evie la introduce en un mundo de sexo, drogas y dinero. Pero no pasa mucho tiempo antes de que el nuevo mundo y la nueva actitud de Tracy finalmente le pasen factura a ella, a su familia y a sus viejos amigos.",
@@ -24118,7 +24084,7 @@
         "descripcion": "La historia de una mujer con tres hijos que, incapaz de lidiar con su bebé recién nacido, contrata a Tully, una niñera con la que rápidamente desarrollará una conexión especial.",
         "anio": "2018",
         "genero": "Comedia, Drama",
-        "duracion": "96 min"
+        "duracion": "95 min"
       }
     ]
   },
@@ -24398,6 +24364,23 @@
     "name": "Comedia",
     "samples": [
       {
+        "name": "Tío Buck al Rescate",
+        "url": "http://144.217.70.79/VODS-M/1080P/Uncle%20Buck%201989.mkv",
+        "icono": "https://image.tmdb.org/t/p/original/kYyxouNI4j0LaGDxlRzmYMAtnxb.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/egj2xaCTo3MRPddmAGe489G5Vc3.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/hJn6QxVzWJq1VvlgLbBKrPCbNMR.png",
+        "type": "PELICULA",
+        "descripcion": "El matrimonio Russell y sus tres hijos han dejado su pequeño pueblo para vivir en las afueras de una gran ciudad. Cuando el abuelo sufre un infarto, los Russell tienen que volver al pueblo a toda velocidad, pero se les plantea un problema: ¿Con quién dejan a los chicos? Para su desgracia, sólo hay una solución... la oveja negra de la familia, el tío Buck. Soltero irresponsable, incapaz de mantener un trabajo y de llevar una vida convencional, está decidido a que la visita a sus sobrinos resulte inolvidable.",
+        "anio": "1989",
+        "genero": "Comedia, Drama, Familia",
+        "duracion": "100 min"
+      }
+    ]
+  },
+  {
+    "name": "Comedia",
+    "samples": [
+      {
         "name": "Tío Drew",
         "url": "http://144.217.70.79/VODS-M/1080P/Uncle%20drew%202018.mkv",
         "icono": "https://image.tmdb.org/t/p/original/gqOBVx7WyGjeM7q37r9Vio4JPyI.jpg",
@@ -24588,7 +24571,7 @@
         "name": "Invicto: Contraataque",
         "url": "http://144.217.70.79/VODS-M/1080P/Undisputed%202002.mkv",
         "icono": "https://image.tmdb.org/t/p/original/3NfN3EmF62Z5wCwYyNpMzrqp7Ox.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/1MYBUWs7h2wh31wp67w90892O4.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/4uGL6J3XTw2vXJgWiMgyy1djkDA.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/hJuIc97LX2DmQZaKE38GIju16u4.png",
         "type": "PELICULA",
         "descripcion": "El campeón mundial de boxeo en la categoría de pesos pesados George “Iceman” Chambers (Ving Rhames) es enviado a prisión acusado de violación, cargo del que él se declara totalmente inocente. Lo que más le indigna es que en la cima de su carrera de boxeador profesional no va a poder disfrutar y defender su título de campeón invicto. Cumpliendo cadena perpetua por un crimen pasional en la misma penitenciaría a la que será enviado Iceman se encuentra Monroe Hutchen (Wesley Snipes). Los reclusos consideran a Hutchen como a un héroe, como a su indiscutible campeón de boxeo. Resignado a pasar el resto de su vida en la cárcel, a Hutchen todavía le obsesiona, sin embargo, la duda de si hubiera podido llegar a ser alguien como boxeador.",
@@ -24604,7 +24587,7 @@
       {
         "name": "Fuera de Control",
         "url": "http://144.217.70.79/VODS-M/1080P/Unhinged%202020.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/nmckMHFqtfgczofmqqs5wowxB0a.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/38XTUyRV6BMb1IOU34pwrBCwaXX.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/wXk9y36eTmNl6XwEuOfw6yNNClr.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/yj7hoOVFZlMsXwq2YvZ2HrVxJ1b.png",
         "type": "PELICULA",
@@ -26282,6 +26265,23 @@
     ]
   },
   {
+    "name": "Bélica",
+    "samples": [
+      {
+        "name": "Codigos de Guerra",
+        "url": "http://144.217.70.79/VODS-M/1080P/Windtalkers%202002.mkv",
+        "icono": "https://image.tmdb.org/t/p/original/nDVe8IpViR0bdFrraEN2IZnBanN.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/xr60oCXkfFIqMRJ4YxtMiD53zBy.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/2q7iFu3mnfbqkuypWJznMbiRznb.png",
+        "type": "PELICULA",
+        "descripcion": "Dos marines estadounidenses en la Segunda Guerra Mundial están asignados a proteger a los marines navajos, que utilizan su lengua materna como código de radio inquebrantable.",
+        "anio": "2002",
+        "genero": "Bélica, Acción",
+        "duracion": "135 min"
+      }
+    ]
+  },
+  {
     "name": "Animación",
     "samples": [
       {
@@ -26952,7 +26952,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Xxx%202002.mkv",
         "icono": "https://image.tmdb.org/t/p/original/gd4hRY3pFXRY7YVbMdVBpnKV7wC.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/a6bItEVaxgphpMswho1wVRerv4r.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/eZ25fp86jM4nwm7cKuCHXpK0qvy.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/xzx6HmTB0DtTRVozVWJcxwBYEjg.png",
         "type": "PELICULA",
         "descripcion": "Xander Cage es tu adicto a la adrenalina estándar sin miedo y con una actitud pésima. Cuando el gobierno de los Estados Unidos lo \"recluta\" para ir a una misión, no está precisamente emocionado. Su misión: recopilar información sobre una organización que puede estar planeando la destrucción del mundo, dirigida por el nihilista Yorgi.",
         "anio": "2002",
@@ -27211,7 +27211,7 @@
         "type": "PELICULA",
         "descripcion": "En esta secuela y empleando el característico sentido del humor del que hizo gala \"Zombieland\" (Tierra de Zombies), el grupo de protagonistas tendrá que viajar desde la Casa Blanca hasta el corazón de los Estados Unidos, sobreviviendo a nuevas clases de muertos vivientes que han evolucionado desde lo sucedido hace algunos años, así como a algunos supervivientes humanos rezagados. Pero, por encima de todo, tendrán que tratar de soportar los inconvenientes de convivir entre ellos.",
         "anio": "2019",
-        "genero": "Terror, Comedia",
+        "genero": "Terror, Comedia, Acción",
         "duracion": "99 min"
       }
     ]
@@ -27251,19 +27251,19 @@
     ]
   },
   {
-    "name": "Terror",
+    "name": "Fantasía",
     "samples": [
       {
-        "name": "Zombies",
+        "name": "Z-O-M-B-I-E-S",
         "url": "http://144.217.70.79/VODS-M/1080P/Zombies%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/47OrFvBRwgrJXHETHX57v1iRKXn.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/m2cbgFVf7ZY9N37fuXUtRMcogGN.jpg",
-        "iconpng": "",
+        "icono": "https://image.tmdb.org/t/p/original/smfvg3SfpkSS0dwCq2C9bhva3A8.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ArccbTKFk8fMp5JnHuxoW8xU0iJ.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/wJuB5ia6lstHdCGZYwzLVwSrfZm.png",
         "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2017",
-        "genero": "Terror, Acción, Suspense, Misterio",
-        "duracion": "84 min"
+        "descripcion": "Los estudiantes de Zombietown son transferidos a una escuela secundaria en un pueblo suburbano preocupado por la uniformidad, las tradiciones y las motivaciones.",
+        "anio": "2018",
+        "genero": "Fantasía, Comedia, Romance, Película de TV",
+        "duracion": "94 min"
       }
     ]
   },
