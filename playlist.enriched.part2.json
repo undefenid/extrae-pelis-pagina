@@ -581,7 +581,7 @@
     "name": "Comedia",
     "samples": [
       {
-        "name": "Papá Por Siempre",
+        "name": "Papás por Siempre",
         "url": "http://144.217.70.79/VODS-M/1080P/Mrs%20Doubtfire%201993.mkv",
         "icono": "https://image.tmdb.org/t/p/original/vC9ufyEuCbvojVvl9i6FXN3n06e.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/sTgavNm82pTaZR9U2NQZ1J2FrJz.jpg",
@@ -1485,7 +1485,7 @@
         "name": "La Noche de los Demonios",
         "url": "http://144.217.70.79/VODS-M/1080P/Night%20of%20the%20Demons%201988.mkv",
         "icono": "https://image.tmdb.org/t/p/original/tCGfOvhgR3P1TfO278V1qOcxIZ2.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/jtUlo2V90nsZ6TEJZSN3LI7UXRJ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/flVqKeNGCPzWKKgORAp23XFJ3NR.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/4hJn07w8pAwFXByXmzK2X4DxE0G.png",
         "type": "PELICULA",
         "descripcion": "Un grupo de jóvenes decide celebrar una fiesta en una casa abandonada durante la noche de Halloween. Se dirigen hacia las afueras en sus coches, para una vez en la casa divertirse a base de música, cerveza, bromas y sexo. Pero sin quererlo, despiertan a un demonio que habita en la casa, y que toma posesión de una de las chicas. Los jóvenes se verán atrapados dentro, ya que una alta pared rodea ahora la edificación, y tendrán que vérselas con los demonios.",
@@ -1552,7 +1552,7 @@
       {
         "name": "Ninja III: la dominación",
         "url": "http://144.217.70.79/VODS-M/1080P/Ninja%203-The%20Domination%201984.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/3zMY3oGopsx0o2HfSR4AZoShAhU.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/6uUMJelRS3CGFehLyspQOS1R4z6.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/hwGnb39LPVkZH5ySosyeeU5T1Va.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/6aymzDnBrHt051DLvVv1Ku9eph8.png",
         "type": "PELICULA",
@@ -2386,7 +2386,7 @@
         "name": "Érase una vez en el Oeste",
         "url": "http://144.217.70.79/VODS-M/1080P/Once%20Upon%20a%20Time%20in%20the%20West%201968.mkv",
         "icono": "https://image.tmdb.org/t/p/original/upiek8u4rHTrOJW9B0woXe4A4h7.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/h31SOVlekuHXsMWVGxI8nPPfY82.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/p1OFxsff2t8bxQC45TPfyo0ZBfU.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/7HgopvSQyPmiBHjNViiDb5SPO4r.png",
         "type": "PELICULA",
         "descripcion": "Mientras los constructores del ferrocarril avanzan imparables por el desierto de Arizona en su camino hacia el mar, Jill llega al pequeño pueblo de Flagstone con la intención de empezar una nueva vida.",
@@ -2608,7 +2608,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Ooops%20The%20Adventure%20Continues%202020.mkv",
         "icono": "https://image.tmdb.org/t/p/original/87YGfUYwM4mI2ITWzsHxxBDbOiy.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/oi9k7RySgadRwl8bAdXt7ehnt2f.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/i74fiwDbFoTd0AzOaciuLmsagBz.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/6g9r6gjm278rYnFmS1g2Uzb0MdG.png",
         "type": "PELICULA",
         "descripcion": "El joven Nestrian Finny y su mejor amiga, Leah, caen accidentalmente en el Arca y son arrastrados al mar.",
         "anio": "2020",
@@ -3921,7 +3921,7 @@
         "type": "PELICULA",
         "descripcion": "Louis Creed, su esposa y sus dos niños se instalan en una vivienda próxima a una carretera con mucho tráfico. Cerca de la casa hay un sendero que lleva a un cementerio de animales y también a un antiguo cementerio indio; según la leyenda, los que sean enterrados allí volverán a la vida. Cuando uno de los niños muere atropellado por un camión, Louis decide enterrarlo en el cementerio indio.",
         "anio": "1989",
-        "genero": "Terror, Drama, Fantasía, Suspense",
+        "genero": "Terror",
         "duracion": "102 min"
       }
     ]
@@ -3938,7 +3938,7 @@
         "type": "PELICULA",
         "descripcion": "El Dr. Louis Creed y su esposa, Rachel, se mudan de Boston a un área rural con sus dos pequeños hijos. La pareja pronto encuentra un misterioso cementerio escondido en las profundidades del bosque cerca de su nuevo hogar.",
         "anio": "2019",
-        "genero": "Terror, Suspense",
+        "genero": "Terror",
         "duracion": "100 min"
       }
     ]
@@ -4102,9 +4102,9 @@
       {
         "name": "Filadelfia",
         "url": "http://144.217.70.79/VODS-M/1080P/Philadelphia%201993.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/x3SQfjiXBhZ7o0Drt2YV9Icc2C2.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/jATwMlaz93jKzT8K5SlW3sRUpDb.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/mE2TjYsnqdWxPt45kIElw3az4O9.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/x3HpQqSoxauYxJf1f1u59KMNOEq.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/ibn4tzLP8dl9KkIz8lzSgCEB5wa.png",
         "type": "PELICULA",
         "descripcion": "Andrew Beckett, un joven y prometedor abogado de Philadelphia, es despedido del prestigioso bufete en el que trabaja cuando sus jefes se enteran de que ha contraído el sida. Decide entonces demandar a la empresa por despido improcedente, pero en un principio ningún abogado acepta defender su caso.",
         "anio": "1993",
@@ -5106,7 +5106,7 @@
         "name": "Predestinación",
         "url": "http://144.217.70.79/VODS-M/1080P/Predestination%202014.mkv",
         "icono": "https://image.tmdb.org/t/p/original/qXabr1nGFE3HCdIlU9xFGqALALg.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/iNHYPrmH3nq1W2mpcG9SOeMAr8J.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/cvq9cRMDJIGzNpHaPVGFftqPcLj.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/qSbaGHRNNv02gvFFJt9va7qrHjw.png",
         "type": "PELICULA",
         "descripcion": "Un agente especial de un departamento secreto del gobierno, una agencia creada en los años 80 que permite realizar viajes en el tiempo, tendrá que realizar una compleja serie de \"saltos\" hacia atrás en el tiempo con el fin de detener al conocido como \"el terrorista fallido\", un individuo que está poniendo bombas por todo el país con miles de víctimas. En uno de sus viajes a los 70, el agente, que trabaja encubierto como camarero de un bar, conoce a un hombre que le narra una historia extraordinaria.",
@@ -5310,7 +5310,7 @@
         "name": "Proyecto X",
         "url": "http://144.217.70.79/VODS-M/1080P/Project%20X%202012.mkv",
         "icono": "https://image.tmdb.org/t/p/original/owF9NIcQOPFAOjp2pni8BsVlnRq.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/yVb5Fu5Dtwy2CRVMpFkwjySPGRx.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/cUqXHZtnptgvyAE1hN47Wsf3ami.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/lVaYBsH90p3B1PxHeYtrZxzwRFi.png",
         "type": "PELICULA",
         "descripcion": "Tres estudiantes de un instituto deciden organizar una fiesta salvaje en casa de uno de ellos, promocionándola en las redes sociales como la fiesta más loca de la temporada. Además, los chicos deciden grabarla para luego publicarla en la red. Pero, poco a poco, irán surgiendo una serie de complicaciones imprevistas...",
@@ -6834,19 +6834,19 @@
     ]
   },
   {
-    "name": "Acción",
+    "name": "Ciencia ficción",
     "samples": [
       {
         "name": "RoboCop",
         "url": "http://144.217.70.79/VODS-M/1080P/RoboCop%202014.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/aWUZ3gcjaWzjEr0KcZubpeJ4hFr.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/pRSTtNlcADoQkfeBGtFQNE1FDpb.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/AvYbrVeIu3W5aSjpkqZ4eLMae0l.png",
+        "icono": "https://image.tmdb.org/t/p/original/2ej8wIzOYBgWQ5XlpeFulnkHAoI.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/hTDAWiohFTwJaKNcCNlsKs64bip.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/i3twADDnmJ9JVwwmRkBFJjSIeLR.png",
         "type": "PELICULA",
-        "descripcion": "En un Detroit violento, casi apocalíptico, la empresa malvada Omni Consumer Products gana un contrato del gobierno de la ciudad para privatizar la fuerza policial. Para probar sus cyborgs de erradicación del crimen, la compañía lleva al policía de la calle Alex Murphy a una confrontación armada con el señor del crimen Boddicker para que puedan usar su cuerpo para respaldar su prototipo RoboCop no probado. Pero cuando RoboCop se entera de los planes nefastos de la compañía, se convierte en su maestro.",
-        "anio": "1987",
-        "genero": "Acción, Suspense, Ciencia ficción",
-        "duracion": "102 min"
+        "descripcion": "Año 2028. La compañía multinacional OmniCorp domina la tecnología robótica. Sus robots han ganado todo tipo de guerras fuera de los Estados Unidos y ahora quieren probarlos dentro del país. Por su parte, Alex Murphy, un policía de Detroit, trata de acabar con la ola de crímenes que arrasa la ciudad. Cuando Alex resulta gravemente herido en acto de servicio, OmniCorp utiliza sus conocimientos de ciencia robótica para salvarlo y también para dotarlo de extraordinarias habilidades que le permitirán afrontar problemas fuera de lo común.",
+        "anio": "2014",
+        "genero": "Ciencia ficción, Acción, Crimen",
+        "duracion": "113 min"
       }
     ]
   },
@@ -7502,7 +7502,7 @@
       {
         "name": "El juego del miedo 2",
         "url": "http://144.217.70.79/VODS-M/1080P/Saw%202%202005.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/4ZOC5ICB4Gg5tzF5jDcVsjLkz0R.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/gw7nQp0rXmEF81SvumCXWx7U5nb.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/1lWeIA03iGXTlDv0yzsN0wUdT9T.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/6K8rO4AdAbuNiCtnmpJMZqSYrpN.png",
         "type": "PELICULA",
@@ -7519,7 +7519,7 @@
       {
         "name": "El juego del miedo 3",
         "url": "http://144.217.70.79/VODS-M/1080P/Saw%203%202006.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/zkB6eWTQhiyDHGFR2icFeXLaOcP.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/raUejCvrhUl0VTjcj8b0gJLBUhQ.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/qx8Pb3nVnHLBizI9792pbRN5nnm.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/j9rYkUvd5Vq5NqaWaqxGicIlps8.png",
         "type": "PELICULA",
@@ -7587,7 +7587,7 @@
       {
         "name": "El juego del miedo 7",
         "url": "http://144.217.70.79/VODS-M/1080P/Saw%207%202010.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/otcgtanjfiuN11zkfyVZA2gYHFM.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/gn4z3QWHyBVbIIRNucsW6xuhJE2.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/bXECndnt2fetBsopdQvsI3Cv970.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/cVX2roGC0vj07Z8QdBMEPMshVzo.png",
         "type": "PELICULA",
@@ -10308,7 +10308,7 @@
         "name": "La pelicula de Stitch",
         "url": "http://144.217.70.79/VODS-M/1080P/Stitch%20The%20Movie%202003.mkv",
         "icono": "https://image.tmdb.org/t/p/original/6MM0i4SrOPQblYSRS8jrOgZ4mlw.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/iEr3i8Qsaun2hRHUy7WH0gmfJBf.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/w1SgXiBjpnDICJ4fYw12AY3B5yS.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/2SmcnDAkF67APWKtOjCf2EEsgvG.png",
         "type": "PELICULA",
         "descripcion": "Las aventuras de Lilo (una pequeña niña hawaiana) y Stitch (el extraterrestre más buscado de la galaxia) continuan. Stitch, Pleakley y el Dr. Jumba son parte de la familia ahora. Pero lo que Lilo y Stitch no saben es que el Dr. Jumba trajo otro de sus \"experimentos\" alienígenas a Hawai.",
@@ -13351,7 +13351,7 @@
         "name": "El Conjuro 2",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Conjuring%202%20The%20Enfield%20Poltergeist%202016.mkv",
         "icono": "https://image.tmdb.org/t/p/original/pdNW0HWw11Wn2N94VGea8O44wOA.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/8Y13s49mOey8MYWiEYNEA9rVywW.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/rOwEWgbryAxp7D1xpzREqh3EOTX.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/qFPl5gsgalp96mWPKzSccMkA40e.png",
         "type": "PELICULA",
         "descripcion": "En está ocasión, Lorraine y Ed Warren viajan al norte de Londres para ayudar a una madre soltera que cría a cuatro hijos sola en una casa plagada de espíritus malignos.",
@@ -13368,7 +13368,7 @@
         "name": "El Conjuro",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Conjuring%202013.mkv",
         "icono": "https://image.tmdb.org/t/p/original/sKuHxkCogdk6YWzTyXYPoo9qd9n.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/mXndmCbpvlqnD6po0EMfxEZcUSn.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/fMlAg1CyHTsCktwQrp74rl9RMwJ.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/5qjvxFhRZtvm4mcV90X9QNYLZVj.png",
         "type": "PELICULA",
         "descripcion": "Una familia aterrorizada pide ayuda a los investigadores paranormales Ed y Lorraine Warren a investigar una presencia oscura en su granja. Al ser obligados a enfrentarse a una entidad poderosa, los Warren se ven atrapados en el caso más aterrador de sus vidas.",
@@ -13663,7 +13663,7 @@
         "descripcion": "Thad Beaumont es un escritor que estuvo publicando, bajo el pseudónimo de George Stark y durante años, novelas de terror que narraban las matanzas del psicópata Alexis Máuina. Una vez conseguida fama y dinero, y con una preciosa familia compuesta por su atractiva esposa y dos gemelos, Beaumont decide que ya no necesita a su doble en su ascendente carrera literaria, por lo que decide desenmascarar al mundo su personaje. Pero pronto descubrirá que no es nada fácil deshacerse del fantasma que creó a lo largo de los años. Basada en la novela de Stephen King.",
         "anio": "1993",
         "genero": "Misterio, Terror",
-        "duracion": "122 min"
+        "duracion": "121 min"
       }
     ]
   },
@@ -14949,7 +14949,7 @@
         "name": "Los Dioses Deben Estar Locos",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Gods%20Must%20Be%20Crazy%201980.mkv",
         "icono": "https://image.tmdb.org/t/p/original/qdGWx0CyuhBD1FlDqbwWwEKhq8h.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/aVB482oVC4hpbtKD5iNXWlBoiRQ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3gzI0UrLqIR9D40qshwduhGZCp3.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/nYSYrqU3uayYgXik3qfY3t0EgF.png",
         "type": "PELICULA",
         "descripcion": "La miseria es llevada a un pequeño grupo de Sho en el desierto de Kalahari en forma de una botella de cola. En su búsqueda por arrojar el objeto malvado sobre el borde de la tierra, Xixo se encuentra con la \"civilización\" occidental, un médico al azar y un déspota tiránico.",
@@ -15714,7 +15714,7 @@
         "name": "Los juegos del hambre: Sinsajo - Parte 1",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Hunger%20Games%20Mockingjay%20Part%201%202014.mkv",
         "icono": "https://image.tmdb.org/t/p/original/wfLsciidZamFPeOb4FD8ywk1Q9c.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/qvo0g1yeQnYoCcXctSHI4mkoFMc.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/lV1P1Q5gLDXVG1ZYCxZHStkcQC3.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/yBzLNk9620G6zkMwacvy4zO2h6o.png",
         "type": "PELICULA",
         "descripcion": "Katniss Everdeen (Jennifer Lawrence) en el Distrito 13 tras, literalmente, destrozar los juegos para siempre. Bajo el liderazgo de la Presidenta Coin (Julianne Moore) y contando con las advertencias de los amigos en quien confía, Katniss expande sus alas al tiempo que lucha por salvar a Peeta (Josh Hutcherson) y a una nación conmovida por su coraje...",
@@ -15731,7 +15731,7 @@
         "name": "Los juegos del hambre: Sinsajo - Parte 2",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Hunger%20Games%20Mockingjay%20Part%202%202015.mkv",
         "icono": "https://image.tmdb.org/t/p/original/3qQPBc7JVGXJGo0Av5jrqndcdTm.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/9zWWAL8LciOBXvAArLn9mtGvRzQ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/qVgLMRVNB5bHU0inmRa0ueShacN.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/4lG2BK5RZZYksGo5XQCGkBTxgV1.png",
         "type": "PELICULA",
         "descripcion": "Katniss Everdeen (Jennifer Lawrence) se da cuenta de que ya no sólo está en juego su supervivencia, sino también el futuro. Con Panem sumida en una guerra a gran escala, Katniss tendrá que plantar cara al presidente Snow (Donald Sutherland) en el enfrentamiento final. Katniss, acompañada por un grupo de sus mejores amigos, que incluye a Gale (Liam Hemsworth), Finnick (Sam Claflin) y Peeta (Josh Hutcherson), emprende una misión con la unidad del Distrito 13, en la que arriesgan sus vidas para liberar a los ciudadanos de Panem y orquestan un intento de asesinato del presidente Snow, cada vez más obsesionado con destruirla. Las trampas mortales, los enemigos y las decisiones morales que aguardan a Katniss la pondrán en mayores aprietos que ninguna arena de Los Juegos del Hambre.",
@@ -15813,7 +15813,7 @@
     "name": "Acción",
     "samples": [
       {
-        "name": "Riesgo Bajo Cero",
+        "name": "Riesgo bajo cero",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Ice%20Road%202021.mkv",
         "icono": "https://image.tmdb.org/t/p/original/axoP5tUVpZ7hLvH82WQ6mUpoEPH.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/klQJJGLRxyZUoiWusZ5GA3qAtiq.jpg",
@@ -16269,7 +16269,7 @@
     ]
   },
   {
-    "name": "Drama",
+    "name": "Western",
     "samples": [
       {
         "name": "Hombre hasta el fin",
@@ -16280,42 +16280,42 @@
         "type": "PELICULA",
         "descripcion": "En 1820, Big Eli (Burt Lancaster) y su hijo deciden abandonar Kentucky para empezar una nueva vida en Texas. Antes de llegar a su destino, se detienen en el pueblo, donde vive el hermano mayor de Eli, y surgen entonces ciertas dificultades. A pesar de ser un gran cazador, Eli no encuentra oportunidades. Además tiene un altercado con el sheriff, que lo encierra en prisión.",
         "anio": "1955",
-        "genero": "Drama, Western",
+        "genero": "Western",
         "duracion": "104 min"
       }
     ]
   },
   {
-    "name": "Comedia",
+    "name": "Fantasía",
     "samples": [
       {
-        "name": "The Kid",
+        "name": "Mi Encuentro Conmigo",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Kid%202000.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/we8AMv9ufyoXgmOlfX0SmubKOrd.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/mAhCW7QbpL5kwvCWGsfyY3ILoW6.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/c5CN2VOt2qFv1gT9y7pM8TqvNE4.png",
+        "icono": "https://image.tmdb.org/t/p/original/fkfSJooU4fMhJzT3LKfzmC6CHqH.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/jEMYEoQw7jF0aoKRgaa1TbHojUT.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/Ab8tEvn2CHyjScB3BoHmTwD2cJD.png",
         "type": "PELICULA",
-        "descripcion": "Una mujer londinense, sumamente pobre, se ve en la necesidad de abandonar a su hijo en una casa de millonarios, aunque por una serie de circustancias el niño terminará siendo cuidado por un vagabundo que se convierte así en su padre. Cinco años después, y con la madre convertida en una popular cantante, el destino tratará de separarlos...",
-        "anio": "1921",
-        "genero": "Comedia, Drama",
-        "duracion": "68 min"
+        "descripcion": "Un consultor de imagen infeliz y disgustado tiene una segunda oportunidad en la vida cuando se enfrenta misteriosamente a una versión de sí mismo de ocho años.",
+        "anio": "2000",
+        "genero": "Fantasía, Comedia, Familia",
+        "duracion": "105 min"
       }
     ]
   },
   {
-    "name": "Comedia",
+    "name": "Western",
     "samples": [
       {
-        "name": "The Kid",
+        "name": "The Kid (Sin piedad)",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Kid%202019.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/we8AMv9ufyoXgmOlfX0SmubKOrd.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/mAhCW7QbpL5kwvCWGsfyY3ILoW6.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/c5CN2VOt2qFv1gT9y7pM8TqvNE4.png",
+        "icono": "https://image.tmdb.org/t/p/original/5pcvDorwyuUNxbiSEt2urKUvKYI.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/qogeijTQKJB3XtopMolADVQcnBG.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/iSBE24pLjWjOrsVCzCShB3q8RFX.png",
         "type": "PELICULA",
-        "descripcion": "Una mujer londinense, sumamente pobre, se ve en la necesidad de abandonar a su hijo en una casa de millonarios, aunque por una serie de circustancias el niño terminará siendo cuidado por un vagabundo que se convierte así en su padre. Cinco años después, y con la madre convertida en una popular cantante, el destino tratará de separarlos...",
-        "anio": "1921",
-        "genero": "Comedia, Drama",
-        "duracion": "68 min"
+        "descripcion": "Un muchacho está viviendo los peores momentos de su vida: su tío ha asesinado a su padre y se ha llevado a su hermana para que ejerza la prostitución. El joven tiene que hacer algo frente a esta situación y decide pedir ayuda a su héroe: Billy El Niño. Intenta que el vaquero vengue a su padre y salve a su hermana… sin ningún resultado. Es entonces cuando aparece el sheriff Pat Garrett asombrando al chico con lo que consigue.",
+        "anio": "2019",
+        "genero": "Western, Drama, Acción",
+        "duracion": "100 min"
       }
     ]
   },
@@ -17312,7 +17312,7 @@
         "name": "El señor de los anillos: La comunidad del anillo",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Lord%20of%20the%20Rings%20The%20Fellowship%20of%20the%20Ring%202001.mkv",
         "icono": "https://image.tmdb.org/t/p/original/9xtH1RmAzQ0rrMBNUMXstb2s3er.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/a0lfia8tk8ifkrve0Tn8wkISUvs.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/z51Wzj94hvAIsWfknifKTqKJRwp.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/dMAXhf7jVsc8Qsx26wsoOmoQh3r.png",
         "type": "PELICULA",
         "descripcion": "En la Tierra Media, el Señor Oscuro Saurón creó los Grandes Anillos de Poder, forjados por los herreros Elfos. Tres para los reyes Elfos, siete para los Señores Enanos, y nueve para los Hombres Mortales. Secretamente, Saurón también forjó un anillo maestro, el Anillo Único, que contiene en sí el poder para esclavizar a toda la Tierra Media. Con la ayuda de un grupo de amigos y de valientes aliados, Frodo emprende un peligroso viaje con la misión de destruir el Anillo Único. Pero el Señor Oscuro Sauron, quien creara el Anillo, envía a sus servidores para perseguir al grupo. Si Sauron lograra recuperar el Anillo, sería el final de la Tierra Media. EXTENDIDA",
@@ -18077,7 +18077,7 @@
         "name": "Guerra sin reglas",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Ministry%20of%20Ungentlemanly%20Warfare%202024.mkv",
         "icono": "https://image.tmdb.org/t/p/original/zhvyWzZii2SWpsrcUvLZJNaJyoG.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/jLRtQNOwA0ul2gnRoZ0QjNwMUN1.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/s5znBQmprDJJ553IMQfwEVlfroH.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/u9J1Ocp0pwd5UhbE7TqMhZbYFNh.png",
         "type": "PELICULA",
         "descripcion": "El ejército británico recluta a un pequeño grupo de soldados de élite para atacar a los nazis detrás de las líneas enemigas durante la Segunda Guerra Mundial.",
@@ -18417,7 +18417,7 @@
         "name": "Diario de una pasión",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Notebook%202004.mkv",
         "icono": "https://image.tmdb.org/t/p/original/gFCnDKfsZWzyv9sweizVC4EWn06.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/bWoa6FtpnD2qByTVTmL5pAZUAKv.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/eEN7tsCCHppGhONHngvHKSdxi7r.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/wFGND0gdewVENSu9JbECaGaHeTU.png",
         "type": "PELICULA",
         "descripcion": "En una residencia de ancianos, un hombre mayor lee a una mujer una historia de amor escrita en su viejo libro de notas. El libro cuenta la vida en los años 40 de Noah Calhoun y Allie Nelson, dos jóvenes adolescentes de Carolina del Norte que, a pesar de vivir en dos ambientes sociales muy diferentes, pasaron un verano idílico juntos y profundamente enamorados, antes de ser separados, primero por sus padres, y más tarde por la Segunda Guerra Mundial.",
@@ -20865,7 +20865,7 @@
         "name": "El Turista",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Tourist%202010.mkv",
         "icono": "https://image.tmdb.org/t/p/original/oph4jJLezMsX0uQ5UYDOR0CVerb.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ooM2Clzo8pGUR0vCE7DC6szPgWV.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/kxslqKKfx89vxU7Mq296f8bBOmo.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/iWRCfvNjQPtNCLLiK7xU2LWuS4C.png",
         "type": "PELICULA",
         "descripcion": "Frank, un turista estadounidense, viaja a Italia para tratar de recuperarse de un fracaso amoroso. Pronto conocerá a Elise, quien traerá la pasión de nuevo a su vida, pero también el peligro.",
@@ -21080,19 +21080,19 @@
     ]
   },
   {
-    "name": "Documental",
+    "name": "",
     "samples": [
       {
-        "name": "Virtual Trip Tokyo Twilight from the Air",
+        "name": "男狼トワイライト",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Twilight%202008.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/nXJSn529IYBSGn27OsDTkjajBK5.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/tqyvi0UIj2C3Yau0ipshLZohdi4.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/21sroH4DyVbzoE8elvpzXWjaBcQ.jpg",
+        "iconoHorizontal": "",
         "iconpng": "",
         "type": "PELICULA",
         "descripcion": "",
         "anio": "2008",
-        "genero": "Documental",
-        "duracion": "76 min"
+        "genero": "",
+        "duracion": "60 min"
       }
     ]
   },
@@ -22581,7 +22581,7 @@
       {
         "name": "La vida secreta de tus mascotas",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20secret%20life%20of%20pets%202016.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/kfMiEhfmsAxTUoldgR4mnKndDVv.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/ubv09HE6hcxrhvoWxyTwQSMj8W6.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/c1Ywtvlqls6tPBZ3BqbPtBwHyng.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/39nwkU8tGS9hoqzgYe5N41TnnPB.png",
         "type": "PELICULA",
@@ -23465,13 +23465,13 @@
       {
         "name": "Toy Story",
         "url": "http://144.217.70.79/VODS-M/1080P/Toy%20Story%201995.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/jvn7wy3RSNEXnFSXLpH2of2LcV6.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/y59d8PjuFSgJJN4VRS7jDoRgSM9.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/3Rfvhy1Nl6sSGJwyjb0QiZzZYlB.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/eX8LcW1zdjxvWNB5ZsZuhPO7NtP.png",
         "type": "PELICULA",
         "descripcion": "Un muñeco vaquero se siente profundamente amenazado y celoso cuando una nueva figura del hombre del espacio lo suplanta como juguete principal en el cuarto de un niño.",
         "anio": "1995",
-        "genero": "Animación, Aventura, Familia, Comedia, Ciencia ficción",
+        "genero": "Animación, Aventura, Familia, Comedia",
         "duracion": "81 min"
       }
     ]
@@ -24045,7 +24045,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/True%20Grit%202010.mkv",
         "icono": "https://image.tmdb.org/t/p/original/3O16Iq2v8FbTI6B2H91CsrKi4q1.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/5dwlH8Krm2bsuc2Pubw2cBb03g5.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/cSuegYH1wOfvLkurN3Kh4Q3kkW3.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/jJnVDNtZOAAAwKk6EwBK5lxBkmN.png",
         "type": "PELICULA",
         "descripcion": "Después del asesinato de su padre, Mattie Ross, una chica de catorce años firmemente decidida a hacer justicia, contrata los servicios del veterano agente del Gobierno Rooster Cogburn, borracho y excelente pistolero. Así ambos se ponen en camino y entran en territorio indio para dar caza a Tom Chaney en compañía de LaBoeuf, un ránger de Texas que busca al fugitivo por el asesinato de un senador… Nueva adaptación de una novela de Charles Portis, que ya había llevado al cine Henry Hathaway (True Grit, 1969) con John Wayne como protagonista.",
         "anio": "2010",
@@ -24135,7 +24135,7 @@
         "descripcion": "“¡No quiero morir en Canadá!”, suplica Wallace Bryton, un popular podcaster que cruza la frontera de Canadá para entrevistar a Howard Howe, que una vez fue salvado por una morsa. Misántropo extremo, Howe secuestrará a Wallace para sacarle su lado más “animal”.",
         "anio": "2014",
         "genero": "Comedia, Terror",
-        "duracion": "105 min"
+        "duracion": "102 min"
       }
     ]
   },
@@ -26914,16 +26914,16 @@
     "name": "Acción",
     "samples": [
       {
-        "name": "X-Men: Días del futuro pasado",
+        "name": "X-Men: Days of Future Past (The Rogue Cut)",
         "url": "http://144.217.70.79/VODS-M/1080P/X-men%20days%20of%20future%20past%20the%20rogue%202014.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/ggb9nmS5alJuA0ll0iU5YHiGbb0.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/hUPgIibqZlwbhs4N08cPzzc4f5K.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/lqjrdVzrXVYAZB6oQXRa8ugw8SQ.png",
+        "icono": "https://image.tmdb.org/t/p/original/kM0QA1ouvsV9lkiENSLIaCHaaxj.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
         "type": "PELICULA",
-        "descripcion": "Los X-Men originales unen fuerzas y envían a Wolverine al pasado en un intento desesperado de cambiar la historia y prevenir un evento que desemboca en la perdición tanto para humanos como para mutantes.",
+        "descripcion": "",
         "anio": "2014",
-        "genero": "Acción, Aventura, Ciencia ficción",
-        "duracion": "131 min"
+        "genero": "Acción, Ciencia ficción, Aventura",
+        "duracion": "149 min"
       }
     ]
   },
@@ -27256,7 +27256,7 @@
       {
         "name": "Z-O-M-B-I-E-S",
         "url": "http://144.217.70.79/VODS-M/1080P/Zombies%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/smfvg3SfpkSS0dwCq2C9bhva3A8.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/snGVInrnUBK6LrfLZkOdbj5PpJo.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/ArccbTKFk8fMp5JnHuxoW8xU0iJ.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/wJuB5ia6lstHdCGZYwzLVwSrfZm.png",
         "type": "PELICULA",
