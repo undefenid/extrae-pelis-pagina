@@ -22205,23 +22205,6 @@
         "name": "",
         "samples": [
             {
-                "name": "Jason bourne",
-                "url": "http://144.217.70.79/VODS-M/1080P/Jason%20bourne%202016.mkv",
-                "icono": "",
-                "iconoHorizontal": "",
-                "iconpng": "",
-                "type": "PELICULA",
-                "descripcion": "",
-                "anio": "2016",
-                "genero": "",
-                "duracion": ""
-            }
-        ]
-    },
-    {
-        "name": "",
-        "samples": [
-            {
                 "name": "Jaws 2",
                 "url": "http://144.217.70.79/VODS-M/1080P/Jaws%202%201978.mkv",
                 "icono": "",
