@@ -73,7 +73,7 @@
       {
         "name": "Turma da Mônica: Lições",
         "url": "http://144.217.70.79/VODS-M/1080P/Monica%20and%20Friends%20Lessons%202022.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/xUXqbadZGR5sjdOZ6dRtV4t8QQq.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/gzaLnQ2CctXaHqatSlRbSVp8Bh4.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/sPgQg5DK8GL6uCcUw9s8PuE2Y80.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/hyWJgeuPqH37thUJyvlZe0C91ib.png",
         "type": "PELICULA",
@@ -1263,7 +1263,7 @@
       {
         "name": "Nezha: El renacer de un dios",
         "url": "http://144.217.70.79/VODS-M/1080P/New%20Gods%20Nezha%20Reborn%202021.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/iyOgNaaDX67AUMWlzsGZVO1luoh.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/bPj2YRLOnYtY7dQCZl3hHef9PZA.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/4PKfa0zltSrp1BJoLl8zfvYXaac.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/A3lyajcRSPwsXXhSmlbd6hnWZU4.png",
         "type": "PELICULA",
@@ -1712,7 +1712,7 @@
         "descripcion": "Hutch Mansell (Interpretado por Bob Odenkirk) es un hombre de familia comun y corriente. Una noche unos ladrones entran a su casa y él renuncia a defenderse y defender a su familia con el fin de evitar complicaciones. Esto decepciona a su hijo Blake (Interpretado por Gage Munroe) y a su mujer Becca (Interpretada por Connie Nielsen) que empiezan a distanciarse de él. El incidente le reconcome por dentro y hace que salga a la luz su lado más oscuro, Uno que creyó dejar atras.",
         "anio": "2021",
         "genero": "Acción, Suspense",
-        "duracion": "91 min"
+        "duracion": "92 min"
       }
     ]
   },
@@ -1887,19 +1887,19 @@
     ]
   },
   {
-    "name": "Misterio",
+    "name": "Drama",
     "samples": [
       {
         "name": "Nostalgia",
         "url": "http://144.217.70.79/VODS-M/1080P/Nostalgia%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/x4v3mPNgDDI3RZaL1eR5bdSVG1U.jpg",
-        "iconoHorizontal": "",
+        "icono": "https://image.tmdb.org/t/p/original/vbvexHHFLEonIuXul2AVpnwgrZw.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/2F7pwPEWYhwgQKQYmNNLxbDnC4h.jpg",
         "iconpng": "",
         "type": "PELICULA",
-        "descripcion": "",
+        "descripcion": "Un mosaico de historias sobre el amor y la pérdida, que exploran nuestra relación con los objetos, artefactos y recuerdos que dan forma a nuestras vidas.",
         "anio": "2018",
-        "genero": "Misterio, Terror, Drama",
-        "duracion": "16 min"
+        "genero": "Drama",
+        "duracion": "115 min"
       }
     ]
   },
@@ -2298,7 +2298,7 @@
     "name": "Comedia",
     "samples": [
       {
-        "name": "Érase una vez un Deadpool",
+        "name": "Había una vez un Deadpool",
         "url": "http://144.217.70.79/VODS-M/1080P/Once%20Upon%20a%20Deadpool%202018.mkv",
         "icono": "https://image.tmdb.org/t/p/original/yI6ddY32SCZQoYWsLJB86W9s74.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/5ZSwZPKgcTJJwhxjbOHeoBTVaKh.jpg",
@@ -2489,7 +2489,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Ong-Bak%20The%20Thai%20Warrior%202003.mkv",
         "icono": "https://image.tmdb.org/t/p/original/srhQeDr0n53IV5xAfee4xwJMSPr.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/wdHIYawEp7lnf1XNzp6rWxLYgUG.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/i8r84Care2O9cRliGCMl3xijW12.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/7vV9Eu4bQR6dTshgDwbPOcdZTv.png",
         "type": "PELICULA",
         "descripcion": "Ong Bak es una estatua legendaria de Buda que se halla en el templo de Nong Para-du, en la Tailandia rural. Los aldeanos creen que los poderes mágicos de Ong Bak les protegen de todo mal. Un despiadado gánster roba la cabeza del buda dejando al pueblo totalmente desprotegido. Sus habitantes buscarán a un guerrero para recuperar el buda y enfrentarse a la banda de gánsters, encontrando a Ting, un huérfano criado en el templo, y alumno de Pra Kru, un amable monje, experto en el ancestral arte del Muay Thai: “Las Nueve Armas Corporales\".",
         "anio": "2003",
@@ -2720,7 +2720,7 @@
     ]
   },
   {
-    "name": "Drama",
+    "name": "Terror",
     "samples": [
       {
         "name": "Mar abierto",
@@ -2731,7 +2731,7 @@
         "type": "PELICULA",
         "descripcion": "Basada en la historia real de dos buceadores que quedaron accidentalmente atrapados en aguas infestadas de tiburones después de que su barco partiera sin ellos.",
         "anio": "2003",
-        "genero": "Drama, Suspense, Terror",
+        "genero": "Terror, Suspense",
         "duracion": "79 min"
       }
     ]
@@ -3134,7 +3134,7 @@
         "name": "Vecinos invasores",
         "url": "http://144.217.70.79/VODS-M/1080P/Over%20the%20Hedge%202006.mkv",
         "icono": "https://image.tmdb.org/t/p/original/5lHMB2jwlQV43RBfT5g3BRGN0Tm.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/nJkPu09Jac5N8CIwKLNf2A4qAuy.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ohDtIpcfP2NXtvAANsQFsh76BO0.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/vc1ks7OX69EKNyzQCQwSrLptdtg.png",
         "type": "PELICULA",
         "descripcion": "RJ, un mapache solitario, se ha metido en un problema muy grave al intentar robar el alimento de Vincent, un oso de cáracter antipático. Pues este ahora le manda, amenazándolo, a que se lo devuelva todo, en tan sólo una semana. De este modo, yendo en busca de los alimentos, se topa con un grupo de animales, que tras despertar de la hibernación, se hallan con un seto sin fin y al otro lado un mundo aparentemente hostil.",
@@ -4661,16 +4661,16 @@
     "name": "Terror",
     "samples": [
       {
-        "name": "Polaroid",
+        "name": "Muerte instantánea",
         "url": "http://144.217.70.79/VODS-M/1080P/Polaroid%202019.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/s2abswphACud7RsUQT65cx1FPiK.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
+        "icono": "https://image.tmdb.org/t/p/original/ghNua7wru2APolXOutWqO5kpJrI.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/kptx2smAhNvp1K7ln2bYWTeCxxe.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/71QyikuPGWQXqAJ39zbTkADulBy.png",
         "type": "PELICULA",
-        "descripcion": "",
+        "descripcion": "Una adolescente solitaria, Bird Fitcher, se tropieza con una antigua Polaroid y pronto descubre que la cámara alberga un terrible secreto: cualquiera que se toma una fotografía con ella, tiene un final trágico y violento. Ella y sus amigos deben sobrevivir una noche para resolver el misterio de la cámara “embrujada”. Adaptación cinematográfica del cortometraje homónimo.",
         "anio": "2019",
-        "genero": "Terror",
-        "duracion": "5 min"
+        "genero": "Terror, Misterio, Suspense",
+        "duracion": "88 min"
       }
     ]
   },
@@ -7214,7 +7214,7 @@
         "name": "Una pareja explosiva 2",
         "url": "http://144.217.70.79/VODS-M/1080P/Rush%20Hour%202%202001.mkv",
         "icono": "https://image.tmdb.org/t/p/original/no3uHLYK0lQyjXiIXIj82fgUsZX.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ocCAwBuaRqMuYDstTQihkqg6zsz.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/vPJwn9pp5f58CqdaXU3eOSLoJkl.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/9WWepdNpSHo99Z28OMEyMq9TDLs.png",
         "type": "PELICULA",
         "descripcion": "El detective James Carter se encuentra de vacaciones en Hong Kong con su buen amigo el detective Lee. Mientras Carter está ansioso por dedicarse a la juerga y las mujeres, Lee tiene que enfrentarse con un jefe de las Tríadas, responsable del asesinato de dos funcionarios de la embajada norteamericana. Conforme avancen en la investigación, descubrirán una trama de distribución de billetes falsos.",
@@ -7248,7 +7248,7 @@
         "name": "Una pareja explosiva",
         "url": "http://144.217.70.79/VODS-M/1080P/Rush%20Hour%201998.mkv",
         "icono": "https://image.tmdb.org/t/p/original/wQjBF386gMhiaQucVWwQYdtJ22s.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/9YRKhVQx174hQn35f8k1MWKLAFQ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ivGXj9i01x5FECAikQkP4X5ojmY.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/7O8CPGkJqq406XRStRXiL9kvEGg.png",
         "type": "PELICULA",
         "descripcion": "Dos detectives diferentes son asignados en un mismo caso. Ambos tendrán que adaptarse a las costumbres del otro para poder concluir su trabajo con éxito, pero no va a ser una tarea fácil. El detective inspector Lee es el rey de las artes marciales y pertenece a la Royal Hong Kong Police. Su pupila preferida es la hija de once años del Cónsul chino, de la cual el inspector Lee es su guardaespaldas y su mejor amigo. Esta muchacha es capturada en los Estados Unidos por un peligroso grupo criminal.",
@@ -8046,7 +8046,7 @@
       {
         "name": "Selena",
         "url": "http://144.217.70.79/VODS-M/1080P/Selena%201997.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/j8xX3yBAFOayfSaImgLZPnAcdWz.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/yKNiK1gwRcy9IGvtHKFewSBaPci.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/kcBlY5FasH8ti150aYExULw53ui.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/wEz9646IRr77zDrxMcB4TuuOVLz.png",
         "type": "PELICULA",
@@ -8522,7 +8522,7 @@
       {
         "name": "Showtime",
         "url": "http://144.217.70.79/VODS-M/1080P/Showtime%202002.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/8sIooUxXZo2blCVuAYbL2wkdUfD.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/n1MjlLOiW0xZD7QM60RDurVanbH.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/4fU2ddunguMjxWK0oWdUfKES9Qo.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/dqSz9utFIPiqqGWOfsndFpZ64RT.png",
         "type": "PELICULA",
@@ -9325,9 +9325,9 @@
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/rQaHA74pevnGsxcKGaoZVGWe9TC.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/x0zdKfh6qqud6BZAITgP6zhmE1g.png",
         "type": "PELICULA",
-        "descripcion": "La historia de Joe Gardner, quien desea convertirse en un músico de jazz reconocido, pero termina abandonando este sueño para convertirse en maestro. Después de ser atropellado, llega a un lugar misterioso donde aprende el significado de la vida.",
+        "descripcion": "Joe Gardner, un maestro de música, le ofrecen una oportunidad para convertirse en un reconocido músico de jazz que tanto soñaba. Sin embargo, después de un pequeño accidente, termina en un lugar misterioso donde las nuevas almas reciben las personalidad, el carácter y los intereses antes de ir a la tierra.",
         "anio": "2020",
-        "genero": "Animación, Familia, Comedia, Fantasía",
+        "genero": "Animación, Familia, Comedia, Fantasía, Drama",
         "duracion": "100 min"
       }
     ]
@@ -11548,7 +11548,7 @@
       {
         "name": "Terrifier",
         "url": "http://144.217.70.79/VODS-M/1080P/Terrifier%202016.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/z1mv8jZa7wzyGGWy10iMUyGyHVX.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/fjXqhGmaeQpB73WerhrYU6HlyV5.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/naNXYdBzTEb1KwOdi1RbBkM9Zv1.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/8jhC6AOSa6cj9brcQFHpk1hagk7.png",
         "type": "PELICULA",
@@ -11907,7 +11907,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Age%20of%20Adaline%202015.mkv",
         "icono": "https://image.tmdb.org/t/p/original/q8r8UFAmb5qAfz4W7wEXCJoCEBr.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/wTvDGO0xGMmnScqjuiDeWU7PkcB.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/xAJNZwJXcst8Caqw0m49pEVn7po.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/7kb04lA8J8jCCYg7HLrO3e05nZ9.png",
         "type": "PELICULA",
         "descripcion": "Adaline Bowman, nacida a comienzos del siglo XX, adquiere a los 29 años la eterna juventud tras un accidente. Tras años de vida solitaria y permanecer con la misma edad durante 8 décadas, conoce a Ellis Jones, un hombre por el que podría merecer la pena perder la inmortalidad.",
         "anio": "2015",
@@ -12603,7 +12603,7 @@
         "name": "El Coleccionista de Huesos",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Bone%20Collector%201999.mkv",
         "icono": "https://image.tmdb.org/t/p/original/rKJHQVzmFtmmGcdQPqShwAdvJ1G.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/hMclNPye6G3ouN5QdusrlTK0SaE.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/oOoy2MqPeuDqeedQyouFfitncei.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/6DEQOaAEMtKvNV0imE1f5MHYKxR.png",
         "type": "PELICULA",
         "descripcion": "Un psicópata va dejando pistas de sus crímenes, pero sólo Lincoln Rhyme, un agente de homicidios tetrapléjico, puede descifrarlas. La novata policía Amelia Donaghy es la encargada de inspeccionar los escenarios del crimen.",
@@ -13062,7 +13062,7 @@
         "name": "El Contador de Cartas",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Card%20Counter%202021.mkv",
         "icono": "https://image.tmdb.org/t/p/original/jRZJ0vrr6XzEWh4HihNryjoPfSK.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/r7dJqfmspzVlHYWXBiKn7NP8ZBw.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/mE0sGZ4CyzibmBG7FYan5CIKuag.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/nm7SOZxjtWesnN3lDbVF8JAdz75.png",
         "type": "PELICULA",
         "descripcion": "William Tell (Oscar Isaac) es un exmilitar y jugador profesional de póker. Su meticulosa vida se trastoca cuando se le acerca Cirk, un joven que busca ayuda en Tell para ejecutar su plan de venganza contra un coronel militar.",
@@ -13668,7 +13668,7 @@
     ]
   },
   {
-    "name": "Acción",
+    "name": "Ciencia ficción",
     "samples": [
       {
         "name": "El día después de mañana",
@@ -13679,13 +13679,13 @@
         "type": "PELICULA",
         "descripcion": "Las investigaciones del climatólogo Jack Hall indican que el calentamiento global podría desencadenar un repentino y catastrófico cambio climático de la Tierra. Hall advierte a los dirigentes políticos de la necesidad de adoptar inmediatamente medidas para evitarlo, pero sus advertencias llegan demasiado tarde: una serie de anómalos fenómenos climáticos empiezan a producirse en distintas partes del globo. El calentamiento global ha puesto el planeta al borde de una nueva era glacial. Mientras Jack advierte a la Casa Blanca del inminente cambio climático, su hijo Sam y sus amigos se encuentran atrapados en Nueva York, a donde han ido para participar en un concurso académico entre institutos.",
         "anio": "2004",
-        "genero": "Acción, Aventura, Ciencia ficción, Suspense",
+        "genero": "Ciencia ficción, Suspense, Aventura",
         "duracion": "117 min"
       }
     ]
   },
   {
-    "name": "Animación",
+    "name": "Familia",
     "samples": [
       {
         "name": "El día que la Tierra explotó: Una película de Looney Tunes",
@@ -13696,7 +13696,7 @@
         "type": "PELICULA",
         "descripcion": "Porky y el Pato Lucas, la clásica pareja de dibujos animados, se convierten en héroes improbables cuando sus travesuras en la fábrica de chicles local destapan un complot secreto de control mental alienígena. Contra todo pronóstico, los dos están decididos a salvar su ciudad y el mundo.",
         "anio": "2024",
-        "genero": "Animación, Familia, Comedia, Aventura, Ciencia ficción",
+        "genero": "Familia, Comedia, Aventura, Animación, Ciencia ficción",
         "duracion": "91 min"
       }
     ]
@@ -13883,7 +13883,7 @@
         "type": "PELICULA",
         "descripcion": "Kevin Lomax es un joven y brillante abogado que nunca ha perdido un caso. Vive en Florida y parece feliz con su esposa Mary Ann. Un día, recibe la visita de un abogado de Nueva York que representa a un poderoso bufete que tiene la intención de contratarlo. Al frente de la prestigiosa empresa se encuentra John Milton, un hombre mundano, brillante y carismático, que alberga planes muy oscuros con respecto a Lomax.",
         "anio": "1997",
-        "genero": "Drama, Misterio, Suspense, Terror",
+        "genero": "Drama, Misterio, Terror",
         "duracion": "144 min"
       }
     ]
@@ -13962,7 +13962,7 @@
       {
         "name": "三岔口",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Divergent%202014.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/he1EG9xjLKQ6evEAxB1IA3KnSbD.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/pR505fBCoezKBeImYV3cdQEejRo.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/3SgSWsMO9BjOyjh5hLwGY0rnxbG.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/6toaXlSLMKTbQtCM0N6HdFGueOL.png",
         "type": "PELICULA",
@@ -14150,7 +14150,7 @@
         "name": "El Paciente Inglés",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20English%20Patient%201996.mkv",
         "icono": "https://image.tmdb.org/t/p/original/rFrE4iRB9Cdj2T3H1JeeV6DOuL8.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/hJcHZ36093DQPZY1cF0UoSHZ3pM.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/yYe63HwFBNFDcnWtBm8KR6NSAeg.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/4cooEV7H9Ca2FA2n9mghJCpzu5.png",
         "type": "PELICULA",
         "descripcion": "Finales de la Segunda Guerra Mundial (1939-1945). Un hombre herido viaja en un convoy sanitario por una carretera italiana, pero su estado es tan grave que tiene que quedarse en un monasterio deshabitado y semiderruido, donde se encarga de cuidarlo Hana, una enfermera canadiense. Aunque su cuerpo está totalmente quemado a consecuencia de un accidente sufrido en África, tiene todavía ánimo para contarle a Hana la trágica historia de su vida.",
@@ -14898,7 +14898,7 @@
         "name": "El Padrino",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Godfather%201972.mkv",
         "icono": "https://image.tmdb.org/t/p/original/dfEQMuZMIcPgC7nt07D9uVQi7Tv.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/htuuuEwAvDVECMpb0ltLLyZyDDt.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/tmU7GeKVybMWFButWEGl2M4GeiP.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/mxRcPMGsEi3nwDqZwuUVZklnsQ5.png",
         "type": "PELICULA",
         "descripcion": "Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York. Tiene cuatro hijos: una chica, Connie, y tres varones: el impulsivo Sonny, el pusilánime Freddie y Michael, que no quiere saber nada de los negocios de su padre. Cuando Corleone, siempre aconsejado por su consejero Tom Hagen, se niega a intervenir en el negocio de las drogas, el jefe de otra banda ordena su asesinato. Empieza entonces una violenta y cruenta guerra entre las familias mafiosas.",
@@ -15034,7 +15034,7 @@
         "name": "Detrás de la verdad",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Good%20Mother%202023.mkv",
         "icono": "https://image.tmdb.org/t/p/original/asfSEhBEiZ0V6ECZaJBYbfZHUMx.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/5TcN4thnijmlcaEQ4Pw0PuCaQ5d.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/4QECZqlNcMC2zLukcypAHmgRnDf.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/1QdEpHTW6AiNaJ9f9HYRxk0cbdt.png",
         "type": "PELICULA",
         "descripcion": "Después del asesinato de su hijo, una periodista forma una alianza con su novia embarazada para encontrar a los responsables de su muerte. Juntas, se enfrentan a un mundo de drogas y corrupción.",
@@ -15477,7 +15477,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Hills%20Have%20Eyes%202006.mkv",
         "icono": "https://image.tmdb.org/t/p/original/qiPSDMZZrgG4axJYzI9l74DtEbB.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/vrFI0I3M8ROZduj9XbFDoQKZyao.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/jB0ufg4Gft6iQY8dVClWVZmZXFo.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/ofldbEkwBFjZ0m6MK1qY55OIT1q.png",
         "type": "PELICULA",
         "descripcion": "La película gira en torno a los Carter, una familia de clase media cuyas vacaciones, acompañando a sus padres en sus bodas de plata, quedan truncadas cuando su caravana sufre un extraño accidente en el desierto de Nuevo México. Aislados del mundo, pronto se darán cuenta de que no están solos: en las colinas habita una estirpe de sanguinarios mutantes fruto de las continuas pruebas nucleares del ejército,como son Gruñidos y Slott y que no dudarán en aniquilar a los Carter de las formas más espeluznantes.",
         "anio": "2006",
@@ -15545,7 +15545,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Hobbit%20The%20Battle%20of%20the%20Five%20Armies%202014.mkv",
         "icono": "https://image.tmdb.org/t/p/original/6OiNSLcRKJsBLXwb6DEi6IQ0JFk.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/zn13a7U9eMTJq8sHthe3bCgsVm4.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/s7zrmBEhDQHxGd2tXeIGzH5iyte.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/5AKROuhPMCVoAVTk4zILv82dIYk.png",
         "type": "PELICULA",
         "descripcion": "Después de haber recuperado el reino del Dragón Smaug en la montaña, la Compañía ha desencadenado, sin querer, una potencia maligna. Un Smaug enfurecido vuela hacia la Ciudad del Lago para acabar con cualquier resto de vida. Obsesionado con las enormes riquezas en su poder, el rey enano Thorin se vuelve codicioso, mientras Bilbo intenta hacerle entrar en razón haciendo algo desesperado y peligroso. Pero hay aún mayores peligros por delante. Sin la ayuda del mago Gandalf, su gran enemigo Sauron ha enviado legiones de orcos hacia la Montaña Solitaria en un ataque épico. Cuando la oscuridad se cierna sobre ellos, las razas de los Enanos, Elfos y Hombres deberán decidir si unirse o ser destruidos. Bilbo se encontrará así en la batalla épica de los Cinco Ejércitos, donde el futuro de la Tierra Media está en juego.",
         "anio": "2014",
@@ -18077,7 +18077,7 @@
         "name": "Guerra sin reglas",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Ministry%20of%20Ungentlemanly%20Warfare%202024.mkv",
         "icono": "https://image.tmdb.org/t/p/original/zhvyWzZii2SWpsrcUvLZJNaJyoG.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/s5znBQmprDJJ553IMQfwEVlfroH.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/jLRtQNOwA0ul2gnRoZ0QjNwMUN1.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/u9J1Ocp0pwd5UhbE7TqMhZbYFNh.png",
         "type": "PELICULA",
         "descripcion": "El ejército británico recluta a un pequeño grupo de soldados de élite para atacar a los nazis detrás de las líneas enemigas durante la Segunda Guerra Mundial.",
@@ -18757,7 +18757,7 @@
         "name": "El fugitivo Josey Wales",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Outlaw%20Josey%20Wales%201976.mkv",
         "icono": "https://image.tmdb.org/t/p/original/5TzrWk1mSoavRcdkNEhVpKftICv.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/vI5kwkIjbUdcysSdgaq0L8I7QI.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/kXsjmuBgRzsujspv4BiHsIgzOnD.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/yzaQMCmdOq6BEoOdRNynO7yyP3c.png",
         "type": "PELICULA",
         "descripcion": "Josey Wales, es un ex-soldado confederado que se dedica ahora a atender su granja al lado de su esposa y su pequeño hijo… hasta que un día, llegan miembros de la guerrilla Los botas rojas (al servicio de los ejércitos de la Unión) y matan a su familia. Desde entonces, Wales decidirá cobrar venganza y se convertirá en perseguido fugitivo al ser el último hombre que se ha negado a firmar un acuerdo de paz con los vencedores en la Guerra de secesión.",
@@ -19162,13 +19162,13 @@
     "name": "Aventura",
     "samples": [
       {
-        "name": "El Principe De Egipto",
+        "name": "El Príncipe de Egipto",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Prince%20of%20Egypt%201998.mkv",
         "icono": "https://image.tmdb.org/t/p/original/gkXTK4e4M7aTWTy4R99gE5lovOH.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/kchiiKCtsOg0VoFUpLnu1H98AX.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/oxmCDHCpLl4qg0BKpn2ckj8gQsy.png",
         "type": "PELICULA",
-        "descripcion": "En Egipto, hace miles de años, el faraón Seti ordena el ahogamiento de todos los bebés judíos. Una madre desesperada coloca a su bebé en una cesta río abajo y deja que Dios la guíe hasta la orilla en donde será hallada por la reina y el bebé, Moisés, criado como hermano del heredero al trono, Ramsés. Años después los hermanos se distanciarán por el descubrimiento de los orígenes hebreos de Moisés.",
+        "descripcion": "En Egipto, hace miles de años, el Faraón Seti ordena el ahogamiento de todos los bebés judíos. Una madre desesperada coloca a su bebé en una cesta río abajo y deja que Dios la guíe hasta la orilla en donde será hallada por la esposa del Faraón y el bebé, Moisés, criado como hermano del heredero al trono, Ramsés. Años después los hermanos se distanciarán por el descubrimiento de los orígenes hebreos de Moisés.",
         "anio": "1998",
         "genero": "Aventura, Animación, Drama, Familia",
         "duracion": "99 min"
@@ -20054,7 +20054,7 @@
         "type": "PELICULA",
         "descripcion": "Basado en el cómic de la década de 1930, enfrenta al héroe contra su archienemigo, Shiwan Khan, quien planea apoderarse del mundo manteniendo una ciudad en rescate usando una bomba atómica. Usando sus poderes de invisibilidad y \"El poder de nublar las mentes de los hombres\", la Sombra viene ardiendo al rescate de la ciudad con resultados explosivos.",
         "anio": "1994",
-        "genero": "Fantasía, Acción, Aventura, Crimen, Misterio, Suspense",
+        "genero": "Fantasía, Acción",
         "duracion": "107 min"
       }
     ]
@@ -20218,7 +20218,7 @@
       {
         "name": "La calavera del marqués",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Skull%201965.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/zBMT4WHMk4xdYv3puiHTa663Kd5.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/8IssMWgJiniyNtnCOeykO7FVXbs.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/l0ftiZeis1c0b2802XVKGUmMV4Z.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/4kN7t4lTQJXBxurareNwMCvAD22.png",
         "type": "PELICULA",
@@ -20337,7 +20337,7 @@
       {
         "name": "El souvenir",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Souvenir%202019.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/2Nj04HsZ0lNkv07JnfBZ0bAIECn.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/2svhKzun22mBsbLQRParIWUg3er.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/kIu6aYaUxBUUfJ0l0sLNW1qh45u.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/ck32WCu5FdKBkmFIo3BEnBlRzUV.png",
         "type": "PELICULA",
@@ -20562,9 +20562,9 @@
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/8SlJ5vlEXwh3K7SUYR6Xgvl8e1b.png",
         "type": "PELICULA",
-        "descripcion": "Mientras trabaja bajo tierra para arreglar una tubería de agua, los plomeros de Brooklyn Mario y su hermano Luigi son transportados por una misteriosa tubería y llegan a un nuevo mundo mágico. Pero cuando los hermanos se separan, Mario se embarca en una búsqueda épica para encontrar a Luigi. Con la ayuda de un residente del Reino Champiñón, Toad y algo de entrenamiento de la gobernante del Reino Champiñón, la Princesa Peach, Mario conocerá su propio poder.",
+        "descripcion": "Mientras trabaja bajo tierra para arreglar una tubería de agua, los plomeros de Brooklyn Mario y su hermano Luigi son transportados por una misteriosa tubería y llegan a un nuevo mundo mágico.",
         "anio": "2023",
-        "genero": "Familia, Fantasía, Comedia, Aventura, Animación",
+        "genero": "Familia, Comedia, Aventura, Animación",
         "duracion": "92 min"
       }
     ]
@@ -26010,19 +26010,19 @@
     ]
   },
   {
-    "name": "Aventura",
+    "name": "Acción",
     "samples": [
       {
-        "name": "White Fang",
+        "name": "Colmillo blanco",
         "url": "http://144.217.70.79/VODS-M/1080P/White%20Fang%201991.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/hbG8BWJApjiMdZ7dxLhyuoAdSMr.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/lwsm8akIZLwtircwHicapin7aSB.jpg",
-        "iconpng": "",
+        "icono": "https://image.tmdb.org/t/p/original/umnGhfxqepSVammxXWn7wW2qJ2.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/1DcKVybwLpvnybtZ3Du8RTOu4MK.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/ogk7gY2FdMh6WmGkhfb02JkgIWz.png",
         "type": "PELICULA",
-        "descripcion": "",
+        "descripcion": "A finales del siglo XIX, el joven Jack Conroy llega a Alaska en plena fiebre del oro, dispuesto a reclamar la herencia de su difunto padre. Allí entablará una estrecha relación con Colmillo Blanco, un cruce de lobo y perro.",
         "anio": "1991",
-        "genero": "Aventura, Animación",
-        "duracion": "50 min"
+        "genero": "Acción, Aventura, Drama, Familia",
+        "duracion": "107 min"
       }
     ]
   },
@@ -26236,7 +26236,7 @@
       {
         "name": "Willow en la tierra del encanto",
         "url": "http://144.217.70.79/VODS-M/1080P/Willow%201988.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/t8o61hbhd63KAfiajj5GUI4ovNr.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/kymxskRkwRGGrlJLdneItwTIAHm.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/3sF6AibdbTTkswfSRxXEGCt5w6s.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/nz2xEcWCEhmuuNLtMn9P8G49oEE.png",
         "type": "PELICULA",
@@ -26713,7 +26713,7 @@
         "name": "Ralph, el demoledor",
         "url": "http://144.217.70.79/VODS-M/1080P/Wreck%20it%20ralph%202012.mkv",
         "icono": "https://image.tmdb.org/t/p/original/lTpE4JQ2C09NicqvDhwi70IRz62.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3IFRjBDwtk0DlIsDfJ2zEzLjUBi.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ziC23LkMYj8gToQQYQGWSGJCLNF.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/u8B4oOjN5KAieJpIOi9ECudIw6Y.png",
         "type": "PELICULA",
         "descripcion": "Durante décadas, Ralph ha vivido a la sombra de Repara-Félix Jr., el chico bueno de su videojuego. Cansado de ser el malo de la historia, Ralph decide tomar el asunto por sus propias y gigantes manos, y se lanza en un viaje a través de los distintos mundos y generaciones de videojuegos para demostrarle al mundo que él también puede ser un héroe.",
@@ -26798,7 +26798,7 @@
         "name": "Camino Hacia El Terror 5",
         "url": "http://144.217.70.79/VODS-M/1080P/Wrong%20Turn%205%20Bloodlines%202012.mkv",
         "icono": "https://image.tmdb.org/t/p/original/8rCVdIzSIDIALXArSjLyw44teD0.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/vAmO0qBi9Ws5IUvDSDGbpRpGcPy.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/qtQ006dKgtLR18hYI7VVDcDCyPt.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/fuZdzZa7FFL5pJB0TyaKpSIAXXe.png",
         "type": "PELICULA",
         "descripcion": "En esta nueva entrega de la popular franquicia de terror de Camino hacia el Terror, las autoridades locales no solamente tienen que sobrevivir a los festejos de Halloween en el Festival Mountain Man, sino también tienen que proteger a la comunicad del peligro y terror reales; ¡los Hermanos Hilliker!",
@@ -26914,16 +26914,16 @@
     "name": "Acción",
     "samples": [
       {
-        "name": "X-Men: Days of Future Past (The Rogue Cut)",
+        "name": "X-Men: Días del futuro pasado",
         "url": "http://144.217.70.79/VODS-M/1080P/X-men%20days%20of%20future%20past%20the%20rogue%202014.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/kM0QA1ouvsV9lkiENSLIaCHaaxj.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
+        "icono": "https://image.tmdb.org/t/p/original/ggb9nmS5alJuA0ll0iU5YHiGbb0.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/hUPgIibqZlwbhs4N08cPzzc4f5K.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/lqjrdVzrXVYAZB6oQXRa8ugw8SQ.png",
         "type": "PELICULA",
-        "descripcion": "",
+        "descripcion": "Los X-Men originales unen fuerzas y envían a Wolverine al pasado en un intento desesperado de cambiar la historia y prevenir un evento que desemboca en la perdición tanto para humanos como para mutantes.",
         "anio": "2014",
-        "genero": "Acción, Ciencia ficción, Aventura",
-        "duracion": "149 min"
+        "genero": "Acción, Aventura, Ciencia ficción",
+        "duracion": "131 min"
       }
     ]
   },
@@ -27137,7 +27137,7 @@
       {
         "name": "Clínica de Zombies",
         "url": "http://144.217.70.79/VODS-M/1080P/Yummy%202019.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/nychvxBaGEijaMmgRzkeMNSfPpT.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/ncy4M4WjBf6f9UUDhv1D0yHOGNc.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/2UcDOPaJjCTW0YrvyeMkAof5wub.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/ekOPFeh6wa559Eh6YGucAN9tAV7.png",
         "type": "PELICULA",
