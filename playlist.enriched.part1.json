@@ -383,7 +383,7 @@
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/5SgrtPH6kBmmHao0PofxpvOYfWC.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/yqr8CWIbojp3qVVPgkxu2Y2M9Ma.png",
         "type": "PELICULA",
-        "descripcion": "Una historia de esperanza y humanidad, de miseria y supervivencia, que explora las fuertes sensaciones emocionales y físicas de tres personajes: Paul, Gato, y Cristina unidos por un accidente inesperado que hace que sus vidas y destinos se crucen, en una historia que los lleva al amor y la venganza. 21 gramos hace referencia al peso que perdemos cuando morimos, el peso llevado por los que sobrevivan.",
+        "descripcion": "Paul Rivers, un matemático enfermo casado sin amor con una emigrante inglesa; Christina Peck, ama de casa de clase media alta de los suburbios y madre de dos niñas; y Jack Jordan, un ex convicto renacido, se unen por un terrible accidente que cambia sus vidas.",
         "anio": "2003",
         "genero": "Drama, Crimen, Suspense",
         "duracion": "124 min"
@@ -821,7 +821,7 @@
       {
         "name": "2067",
         "url": "http://144.217.70.79/VODS-M/1080P/2067%202020.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/j2rf9hrGjm8m1xdH5fy19AcOZ0F.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/7D430eqZj8y3oVkLFfsWXGRcpEG.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/5UkzNSOK561c2QRy2Zr4AkADzLT.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/iz56vdNJEzD2mzpRTEP5QuzNxSk.png",
         "type": "PELICULA",
@@ -1451,7 +1451,7 @@
         "name": "Pesadilla en la calle del infierno 4: El amo de los sueños",
         "url": "http://144.217.70.79/VODS-M/1080P/A%20Nightmare%20on%20Elm%20Street%204%201988.mkv",
         "icono": "https://image.tmdb.org/t/p/original/waLzjguZwn83nCtSuG22l87eHZx.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/iJSz9YyOmdNUNmApkr8A911AERY.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/958iIniQBVh6pKSrOMpK9Sx0h9z.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/fhNs264FwtNsDtMeYX9dStv5bA1.png",
         "type": "PELICULA",
         "descripcion": "Freddy Krueger vuelve a la vida después de su aparente muerte en la entrega anterior y comienza a matar a los chicos que viven en Elm Street. Pero, Kristen, capaz de atraer a los demás dentro de sus sueños, le concede este poder especial a su amiga Alice. Sin embargo, ésta se da cuenta de que Freddy está sacando partido a este extraño poder.  Equipo destacado",
@@ -1468,7 +1468,7 @@
         "name": "Pesadilla en la calle del infierno 5: Ha nacido el hijo de Freddy",
         "url": "http://144.217.70.79/VODS-M/1080P/A%20Nightmare%20on%20Elm%20Street%205%201989.mkv",
         "icono": "https://image.tmdb.org/t/p/original/vUEPnN7ZkW3buaTDmosFubwC7ZH.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/uUUFZlLvuBunPS0RSVAaNGDrHzs.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/vgwwtyrk806hrsPE3khlyGk0SqX.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/7GzzG8VJ13e0dAOQfogG2TFthQw.png",
         "type": "PELICULA",
         "descripcion": "Alice y Dan viven felices tras haber acabado con Freddy. Las pesadillas han terminado y Alice espera plácidamente que nazca su bebé. Ssin embargo, Freddy planea apoderarse del alma del hijo que espera Alice.",
@@ -1775,7 +1775,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Above%20the%20Law%201988.mkv",
         "icono": "https://image.tmdb.org/t/p/original/jlf78X9MYp4J0lKMf8mORhMc0DO.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/qvrayOIHOQMo9y9B3u7ACGimuo2.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/cdcfCnGoihLMDoCs1THViAQiXU.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/hE2DVflTlhUejBTUtWOYNCVesY0.png",
         "type": "PELICULA",
         "descripcion": "Nico Toscani es un inmigrante italiano, patriota estadounidense, ex agente de la CIA, especialista en aikido y policía poco ortodoxo de Chicago. Está tan comprometido con su trabajo como lo está con su marca personalizada de justicia: experto y minucioso.",
         "anio": "1988",
@@ -2561,7 +2561,7 @@
         "type": "PELICULA",
         "descripcion": "Dos agentes de la CIA y ex amantes (Chris Pine y Thandiwe Newton) vuelven a estar juntos años después de un intento fallido de rescate y se ven obligados a descifrar las líneas entre profesión y pasión en esta historia profundamente fascinante de espionaje global, dilema moral y traición mortal.",
         "anio": "2022",
-        "genero": "Suspense, Acción",
+        "genero": "Suspense, Misterio",
         "duracion": "102 min"
       }
     ]
@@ -3275,7 +3275,7 @@
         "type": "PELICULA",
         "descripcion": "Un laboratorio científico mantiene en cautividad a una anaconda gigante con fines experimentales. Cuando ésta y otra de las serpientes del laboratorio escapan y empiezan a atacar a los científicos, un equipo de especialistas deberá intervenir para dar caza a los animales.",
         "anio": "2008",
-        "genero": "Aventura, Terror",
+        "genero": "Aventura, Terror, Suspense",
         "duracion": "91 min"
       }
     ]
@@ -3298,7 +3298,7 @@
     ]
   },
   {
-    "name": "Acción",
+    "name": "Aventura",
     "samples": [
       {
         "name": "Anaconda 2: En busca de la orquídea sangrienta",
@@ -3309,13 +3309,13 @@
         "type": "PELICULA",
         "descripcion": "La orquídea sangrienta: una flor rara que guarda el secreto de la vida eterna y una fortuna para la compañía farmacéutica que la encuentra. Dirigido por un soldado de fortuna con dos puños, se envía una expedición científica a las selvas de Borneo para localizar y traer muestras de la legendaria planta. Luchando río arriba, los exploradores se enfrentan a valientes insectos venenosos, cocodrilos feroces y cazadores de cabezas salvajes, sin darse cuenta de que los acecha un peligro aún mayor: un nido de anacondas gigantes, voraces comedores de carne de cincuenta pies de largo que se detendrán nada para proteger su caldo de cultivo, el hogar de las orquídeas de sangre.",
         "anio": "2004",
-        "genero": "Acción, Aventura, Terror",
+        "genero": "Aventura, Terror, Suspense",
         "duracion": "96 min"
       }
     ]
   },
   {
-    "name": "Terror",
+    "name": "Aventura",
     "samples": [
       {
         "name": "Anaconda 4: Rastro de Sangre",
@@ -3326,7 +3326,7 @@
         "type": "PELICULA",
         "descripcion": "Una cría de anaconda, genéticamente mejorada, se ha regenerado y crece monstruosamente. La cría sedienta de sangre es aparentemente invencible, y se desliza entre explosiones y disparos para regenerarse y alimentarse insaciablemente de todo lo que se encuentre en su camino.",
         "anio": "2009",
-        "genero": "Terror, Acción, Aventura",
+        "genero": "Aventura, Terror, Suspense",
         "duracion": "89 min"
       }
     ]
@@ -3711,7 +3711,7 @@
       {
         "name": "Con todos menos contigo",
         "url": "http://144.217.70.79/VODS-M/1080P/Anyone%20But%20You%202023.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/tHSsoWgTQOKPzRzIHQt649RmAEE.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/smIleWSSXhbBunnWkKmyGj9oVaj.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/j9eOeLlTGoHoM8BNUJVNyWmIvCi.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/mAMtdyAPsbFt34kc4IqGg5Kktno.png",
         "type": "PELICULA",
@@ -3972,7 +3972,7 @@
         "type": "PELICULA",
         "descripcion": "",
         "anio": "2015",
-        "genero": "Terror, Ciencia ficción, Misterio",
+        "genero": "Terror, Misterio, Ciencia ficción",
         "duracion": "91 min"
       }
     ]
@@ -4409,7 +4409,7 @@
         "name": "Ataque al bloque",
         "url": "http://144.217.70.79/VODS-M/1080P/Attack%20The%20Block%202011.mkv",
         "icono": "https://image.tmdb.org/t/p/original/d7eVbUOHSyBofZBMnUGBZ0nbg4b.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/8jUDAeJST2vyNZa1gaThZiuYB2A.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ncYrkutA6Yd1Gmh8fLyGieWlqLv.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/sRqMT16pw1VpHay6a0dmYaupFYL.png",
         "type": "PELICULA",
         "descripcion": "Divertida y aterradora película de aventuras que enfrenta a una banda de adolescentes contra una invasión de salvajes alienígenas, convirtiendo una zona marginal de Londres en una zona de peligrosos juegos de ciencia ficción. De la noche a la mañana, un bloque de pisos se convierte en una fortaleza sitiada y un grupo de adolescentes de la calle en héroes. El enfrentamiento entre el ghetto y el espacio exterior está servido.",
@@ -5224,7 +5224,7 @@
       {
         "name": "Batman Ninja",
         "url": "http://144.217.70.79/VODS-M/1080P/Batman%20ninja%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/kZIrg87DiU1xKqCNcEV6LMfj3pS.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/zaw7PQ7GvTliBVmfg2o8OJfhWjU.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/silcq0dj3Scf1LtpBjjVKXMQXS2.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/qQVLmkQedPdlILUr1eqQcjvz2Pp.png",
         "type": "PELICULA",
@@ -5530,7 +5530,7 @@
       {
         "name": "Antes del Amanecer",
         "url": "http://144.217.70.79/VODS-M/1080P/Before%20Sunrise%201995.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/zt9A0Vw1jHY02pn9uEwr6XPB6HZ.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/uw9vx5M0qwkU1QnBNG4CXCgwYB3.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/qA2TyqPldTtoTVY3LKrNIG5g6bH.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/s0ZtQGTep8vRo0zhRevsxEQJhKY.png",
         "type": "PELICULA",
@@ -5649,7 +5649,7 @@
       {
         "name": "Benji",
         "url": "http://144.217.70.79/VODS-M/1080P/Benji%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/1wLnkdSEA2g6552QrjfdAB2eVC7.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/79pacM3h5FoETnfuRC6O2qPfzn4.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/eOkbeZ658RHVt7ULoFBqmesxEYX.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/cTykO90AdN52vABZ6hdxI6OdFf0.png",
         "type": "PELICULA",
@@ -7213,7 +7213,7 @@
       {
         "name": "Nacido el Cuatro de Julio",
         "url": "http://144.217.70.79/VODS-M/1080P/Born%20on%20the%20Fourth%20of%20July%201989.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/aqFRpA9wjMLP1MWjQelCsP7qXJn.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/wube6W2ntQeuIO42ND76oUP25Y1.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/3nx1jkMcWlcjmlDgEDFzW1Tykv0.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/yY3PKfULPDcVAbQpWZG0L2Ir7wj.png",
         "type": "PELICULA",
@@ -7554,7 +7554,7 @@
         "name": "El Diario de Bridget Jones",
         "url": "http://144.217.70.79/VODS-M/1080P/Bridget%20Joness%20Diary%202001.mkv",
         "icono": "https://image.tmdb.org/t/p/original/747EDazOLVIALUnflQcGf8lNwNA.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/imvV078HyWsa9jgDVLi4APgskrJ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/9rSpxsMhG1FnFtUDdvSAXdtLtb3.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/pJaqFpeW9kaoowXPXxIeOeWA7JS.png",
         "type": "PELICULA",
         "descripcion": "Las crónicas diarias de Bridget Jones, una joven divertida, pero acomplejada, cuya vida sentimental está siempre en crisis; y que vivirá obsesionada con la idea de bajar de peso, dejar de fumar y conseguir novio.",
@@ -7973,7 +7973,7 @@
     ]
   },
   {
-    "name": "Western",
+    "name": "Aventura",
     "samples": [
       {
         "name": "Dos hombres y un destino",
@@ -7984,7 +7984,7 @@
         "type": "PELICULA",
         "descripcion": "Un grupo de jóvenes pistoleros se dedica a asaltar los bancos del estado de Wyoming y el tren-correo de la Union Pacific. El jefe de la banda es el carismático Butch Cassidy, y Sundance Kid es su inseparable compañero. Un día, después de un atraco, el grupo se disuelve. Será entonces cuando Butch, Sundance y una joven maestra de Denver formen un trío de románticos forajidos que, huyendo de la ley, llegan hasta Bolivia.",
         "anio": "1969",
-        "genero": "Western, Aventura, Crimen, Drama, Historia",
+        "genero": "Aventura, Western, Crimen, Drama, Historia",
         "duracion": "112 min"
       }
     ]
@@ -11973,7 +11973,7 @@
       {
         "name": "Puertas al infierno",
         "url": "http://144.217.70.79/VODS-M/1080P/Devils%20Gate%202017.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/44PFATfN8a1Z9eMKq9XLlIvOsvh.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/t30xW4QF0MlFwiyVokwjZuZDRYe.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/cdDwJcE2fH9wEiuswJ0GkPR6hIG.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/A9gGY6lu8gHC5iSliPmWgHL9965.png",
         "type": "PELICULA",
@@ -12551,7 +12551,7 @@
       {
         "name": "Doble dragón: la película",
         "url": "http://144.217.70.79/VODS-M/1080P/Double%20Dragon%20The%20Movie%201994.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/wKDmJbXm6BQdGZ9TnzBkCBx0Jrr.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/9ZTYSD8ZesYMKqLRbmVfZUW1FiE.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/gJXt3gMz4EF39mdyhvy5EsXdiPk.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/b4BYOD67aNWQU7wmkPIl5bhbknh.png",
         "type": "PELICULA",
@@ -12706,7 +12706,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Dr%20Dolittle%20Tail%20to%20the%20Chief%202008.mkv",
         "icono": "https://image.tmdb.org/t/p/original/gK7uVGIgwNoyAenEIEGsTe3OasZ.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/2Imy8YUcvX0Scqe8JODbtii05U4.jpg",
-        "iconpng": "",
+        "iconpng": "https://image.tmdb.org/t/p/original/iJoEukQ2RuBoeU8VKKS8cSczvIk.png",
         "type": "PELICULA",
         "descripcion": "Cuando Maya Dolittle (Pratt) se entera de que el Presidente de los Estados Unidos de Norteamérica tiene un percance con un perro, que podría transformarse en una catástrofe mundial, debe encender sus encantos y su instinto de animal antes de que sea demasiado tarde. Cuarta entrega de la saga Dr. Dolittle lanzada directamente a vídeo y DVD.",
         "anio": "2008",
@@ -13792,7 +13792,7 @@
       {
         "name": "Ascensión de las maquinas",
         "url": "http://144.217.70.79/VODS-M/1080P/Ederlezi%20Rising%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/cvSjrRXBKzh5vGk01fUfrqSrkKO.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/aXosp6MFBxYi4m6ZmE4u1auReHc.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/6PvtKxQkMa5OCQMmCbgqISvxhym.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/5EtRbVma1OY1th3JGGlNEAh553w.png",
         "type": "PELICULA",
@@ -16344,7 +16344,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Four%20Weddings%20and%20a%20Funeral%201994.mkv",
         "icono": "https://image.tmdb.org/t/p/original/hpPe7zVnNuqfzDy3bzXnWnJWA83.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/ejFaHWnDP29z7ePw2cJVOsWvOvH.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/47y2zl1CkIX0KtHAAStlm5W4AnL.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/ldrX9Ld1pS5VXlSamMBBuUq8mYS.png",
         "type": "PELICULA",
         "descripcion": "Charles (Hugh Grant) y sus amigos, todos ellos solteros y sin compromiso, han llegado a una edad en la que casi todos sus conocidos se han casado. En una de las bodas, a la que el grupo ha sido invitado, Charles conoce a Carrie (Andie Macdowell), una americana de la que se enamora a primera vista. Esa noche la pasan juntos, pero no vuelven a verse. Tendrán que esperar a la siguiente boda, en la que Carrie le presenta a su prometido",
         "anio": "1994",
@@ -16427,7 +16427,7 @@
       {
         "name": "Freaks",
         "url": "http://144.217.70.79/VODS-M/1080P/Freaks%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/kdDTFlLFjfT3V34HHIVk9E7yT0C.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/kc2cvuqESIiRX5QoZOoMTBq18kQ.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/mPeyCA2625dLDbPSDjfxpNKL8Uv.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/fAxDNlRKMKxVqYbIYeEuzURfbWi.png",
         "type": "PELICULA",
@@ -17872,7 +17872,7 @@
       {
         "name": "Buenos Muchachos",
         "url": "http://144.217.70.79/VODS-M/1080P/GoodFellas%201990.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/3Yy0zBO9AlyAZH1cTI8Ko2ouCi.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/nocvbyxKR5b1vxagy46SfEiMK3P.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/sw7mordbZxgITU877yTpZCud90M.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/y3uMg4x3wLnTpv8wRfL4qABr3Uq.png",
         "type": "PELICULA",
@@ -18111,7 +18111,7 @@
         "name": "Vaselina",
         "url": "http://144.217.70.79/VODS-M/1080P/Grease%201978.mkv",
         "icono": "https://image.tmdb.org/t/p/original/flSy0dexE82TiS6Si2FtulSHk8o.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3EQrwVqg3px97hpzmoefT4tb1sO.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/pdhDFmVQSA0f5i5IL0gpWROjgZ5.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/ie0nDR48aT7CZA8Tl69p5n0498l.png",
         "type": "PELICULA",
         "descripcion": "El rebelde Danny Zuko y la inocente australiana Sandy mantienen un romance durante las vacaciones, creyendo que no se volverán a ver; sin embargo, para sorpresa de ambos, se reencuentran en la escuela secundaria al empezar el nuevo año escolar.",
@@ -18263,7 +18263,7 @@
       {
         "name": "Guardianes de la galaxia",
         "url": "http://144.217.70.79/VODS-M/1080P/Guardians%20of%20the%20galaxy%202014.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/lGR9yjcPctrIxNrnGBiXlEbM6nT.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/zqZNnuMtrmK99Xux91KiCdnZxgb.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/uLtVbjvS1O7gXL8lUOwsFOH4man.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/n72mdjuHlK41YpjvkKdKq1EHvJQ.png",
         "type": "PELICULA",
@@ -18575,7 +18575,7 @@
         "type": "PELICULA",
         "descripcion": "Minutos después de que Laurie Strode, su hija Karen y su nieta Allyson dejaran al despiadado asesino Michael Myers encerrado y ardiendo en el sótano, Laurie es llevada de urgencia al hospital con heridas que ponen en peligro su vida, creyendo haber acabado por fin con quien ha convertido su vida en un infierno. Pero cuando Michael consigue liberarse de la trampa de Laurie, reinicia su ritual de baño de sangre. Mientras Laurie lucha contra su dolor y se prepara para defenderse de él, inspira a toda la población de Haddonfield a rebelarse contra su imparable monstruo. Las Strode se unen a un grupo de supervivientes de la primera masacre de Michael quienes deciden hacer justicia por su propia mano y forman una patrulla ciudadana con el objetivo de cazar a Michael de una vez por todas.",
         "anio": "2021",
-        "genero": "Terror, Suspense, Acción, Drama",
+        "genero": "Terror, Suspense",
         "duracion": "105 min"
       }
     ]
@@ -19623,7 +19623,7 @@
       {
         "name": "Hollywoodland",
         "url": "http://144.217.70.79/VODS-M/1080P/Hollywoodland%202006.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/mOjlZht0S1eJB8wyttSFiUjIbqa.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/8FgNVvJEEwRgFURiAcW7VuXwvf1.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/grBVNhFI7iNB54eFfXVzbYfDSQk.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/anQL7qVfTx5Tm6VrEe9ZENASX3n.png",
         "type": "PELICULA",
@@ -20590,7 +20590,7 @@
     "name": "Comedia",
     "samples": [
       {
-        "name": "El genio del amor",
+        "name": "I.Q: fórmula para amar",
         "url": "http://144.217.70.79/VODS-M/1080P/I.Q.%201994.mkv",
         "icono": "https://image.tmdb.org/t/p/original/n9gSZQwzTY77z57aOCmwB8qbKz1.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/16ik8U3nxKZnRUguOUIxFe2yYdk.jpg",
@@ -21578,7 +21578,7 @@
       {
         "name": "Interceptor",
         "url": "http://144.217.70.79/VODS-M/1080P/Interceptor%202022.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/7u2hPxgCoP0mPGgoH63H37RPUxF.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/jBKNAfANo4e3rzJtb7aHfYNd7b3.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/i2tcQ9nDJpdJELPA82eCd7Irasd.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/avm0vTenBaMsm2CUVE8keTun2tm.png",
         "type": "PELICULA",
@@ -22400,7 +22400,7 @@
         "type": "PELICULA",
         "descripcion": "Después de desertar de la guerra entre Estados Unidos y Mexico y hastiado de la civilización, el soldado Jeremías Johnson, decide dejarlo todo y establecerse en las heladas montañas. Allí, con la ayuda de un viejo trampero, tendrá que luchar para sobrevivir. Descubrirá la violencia de los indios que habitan esas tierras y tendrá que defender a su familia. Finalmente su ira caerá sobre la tribu de los Crow.",
         "anio": "1972",
-        "genero": "Aventura, Western",
+        "genero": "Aventura, Western, Drama, Acción",
         "duracion": "108 min"
       }
     ]
@@ -23193,7 +23193,7 @@
       {
         "name": "K-19: The Widowmaker",
         "url": "http://144.217.70.79/VODS-M/1080P/K-19%20The%20Widowmaker%202002.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/ojUbKgXLeGr67XCuGVfU9KZh2rg.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/vImR0HQkJs7Xs2qgdXEUDeX49m0.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/vhGmRg0RyTwpoPsLpGHtqOcsGSI.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/eYhXgpfgwnz5jf0T7lt1BuRlF6i.png",
         "type": "PELICULA",
@@ -23924,7 +23924,7 @@
       {
         "name": "Dama de sangre",
         "url": "http://144.217.70.79/VODS-M/1080P/Lady%20Bloodfight%202016.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/bGB1rSwpw2wio96htGODLe9Ptfc.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/hDZzETrYegrB6pYpHKKzdwux6Km.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/krWx9CsOfW6nvsb1o1O3ThDYP1W.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/xOJ5oLMX7krM0VOlj7ssShEXqGH.png",
         "type": "PELICULA",
@@ -24571,7 +24571,7 @@
         "name": "Legionario",
         "url": "http://144.217.70.79/VODS-M/1080P/Legionnaire%201998.mkv",
         "icono": "https://image.tmdb.org/t/p/original/vMNSGvi41FkE4uOIEopTpaSsy0E.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/uDicXMIFyQKDUgMaXq0YAHNPs5I.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/lHmI3sEY99Sduaupnx3BUXwcD7u.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/59cgH0N1EMTjy53NLHRBYVt0fEm.png",
         "type": "PELICULA",
         "descripcion": "Marsella, años 20. Un boxeador ha desafiado a la mafia al intentar rescatar a su amante de las manos de un gángster. Para eludir el peligro, se alista en la legión francesa y lo trasladan a Marruecos. Allí participará en una peligrosa misión, en el corazón del desierto, a las órdenes de un tiránico oficial...",
@@ -24996,7 +24996,7 @@
         "name": "León blanco: El luchador sin ley",
         "url": "http://144.217.70.79/VODS-M/1080P/Lionheart%201990.mkv",
         "icono": "https://image.tmdb.org/t/p/original/j4pTOgrUqPSXrDDLKDDAaaiN805.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/aYBEOdcoOsEGNFdEcMYhvFrELyR.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/tcbmOGMRsYN7oIEbmQk7vu7G0ee.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/voWHLg7TGpQDau2UE4vrN7cTLhZ.png",
         "type": "PELICULA",
         "descripcion": "León Gualtier es un desertor en la Legión Extranjera que llega a los EE.UU y encuentra a su hermano entre la vida y la muerte y a su cuñada sin dinero para curar a su marido y mantener su hija. Para ganar el dinero necesario, Gualtier acepta para participar en peleas clandestinas.",
@@ -25998,11 +25998,11 @@
       {
         "name": "Al borde del abismo",
         "url": "http://144.217.70.79/VODS-M/1080P/Man%20on%20a%20Ledge%202012.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/9TSMZdx0jmZLFRDMaJV81H8bsuo.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/zB2NdJ75xpZRJhFtU7dUVAgD0cW.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/zjXyxHw7CymcLVjHaPvBp5sV57L.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3qpMGXJlIuNP1sH9Zn2u5quY0JM.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/2CZbqc6y9hmF0bCzzbx1RArfqXO.png",
         "type": "PELICULA",
-        "descripcion": "Un ex policía convertido en estafador amenaza con saltar a su muerte desde la azotea de un hotel de Manhattan. El Departamento de Policía de Nueva York envía a una psicóloga de policía para que lo convenza. Sin embargo, sin el conocimiento de la policía en la escena, el intento de suicidio es una tapadera para el robo de diamantes más grande jamás realizado.",
+        "descripcion": "Nick Cassidy, un ex policía, amenaza con saltar desde la azotea de un hotel de Manhattan. Mientras el departamento de Policía de Nueva York envía a una psicóloga policial para tranquilizarlo, sin que la policía presente lo sepa, se descubre las intenciones detras del intento de suicidio.",
         "anio": "2012",
         "genero": "Acción, Suspense, Crimen",
         "duracion": "102 min"
@@ -26102,7 +26102,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Marked%20for%20Death%201990.mkv",
         "icono": "https://image.tmdb.org/t/p/original/nO0PZLiOlyaLuO6t29pxMNFS5sq.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/rCTf5W1531LiFxJzUhdAcV9EDav.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/1QUFgrJD5OcaqeBYNtPp5kPRww4.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/bzRpbuLRtFtRiLyonYAUdkfjEiJ.png",
         "type": "PELICULA",
         "descripcion": "El agente John Hatcher (Steven Seagal), de la división antidroga de Chicago, acaba de volver de Colombia, en donde su compañero ha sido asesinado en acto de servicio por un narcotraficante. A causa de ello ha decidido retirarse, pero después de un tiroteo con un traficante de drogas jamaicano llamado Screwface (Basil Wallace), éste intenta matar a su hermana y a la hija de ésta. John y su amigo Max intentarán atrapar al villano en su país natal.",
         "anio": "1990",
