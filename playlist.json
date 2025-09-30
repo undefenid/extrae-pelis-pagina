@@ -10407,6 +10407,40 @@
         "name": "",
         "samples": [
             {
+                "name": "Crouching Tiger Hidden Dragon",
+                "url": "http://144.217.70.79/VODS-M/1080P/Crouching%20Tiger%20Hidden%20Dragon%202000.mkv",
+                "icono": "",
+                "iconoHorizontal": "",
+                "iconpng": "",
+                "type": "PELICULA",
+                "descripcion": "",
+                "anio": "2000",
+                "genero": "",
+                "duracion": ""
+            }
+        ]
+    },
+    {
+        "name": "",
+        "samples": [
+            {
+                "name": "Crouching Tiger Hidden Dragon Sword of Destiny",
+                "url": "http://144.217.70.79/VODS-M/1080P/Crouching%20Tiger%20Hidden%20Dragon%20Sword%20of%20Destiny%202016.mkv",
+                "icono": "",
+                "iconoHorizontal": "",
+                "iconpng": "",
+                "type": "PELICULA",
+                "descripcion": "",
+                "anio": "2016",
+                "genero": "",
+                "duracion": ""
+            }
+        ]
+    },
+    {
+        "name": "",
+        "samples": [
+            {
                 "name": "Cruel Intentions 2",
                 "url": "http://144.217.70.79/VODS-M/1080P/Cruel%20Intentions%202%202000.mkv",
                 "icono": "",
@@ -46999,6 +47033,23 @@
                 "type": "PELICULA",
                 "descripcion": "",
                 "anio": "2011",
+                "genero": "",
+                "duracion": ""
+            }
+        ]
+    },
+    {
+        "name": "",
+        "samples": [
+            {
+                "name": "The Ritual",
+                "url": "http://144.217.70.79/VODS-M/1080P/The%20Ritual%202025.mkv",
+                "icono": "",
+                "iconoHorizontal": "",
+                "iconpng": "",
+                "type": "PELICULA",
+                "descripcion": "",
+                "anio": "2025",
                 "genero": "",
                 "duracion": ""
             }
