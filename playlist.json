@@ -19315,6 +19315,23 @@
         "name": "",
         "samples": [
             {
+                "name": "Hell or High Water",
+                "url": "http://144.217.70.79/VODS-M/1080P/Hell%20or%20High%20Water%202016.mkv",
+                "icono": "",
+                "iconoHorizontal": "",
+                "iconpng": "",
+                "type": "PELICULA",
+                "descripcion": "",
+                "anio": "2016",
+                "genero": "",
+                "duracion": ""
+            }
+        ]
+    },
+    {
+        "name": "",
+        "samples": [
+            {
                 "name": "Herbie Fully Loaded",
                 "url": "http://144.217.70.79/VODS-M/1080P/Herbie%20Fully%20Loaded%202005.mkv",
                 "icono": "",
@@ -32855,6 +32872,23 @@
                 "type": "PELICULA",
                 "descripcion": "",
                 "anio": "2022",
+                "genero": "",
+                "duracion": ""
+            }
+        ]
+    },
+    {
+        "name": "",
+        "samples": [
+            {
+                "name": "Quadrophenia",
+                "url": "http://144.217.70.79/VODS-M/1080P/Quadrophenia%201979.mkv",
+                "icono": "",
+                "iconoHorizontal": "",
+                "iconpng": "",
+                "type": "PELICULA",
+                "descripcion": "",
+                "anio": "1979",
                 "genero": "",
                 "duracion": ""
             }
