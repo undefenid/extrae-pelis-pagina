@@ -1,22 +1,5 @@
 [
   {
-    "name": "Comedia",
-    "samples": [
-      {
-        "name": "Mamá y Papá",
-        "url": "http://144.217.70.79/VODS-M/1080P/Mom%20and%20Dad%202017.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/y9Zp949JZCwDGz4BtBO5h2pHigz.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ozc8RAW9Bwt3T99iUjCrUvL7j1c.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/bNL5NeCmoSVUmCzc9yA2AwA1cF0.png",
-        "type": "PELICULA",
-        "descripcion": "Una misteriosa epidemia en forma de locura masiva provoca que los padres ataquen violentamente a sus hijos. Carly y Joshua tratarán de sobrevivir durante tan aciaga jornada, amenazados por unos progenitores que poseen los rasgos de Nicolas Cage y Selma Blair.",
-        "anio": "2018",
-        "genero": "Comedia, Terror, Suspense",
-        "duracion": "83 min"
-      }
-    ]
-  },
-  {
     "name": "Documental",
     "samples": [
       {
@@ -40,7 +23,7 @@
         "name": "Asalto al tren del dinero",
         "url": "http://144.217.70.79/VODS-M/1080P/Money%20Train%201995.mkv",
         "icono": "https://image.tmdb.org/t/p/original/um0DjdiCWm0IdKqySjQAlkV6rvv.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/zMI33Tb8AXXSFXfYtzb0Bd3wTTV.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/gyaBJn7eR8Ol205wmT2Xpi6IuhA.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/ks7WC0XpTSa2vQNuKVuMadRpLYe.png",
         "type": "PELICULA",
         "descripcion": "Los hermanos John y Charlie Foster trabajan como policías en el metro de Nueva York. Mientras a uno la vida le va bien, el otro no levanta cabeza y acaba siendo despedido de su trabajo. Se le ocurre entonces asaltar un tren que transporta las recaudaciones del metro. Su principal obstáculo será Donald Patterson, el jefe de la seguridad metropolitana.",
@@ -391,19 +374,19 @@
     ]
   },
   {
-    "name": "Suspense",
+    "name": "",
     "samples": [
       {
-        "name": "The Most Dangerous Game",
+        "name": "Most Dangerous Game",
         "url": "http://144.217.70.79/VODS-M/1080P/Most%20Dangerous%20Game%202020.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/41N5Rn3Xw3p7vj7n3j7M2GLgDwA.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/psBFJubFWiAV23dAZ6D0wjQWbhe.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/l3Od2KXQKytcyAdu7gjzU3Lmyn4.png",
+        "icono": "",
+        "iconoHorizontal": "",
+        "iconpng": "",
         "type": "PELICULA",
         "descripcion": "",
-        "anio": "1932",
-        "genero": "Suspense, Aventura, Terror, Acción",
-        "duracion": "63 min"
+        "anio": "2020",
+        "genero": "",
+        "duracion": "0 min"
       }
     ]
   },
@@ -1485,7 +1468,7 @@
         "name": "La noche de los demonios 2",
         "url": "http://144.217.70.79/VODS-M/1080P/Night%20of%20the%20Demons%202%201994.mkv",
         "icono": "https://image.tmdb.org/t/p/original/b8l0kUoAqobMKGQQQ4qwWMMzx6n.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/xj0Cas0bnBtUvjZA6Tye4utUvxD.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/smGWFwNIIG7MRB2ZaMUVYEF9nrP.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/dRSq9K9XJYtrOdfHM1FTOq83iWN.png",
         "type": "PELICULA",
         "descripcion": "En un colegio católico, unos adolescentes son castigados a asistir a la fiesta de Halloween por la hermana Gloria, pero estos deciden escapar esa noche e ir a Hull House, una mansión donde años atrás sucedieron varios asesinatos. Al llegar al lugar, los chicos rondan por el lugar sin saber que Ángela, la chica demonio culpable de la masacre ocurrida años atrás, está en la casa. Cuando los jovenes se retiran del lugar, Bibi, una de las chicas se lleva un lápiz labial donde Ángela se oculta. Al llegar de nuevo al colegio, Ángela sale de su escondite dispuesta a asesinar a los jovenes estudiantes e ir por su hermana Melissa.",
@@ -1842,7 +1825,7 @@
         "name": "¡Nop!",
         "url": "http://144.217.70.79/VODS-M/1080P/Nope%202022.mkv",
         "icono": "https://image.tmdb.org/t/p/original/tfZPQAHZ3xKSdilLywRzHj8xH7p.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/5N8LOeRzt7LcZIhPbNVaCsVOPdT.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/yRutvYkM3OP8N9oqqfjSK1VC7fs.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/nKyn6s7fEwOXdRczHVOynBHB6iY.png",
         "type": "PELICULA",
         "descripcion": "Los habitantes de una lejana propiedad del interior de California son testigos de un extraño y escalofriante descubrimiento.",
@@ -2747,7 +2730,7 @@
         "iconpng": "https://image.tmdb.org/t/p/original/xZpf2QLBf82kFfW37uayHo2SupX.png",
         "type": "PELICULA",
         "descripcion": "Basada en la historia real de dos buceadores que quedaron accidentalmente atrapados en aguas infestadas de tiburones después de que su barco partiera sin ellos.",
-        "anio": "2003",
+        "anio": "2004",
         "genero": "Terror, Suspense",
         "duracion": "79 min"
       }
@@ -2895,7 +2878,7 @@
       {
         "name": "La huérfana: El origen",
         "url": "http://144.217.70.79/VODS-M/1080P/Orphan%20First%20Kill%202022.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/eed4qNf174pcT65it1PBbaTTL3x.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/zw48OaYkbEpgfgYmABcAFYZwYap.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/e77LAFvZq5KteWsKxuc5nP9B6OD.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/yEEZJUbgfCAHt8kEixaGdfu7U2Q.png",
         "type": "PELICULA",
@@ -6245,7 +6228,7 @@
         "name": "Duelo de Titanes",
         "url": "http://144.217.70.79/VODS-M/1080P/Remember%20the%20Titans%202000.mkv",
         "icono": "https://image.tmdb.org/t/p/original/fh9fyi0pEpsY1vli8b0myyqRuJ2.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/cMUReq46MSz6WWsdW1Gu8oecJlc.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/7lwo8VLHD8Va49DKuszabpm41V9.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/n0qNrhnvFrUKNrc3E7L7FabS6yX.png",
         "type": "PELICULA",
         "descripcion": "Corre el año 1971, cuando en la ciudad de Alexandria, Virginia, se tomó la polémica decisión de integrar en el Secundario T.C. Williams a los estudiantes de raza negra con los de raza blanca. Los jugadores blancos veían con temor el ingreso de jugadores negros al equipo, llamado \"Los Titanes\", pues ponía en peligro sus puestos. Su miedo aumentó cuando el hasta entonces entrenador Bill Yoast es reemplazado en su cargo por Herman Boone, de raza afroamericana.",
@@ -6500,7 +6483,7 @@
         "name": "Riddick: El amo de la oscuridad",
         "url": "http://144.217.70.79/VODS-M/1080P/Riddick%202013.mkv",
         "icono": "https://image.tmdb.org/t/p/original/kEQgDr7H3oVBTCF2SiirmZjy58W.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/mLbjD5xyrjLzVviSd8l37rxfWBo.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/naGU49u4BXynQ1o5L755pfs8dom.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/cqntQjx3looDzQ4gLkEkE9TmWKD.png",
         "type": "PELICULA",
         "descripcion": "Traicionado por su propia especie y dado por muerto en un lejano y desolado planeta, aparentemente sin vida, el duro Riddick tendrá que luchar por la supervivencia contra depredadores alienígenas y cazarrecompensas, cnvirtiéndose en un ser más poderoso y peligroso que nunca… Tercera entrega de la saga iniciada en «Pitch Black» y continuada en «Las crónicas de Riddick",
@@ -6516,7 +6499,7 @@
       {
         "name": "Riddick: Criaturas de la noche",
         "url": "http://144.217.70.79/VODS-M/1080P/Riddick%20Pitch%20Black%202000.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/hsrBRkY7j4aLMil3dy52lKQJPlD.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/6dpS8aHNYrowQ7maE0CIY6HptNF.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/mZGwhwIwYuF0G9XLS8j23dhNfUC.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/tOiD7y4mQd0kjoj0Ni16e2wuc0P.png",
         "type": "PELICULA",
@@ -6779,6 +6762,23 @@
         "anio": "1995",
         "genero": "Aventura, Historia, Drama, Acción, Bélica",
         "duracion": "139 min"
+      }
+    ]
+  },
+  {
+    "name": "Acción",
+    "samples": [
+      {
+        "name": "Robin Hood",
+        "url": "http://144.217.70.79/VODS-M/1080P/Robin%20Hood%202010.mkv",
+        "icono": "https://image.tmdb.org/t/p/original/rRwrvxi2YA9DzAYcqtMZd2C3rfL.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ttSqbpXPTBITtX9ijGmyYv58Kno.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/xukhYhHExozCJJtzJiiCWFkRnIm.png",
+        "type": "PELICULA",
+        "descripcion": "Cuando el soldado Robin se encuentra con el moribundo Robert de Loxley, promete devolver la espada del hombre a su familia en Nottingham. Allí, él asume la identidad de Robert; romances a su viuda, Marion; y atrae la ira del sheriff de la ciudad y el esbirro del rey Juan, Godfrey.",
+        "anio": "2010",
+        "genero": "Acción, Aventura, Historia",
+        "duracion": "140 min"
       }
     ]
   },
@@ -8272,7 +8272,7 @@
         "iconpng": "https://image.tmdb.org/t/p/original/eLtMLHOpPNwnmWRgxS1RwlUCavQ.png",
         "type": "PELICULA",
         "descripcion": "La Capitana Maude Gardner, es una piloto de la Segunda Guerra Mundial capaz de cruzar los vuelos en un B-17, una auténtica fortaleza voladora de enorme tamaño. La Capitana Gardner es encomendada con llevar unos documentos totalmente secretos en un B-17, pero el viaje no será fácil cuando se tenga que enfrentar a una serie de presencias malignas que habitan en el avión.",
-        "anio": "2020",
+        "anio": "2021",
         "genero": "Terror, Acción, Bélica",
         "duracion": "83 min"
       }
@@ -9526,7 +9526,7 @@
         "name": "Máxima Velocidad 2",
         "url": "http://144.217.70.79/VODS-M/1080P/Speed%202%201997.mkv",
         "icono": "https://image.tmdb.org/t/p/original/oW8jpRRj1Rot4bjtFT3XEExBo7S.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/2FK7MnCeryL8aj5ZiHIz234VgEp.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/wmwEjQpqNXEIadsQoqWUS1pVVBi.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/wadu7RMtcmsrrzSX66WoVQjTsrU.png",
         "type": "PELICULA",
         "descripcion": "Una joven sueña con disfrutar de unas maravillosas vacaciones por el Caribe en compañía de su novio. Su viaje al paraíso se convierte en el mismísimo infierno cuando un lunático, genio de la informática, se hace con el mando del crucero.",
@@ -9644,7 +9644,7 @@
       {
         "name": "El hombre araña",
         "url": "http://144.217.70.79/VODS-M/1080P/Spider-Man%202002.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/bCDaKZLRkrVVtPNyHxUfKvepW1N.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/8eTbNzpjK9VJGu1g60j268MmXzm.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/qJzloL8O9YHhiWBrhlPfKAtZu2I.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/26A4s4YUkqI8alNiBiOiMIdveZK.png",
         "type": "PELICULA",
@@ -9883,7 +9883,7 @@
         "name": "Spy: Una Espía Despistada",
         "url": "http://144.217.70.79/VODS-M/1080P/Spy%202015.mkv",
         "icono": "https://image.tmdb.org/t/p/original/4DjDCZw0YPhXq2lr0uargYZc6b4.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/a0jJMlI1Nw83EXaYmN0QHuccRXm.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/eHEGPHKHTVhWdXzBQcrTATz9M0I.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/q7fS4W7PqJ9cdXTx9l11qcev6PJ.png",
         "type": "PELICULA",
         "descripcion": "Susan Cooper (Melissa McCarthy) es una modesta y sedentaria analista de la CIA y la heroína olvidada de las misiones más peligrosas de la agencia. Pero cuando su compañero (Jude Law) desaparece de la faz de la Tierra y otro agente (Jason Statham) se ve envuelto en problemas, Susan se presenta voluntaria como agente secreto para emprender una misión encubierta en la que se tendrá que infiltrar en el mundo de un sanguinario traficante de armas para evitar un desastre mundial.",
@@ -11074,7 +11074,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Taken%203%202015.mkv",
         "icono": "https://image.tmdb.org/t/p/original/hCffcXqpH002rvSFt8AUnIC376s.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/vFm4pF0BgaWPj0i2zEiZO6TqEQ0.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/73zC2Fs7Rs8PLTwISdsNaz2dgs4.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/rtKZqUuZlv88arn0mQOP9p0luGc.png",
         "type": "PELICULA",
         "descripcion": "La vida del ex-agente especial Bryan Mills (Liam Neeson) se ve inesperadamente truncada tras el brutal asesinato de su ex mujer. Tras ser acusado de su muerte, se ve obligado a huir de la implacable persecución de la CIA, el FBI y la policía. Una vez más, deberá usar sus “habilidades especiales” para hacer justicia, dar caza a los verdaderos asesinos y proteger lo único que le queda en la vida: su hija.",
         "anio": "2014",
@@ -11090,7 +11090,7 @@
         "name": "Búsqueda implacable",
         "url": "http://144.217.70.79/VODS-M/1080P/Taken%202008.mkv",
         "icono": "https://image.tmdb.org/t/p/original/fO9HTzeL7sd346tybTfbd99Nv3R.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/d9ISNkCasZmkvL7YFw2J4ddQv3j.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/auLFB4G02tW4SxBqTDeybV0lXVl.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/gtLc4GORCFiW6ocTTtaq1nsYbpS.png",
         "type": "PELICULA",
         "descripcion": "Bryan Mills (Liam Neeson) es un agente especial jubilado. Pero cuando su hija Kim (Maggie Grace) es secuestrada en París por una organización criminal albanokosovar, tendrá que volver a la acción para intentar salvarla. La banda se dedica a una red de trata de blancas, por lo que Mills sabe que sólo dispone de unas horas para conseguir rescatarla antes de que se pierda el rastro de su hija.",
@@ -11311,7 +11311,7 @@
         "name": "Las Tortugas Ninja",
         "url": "http://144.217.70.79/VODS-M/1080P/Teenage%20Mutant%20Ninja%20Turtles%201990.mkv",
         "icono": "https://image.tmdb.org/t/p/original/uDJipJy4zwIN9F7stcaTGwfD9yP.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/6teOJJUV5IGaX7ucJv2ONoGGf4e.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/l4eT7lDzkzaSZPRSyuf43dZwFEJ.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/u6Rn3KUhvG5TBEOiZ54QJVSDoNv.png",
         "type": "PELICULA",
         "descripcion": "Después de haber sido contaminadas con una misteriosa sustancia química, llamada Ooze, cuatro tortugas mutantes, Leonardo, Miguel Ángel, Donatello y Rafael, entrenadas por su mentor en ninjitsu, el Maestro Splinter, deben aprender a trabajar juntos para enfrentar la amenaza de Shredder y el Clan del Pie.",
@@ -12058,7 +12058,7 @@
       {
         "name": "El Arte De La Guerra",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Art%20of%20War%202000.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/xoY5Amtcx04rmYj4YUqD871VBw1.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/paYmKfHNOJk2FPub0dZnUq79GVB.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/dE6xTBdthy3d9GYIIbbndFr4AOD.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/qenvvoMlTIkqntbQB4kI4rfpofh.png",
         "type": "PELICULA",
@@ -12487,10 +12487,10 @@
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/syKiIOqEoOi1Hb0Oh0n9cImcBab.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/5oAkSt6F44mKIhxaf3fJrMb6vhw.png",
         "type": "PELICULA",
-        "descripcion": "Finney Shaw, un tímido, pero inteligente niño de 13 años es secuestrado por un sádico asesino y atrapado en un aterrador, oscuro y aislado sótano, donde los gritos son de poca utilidad. Cuando un teléfono negro desconectado en la pared comienza a sonar, Finney descubre que puede escuchar a los espíritus de las víctimas anteriores del asesino.",
+        "descripcion": "El tímido pero inteligente Finney Blake, de 13 años, es secuestrado por un asesino sádico. En el sótano insonorizado, un teléfono desconectado en la pared empieza a sonar.",
         "anio": "2022",
         "genero": "Terror, Suspense",
-        "duracion": "102 min"
+        "duracion": "103 min"
       }
     ]
   },
@@ -12552,8 +12552,8 @@
         "name": "El proyecto de la bruja de Blair",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Blair%20Witch%20Project%201999.mkv",
         "icono": "https://image.tmdb.org/t/p/original/4VkdY6GlFchXcHgg3Bsl1A73jsH.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/xpTHHojJnJQgavgMw5OQYUzuNIU.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/5tr9uJnMUtEDXmbQd31x6SWcrko.png",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ghPJw3XfhELokIf6V5QL0VpsXtK.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/zR4i8xCkXImxmMK9OVGwngRufmr.png",
         "type": "PELICULA",
         "descripcion": "El 21 de octubre de 1994, Heather Donahue, Joshua Leonard y Michael Williams entraron en un bosque de Maryland para rodar un documental sobre una leyenda local, \"La bruja de Blair\". No se volvió a saber de ellos. Un año después, fue encontrada la cámara con la que rodaron: mostraba los terroríficos hechos que dieron lugar a su desaparición.",
         "anio": "1999",
@@ -13385,7 +13385,7 @@
         "name": "El Conjuro 2",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Conjuring%202%20The%20Enfield%20Poltergeist%202016.mkv",
         "icono": "https://image.tmdb.org/t/p/original/x4jUJ0fF60SSOeUUTkaRtmnDvwG.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/rOwEWgbryAxp7D1xpzREqh3EOTX.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ev5Ti7Q0REkoVLO7PkKaq1yZYQE.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/qFPl5gsgalp96mWPKzSccMkA40e.png",
         "type": "PELICULA",
         "descripcion": "En está ocasión, Lorraine y Ed Warren viajan al norte de Londres para ayudar a una madre soltera que cría a cuatro hijos sola en una casa plagada de espíritus malignos.",
@@ -13402,7 +13402,7 @@
         "name": "El Conjuro",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Conjuring%202013.mkv",
         "icono": "https://image.tmdb.org/t/p/original/10ir0eISr3p1MF1mjZwGTx7u4vv.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/fMlAg1CyHTsCktwQrp74rl9RMwJ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/hPUDpQ1W7VZAqBQTi0tZx0EPEsL.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/5qjvxFhRZtvm4mcV90X9QNYLZVj.png",
         "type": "PELICULA",
         "descripcion": "Una familia aterrorizada pide ayuda a los investigadores paranormales Ed y Lorraine Warren a investigar una presencia oscura en su granja. Al ser obligados a enfrentarse a una entidad poderosa, los Warren se ven atrapados en el caso más aterrador de sus vidas.",
@@ -13668,19 +13668,19 @@
     ]
   },
   {
-    "name": "Drama",
+    "name": "Terror",
     "samples": [
       {
-        "name": "Batman: El caballero de la noche",
+        "name": "La Oscuridad",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Dark%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/vLFCrzI3V4kbze877tP1H7TqppL.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/nO5Uix3Qr4WjOyU1BMPv0okyNWm.png",
+        "icono": "https://image.tmdb.org/t/p/original/8ju0L6Wy5QrW6XJOGvaLjVCDwtZ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3bC3FyK6rmaebYzoT8qX7EoHgah.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/4FBBD9QoBaB3ozLfPgyC1K87ddx.png",
         "type": "PELICULA",
-        "descripcion": "Cuando la amenaza conocida como el Joker causa estragos y caos en la gente de Ciudad Gótica, Batman debe aceptar una de las mayores pruebas psicológicas y físicas de su capacidad para luchar contra la injusticia.",
-        "anio": "2008",
-        "genero": "Drama, Acción, Crimen, Suspense",
-        "duracion": "152 min"
+        "descripcion": "Una muchacha sobrevive en un bosque tras haber sido asesinada tiempo atrás. Con un rostro deformado por el maltrato que sufrió, es consciente de que nunca podrá abandonar la zona en la que se encuentra, por lo que se alimenta de todo lo que se adentra en su \"hogar\". Un día, un asesino en serie que huye se tropieza con ella, convirtiéndose así en su última víctima. Sin embargo, la joven no cuenta con que, en el maletero de su vehículo, se esconde un chico que estaba a punto de sufrir las mismas penurias que ella.",
+        "anio": "2018",
+        "genero": "Terror, Drama, Fantasía",
+        "duracion": "95 min"
       }
     ]
   },
@@ -15499,7 +15499,7 @@
         "descripcion": "Lo que comenzó con la familia Carter, no llegó claramente a su fin. Como parte de una misión habitual, una unidad de soldados de la Guardia Nacional se detiene en una posición avanzada de Nuevo México para entregar equipo a un grupo de científicos atómicos. Sin embargo, al llegar al aislado campo de investigación, lo hallan misteriosamente desierto. Después de haber divisado una señal de socorro en una lejana cordillera, el equipo decide emprender una misión de búsqueda y rescate por las montañas con el fin de localizar a los científicos desaparecidos. No saben que éstas son las mismas montañas que la desventurada familia Carter visitó en una ocasión, y en las que acecha una tribu de mutantes antropófagos.",
         "anio": "2007",
         "genero": "Terror, Suspense",
-        "duracion": "90 min"
+        "duracion": "89 min"
       }
     ]
   },
@@ -16320,36 +16320,36 @@
     ]
   },
   {
-    "name": "Fantasía",
+    "name": "Comedia",
     "samples": [
       {
-        "name": "Mi Encuentro Conmigo",
+        "name": "The Kid",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Kid%202000.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/fkfSJooU4fMhJzT3LKfzmC6CHqH.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/jEMYEoQw7jF0aoKRgaa1TbHojUT.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/Ab8tEvn2CHyjScB3BoHmTwD2cJD.png",
+        "icono": "https://image.tmdb.org/t/p/original/we8AMv9ufyoXgmOlfX0SmubKOrd.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/mAhCW7QbpL5kwvCWGsfyY3ILoW6.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/c5CN2VOt2qFv1gT9y7pM8TqvNE4.png",
         "type": "PELICULA",
-        "descripcion": "Un consultor de imagen infeliz y disgustado tiene una segunda oportunidad en la vida cuando se enfrenta misteriosamente a una versión de sí mismo de ocho años.",
-        "anio": "2000",
-        "genero": "Fantasía, Comedia, Familia",
-        "duracion": "105 min"
+        "descripcion": "Una mujer londinense, sumamente pobre, se ve en la necesidad de abandonar a su hijo en una casa de millonarios, aunque por una serie de circustancias el niño terminará siendo cuidado por un vagabundo que se convierte así en su padre. Cinco años después, y con la madre convertida en una popular cantante, el destino tratará de separarlos...",
+        "anio": "1921",
+        "genero": "Comedia, Drama",
+        "duracion": "68 min"
       }
     ]
   },
   {
-    "name": "Western",
+    "name": "Comedia",
     "samples": [
       {
-        "name": "The Kid (Sin piedad)",
+        "name": "The Kid",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Kid%202019.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/5pcvDorwyuUNxbiSEt2urKUvKYI.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/qogeijTQKJB3XtopMolADVQcnBG.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/iSBE24pLjWjOrsVCzCShB3q8RFX.png",
+        "icono": "https://image.tmdb.org/t/p/original/we8AMv9ufyoXgmOlfX0SmubKOrd.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/mAhCW7QbpL5kwvCWGsfyY3ILoW6.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/c5CN2VOt2qFv1gT9y7pM8TqvNE4.png",
         "type": "PELICULA",
-        "descripcion": "Un muchacho está viviendo los peores momentos de su vida: su tío ha asesinado a su padre y se ha llevado a su hermana para que ejerza la prostitución. El joven tiene que hacer algo frente a esta situación y decide pedir ayuda a su héroe: Billy El Niño. Intenta que el vaquero vengue a su padre y salve a su hermana… sin ningún resultado. Es entonces cuando aparece el sheriff Pat Garrett asombrando al chico con lo que consigue.",
-        "anio": "2019",
-        "genero": "Western, Drama, Acción",
-        "duracion": "100 min"
+        "descripcion": "Una mujer londinense, sumamente pobre, se ve en la necesidad de abandonar a su hijo en una casa de millonarios, aunque por una serie de circustancias el niño terminará siendo cuidado por un vagabundo que se convierte así en su padre. Cinco años después, y con la madre convertida en una popular cantante, el destino tratará de separarlos...",
+        "anio": "1921",
+        "genero": "Comedia, Drama",
+        "duracion": "68 min"
       }
     ]
   },
@@ -17108,7 +17108,7 @@
         "name": "El Faro",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Lighthouse%202019.mkv",
         "icono": "https://image.tmdb.org/t/p/original/atwJGO4Ks8k9aUcGN968YFvnwbB.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/r4uBaF8VCdIcEp38jUpdxKP8eLJ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/sYLzRuEcwSz0L1Z92wQNrETHU9O.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/fRVX8Dbp4EVa1lblWNIuhGePQOZ.png",
         "type": "PELICULA",
         "descripcion": "Ambientada a finales del siglo XIX, cuenta la historia de dos fareros que trabajan juntos en una misteriosa isla perdida de Nueva Inglaterra.",
@@ -17839,7 +17839,7 @@
         "name": "La Máscara del Zorro",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Mask%20of%20Zorro%201998.mkv",
         "icono": "https://image.tmdb.org/t/p/original/fbqmGj7PCUDRAMydIiPx0knWvhn.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/dOqqnfLq1LFs7UlC9ZzMIgqbicu.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/xIELAm4tOQCvbg8N0T2g2Ru1lxw.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/9CITIgg0I4SK3dQIAetoDXEPiiP.png",
         "type": "PELICULA",
         "descripcion": "México, 1821. Un enmascarado y romántico héroe popular, conocido como El Zorro, lucha valientemente contra el dominio colonial español en la Alta California. Sin embargo, la víspera de la liberación de México, el despótico gobernador don Rafael Montero descubre que el Zorro es don Diego de la Vega. Un ataque contra la casa del rebelde, se salda con su captura, la muerte de su mujer, el secuestro de su única hija Elena y la destrucción de sus propiedades. Veinte años después, Montero regresa del exilio con Elena, que ignora la identidad de su padre, y se propone comprar California al Presidente de México, el General Santa Anna. Cuando don Diego de la Vega se entera, escapa de la prisión dispuesto a vengarse de Montero.",
@@ -17856,7 +17856,7 @@
         "name": "The Master: Todo hombre necesita un guía",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Master%202012.mkv",
         "icono": "https://image.tmdb.org/t/p/original/oYgmvq6olZa9eb1BpAEEKPZRGol.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/bwgjIlMoSyU1Iw0IhNIFUeSbNDy.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/d6EZMyJos2FonQb7omnXWe38aHY.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/tEhM7HjXVPNyTgWAVLw2pE5kDNx.png",
         "type": "PELICULA",
         "descripcion": "Drama sobre la Iglesia de la Cienciología. Lancaster Dodd (Philip Seymour Hoffman), un intelectual brillante y de fuertes convicciones, crea una organización religiosa que empieza a hacerse popular en Estados Unidos hacia 1952. Freddie Quell (Joaquin Phoenix), un joven vagabundo, se convierte en su mano derecha. Sin embargo, cuando la secta triunfa y consigue atraer a numerosos y fervientes seguidores, a Freddie le surgirán dudas.",
@@ -19029,7 +19029,7 @@
         "name": "La Pantera Rosa",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Pink%20Panther%202006.mkv",
         "icono": "https://image.tmdb.org/t/p/original/5wYfVgR8hIGeeCk8vifYHZteWdk.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/qWM3HxnKBCJmTIJemhMFxzFPUTE.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3jiNJ4lyAmdSidvbFTFIL2GQGBu.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/xOJpuZVTQ7tUiBtsXhGO7c4VWWa.png",
         "type": "PELICULA",
         "descripcion": "Cuando el entrenador de un equipo de fútbol es asesinado en un estadio, su valioso anillo con el diamante Pantera Rosa es robado. El ambicioso Director Dreyfus asignará el caso al torpe Clouseau para que lo resuelva, nombrándole al mismo tiempo inspector. Sin embargo, su verdadera intención es distraer a la prensa mientras trata de resolver el mismo el caso.",
@@ -19778,7 +19778,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Room%202019.mkv",
         "icono": "https://image.tmdb.org/t/p/original/m6bIdi1u4wq5axdW7gKhga5envh.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/snbRXbkzEpc35mFDlwUg41cN8aw.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/qqELOzH5Dl4TOUpczgCTws32mA8.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/4EsHYKEfC1Wax0ynBFgFkroWV6b.png",
         "type": "PELICULA",
         "descripcion": "Matt y Kate compran una casa aislada. A medida que se mudan, descubren una habitación extraña que les da un número ilimitado de deseos materiales. Pero, como Kate ha tenido dos abortos involuntarios, lo que más extrañan es un niño.",
         "anio": "2019",
@@ -20972,7 +20972,7 @@
         "type": "PELICULA",
         "descripcion": "Nominada a tres premios Oscar, incluido el de Mejor Actor. Denzel Washington y Frances McDormand protagonizan esta adaptación, cruda y audaz, de Joel Coen. Un lord escocés es convencido por unas brujas de que se convertirá en el futuro rey de Escocia. Adaptación de \"Macbeth\", de William Shakespeare.",
         "anio": "2021",
-        "genero": "Drama, Bélica",
+        "genero": "Drama, Acción, Fantasía",
         "duracion": "105 min"
       }
     ]
@@ -21361,7 +21361,7 @@
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/lVSMgZUBE4XTVaPBEBAczre4f1W.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/5yWz7mnajKs07FPs5NGvV6obLs8.png",
         "type": "PELICULA",
-        "descripcion": "En los albores de la carrera espacial, dos adolescentes obsesionados con la radio descubren una extraña frecuencia en las ondas en lo que se convierte en la noche más importante de sus vidas y en la historia de su pequeño pueblo.",
+        "descripcion": "En los años 50, en la pequeña poblacion de Cayuga, Nuevo México, la joven operadora de radio Fay Crocker (Sierra McCormick) y el carismático locutor local Everett Sloan (Jake Horowitz) descubren una misteriosa frecuencia de radio que podría cambiar su vida y la de toda la humanidad para siempre.",
         "anio": "2019",
         "genero": "Drama, Misterio, Ciencia ficción, Suspense",
         "duracion": "91 min"
@@ -21578,7 +21578,7 @@
       {
         "name": "La Ballena",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Whale%202022.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/l6Jbj5dnljC3qJ4Lkpzgu9tK13M.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/5PXybRV6hVkteNZsxLeSC1FV3kx.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/46FRuCeAn6TrS4F1P4F9zhyCpyo.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/72dLGgN4ZvgxWRR2fhjine4yMmY.png",
         "type": "PELICULA",
@@ -21766,7 +21766,7 @@
         "name": "Las brujas de Eastwick",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Witches%20of%20Eastwick%201987.mkv",
         "icono": "https://image.tmdb.org/t/p/original/1PC5sd5aLgLF5TNmf9jndfYJDhR.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/oCjvuJSbZhFyIu9jCTqhhG7WCjJ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/5xgtdWDqBhc2nD5e6zlgyjeQ6XD.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/1qrlV7leupCahfwjPbNAdF4qD6G.png",
         "type": "PELICULA",
         "descripcion": "En la pequeña y tranquila población de Eastwick, Nueva Inglaterra, viven Jane, Sukie y Alexandra, tres modernas y aburridas mujeres. Hartas de esperar al hombre capaz de satisfacerlas, una noche de lluvia se reúnen, e inocentemente, invocan al hombre perfecto. Pronto las tres mujeres descubren sus extraordinarios poderes cuando llega a la ciudad el misterioso Daryl Van Horne (Nicholson), un personaje tan diabólico como seductor.",
@@ -22072,7 +22072,7 @@
         "name": "La favorita",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20favourite%202018.mkv",
         "icono": "https://image.tmdb.org/t/p/original/mirzwvOh7s5HN0vC7b7H6WMkO6X.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ph5fElfh4U7O3jwhFljxz2LDp1l.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/iSskYDN193CJfTbSpFfscSwZ9Sx.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/d08O2J54CD6gihPWjZiiWD4zkWk.png",
         "type": "PELICULA",
         "descripcion": "Principios del siglo XVIII. Inglaterra está en guerra con los franceses. Una reina debilitada, Anne, ocupa el trono y su amiga Lady Sarah gobierna el país en su ausencia, debido a su estado de salud y a su carácter inestable. Cuando una nueva sirvienta aparece, Abigail, su encanto seduce a Sarah. Como la política ocupa gran parte del tiempo de Sarah, Abigail empieza a acompañar con más frecuencia a la Reina. Desarrollarán una amistad que Abigail aprovechará para saciar sus ambiciones.",
@@ -22621,7 +22621,7 @@
         "type": "PELICULA",
         "descripcion": "Un grupo de amigos de la universidad se reúnen para emprender un viaje de senderismo por los montes de Suecia, con la finalidad de rendir homenaje a uno de ellos, muerto de forma violenta. Cuando se internan en el bosque, una presencia amenazante empieza a acosarles.",
         "anio": "2017",
-        "genero": "Terror, Suspense, Misterio",
+        "genero": "Terror, Misterio",
         "duracion": "94 min"
       }
     ]
@@ -23108,7 +23108,7 @@
       {
         "name": "tick, tick... BOOM!",
         "url": "http://144.217.70.79/VODS-M/1080P/Tick%20Tick%20Boom%202021.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/DPmfcuR8fh8ROYXgdjrAjSGA0o.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/f25ztdpMF58m7mfKGgVYYlDQNNd.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/rKe3MR2u4ZZ0y9uKivzKJRrqBCe.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/rrkaKkOFOP1SYIBguRI3J5b7yOq.png",
         "type": "PELICULA",
@@ -23975,8 +23975,8 @@
       {
         "name": "Tron: El Legado",
         "url": "http://144.217.70.79/VODS-M/1080P/Tron%20Legacy%202010.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/m3tkTgatN1IuwKGAFnsiLakRQLh.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/7o07Xkj2T19e9ken5IjAv1GNmBK.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/oImEJEbwvhf00tY8SXapLr9vPnP.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/uUa6jgSr5BQpcBhhaz1PV1JhSa4.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/svy9xGRRZ13rgnrDKNf4vLqOCB3.png",
         "type": "PELICULA",
         "descripcion": "En un intento de descubrir la desaparición de su padre, el audaz Sam Flynn logra ingresar a un mundo digital. Acompañado de Quorra, Sam emprende una misión para impedir los planes del malvado dictador Clu.",
@@ -24792,7 +24792,7 @@
         "name": "Leyenda urbana 2",
         "url": "http://144.217.70.79/VODS-M/1080P/Urban%20Legends%20Final%20Cut%202000.mkv",
         "icono": "https://image.tmdb.org/t/p/original/9TxrMWzcZZj2vSGvjD4v2r1cgXt.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/sOn1tOLzvhRaEtOdRP4dxmweNBN.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/xH7ISsZtQ7prIpjHz8qbu4Wuud2.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/g43gH0HoHMPhDOEKEdGctyYTgWz.png",
         "type": "PELICULA",
         "descripcion": "La realización de una película de terror adquiere una aterradora realidad para los estudiantes de la escuela de cine más prestigiosa del país. En Alpine University, alguien está decidido a ganar el premio a la mejor película a cualquier precio, incluso si eso significa eliminar a la competencia. Nadie está a salvo y todos son sospechosos.",
@@ -25029,12 +25029,12 @@
       {
         "name": "V de Venganza",
         "url": "http://144.217.70.79/VODS-M/1080P/V%20for%20Vendetta%202005.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/yJea98u5qGwRoKlWhUXZw5rUaqo.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/8pDM7gryUV0FqaniCXcw5KhH5SS.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/sFEYsEfzTx7hhjetlNrme8B5OUo.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/xdMteiDaj5hJeuOQJBbCsm47yE0.png",
         "type": "PELICULA",
         "descripcion": "Una tarde, tras el toque de queda, Evey es rescatada en plena calle por un misterioso enmascarado cuyo nombre es \"V\". El extraño personaje le explica cuáles son sus planes para recuperar la libertad.",
-        "anio": "2005",
+        "anio": "2006",
         "genero": "Acción, Suspense, Ciencia ficción",
         "duracion": "132 min"
       }
@@ -25061,16 +25061,16 @@
     "name": "Drama",
     "samples": [
       {
-        "name": "El gran triunfo",
+        "name": "Escape a la victoria",
         "url": "http://144.217.70.79/VODS-M/1080P/Victory%201981.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/7SSzFCX0gLz1UZDza7Nf4YpWxzK.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
+        "icono": "https://image.tmdb.org/t/p/original/hO86vqFBAVEoMdO8OsoKn3RwwBQ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/cWOpRLx5Fzz92D3zdesIcsQQxX9.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/uEtBBX8OTpBXaqWp6J6z6SMrX0W.png",
         "type": "PELICULA",
-        "descripcion": "",
+        "descripcion": "Segunda Guerra Mundial, año 1943. El comandante del campo de concentración de Gensdorff, que antes de la guerra había formado parte de la selección alemana de fútbol, se interesa por un un grupo de prisioneros que practican este deporte. Se le ocurre entonces la idea de organizar un partido en el que se enfrenten una selección alemana y una selección formada por prisioneros de guerra. Aunque al principio los aliados rechazan la propuesta, al final aceptan el desafío.",
         "anio": "1981",
-        "genero": "Drama, Música",
-        "duracion": "89 min"
+        "genero": "Drama, Bélica",
+        "duracion": "116 min"
       }
     ]
   },
@@ -25744,7 +25744,7 @@
         "name": "¿Quién *&$%! son los Miller?",
         "url": "http://144.217.70.79/VODS-M/1080P/We%20re%20the%20Millers%202013.mkv",
         "icono": "https://image.tmdb.org/t/p/original/e6ITLpsQP9FMBF4jDyvHpWUYV64.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/5Z0xJLURPiN8zSvhMLa3qBojleK.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/orovxbloKJQwveXC3UwiTPPSgcb.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/zCFrp80myGchlUQB2IZuW59iXEX.png",
         "type": "PELICULA",
         "descripcion": "El distribuidor de marihuana David aprende por las malas que ninguna buena acción queda sin castigo; él intenta ayudar a algunos jóvenes y es sorprendido por unos criminales, perdiendo su dinero y producto. David está endeudado con su proveedor y para solucionar el problema debe ir a México para recoger un cargamento del jefe. Para lograr la misión, David idea un plan infalible: reúne a una familia falsa y la sube a una casa rodante para dirigirse al sur durante un fin de semana salvaje.",
@@ -25829,7 +25829,7 @@
         "name": "Locura de amor en Las Vegas",
         "url": "http://144.217.70.79/VODS-M/1080P/What%20Happens%20In%20Vegas%202008.mkv",
         "icono": "https://image.tmdb.org/t/p/original/asQQdmkKQ2Jz5RlQX3a1hfcuS3G.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/rCxs7yZ7lhfdi2IFZuXxZvvBeJN.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/iJxccKHCe1vTXtCoFezYCWDk8On.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/cAhDpO67CqegGqBvIes0mYbqTTB.png",
         "type": "PELICULA",
         "descripcion": "Al fiestero Jack Fuller lo acaba de despedir de la empresa su propio padre. Por otro lado a la atractiva Joy McNally, su novio la ha dejado plantada. Ambos deciden irse a Las Vegas, y ahí se conocen por una equivocación en las habitaciones de su hotel. Tras irse de fiesta, a la mañana siguiente se despiertan... y descubren que se han casado tras una noche de locura y descontrol. Justo en su primera discusión, Jack gana en un tragamonedas 3 millones de dólares en una máquina del casino jugando con una moneda de Joy. Ambos intentarán quedarse con el dinero, aunque el amor quizá aparezca en el camino...",
@@ -26559,7 +26559,7 @@
       {
         "name": "Wolfwalkers: Espíritu de lobo",
         "url": "http://144.217.70.79/VODS-M/1080P/Wolfwalkers%202020.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/nIWCrXAqxUuIDxMKAiTem5cKg67.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/4AbbGAiz1t5Hxa9c35avWeyB3dA.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/3zTbERSBLh7waK9811RTKGAcG86.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/7t3DeQf1boeuog3dqqVULQSJJ8C.png",
         "type": "PELICULA",
@@ -26763,7 +26763,7 @@
       {
         "name": "Ralph, el demoledor",
         "url": "http://144.217.70.79/VODS-M/1080P/Wreck%20it%20ralph%202012.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/lTpE4JQ2C09NicqvDhwi70IRz62.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/3kB1z3uwsYlKAUMO8OuxrFlktvx.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/ziC23LkMYj8gToQQYQGWSGJCLNF.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/u8B4oOjN5KAieJpIOi9ECudIw6Y.png",
         "type": "PELICULA",
@@ -26849,7 +26849,7 @@
         "name": "Camino Hacia El Terror 5",
         "url": "http://144.217.70.79/VODS-M/1080P/Wrong%20Turn%205%20Bloodlines%202012.mkv",
         "icono": "https://image.tmdb.org/t/p/original/8rCVdIzSIDIALXArSjLyw44teD0.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/rSVomcnK5exRUp21yqWXKX2yJ6F.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/9zLKHhK67SGINHtJngXpBxmtSGX.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/fuZdzZa7FFL5pJB0TyaKpSIAXXe.png",
         "type": "PELICULA",
         "descripcion": "En esta nueva entrega de la popular franquicia de terror de Camino hacia el Terror, las autoridades locales no solamente tienen que sobrevivir a los festejos de Halloween en el Festival Mountain Man, sino también tienen que proteger a la comunicad del peligro y terror reales; ¡los Hermanos Hilliker!",
@@ -27003,7 +27003,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Xxx%202002.mkv",
         "icono": "https://image.tmdb.org/t/p/original/gd4hRY3pFXRY7YVbMdVBpnKV7wC.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/4QXRStvIJHsHLUf6hr7aweMX7em.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/xzx6HmTB0DtTRVozVWJcxwBYEjg.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/eZ25fp86jM4nwm7cKuCHXpK0qvy.png",
         "type": "PELICULA",
         "descripcion": "Xander Cage es tu adicto a la adrenalina estándar sin miedo y con una actitud pésima. Cuando el gobierno de los Estados Unidos lo \"recluta\" para ir a una misión, no está precisamente emocionado. Su misión: recopilar información sobre una organización que puede estar planeando la destrucción del mundo, dirigida por el nihilista Yorgi.",
         "anio": "2002",
@@ -27205,7 +27205,7 @@
       {
         "name": "Z",
         "url": "http://144.217.70.79/VODS-M/1080P/Z%202019.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/r7U6HTvhFV6z9bvIyPydJeVI3Ao.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/5kFQrl8fCIrQEXqFUc6bBUylrFs.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/f7x2aH3C6u6fgpKqqXZ5mCdihaf.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/6yFgqhqNv2YxfOAA3oC5jYqSYsP.png",
         "type": "PELICULA",
@@ -27271,7 +27271,7 @@
     "name": "Fantasía",
     "samples": [
       {
-        "name": "Zombies 2",
+        "name": "Z-O-M-B-I-E-S 2",
         "url": "http://144.217.70.79/VODS-M/1080P/Zombies%202%202020.mkv",
         "icono": "https://image.tmdb.org/t/p/original/cOnxoQ3kx4mgmWb7yRi6GBWssOh.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/aJK3XZGn7TaCnb1wbHBgCfXOxnc.jpg",
