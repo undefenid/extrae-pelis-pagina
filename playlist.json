@@ -49473,23 +49473,6 @@
         "name": "",
         "samples": [
             {
-                "name": "The dark tower",
-                "url": "http://144.217.70.79/VODS-M/1080P/The%20dark%20tower%202017.mkv",
-                "icono": "",
-                "iconoHorizontal": "",
-                "iconpng": "",
-                "type": "PELICULA",
-                "descripcion": "",
-                "anio": "2017",
-                "genero": "",
-                "duracion": ""
-            }
-        ]
-    },
-    {
-        "name": "",
-        "samples": [
-            {
                 "name": "The emoji movie",
                 "url": "http://144.217.70.79/VODS-M/1080P/The%20emoji%20movie%202017.mkv",
                 "icono": "",
