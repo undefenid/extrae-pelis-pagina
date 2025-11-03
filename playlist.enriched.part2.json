@@ -1,5 +1,22 @@
 [
   {
+    "name": "Comedia",
+    "samples": [
+      {
+        "name": "Mamá y Papá",
+        "url": "http://144.217.70.79/VODS-M/1080P/Mom%20and%20Dad%202017.mkv",
+        "icono": "https://image.tmdb.org/t/p/original/y9Zp949JZCwDGz4BtBO5h2pHigz.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ozc8RAW9Bwt3T99iUjCrUvL7j1c.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/bNL5NeCmoSVUmCzc9yA2AwA1cF0.png",
+        "type": "PELICULA",
+        "descripcion": "Una misteriosa epidemia en forma de locura masiva provoca que los padres ataquen violentamente a sus hijos. Carly y Joshua tratarán de sobrevivir durante tan aciaga jornada, amenazados por unos progenitores que poseen los rasgos de Nicolas Cage y Selma Blair.",
+        "anio": "2018",
+        "genero": "Comedia, Terror, Suspense",
+        "duracion": "83 min"
+      }
+    ]
+  },
+  {
     "name": "Documental",
     "samples": [
       {
@@ -1314,7 +1331,7 @@
       {
         "name": "Noticias del Mundo",
         "url": "http://144.217.70.79/VODS-M/1080P/News%20of%20the%20World%202020.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/8ZKTXjgIVZQ20w70jdJ9WV3A2OP.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/zgMZ07rp80zTQXzuxFhxIqf5ycp.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/57dG6BzU2RcPtLgoA3oyHUIb2rI.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/5wFA4NtfAk7IBcNhsr5AClkvTBY.png",
         "type": "PELICULA",
@@ -1773,7 +1790,7 @@
       {
         "name": "Nocturne",
         "url": "http://144.217.70.79/VODS-M/1080P/Nocturne%202020.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/fkRtfFOOH2ap0C8wRdqELFMR0la.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/mNOSZ6Udeq5VAGv16ThqiHQZSRo.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/c2fcPbS9Hr7Rw4ChIIcI8Xrbf8J.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/6slRTjeQ9YoZLO1pdlu0fQf9asy.png",
         "type": "PELICULA",
@@ -2114,7 +2131,7 @@
         "name": "Enredos de oficina",
         "url": "http://144.217.70.79/VODS-M/1080P/Office%20Space%201999.mkv",
         "icono": "https://image.tmdb.org/t/p/original/nZaCSfRVCisOrW7hdW7MowzseP3.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/osVUxxcXnJd9tqSRZBk4RxVl0As.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/g7o5O6xRWkMiwHXiYMPC690YEL4.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/kAol2s0iXnPIVVRIMBo58W1Wz1u.png",
         "type": "PELICULA",
         "descripcion": "Harto de su trabajo como programador informático y de su jefe, Peter Gibbons se propone que le despidan para cobrar una buena indemnización y dedicarse a la buena vida junto a una joven camarera llamada Joanna, que es en realidad la que le anima a seguir por ese camino. Pero sus múltiples acciones para conseguir el despido, entre las que figuran llegar tarde o no presentarse al trabajo, son consideradas como una nueva y revolucionaria manera de trabajar, lo que, contra todo pronóstico, le suponen un aumento de sueldo y un ascenso.",
@@ -2385,8 +2402,8 @@
       {
         "name": "Érase una vez en el Oeste",
         "url": "http://144.217.70.79/VODS-M/1080P/Once%20Upon%20a%20Time%20in%20the%20West%201968.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/upiek8u4rHTrOJW9B0woXe4A4h7.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/p1OFxsff2t8bxQC45TPfyo0ZBfU.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/mjpBEYcB0SjBmysIEIO44YnEG87.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/aKZ9hDmLJTaGSxWdhxqMTcvXmk4.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/7HgopvSQyPmiBHjNViiDb5SPO4r.png",
         "type": "PELICULA",
         "descripcion": "Mientras los constructores del ferrocarril avanzan imparables por el desierto de Arizona en su camino hacia el mar, Jill llega al pequeño pueblo de Flagstone con la intención de empezar una nueva vida.",
@@ -3014,7 +3031,7 @@
       {
         "name": "Tiempo límite",
         "url": "http://144.217.70.79/VODS-M/1080P/Out%20of%20Time%202003.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/lAbBRDNTspvbvjgESe2TJiVS39o.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/vMhzp9qiCGSUVxbPuvvsww3ISak.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/ip2SgXV5XBT3XDQRrNdXtk1kZd5.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/jsVV3E9myvlgfH5IrdTi639Tikk.png",
         "type": "PELICULA",
@@ -3849,7 +3866,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Penguins%20of%20Madagascar%202014.mkv",
         "icono": "https://image.tmdb.org/t/p/original/lEnUxCpQUyntm2eLBzCTv3bfplV.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/2QMgoiDlTmrO9FngZft8GgZ2SbX.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/pGP5M2dapifQZWNzBaNdOYYSqvm.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/df26qur2MaG0GllJ8fIrUGnNJoe.png",
         "type": "PELICULA",
         "descripcion": "Spin-off de 'Madagascar' protagonizado por los pingüinos de la isla. Las más divertidas aves encubiertas del mundo del espionaje: Capitán, Kowalski, Rico y Soldado. Son la élite de la élite y juntos unen sus fuerzas a una elegante organización encubierta llamada Viento Norte, liderada por el apuesto y musculoso Agente Clasificado. Entre todos deben evitar que el villano Dr. Octavio Salitre destruya el mundo tal y como lo conocemos.",
         "anio": "2014",
@@ -5327,7 +5344,7 @@
         "name": "Prometeo",
         "url": "http://144.217.70.79/VODS-M/1080P/Prometheus%202012.mkv",
         "icono": "https://image.tmdb.org/t/p/original/6a1c2DhgkajssrdukOEtRd3KWK3.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/sM42bpH73dmf3kJrE8xr4kztYqR.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/qDG5SlGkWNsjSJWiGTBMFI8DpzA.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/qVUeDjWb4EzgL3A5IX7v47KFvuZ.png",
         "type": "PELICULA",
         "descripcion": "Un equipo de exploradores descubre una pista a los orígenes de humanidad en la Tierra, conduciéndolos en un viaje a las esquinas más oscuras del universo. Allí, deben luchar una batalla aterradora para salvar el futuro de la raza humana.",
@@ -5700,7 +5717,7 @@
       {
         "name": "Rambo 4: Regreso al infierno",
         "url": "http://144.217.70.79/VODS-M/1080P/Rambo%204%202008.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/qp9Q0JeHQ6JShQPm6KA8euYhWLF.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/uCUfIzSnfJngxcHfbpPxzAo9p49.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/8cX1Xt91RSpxpwNamNDQog0OeMq.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/84PuVsCeKatDuljLryx7TTQWplp.png",
         "type": "PELICULA",
@@ -5717,7 +5734,7 @@
       {
         "name": "Rambo",
         "url": "http://144.217.70.79/VODS-M/1080P/Rambo%20First%20Blood%201982.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/sYHRcd9p3rV3t3w8MHGaA7wdIBl.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/oxHEl7nsCC5E2aBRIK8QLSb3XZO.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/hCxxOJojCUFyuahDx167glJgp7E.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/6TtEi8Jt0dqlEsFofnImnWug1tW.png",
         "type": "PELICULA",
@@ -6057,7 +6074,7 @@
       {
         "name": "Infierno rojo",
         "url": "http://144.217.70.79/VODS-M/1080P/Red%20Heat%201988.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/zryS52ge0fk7NMt1koH9YcMaooA.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/6KAYszU6AHBMeGR2qyTfOtw0NFF.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/zgiOOv5mkxbV0bTWAQ5c9y0UObx.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/s7XjwtToDlMQxy244vMB2dzoeYv.png",
         "type": "PELICULA",
@@ -6176,8 +6193,8 @@
       {
         "name": "Operación Red Sparrow",
         "url": "http://144.217.70.79/VODS-M/1080P/Red%20sparrow%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/jp7GjxsfHHjjd038QrB5WkNyaPR.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/7k2LcmWJJTSf0FcP1Jd8v9S8vfQ.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/cho8HedXkO1z8D4sqyFw3ko0hMh.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/sGzuQYSTwJvLBc2PnuSVLHhuFeh.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/lTvkXP6mtIZhITf3OP204AdVVCu.png",
         "type": "PELICULA",
         "descripcion": "Dominika, una antigua bailarina se convierte en agente secreto del servicio ruso, pero la dureza del entrenamiento le pasa factura. Su primera misión le involucra con un agente de la CIA junto al que cae en una espiral de atracción y engaño.",
@@ -6511,19 +6528,19 @@
     ]
   },
   {
-    "name": "Suspense",
+    "name": "Acción",
     "samples": [
       {
-        "name": "Ride - Viaje Mortal",
+        "name": "Ride",
         "url": "http://144.217.70.79/VODS-M/1080P/Ride%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/lM0QMQkezkirKuGE2yFJzWlMLxo.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/aYO96tiCdOC4Zg0RBGKtPvHWKAR.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/tW4vjWHfTQ9xq4MJI6Nw0oggxbZ.png",
+        "icono": "https://image.tmdb.org/t/p/original/hT776Sdu3m7DDvV6XMXeo3liglh.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
         "type": "PELICULA",
-        "descripcion": "Una noche en Los Ángeles se convierte en una guerra psicológica de supervivencia cuando un conductor de Uber, James y su pasajera, Jessica, recogen a Bruno, que es carismático pero manipulador.",
+        "descripcion": "",
         "anio": "2018",
-        "genero": "Suspense, Crimen",
-        "duracion": "79 min"
+        "genero": "Acción",
+        "duracion": "102 min"
       }
     ]
   },
@@ -7588,7 +7605,7 @@
         "name": "El juego del miedo 5",
         "url": "http://144.217.70.79/VODS-M/1080P/Saw%205%202008.mkv",
         "icono": "https://image.tmdb.org/t/p/original/fkb5iYclS18yvEBWkRLau3bKhnE.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/jIjVPKDow5ai8dbs4PgWmtqg9Ol.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/9rlenYH6E1kOWuQW3wl4XjjFKTJ.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/2aCrss1X3pVWLlKJHqRQ3zDSVfi.png",
         "type": "PELICULA",
         "descripcion": "Hoffman (Costas Mandylor) es la última persona viva para heredar el legado de Jigsaw (Tobin Bell). Pero cuando su secreto se ve amenazado, Hoffman debe iniciar la caza para eliminar todos los cabos sueltos. Nueva entrega de la saga dirigida por el diseñador de producción de las tres anteriores.",
@@ -7810,7 +7827,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Scream%204%202011.mkv",
         "icono": "https://image.tmdb.org/t/p/original/sr7WNBgjX1UH9yw4Qq4o6GLAyVf.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/c5EmNhLQsTTKAyUHULnKYQjlloz.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/gwDqhhvWk9NOpCWpLaspwTVtVe4.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/jJG84V3LLwZkFbmU1L2j4jFioCs.png",
         "type": "PELICULA",
         "descripcion": "Sidney Prescott ha logrado olvidar los asesinatos cometidos en Woodsboro. Diez años después, convertida en una escritora de éxito, vuelve a su pueblo natal con motivo de la gira de promoción de su nuevo libro. Pero su regreso irá acompañado de una nueva ola de crímenes perpetrados por un viejo conocido: Ghostface.",
         "anio": "2011",
@@ -7829,7 +7846,7 @@
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/44immBwzhDVyjn87b3x3l9mlhAD.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/1BNt7BwqBGPm5YvvRsTdZHoOC5D.png",
         "type": "PELICULA",
-        "descripcion": "A pesar de iniciar una nueva vida en Nueva York, el ya conocido, Ghostface, continúa acechando nuevos asesinatos. Así que Sam, Tara, Mindy y Chad están dispuestos a no rendirse.",
+        "descripcion": "A pesar de iniciar una nueva vida en Nueva York, Ghostface continúa acechando nuevos asesinatos. Así que Sam, Tara, Mindy y Chad están dispuestos a no rendirse.",
         "anio": "2023",
         "genero": "Terror, Crimen, Suspense",
         "duracion": "123 min"
@@ -7857,7 +7874,7 @@
     "name": "Terror",
     "samples": [
       {
-        "name": "Scream 5",
+        "name": "Scream (Grita)",
         "url": "http://144.217.70.79/VODS-M/1080P/Scream%202022.mkv",
         "icono": "https://image.tmdb.org/t/p/original/uWKJyIISWzP7KmB2vcgrX7xyhUh.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/ifUfE79O1raUwbaQRIB7XnFz5ZC.jpg",
@@ -8081,8 +8098,8 @@
         "name": "Selena",
         "url": "http://144.217.70.79/VODS-M/1080P/Selena%201997.mkv",
         "icono": "https://image.tmdb.org/t/p/original/yKNiK1gwRcy9IGvtHKFewSBaPci.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/kcBlY5FasH8ti150aYExULw53ui.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/wEz9646IRr77zDrxMcB4TuuOVLz.png",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/gHuYLoBIOXug2azA5NYsXcaxsEm.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/a5416KZOWPufflnaHj0vOMx6EVv.png",
         "type": "PELICULA",
         "descripcion": "Basada en hechos reales, narra la meteórica carrera de la joven cantante hispana Selena Quintanilla-Perez, todo un fenómeno de la música que surge en una localidad de Texas para convertirse en una estrella del universo latino. Descubierta casualmente por su propio padre a la temprana edad de 10 años, su vida será un continuo carrusel de problemas familiares, incluyendo su matrimonio en secreto con su guitarrista Chris Perez. A pesar de su corta y trágica carrera, su popularidad fue extraordinaria tanto en México como entre la población hispana de los Estados Unidos, que vivió su fulgurante ascenso y su trágica muerte, sucedida en 1995 cuando contaba con apenas 23 años de edad, a manos de su mayor admiradora: la presidenta de su club de fans y secretaria personal.",
         "anio": "1997",
@@ -8183,7 +8200,7 @@
         "name": "Serpico",
         "url": "http://144.217.70.79/VODS-M/1080P/Serpico%201973.mkv",
         "icono": "https://image.tmdb.org/t/p/original/aMkyqIjXjg8Q9hiuY9gpvZoHvFT.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/zvNMZl0l2qYq0x0ntq8sILiIpLw.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/xcTYnIZQNcHx9rjJqrpBuElgvBe.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/9owMfBYkVWB9gAnSlh4qY6W5dVo.png",
         "type": "PELICULA",
         "descripcion": "Años 70. Relato biográfico sobre Frank Serpico, un policía íntegro de principios incorruptibles que, a diferencia de sus colegas, nunca se dejó sobornar, y precisamente por ello siempre tuvo problemas con sus compañeros de profesión y se vio expuesto a situaciones muy peligrosas.",
@@ -8801,7 +8818,7 @@
         "descripcion": "Simbad, el aventurero más osado y famoso que cruzó los siete mares, tiene que afrontar el peligro más grande de su vida. Acusado de robar el Libro de la Paz, uno de los tesoros más valiosos del mundo, tendrá que encontrarlo para salvar a Proteus, su mejor amigo. Será Marina, la prometida de Proteus, quien convenza a Simbad de que tiene el deber de cumplir esa misión. Eris, la diosa del caos, trata de impedírselo arrojando contra él la furia de los elementos y una legión de criaturas monstruosas.",
         "anio": "2003",
         "genero": "Familia, Animación, Aventura, Comedia, Fantasía, Acción",
-        "duracion": "90 min"
+        "duracion": "86 min"
       }
     ]
   },
@@ -9118,7 +9135,7 @@
         "name": "La serpiente a la sombra del águila",
         "url": "http://144.217.70.79/VODS-M/1080P/Snake%20in%20the%20Eagles%20Shadow%201978.mkv",
         "icono": "https://image.tmdb.org/t/p/original/rHRIajKl7NPnoFVpbO1xaCJRnnh.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/jlV20sHlKJcO4zslg17z23kOdSL.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/7VjslHn3HOhH6N2rgywlH3Js1Dz.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/afG1LmFiibuGVqH5kohAXyY1q6l.png",
         "type": "PELICULA",
         "descripcion": "Un anciano profesor de artes marciales conserva la tradición de la lucha de la cobra, y consigue formar un discípulo que además, observando la lucha entre una cobra y un gato, incorporará el estilo garra de gato.",
@@ -10495,7 +10512,7 @@
         "name": "Calles de fuego",
         "url": "http://144.217.70.79/VODS-M/1080P/Streets%20of%20Fire%201984.mkv",
         "icono": "https://image.tmdb.org/t/p/original/r6s0i5GpGIcJAgIeOAlC0d4cvJE.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/5e8V714wUtpPgMD9xD8NjTEqlyu.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/7rE6SyTySkcpnHSuBMkOOTivOxg.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/WA6G6pXArzGkDK4bJ8YfR2NyIC.png",
         "type": "PELICULA",
         "descripcion": "Tom Cody, atractivo, soldado heroico y afortunado regresa a su antiguo vecindario para rescatar a su hermosa ex novia, la estrella de rock Ellen Aim, de las garras de una banda de malvados motociclistas que la han secuestrado. Junto con el productor de Ellen, Billy Fish, y los dos puños de su compañero bebedor de cerveza, McCoy, parte a un mundo de humo, neón, calles salpicadas de lluvia, coches contaminantes y enemigos mortales para traer a Ellen de regreso.",
@@ -11056,7 +11073,7 @@
         "name": "Búsqueda implacable 2",
         "url": "http://144.217.70.79/VODS-M/1080P/Taken%202%202012.mkv",
         "icono": "https://image.tmdb.org/t/p/original/ZmlI7702fExu9MROFu5vO8Vqt4.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/dvz4VvkSb3nA0hY6coyNsatXsZ4.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/5M92Rtz6r01HLrN0TMrU8jCbyVm.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/3dEdmXdgv2sGqEGP5VcZqGaxBmI.png",
         "type": "PELICULA",
         "descripcion": "Aunque ya está retirado, Bryan Mills se ve obligado a utilizar todos sus recursos y habilidades de agente de la CIA para salvar tanto la vida de su mujer y de su hija como la suya propia. El padre de uno de los secuestradores albaneses que lo tuvieron en jaque en el primer film jura vengarse y aprovecha las vacaciones de la familia Mills en Estambul para llevar a cabo su plan. Una vez más parece que subestiman al ex agente de la CIA.",
@@ -11090,7 +11107,7 @@
         "name": "Búsqueda implacable",
         "url": "http://144.217.70.79/VODS-M/1080P/Taken%202008.mkv",
         "icono": "https://image.tmdb.org/t/p/original/iv7pRijM07LkrkOQJ3MMfqs6VIM.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/auLFB4G02tW4SxBqTDeybV0lXVl.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3DlffV1tXQ0HmYiwUZ1RhTyJxBk.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/gtLc4GORCFiW6ocTTtaq1nsYbpS.png",
         "type": "PELICULA",
         "descripcion": "Bryan Mills (Liam Neeson) es un agente especial jubilado. Pero cuando su hija Kim (Maggie Grace) es secuestrada en París por una organización criminal albanokosovar, tendrá que volver a la acción para intentar salvarla. La banda se dedica a una red de trata de blancas, por lo que Mills sabe que sólo dispone de unas horas para conseguir rescatarla antes de que se pierda el rastro de su hija.",
@@ -11599,7 +11616,7 @@
       {
         "name": "Masacre en Texas: Herencia maldita",
         "url": "http://144.217.70.79/VODS-M/1080P/Texas%20Chainsaw%203D%202013.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/fAD6zxYjb2IKAEIj52iOYBkCCZ6.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/4lZXImW57lwzEYbZA9JgMM3Hh0A.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/w5T2Avx3FCyqhzHxzQPeIli91BJ.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/a5hkYFDxfzM8OhmssyaQZhCKz3B.png",
         "type": "PELICULA",
@@ -11839,7 +11856,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Addams%20Family%201991.mkv",
         "icono": "https://image.tmdb.org/t/p/original/sf0ABx2RewFdLi5QJEdRIfL8cBn.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/7OxGhxUYAdtuike29VMzEFxJx7y.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/w4GExspvGJkVCGwyLsImtKR338z.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/153LFkMQQaZTUrVQixJVe7QIZhs.png",
         "type": "PELICULA",
         "descripcion": "El delirante y gótico estilo de vida de la peculiar familia Addams se ve amenazado peligrosamente cuando el codicioso dúo que forman madre e hijo, con la ayuda de un abogado sin ningún escrúpulos, conspiran para hacerse con la fortuna familiar.",
         "anio": "1991",
@@ -11856,7 +11873,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Addams%20Family%202019.mkv",
         "icono": "https://image.tmdb.org/t/p/original/sf0ABx2RewFdLi5QJEdRIfL8cBn.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/7OxGhxUYAdtuike29VMzEFxJx7y.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/w4GExspvGJkVCGwyLsImtKR338z.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/153LFkMQQaZTUrVQixJVe7QIZhs.png",
         "type": "PELICULA",
         "descripcion": "El delirante y gótico estilo de vida de la peculiar familia Addams se ve amenazado peligrosamente cuando el codicioso dúo que forman madre e hijo, con la ayuda de un abogado sin ningún escrúpulos, conspiran para hacerse con la fortuna familiar.",
         "anio": "1991",
@@ -11963,7 +11980,7 @@
         "descripcion": "En 1836, algunos texanos que luchaban por independizarse de México fueron sitiados en El Álamo, una misión cerca de San Antonio de Béjar, por las tropas mexicanas (más de 7.000 soldados) al mando del general Santa Anna. Entre los sitiados, unas doscientas personas, se encontraba el legendario David Crockett (John Wayne).",
         "anio": "1960",
         "genero": "Bélica, Aventura, Historia, Western",
-        "duracion": "202 min"
+        "duracion": "162 min"
       }
     ]
   },
@@ -12058,7 +12075,7 @@
       {
         "name": "El Arte De La Guerra",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Art%20of%20War%202000.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/paYmKfHNOJk2FPub0dZnUq79GVB.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/wmfUP9i3f9T7wjGWywGpV4Zp8T9.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/dE6xTBdthy3d9GYIIbbndFr4AOD.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/qenvvoMlTIkqntbQB4kI4rfpofh.png",
         "type": "PELICULA",
@@ -12502,7 +12519,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Black%20Phone%202022.mkv",
         "icono": "https://image.tmdb.org/t/p/original/1D2R2wIgbTyXTPzmyJIKSbVN9wG.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/syKiIOqEoOi1Hb0Oh0n9cImcBab.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/5oAkSt6F44mKIhxaf3fJrMb6vhw.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/1mKqTRD3Cq42FhqGIJYUT2CmFmF.png",
         "type": "PELICULA",
         "descripcion": "El tímido pero inteligente Finney Blake, de 13 años, es secuestrado por un asesino sádico. En el sótano insonorizado, un teléfono desconectado en la pared empieza a sonar.",
         "anio": "2022",
@@ -12569,7 +12586,7 @@
         "name": "El proyecto de la bruja de Blair",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Blair%20Witch%20Project%201999.mkv",
         "icono": "https://image.tmdb.org/t/p/original/4VkdY6GlFchXcHgg3Bsl1A73jsH.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ghPJw3XfhELokIf6V5QL0VpsXtK.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/sTHhJnAmgQtu8YKAREgqV6WvqgZ.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/zR4i8xCkXImxmMK9OVGwngRufmr.png",
         "type": "PELICULA",
         "descripcion": "El 21 de octubre de 1994, Heather Donahue, Joshua Leonard y Michael Williams entraron en un bosque de Maryland para rodar un documental sobre una leyenda local, \"La bruja de Blair\". No se volvió a saber de ellos. Un año después, fue encontrada la cámara con la que rodaron: mostraba los terroríficos hechos que dieron lugar a su desaparición.",
@@ -12807,7 +12824,7 @@
         "name": "La supremacía Bourne",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Bourne%20Supremacy%202004.mkv",
         "icono": "https://image.tmdb.org/t/p/original/wKrCaaQe4nXnipmYuf3WVdDiP54.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/xTl1KkHSnMIYnYMukoAQUOewcrY.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/fE7RqvVHbGHjBC9NjIjlLh2t4zK.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/hfje093k8yb2itSeZulY7cQMosF.png",
         "type": "PELICULA",
         "descripcion": "Cuando Jason Bourne es incriminado en una operación de la CIA que salió mal, se ve obligado a reanudar su vida anterior como asesino entrenado para sobrevivir.",
@@ -13080,7 +13097,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Cable%20Guy%201996.mkv",
         "icono": "https://image.tmdb.org/t/p/original/cWrDQ9bSBrkI2gylZfksb6sMD2c.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/nj0rIFyjZ0GUOQYnGM8YyGR3CmS.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/6i2Zh6bCBgnnH1CX1OvPnJjSnVs.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/aLX59fWaU8PACIghMBYnkyXo8uh.png",
         "type": "PELICULA",
         "descripcion": "Steven Kovacs es un joven que acaba de romper con su novia y que pretende instalar en su casa un servicio de televisión por cable de forma gratuita. Pero Kovacs se encuentra con un instalador un tanto peculiar, que busca incansablemente un amigo con el que compartir su vida. Desde el momento en el que el \"Chico del Cable\" entra en casa del protagonista, intenta adentrarse en la vida de éste hasta arruinársela... y poco a poco se va convirtiendo en un ser peligroso, capaz de hacer cualquier cosa por mantener la incipiente amistad con su cliente.",
         "anio": "1996",
@@ -13725,7 +13742,7 @@
         "name": "El día después de mañana",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Day%20After%20Tomorrow%202004.mkv",
         "icono": "https://image.tmdb.org/t/p/original/rT70FZPn3DEFB5UdMHlkwaYQWNV.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/smqQ71MIn1DSdSiQzCzCOV6rgRq.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/fXJhA3pjLMDkHPgZ2GVhRDXA5M3.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/jDyak6s6v0EpjttgW55eQvPXeSO.png",
         "type": "PELICULA",
         "descripcion": "Las investigaciones del climatólogo Jack Hall indican que el calentamiento global podría desencadenar un repentino y catastrófico cambio climático de la Tierra. Hall advierte a los dirigentes políticos de la necesidad de adoptar inmediatamente medidas para evitarlo, pero sus advertencias llegan demasiado tarde: una serie de anómalos fenómenos climáticos empiezan a producirse en distintas partes del globo. El calentamiento global ha puesto el planeta al borde de una nueva era glacial. Mientras Jack advierte a la Casa Blanca del inminente cambio climático, su hijo Sam y sus amigos se encuentran atrapados en Nueva York, a donde han ido para participar en un concurso académico entre institutos.",
@@ -13826,7 +13843,7 @@
       {
         "name": "El Francotirador",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Deer%20Hunter%201978.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/qwS3AuvdXlpCqlYAuEwGInOe3pu.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/9wnhR923MtQxnJ1oUs3zu4e1Aea.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/ojG57hVx69vhk5DDGPIcfyRR55I.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/kZu2jSUtzUPcJNwKKq6Njluy1v.png",
         "type": "PELICULA",
@@ -14370,7 +14387,7 @@
       {
         "name": "Los indestructibles",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Expendables%202010.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/qiKXe4xbXnXdrhQXmXpZwG4Qlkv.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/y8ZqlmkZTAoDXCkhCXDlWBiLwBq.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/sJpbDELfC8VjlRBOOkMJxxWpUg7.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/liM31KX1YltzpcdPBLdCtlEdOan.png",
         "type": "PELICULA",
@@ -15356,7 +15373,7 @@
       {
         "name": "La mano que mece la cuna",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Hand%20that%20Rocks%20the%20Cradle%201992.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/gTCIHzm41BbtJw9lXYnmCSOql2c.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/rimW62jSFC5mF2DzIxSkiOPe5A3.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/41gxQ4hQiSuHFreKJybATwhKtp8.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/ba8AB3EMwEMFOWEJuyjQs1Ic93A.png",
         "type": "PELICULA",
@@ -15645,7 +15662,7 @@
       {
         "name": "El señor de los caballos",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Horse%20Whisperer%201998.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/1YKoikePFH63vdV9blLcyoZzfAd.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/tg5lGDEpae0U65jYi8VqeFkkOL5.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/ww9pokP6M6gp2Iu0o3sT5B7eN66.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/wEFYnnHIqAwBTTETazJBpbOYWpV.png",
         "type": "PELICULA",
@@ -15851,7 +15868,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Hurt%20Locker%202008.mkv",
         "icono": "https://image.tmdb.org/t/p/original/wMzapRL8iTqF6oDUY04a2tVU5S4.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/9UAhRDffrWkOwxqzqAF6ls1iEZ8.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/99MGPeoyEfXKdW2YzXmP7au9gry.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/ppkZzC3LdE0bC5mF8HY3u76huuO.png",
         "type": "PELICULA",
         "descripcion": "En Irak, una unidad de élite de artificieros norteamericanos actúa en una caótica ciudad donde cualquier persona puede ser un enemigo y cualquier objeto, una bomba. El jefe del grupo, el sargento Thompson, muere en el transcurso de una misión y es sustituido por el impredecible y temerario sargento William James. Cuando falta poco para que la brigada sea relevada, el imprudente comportamiento de James hará que dos de sus subordinados, se planteen seriamente el riesgo que corren.",
         "anio": "2008",
@@ -17311,7 +17328,7 @@
       {
         "name": "Golpe Bajo: El Juego Final",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Longest%20Yard%202005.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/jl6bUYM5HBTMyckxeJKA2x0UQjS.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/hUuCldGYaNhN6VL2DeoMPKACFFn.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/63V4wbVah1gnjckPJnSU0ZmOGAW.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/tvDSv5mdfv7Y92F6vg2AMRB33op.png",
         "type": "PELICULA",
@@ -18162,7 +18179,7 @@
         "name": "La misión",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Mission%201986.mkv",
         "icono": "https://image.tmdb.org/t/p/original/rubwmohm8t5TTtBZyYQ9BHOwDUQ.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/izgDdMvuRvTtA2azhKwPvfITZU1.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/xdxfsLnbLp4B7dZh9GVKZc78VFj.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/7a18taijBYbjY9Jm5JCkeWSpy1A.png",
         "type": "PELICULA",
         "descripcion": "Hispanoamérica, siglo XVIII. En plena jungla tropical junto a las cataratas de Iguazú un misionero jesuita, el padre Gabriel, sigue el ejemplo de un jesuita crucificado, sin más armas que su fe y un oboe. Al ser aceptado por los indios guaraníes, Gabriel crea la misión de San Carlos. Entre sus seguidores está Rodrigo Mendoza, ex-traficante de esclavos, mercenario y asesino, que buscando el perdón se hace jesuita y encuentra la redención entre sus antiguas víctimas. Después de luchar juntos durante años, se enfrentan a causa de la independencia de los nativos: Gabriel confía en el poder de la oración; Rodrigo, en la fuerza de la espada.",
@@ -19318,7 +19335,7 @@
         "name": "Angeles y Demonios",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Prophecy%201995.mkv",
         "icono": "https://image.tmdb.org/t/p/original/1Z56MonpplOTKur2KTz371RQrjr.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/yvD8uPr5VZNDacY6jbJpOYo0qPA.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/kZbLOAlCB3htkhyZzTkUv21i0gv.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/s4FLYNmq5urlqEyFv6zRujalzmT.png",
         "type": "PELICULA",
         "descripcion": "Cuando Thomas Dagget, un joven a punto de convertirse en sacerdote, se ve acosado por desconcertantes y horribles visiones, abandona la iglesia antes de ser ordenado. Años más tarde, trabajando como detective de homicidios, se le asigna un oscuro caso de asesinato en el que aparecen pistas de carácter religioso. La autopsia del cuerpo de la víctima revela su naturaleza no terrenal.",
@@ -19419,7 +19436,7 @@
       {
         "name": "12 Horas para sobrevivir: El Año de la Elección",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Purge%20Election%20Year%202016.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/h2dwdn1fDIgCQIaUOFNix87b7RH.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/2eVnqEQy4n98ujEdFkdddYEgpqW.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/a7V3ZXCDAk3P7GjpgfN0IInjh0r.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/4x0HAycNVXWiu4IAAVj0utz2zn4.png",
         "type": "PELICULA",
@@ -19676,7 +19693,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Rite%202011.mkv",
         "icono": "https://image.tmdb.org/t/p/original/so8yL8Em4X9sZBksDxbyA9Fgw7M.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/qJxSCLGqkSdlvDBIbPqCnCnvV70.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/pYcaMpvgYoMfgwI3xd85aEeKkmr.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/qKfjy3ysiZvSrPt9V03KANK3Nkj.png",
         "type": "PELICULA",
         "descripcion": "Michael Kovak (Colin O'Donoghue) es un decepcionado seminarista norteamericano que decide asistir a un curso de exorcismos en el Vaticano, lo que hará que su fe se tambalee y tenga que enfrentarse a terribles fuerzas demoniacas. En Roma conocerá al Padre Lucas (Hopkins), un sacerdote poco ortodoxo que le enseñará el lado oscuro de la Fe...",
         "anio": "2011",
@@ -20310,7 +20327,7 @@
         "descripcion": "Durante una fiesta de pijamas con sus mejores amigos, dos hermanos descubren que su madre, Margot (Malin Akerman), no es lo que parece. Ahora es un ama de casa normal y corriente, pero fue una ladrona de guante blanco que se acogió al programa de protección de testigos. Cuando ella y el padre de los niños (Ken Marino) desaparecen, obligados a dar un último golpe con el ex novio de Margot (Joe Manganiello), los hermanos deciden formar un grupo para rescatarla a lo largo de una noche repleta de acción.",
         "anio": "2020",
         "genero": "Familia, Acción",
-        "duracion": "103 min"
+        "duracion": "101 min"
       }
     ]
   },
@@ -20423,7 +20440,7 @@
         "name": "Bob Esponja: Un héroe fuera del agua",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20SpongeBob%20Movie%20Sponge%20Out%20of%20Water%202015.mkv",
         "icono": "https://image.tmdb.org/t/p/original/z5aphafm6OEcAq4jwOs5Ml9F384.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/6eGYsTJvTf2R38YO0NlnqdsaZu0.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/sqcqFzAj3IPSFprQSLHr5JOBU4m.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/q6jS0erdio6fCe32VHgnFhVe9EP.png",
         "type": "PELICULA",
         "descripcion": "Bob Esponja emprende un viaje para recuperar una receta que ha robado un pirata; para ello lo trae a nuestra dimensión en 3D.",
@@ -20779,7 +20796,7 @@
       {
         "name": "La masacre de Texas",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Texas%20Chain%20Saw%20Massacre%201974.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/fOqMcW2TYN0WReTDpds93rkAYpR.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/ay277gNPHFkXOfLiky4L5vMLBbJ.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/wvBx1Q1FcQE1BPLfBbgA3y9aaS1.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/vG5KDSrPFuUPtfMYiXtWgT2SIDK.png",
         "type": "PELICULA",
@@ -21546,7 +21563,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Way%20Back%202020.mkv",
         "icono": "https://image.tmdb.org/t/p/original/cSr8I4ObWVa38Y0WofCYW1TACoa.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/iTLGqoHkiSqUts9nPIdYLPtOz8C.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/og2TLmneqYWcinTyQJhz2p6yTaH.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/wPP7opkgZbyIWsXyd6aN4nycLBX.png",
         "type": "PELICULA",
         "descripcion": "Una antigua estrella del baloncesto caída en desgracia y sumido en el terrible mundo de las adicciones trata de volver al sendero correcto como entrenador de un equipo de instituto cuya mayor peculiaridad es estar compuesto por un variopinto grupo de estudiantes.",
         "anio": "2020",
@@ -21664,7 +21681,7 @@
         "name": "La pandilla salvaje",
         "url": "http://144.217.70.79/VODS-M/1080P/The%20Wild%20Bunch%201969.mkv",
         "icono": "https://image.tmdb.org/t/p/original/8RLSKxIbW10kFKJirxVYDwwmDAl.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/cSHie9qJvujqN4tYq6gx88WDf7o.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/8D0tbahTduvTkSo1Aqn3dVVg9mk.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/bnAUv1S7iagjnfDYcC1OKTGmEPO.png",
         "type": "PELICULA",
         "descripcion": "Un grupo de veteranos atracadores de bancos que viven al margen de la ley y que actúan en la frontera entre los Estados Unidos y México, se ven acorralados a la vez por unos cazadores de recompensas y por el ejército mexicano.",
@@ -22028,23 +22045,6 @@
         "anio": "2018",
         "genero": "Acción, Aventura, Drama",
         "duracion": "105 min"
-      }
-    ]
-  },
-  {
-    "name": "Fantasía",
-    "samples": [
-      {
-        "name": "La Torre Oscura",
-        "url": "http://144.217.70.79/VODS-M/1080P/The%20dark%20tower%202017.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/eVTlk5O6simP30vTd3sA1BNQZgV.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/pVVobDO8cezhVPvwD6EBUN0g3mt.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/gROodog4fHquugGzXgia7tBHaJq.png",
-        "type": "PELICULA",
-        "descripcion": "El último Gunslinger, Roland Deschain, ha estado encerrado en una eterna batalla con Walter O'Dim, también conocido como el Hombre de Negro, decidido a evitar que derribe a la Torre Oscura, que mantiene unido al universo. Con el destino de los mundos en juego, el bien y el mal colisionarán en la última batalla ya que solo Roland puede defender la Torre del Hombre de Negro.",
-        "anio": "2017",
-        "genero": "Fantasía, Acción, Ciencia ficción",
-        "duracion": "95 min"
       }
     ]
   },
@@ -23245,7 +23245,7 @@
         "name": "Titanic",
         "url": "http://144.217.70.79/VODS-M/1080P/Titanic%201997.mkv",
         "icono": "https://image.tmdb.org/t/p/original/c32fxD3D7a7PuxYxOvSLcssHj8G.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/tupgjqhWx5oieQrdyesO3aclUX9.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/xXCuto8YVp5RFqBJ7yKmVmLOWpF.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/rLzHguwcdni9Jam8rMtMlg5XG2D.png",
         "type": "PELICULA",
         "descripcion": "El romance florece entre Jack Dawson y Rose DeWitt Bukater en el esplendoroso transatlántico RMS Titanic. Su amor, como el barco, desafía las olas del destino. Pero cuando el Titanic choca con el iceberg, su historia se convierte en una épica de sacrificio y supervivencia, en la que el amor perdurará más allá de las profundidades del mar.",
@@ -23567,7 +23567,7 @@
       {
         "name": "De mendigo a millonario",
         "url": "http://144.217.70.79/VODS-M/1080P/Trading%20Places%201983.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/bwmqcucVleqUTKUKw7K3hlvUGKC.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/aLUl4IVnvBbI0PTh9KgyitZaL9I.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/2pViauhiZLhAUb1lsY6wRir69SF.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/pQ5xs9ORLHUV1aNUQW9tqQypPM3.png",
         "type": "PELICULA",
@@ -24111,7 +24111,7 @@
       {
         "name": "Temple de Acero",
         "url": "http://144.217.70.79/VODS-M/1080P/True%20Grit%202010.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/3O16Iq2v8FbTI6B2H91CsrKi4q1.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/r2Ao8LX37EzmEyQLbFDLIIHdJfR.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/5dwlH8Krm2bsuc2Pubw2cBb03g5.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/jJnVDNtZOAAAwKk6EwBK5lxBkmN.png",
         "type": "PELICULA",
@@ -24655,7 +24655,7 @@
       {
         "name": "Fuera de Control",
         "url": "http://144.217.70.79/VODS-M/1080P/Unhinged%202020.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/38XTUyRV6BMb1IOU34pwrBCwaXX.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/nmckMHFqtfgczofmqqs5wowxB0a.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/wXk9y36eTmNl6XwEuOfw6yNNClr.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/yj7hoOVFZlMsXwq2YvZ2HrVxJ1b.png",
         "type": "PELICULA",
@@ -24961,7 +24961,7 @@
       {
         "name": "Justo en la mira",
         "url": "http://144.217.70.79/VODS-M/1080P/Vantage%20Point%202008.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/mQJUd5tlR9qBSokuAqmaRuP8sv.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/gdk8wbuuZXOHyYaVO0jxZuX2nYQ.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/tmh9zbHQiugRMloFk8co3PBmtoo.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/lRHLbIYAuzH37oKwrIqGoUxKfyg.png",
         "type": "PELICULA",
@@ -25172,7 +25172,7 @@
         "descripcion": "Gemma (Imogen Poots) y Tom (Jesse Eisenberg) son una joven pareja que se ha planteado la compra de su primera casa. Para ello visitan una inmobiliaria donde los recibe un extraño agente de ventas, que les acompaña a Yonder, una nueva, misteriosa y peculiar urbanización donde todas las casas son idénticas, para mostrarles una vivienda unifamiliar para ellos. Volviendo de la visita, quedan atrapados en una laberíntica e interminable pesadilla surrealista.",
         "anio": "2019",
         "genero": "Ciencia ficción, Suspense, Misterio, Terror",
-        "duracion": "97 min"
+        "duracion": "99 min"
       }
     ]
   },
@@ -25352,7 +25352,7 @@
       {
         "name": "Warcraft: El primer encuentro de dos mundos",
         "url": "http://144.217.70.79/VODS-M/1080P/Warcraft%202016.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/r62koy47q5TpDfCVzH0opsk7ZXv.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/nXi7ahEIH8gdVGZ6emjWbg3exrF.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/riaO9lEYnzlmkILiLG3Y6HtJaM3.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/1GjUSjuCAMmKyZigqc62mhzAUPg.png",
         "type": "PELICULA",
@@ -26305,7 +26305,7 @@
         "name": "Willow en la tierra del encanto",
         "url": "http://144.217.70.79/VODS-M/1080P/Willow%201988.mkv",
         "icono": "https://image.tmdb.org/t/p/original/kymxskRkwRGGrlJLdneItwTIAHm.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3sF6AibdbTTkswfSRxXEGCt5w6s.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/hi1E20BEDuOAsEpJ4rLM09MLRfZ.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/nz2xEcWCEhmuuNLtMn9P8G49oEE.png",
         "type": "PELICULA",
         "descripcion": "Temerosa de que una profecía declare que una niña nacerá para provocar su caída, la malvada Reina Bavmorda encarcela a todas las mujeres embarazadas dentro de la formidable fortaleza de Nockmaar. Una niña, Elora Danan, nace en las mazmorras de Nockmaar y es identificada como la niña profetizada por una marca de nacimiento en su brazo. Sin embargo, antes de que la hechicera negra llegue para reclamar al niño, la madre de Elora convence a su renuente partera a escapar con el bebé. Willow, un agricultor tímido y aspirante a hechicero, tiene la misión de librar al infante real del mal.",
@@ -26549,7 +26549,7 @@
         "descripcion": "Kristy, Ben y Liz son tres jóvenes excursionistas que se adentran en el Parque Nacional de Wolf Creek en Australia. Los problemas empiezan cuando su coche no arranca. Mientras buscan ayuda, se cruzan con Mick Taylor, un agradable habitante de la zona que les promete reparar el vehículo. Los jóvenes acceden a acompañarle a su campamento, sin saber que su viaje se convertirá en una encrucijada terrorífica.",
         "anio": "2005",
         "genero": "Terror, Suspense",
-        "duracion": "104 min"
+        "duracion": "99 min"
       }
     ]
   },
@@ -26763,7 +26763,7 @@
       {
         "name": "Justicia Implacable",
         "url": "http://144.217.70.79/VODS-M/1080P/Wrath%20of%20Man%202021.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/emM894kjspdQsHyTAF7sjRNlbTr.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/4Q9wvngvgzzLcycZvMRo6djpcoX.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/70AV2Xx5FQYj20labp0EGdbjI6E.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/u0mUUFk9owtYlBwWxKpSKC2SQcX.png",
         "type": "PELICULA",
@@ -26781,7 +26781,7 @@
         "name": "Ralph, el demoledor",
         "url": "http://144.217.70.79/VODS-M/1080P/Wreck%20it%20ralph%202012.mkv",
         "icono": "https://image.tmdb.org/t/p/original/3kB1z3uwsYlKAUMO8OuxrFlktvx.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ziC23LkMYj8gToQQYQGWSGJCLNF.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3IFRjBDwtk0DlIsDfJ2zEzLjUBi.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/u8B4oOjN5KAieJpIOi9ECudIw6Y.png",
         "type": "PELICULA",
         "descripcion": "Durante décadas, Ralph ha vivido a la sombra de Repara-Félix Jr., el chico bueno de su videojuego. Cansado de ser el malo de la historia, Ralph decide tomar el asunto por sus propias y gigantes manos, y se lanza en un viaje a través de los distintos mundos y generaciones de videojuegos para demostrarle al mundo que él también puede ser un héroe.",
@@ -26866,7 +26866,7 @@
         "name": "Camino Hacia El Terror 5",
         "url": "http://144.217.70.79/VODS-M/1080P/Wrong%20Turn%205%20Bloodlines%202012.mkv",
         "icono": "https://image.tmdb.org/t/p/original/7bwCfuWm2zFUKsZ6itwMr2j7toF.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/9zLKHhK67SGINHtJngXpBxmtSGX.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3GTGFqZU2pXWg5fZPxDLNDdao28.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/fuZdzZa7FFL5pJB0TyaKpSIAXXe.png",
         "type": "PELICULA",
         "descripcion": "En esta nueva entrega de la popular franquicia de terror de Camino hacia el Terror, las autoridades locales no solamente tienen que sobrevivir a los festejos de Halloween en el Festival Mountain Man, sino también tienen que proteger a la comunicad del peligro y terror reales; ¡los Hermanos Hilliker!",
