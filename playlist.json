@@ -9574,23 +9574,6 @@
         "name": "",
         "samples": [
             {
-                "name": "Coco",
-                "url": "http://144.217.70.79/VODS-M/1080P/Coco%202017.mkv",
-                "icono": "",
-                "iconoHorizontal": "",
-                "iconpng": "",
-                "type": "PELICULA",
-                "descripcion": "",
-                "anio": "2017",
-                "genero": "",
-                "duracion": ""
-            }
-        ]
-    },
-    {
-        "name": "",
-        "samples": [
-            {
                 "name": "Cocoon",
                 "url": "http://144.217.70.79/VODS-M/1080P/Cocoon%201985.mkv",
                 "icono": "",
