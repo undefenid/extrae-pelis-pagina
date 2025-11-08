@@ -4083,6 +4083,23 @@
         "name": "",
         "samples": [
             {
+                "name": "Armor",
+                "url": "http://144.217.70.79/VODS-M/1080P/Armor%202024.mkv",
+                "icono": "",
+                "iconoHorizontal": "",
+                "iconpng": "",
+                "type": "PELICULA",
+                "descripcion": "",
+                "anio": "2024",
+                "genero": "",
+                "duracion": ""
+            }
+        ]
+    },
+    {
+        "name": "",
+        "samples": [
+            {
                 "name": "Army of Thieves",
                 "url": "http://144.217.70.79/VODS-M/1080P/Army%20of%20Thieves%202021.mkv",
                 "icono": "",
