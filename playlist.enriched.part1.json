@@ -192,7 +192,7 @@
       {
         "name": "8 Mile: Calle de ilusiones",
         "url": "http://144.217.70.79/VODS-M/1080P/8%20Mile%202002.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/bRSMRkf06aUeZcmr5Cyxuv5vk4T.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/l9x4o8qcKYxyC15GTzRUcGCxGCE.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/jNG7pl0DkN1nzxnbZj4MCGf2VEG.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/8bmhVQSQEg40xvXQb7DAVYtuiHP.png",
         "type": "PELICULA",
@@ -1162,7 +1162,7 @@
         "name": "Por un puñado de dólares",
         "url": "http://144.217.70.79/VODS-M/1080P/A%20Fistful%20of%20Dollars%201964.mkv",
         "icono": "https://image.tmdb.org/t/p/original/la1A6gknPnZd0bZgL6C7poN11v.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/rTJRWO9zHcB29JecTXHg0wUa4Xs.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/9gMkOYzk7P9QXwndhLRAC8cMZcJ.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/eY8oeIl7ibH4dRJVcRIeDQiGml2.png",
         "type": "PELICULA",
         "descripcion": "Un forastero llega al pequeño pueblo de San Miguel. Silvanito, el posadero de la ciudad, le cuenta al forastero sobre una disputa entre dos familias que compiten por obtener el control de un pueblo de hombres muertos y mujeres viudas.",
@@ -1873,7 +1873,7 @@
     "name": "Crimen",
     "samples": [
       {
-        "name": "Ace Ventura: Un Loco En África",
+        "name": "Ace Ventura: Cuando la naturaleza llama",
         "url": "http://144.217.70.79/VODS-M/1080P/Ace%20Ventura%20When%20Nature%20Calls%201995.mkv",
         "icono": "https://image.tmdb.org/t/p/original/3YdCgrlLLzXYRRNZRGf5URXXb1h.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/8JqXx6Tm6P4UEU8zAyC0A8R8bvz.jpg",
@@ -2742,7 +2742,7 @@
       {
         "name": "Un Chofer en Apuros",
         "url": "http://144.217.70.79/VODS-M/1080P/Amateur%20night%202016.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/ysCzcky4bY8a4jKZEdmii6ScVW8.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/iHFeb2AKMDKOBSJ7W3Q1nm2nadj.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/5ywx5ci0WWvIDE26vKY8m5JFbvL.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/8D6PGkUh389gpseKc1t47WJuI7Z.png",
         "type": "PELICULA",
@@ -3133,7 +3133,7 @@
       {
         "name": "American Pie 3: La Boda",
         "url": "http://144.217.70.79/VODS-M/1080P/American%20Wedding%202003.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/mUGNXTC3CelVZMFuV4DTEle2wO2.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/3DhL9QqG1wCS3clyK3Ewvl6Kab.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/qW703anWHFXulRTKWOckAg9i70K.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/o7axFSepnk1C0ExWV0jXia8C1oX.png",
         "type": "PELICULA",
@@ -4352,19 +4352,19 @@
     ]
   },
   {
-    "name": "Música",
+    "name": "Drama",
     "samples": [
       {
-        "name": "Nace Una Estrella",
+        "name": "Nace una estrella",
         "url": "http://144.217.70.79/VODS-M/1080P/A%20star%20is%20born%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/ozV6d6apn9wxtgMRbMesMXK2Ez7.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/dDYpjrwh1wNVQk0rEpc9P81wQt4.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/px1y5QKnt2VReQsOk4sfh71tINy.png",
+        "icono": "https://image.tmdb.org/t/p/original/rxi164d1swZUqbnvweiqhxeJINz.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/kPn4M9dw7raRVQt2UPOWY0j2k0o.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/8DtM1XA0BEpMNZIYv0a3G1qKWZp.png",
         "type": "PELICULA",
-        "descripcion": "Jackson Maine es una estrella de la música que se enamora de Ally, una artista que lucha por salir adelante. Justo cuando Ally está a punto de abandonar su sueño de convertirse en cantante, Jack decide ayudarla en su carrera hacia la fama. El camino será más duro de lo que imaginan",
-        "anio": "2018",
-        "genero": "Música, Drama, Romance",
-        "duracion": "135 min"
+        "descripcion": "El éxito como cantante de Esther Hoffman es paralelo al proceso de autodestrucción de su marido John Norman, una estrella del rock en decadencia y adicto a las drogas.",
+        "anio": "1976",
+        "genero": "Drama, Música, Romance",
+        "duracion": "139 min"
       }
     ]
   },
@@ -4561,7 +4561,7 @@
       {
         "name": "Ava",
         "url": "http://144.217.70.79/VODS-M/1080P/Ava%202020.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/qzA87Wf4jo1h8JMk9GilyIYvwsA.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/6Dh6ynAAuFbsKFDJviRE6cfgXc7.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/54yOImQgj8i85u9hxxnaIQBRUuo.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/k5XlRLzacnMtdmhdlTFEcee9Di0.png",
         "type": "PELICULA",
@@ -4612,7 +4612,7 @@
       {
         "name": "Avengers 2: Era de Ultrón",
         "url": "http://144.217.70.79/VODS-M/1080P/Avengers%20Age%20of%20Ultron%202015.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/3Lz6h5rlCFNNyCZRaRJ2ZjtBnAE.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/ggyEm4OkePLo8zEdDm5Pac2fOgz.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/kIBK5SKwgqIIuRKhhWrJn3XkbPq.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/99E5uzCzxnVsSu40yzjVfW8mBM.png",
         "type": "PELICULA",
@@ -4918,7 +4918,7 @@
       {
         "name": "Bad Boys II: vuelven más rebeldes",
         "url": "http://144.217.70.79/VODS-M/1080P/Bad%20Boys%202%202003.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/qyHDZB87UQF9cu6uuQzhhaKGvuo.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/r6qSm5p1lRaEbNOioNzhF5A4RaN.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/gxSVZCUlDd8upT1G2wdrUdz2hxG.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/smCn6kq03GqOnXF0OoCVego7I89.png",
         "type": "PELICULA",
@@ -5174,7 +5174,7 @@
         "name": "Bajos Instintos",
         "url": "http://144.217.70.79/VODS-M/1080P/Basic%20Instinct%201992.mkv",
         "icono": "https://image.tmdb.org/t/p/original/7iUhPh6B5C4T1osYDzoUchjb3i4.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/lBZlIW0xg1AP66IkvCL0X4IuXfY.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/7FRraud59N3s10bbf9bfYjvwx3v.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/t5ks97vJmLz4qCjlcm8R31DcgbY.png",
         "type": "PELICULA",
         "descripcion": "La clásica película erótica Bajos Instintos nos trae a Michael Douglas encarnando a un policia que debe buscar a una asesina de misteriosos crímenes sexuales mientras se enreda con una seductora escritora que lo ubica como protagonista de su próximo best seller. Ella es sospechosa de asesinato y él posible víctima, pero su lujuriosa relación le impidirá alejarse de ella...",
@@ -6245,8 +6245,8 @@
         "name": "Residencia macabra",
         "url": "http://144.217.70.79/VODS-M/1080P/Black%20Christmas%201974.mkv",
         "icono": "https://image.tmdb.org/t/p/original/qqO98sdPgptFgCua3Z4uZDuPcmP.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/s46nIyQQtZZPI8kw7A71Iuauk57.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/6dV4fi5lvRNJ8MmVTVbX0Pud67n.png",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/7nxNnR9yftqVUoFvBdfr2akgu2A.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/21cWoF4DgS9E7jcO5h2BQEnVYLo.png",
         "type": "PELICULA",
         "descripcion": "Durante el descanso de Navidad, las chicas de una fraternidad se preparan para retornar con sus familias, pero antes deciden hacer una fiesta. Durante la misma, las jóvenes reciben llamadas extrañas de un acosador, quien hace sonidos escalofriantes y se oyen diferentes voces, así como frases obcenas. Posteriormente, una de las chicas desaparece...",
         "anio": "1974",
@@ -6448,8 +6448,8 @@
       {
         "name": "Black Widow",
         "url": "http://144.217.70.79/VODS-M/1080P/Black%20Widow%202021.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/iKntUTTLxUgizTe3jFcGLuHc84c.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/keIxh0wPr2Ymj0Btjh4gW7JJ89e.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/uR3ex7LZrX3lbIMNb87WBXzCWM.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/dq18nCTTLpy9PmtzZI6Y2yAgdw5.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/zvA336zpabTaFKfgdQc3rmWx3KD.png",
         "type": "PELICULA",
         "descripcion": "Natasha Romanoff, también conocida como Black Widow, se enfrenta a lo más oscuro de sus cuentas pendientes cuando surge una peligrosa conspiración que tiene lazos con su pasado. Perseguida por una fuerza que no se detendrá ante nada para derribarla, debe lidiar con su historia como espía y con las relaciones rotas que dejó a su paso mucho antes de convertirse en parte de los Vengadores.",
@@ -6567,7 +6567,7 @@
       {
         "name": "Blade: Cazador de Vampiros",
         "url": "http://144.217.70.79/VODS-M/1080P/Blade%201998.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/dCsTsFX4PT9wewpKYaddwPHYI3A.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/IZt3ouxQIVRfig4N2FKTa9OIWF.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/7NKfxJrQn053UJeLftlx4m4NTzo.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/tAo7IYPj4jW36z02JtuFP5BUdT7.png",
         "type": "PELICULA",
@@ -7027,7 +7027,7 @@
         "name": "Triste San Valentín",
         "url": "http://144.217.70.79/VODS-M/1080P/Blue%20Valentine%202010.mkv",
         "icono": "https://image.tmdb.org/t/p/original/ghI2A3qVbNEv2uKdonLQ9MPYQDV.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/sZRErzShw9N77TEcxX3DBpDPmCc.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/fAqpfILTPsaKpAzoAvkXf5glgSo.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/iJXoxhOx9HATWRDbEMyLISuulmS.png",
         "type": "PELICULA",
         "descripcion": "Dean y Cindy llevan juntos seis años, en los que ha florecido una apasionada historia de amor, han tenido una hija juntos y han decidido casarse. Ahora su amor empieza a desmoronarse: Cindy ha perdido interés por la relación, y en un intento por juntar las piezas y reconstruir lo que habían construido juntos, Dean propone ir a pasar la noche a un hotel temático, donde eligen la “habitación del futuro”. Desde este futuro, que Dean y Cindy difícilmente podían haber intuido años atrás, iremos conociendo la historia de esta pareja. Una historia que va desvelando el misterio de por qué incluso las relaciones más esperanzadoras e intensas pueden irse al traste, en un viaje emocional que hace que dos personas ya nunca vuelvan a ser las mismas.",
@@ -8080,7 +8080,7 @@
       {
         "name": "La Cabaña Sangrienta",
         "url": "http://144.217.70.79/VODS-M/1080P/Cabin%20Fever%202002.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/iLdhs92kvQUoEppSHtTjidsir78.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/yLYKI1F8Lltt4nXsJsfmR30BMic.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/kGG4eCEaWvq20r4OofW4oUskhkY.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/qagjWmoEJmWvCdMaHDLaP0YFRBx.png",
         "type": "PELICULA",
@@ -8624,7 +8624,7 @@
       {
         "name": "Gatúbela",
         "url": "http://144.217.70.79/VODS-M/1080P/Catwoman%202004.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/l40ot7UBtLOmse1qn4NI97w3ve3.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/yIbCiQplHkP5aR8zAPcIkkj56ri.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/wbwHIbOAAYHqhsaFFsFQV62Wr6.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/2F9hCogV3rDI0374qVz5LAfBHYg.png",
         "type": "PELICULA",
@@ -9186,7 +9186,7 @@
         "name": "La Cenicienta",
         "url": "http://144.217.70.79/VODS-M/1080P/Cinderella%202015.mkv",
         "icono": "https://image.tmdb.org/t/p/original/9QLgQpooeU4UDIv5fDCJgVDl2tw.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/uKp9bl7yfwOROeGD7BZPPmiKTSm.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/q7vmCCmyiHnuKGMzHZlr0fD44b9.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/r9O6EER8BCpKcPb2aVtLEQJxkGs.png",
         "type": "PELICULA",
         "descripcion": "A pesar del maltrato de su madrastra, Lady Tremaine, y sus hermanastras, Anastasia y Drisella, Ella se aferra a la bondad y la esperanza. Su vida da un giro inesperado cuando conoce al Príncipe Kit, sin saber su verdadera identidad. Con la ayuda de su Hada Madrina, Ella tendrá la oportunidad de cambiar su destino y descubrir su verdadero valor.",
@@ -13997,7 +13997,7 @@
         "name": "Elf, el duende",
         "url": "http://144.217.70.79/VODS-M/1080P/Elf%202003.mkv",
         "icono": "https://image.tmdb.org/t/p/original/nIFkyvrwXk4LIEGaImb0h8HumpC.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/lKkKaGnKdahSGPMOngMIGM1fNJN.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/70IkmVGiWKwZj0BmQahLlwSLJja.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/zaaNsgX7Ov2hcl8cCsLh580gqSS.png",
         "type": "PELICULA",
         "descripcion": "Cuando Buddy joven cae al saco de regalo de Santa durante la Nochebuena, ha transportado atrás al Polo Norte y ha levantado como un elfo que hace el juguete por los ayudantes de Santa. Pero ya que se convierte en la adultez, no puede sacudir el fastidio sintiendo que no pertenece. Buddy jura de visitar Manhattan y encontrar a su verdadero papá, un editor del adicto al trabajo.",
@@ -14048,7 +14048,7 @@
         "name": "Elvis",
         "url": "http://144.217.70.79/VODS-M/1080P/Elvis%202022.mkv",
         "icono": "https://image.tmdb.org/t/p/original/z4miRBGEqhkIkUr0ausHLfUytgq.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/rLo9T9jEg67UZPq3midjLnTUYYi.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/xyS0NgcQ2pbGWcwvSSu3xKEBhoO.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/9M9tEwZPDTxSNM3ptldnKNYatEI.png",
         "type": "PELICULA",
         "descripcion": "La película explora la vida y la música de Elvis Presley a través del prisma de su relación con el coronel Tom Parker, su enigmático manager. La historia profundiza en la compleja dinámica que existía entre Presley y Parker que abarca más de 20 años, desde el ascenso de Presley a la fama hasta su estrellato sin precedentes, en el contexto de la revolución cultural y la pérdida de la inocencia en Estados Unidos. Y en el centro de ese periplo está Priscilla Presley (Olivia DeJonge), una de las personas más importantes e influyentes en la vida de Elvis.",
@@ -14422,7 +14422,7 @@
         "name": "Escape de Nueva York",
         "url": "http://144.217.70.79/VODS-M/1080P/Escape%20from%20New%20York%201981.mkv",
         "icono": "https://image.tmdb.org/t/p/original/h4zYejVGgt8tBoZeW2xu9FoiYx7.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/6vNuos23LwWjY1FJuojwPAgo8Ss.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/aJsO6ek1ax2qDU8qJzB0HKBMHyA.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/3NCdALMszFi0PpnXCzzLgTuWecH.png",
         "type": "PELICULA",
         "descripcion": "Año 1997. El avión del presidente de los Estados Unidos es secuestrado por un grupo radical, pero consigue sobrevivir y se encuentra solo en las calles de Nueva York, donde Manhattan se ha convertido en una enorme prisión de alta seguridad. Ante la imposibilidad de lanzar una acción convencional, por miedo a que maten al presidente, se decide enviar a un agente secreto para rescatarlo. El elegido es \"Serpiente\" Plissken (Kurt Russell), un conocido convicto al que todos daban por muerto.",
@@ -15084,7 +15084,7 @@
       {
         "name": "Los 4 Fantásticos",
         "url": "http://144.217.70.79/VODS-M/1080P/Fantastic%20Four%202015.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/349fSE2Zd4fztRKK5BQ08A9rIMI.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/auXAR5jfSNOWWtuEYFWcNadfzWX.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/or5kDR8Ve3TtuPSdEf1X5NdQHyz.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/forN0fjHXjXWvzwnM1Y8pp1hnxr.png",
         "type": "PELICULA",
@@ -18859,7 +18859,7 @@
         "name": "Niña mala",
         "url": "http://144.217.70.79/VODS-M/1080P/Hard%20Candy%202005.mkv",
         "icono": "https://image.tmdb.org/t/p/original/AucSpuuHj95IoOSxVNBIPSIXrwi.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/4oKqen5wtX9uvVWNcVVHqtFsPHp.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/9uYq1A9mx4wvQ8J6OF8BXUntciQ.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/wv0Bba9BBCWAuHCqsB0MRJbV0xE.png",
         "type": "PELICULA",
         "descripcion": "Un fotógrafo de 32 años queda de verse con una chica adolescente a la que ha conocido a través de Internet. Después de tomar un café, la lleva a su casa con el propósito de hacerle unas fotos. Sin embargo, la joven no lo ha elegido por casualidad...",
@@ -19080,7 +19080,7 @@
         "name": "Harry Potter y el prisionero de Azkaban",
         "url": "http://144.217.70.79/VODS-M/1080P/Harry%20Potter%20and%20the%20Prisoner%20of%20Azkaban%202004.mkv",
         "icono": "https://image.tmdb.org/t/p/original/xBph7rrwtxUuDxyZVDQtbP2H0sM.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/fVgBU3KJAWHS55FPdbsZQ3YQG2Z.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/vbk5CfaAHOjQPSAcYm6AoRRz2Af.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/y08e9oToQuGU818IjBrAdpB0AVL.png",
         "type": "PELICULA",
         "descripcion": "Durante sus días en la escuela Hogwarts, nuevos peligros se le presentan a Harry y sus amigos. La llegada de los Dementores, seres que absorben el alma, un peligroso aliado acecha dentro de los muros del castillo y el temible mago Sirius Black escapa Azkaban.",
@@ -20475,7 +20475,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/How%20it%20ends%202018.mkv",
         "icono": "https://image.tmdb.org/t/p/original/k2qO672N3FgpVT7a9bSjBQJikEg.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/27RtdnNXPVC5SKDLVjmpijFgyx3.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/5MI5geRNI3lFvpDBWH6SVFbe3hM.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/1T8OIIw54AiSccUdbpNsKXJE4qg.png",
         "type": "PELICULA",
         "descripcion": "Un padre desesperado intenta regresar a casa con su esposa embarazada después de que un misterioso evento apocalíptico lo convierta todo en caos.",
         "anio": "2018",
@@ -20883,7 +20883,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/I%20Think%20Were%20Alone%20Now%202018.mkv",
         "icono": "https://image.tmdb.org/t/p/original/bBnZZEnKalzu2ns1y31kkSUOThP.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/ipaCW3O6vFcZKfh1FLPeV4vArxI.jpg",
-        "iconpng": "",
+        "iconpng": "https://image.tmdb.org/t/p/original/r5L8NoJ94SLINpuImudExW7ssIn.png",
         "type": "PELICULA",
         "descripcion": "El apocalipsis se muestra como una bendición oculta para un afortunado recluso, hasta que un segundo superviviente llega con la amenaza de hacerle compañía.",
         "anio": "2018",
@@ -21290,7 +21290,7 @@
         "name": "El Origen",
         "url": "http://144.217.70.79/VODS-M/1080P/Inception%202010.mkv",
         "icono": "https://image.tmdb.org/t/p/original/xgPGDEKkBrXhPaNmwIlf8e2RCMk.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ii8QGacT3MXESqBckQlyrATY0lT.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/8uAzMJVoGi0lGICfx8Kuw2qxkyK.png",
         "type": "PELICULA",
         "descripcion": "Dom Cobb es un ladrón de secretos que se sumerge en los sueños de otros para extraer información. Para redimirse, debe implantar una idea en lugar de extraerla. En un viaje de sueños dentro de sueños, lucha por la redención mientras se enfrenta a sus propios demonios.",
@@ -22207,7 +22207,7 @@
       {
         "name": "Jim y el durazno gigante",
         "url": "http://144.217.70.79/VODS-M/1080P/James%20and%20the%20Giant%20Peach%201996.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/mArShSmLgt8YQQEyX2V5qLVSoGR.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/yVQdCwSgoT2TlHeGugU6xZqZ5IW.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/6kTLm7zfwKAgAcGnaVU0uT4QYug.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/8aHUItdW7X3xMgOifCWCSINMEyk.png",
         "type": "PELICULA",
@@ -22445,7 +22445,7 @@
       {
         "name": "Jeepers Creepers 3: El Regreso del Demonio",
         "url": "http://144.217.70.79/VODS-M/1080P/Jeepers%20Creepers%203%202017.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/pK7ge28ubs45av9aGEbVWW7ZbA8.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/zOGuuXPakkQCxkgriylW4aeoFeM.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/l49X7KxytkRCdXrpAu92QqxVrN5.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/wIptl4z3RY2VsZUnbqiGNGldRO8.png",
         "type": "PELICULA",
@@ -22683,7 +22683,7 @@
       {
         "name": "John Q: Situación extrema",
         "url": "http://144.217.70.79/VODS-M/1080P/John%20Q.%202002.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/faGkU8DuIjmNmTs9ecumzZ3rrtJ.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/cF8cNAfyAcA8JxZy5fNTr1P5obl.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/sBB39VMtByFltGGGW2c5N6LOAvj.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/7KoXZDxJNK0Kbo8qINJRxik2rVv.png",
         "type": "PELICULA",
@@ -22887,7 +22887,7 @@
       {
         "name": "Joy: El Nombre del Éxito",
         "url": "http://144.217.70.79/VODS-M/1080P/Joy%202015.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/vaMYf81ROzslWg22l5bsbeLDtz6.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/qNZvx4RyC1rA9KWQZ0muDTxLUTg.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/gwlx0r6NyWUuaI6MNajpYHPogZ1.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/tPJHgsSvsftx6HSDUWU8h7ncQQy.png",
         "type": "PELICULA",
@@ -23080,7 +23080,7 @@
         "type": "PELICULA",
         "descripcion": "Film ambientado a principios del siglo XX. Frank (Interpretado por Dwayne Johnson) es el carismático capitán de una peculiar embarcación que recorre la selva amazónica. Allí, a pesar de los peligros que el río Amazonas les tiene preparados, Frank llevará en su barco a la científica Lily Houghton (Interpretada por Emily Blunt) y a su hermano McGregor Houghton (Interpretado por Jack Whitehall).",
         "anio": "2021",
-        "genero": "Fantasía, Aventura",
+        "genero": "Fantasía, Aventura, Familia, Acción, Comedia",
         "duracion": "127 min"
       }
     ]
@@ -23256,19 +23256,19 @@
     ]
   },
   {
-    "name": "Animación",
+    "name": "Acción",
     "samples": [
       {
-        "name": "La Liga de la Justicia: La paradoja del tiempo",
+        "name": "Liga de la Justicia",
         "url": "http://144.217.70.79/VODS-M/1080P/Justice%20league%202017.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/jOIH3wCtz3y4DonPDoHqSz0VjDj.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/35RYg50KXsenD4TrpZzzBm2X4cK.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/b7TvyTPuI96YqJmXcuDKv0NMijj.png",
+        "icono": "https://image.tmdb.org/t/p/original/wUWqnavD8iGZ5F4xXhWlrtEzKjV.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/2nyaeISu2xIxIgZYNpX4UayY8PN.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/3TwjktxstPJvKiD9L5x5vxBNYbm.png",
         "type": "PELICULA",
-        "descripcion": "Barry Allen despierta en una realidad alternativa, donde descubre que ningun héroe de la Liga de la Justicia existe, a excepción de Batman, Aquaman y Wonder Woman; estos dos últimos tienen una enorme guerra, incluso los Atlantes de Aquaman inundaron Europa y las Amazonas conquistaron Inglaterra.",
-        "anio": "2013",
-        "genero": "Animación, Ciencia ficción, Acción, Aventura, Fantasía",
-        "duracion": "75 min"
+        "descripcion": "Motivado por la fe que había recuperado en la humanidad e inspirado por la acción altruista de Superman, Bruce Wayne recluta la ayuda de su nueva aliada, Diana Prince, para enfrentarse a un enemigo aún mayor. Juntos, Batman y Wonder Woman se mueven rápidamente para intentar encontrar y reclutar un equipo de metahumanos que combata esta nueva amenaza. El problema es que a pesar de la formación de esta liga de héroes sin precedentes –Batman, Wonder Woman, Aquaman, Cyborg y Flash– puede que sea demasiado tarde para salvar el planeta de una amenaza de proporciones catastróficas",
+        "anio": "2017",
+        "genero": "Acción, Aventura, Ciencia ficción",
+        "duracion": "121 min"
       }
     ]
   },
@@ -24049,7 +24049,7 @@
         "type": "PELICULA",
         "descripcion": "La romántica historia de una perrita Cocker Spaniel de la alta sociedad y un callejero Mutt del centro de la ciudad.",
         "anio": "1955",
-        "genero": "Familia, Animación, Romance",
+        "genero": "Familia, Animación, Romance, Aventura, Comedia",
         "duracion": "77 min"
       }
     ]
@@ -24248,7 +24248,7 @@
         "name": "Lara Croft: Tomb Raider - La cuna de la vida",
         "url": "http://144.217.70.79/VODS-M/1080P/Lara%20Croft%20Tomb%20Raider%20The%20Cradle%20of%20Life%202003.mkv",
         "icono": "https://image.tmdb.org/t/p/original/lMZRhXuZyNEpohTui1VpSsmsq63.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/382oiHbRd9aqSUX3QjItHKXHKT9.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/lyCPWvJJSLgUo62USdnvqOVJfGi.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/mqq4htA3wj8lSYXPZIp4Q5PLeT8.png",
         "type": "PELICULA",
         "descripcion": "Enfrentándose a nuevos y mayores peligros y desafíos, Lara Croft muestra sus poderes físicos en otra trepidante aventura. La intrépida heroína viajará a un templo sumergido bajo el agua en busca de la legendaria \"Caja de Pandora\", pero antes de que llegue, un banda de criminales chinos, liderados por Chen Lo, consigue apoderarse del preciado objeto. Lara tendrá que detenerlos antes de que lo usen con fines maléficos.",
@@ -27053,7 +27053,7 @@
         "name": "Minority report: Sentencia previa",
         "url": "http://144.217.70.79/VODS-M/1080P/Minority%20Report%202002.mkv",
         "icono": "https://image.tmdb.org/t/p/original/pnzJEfXpRc1bknR5ASFG0MZcTvo.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/r1gLQFbpkWWLrOEPmpqzzMIUxxj.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/PrMb3oeEluauy0q9ZO5xL33A6C.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/wR3kpYB0ycyKu0g30Fb8zqLBMgM.png",
         "type": "PELICULA",
         "descripcion": "Washington DC, año 2054. La policía utiliza tecnología psíquica para arrestar y enjuiciar a los asesinos antes de que cometan un crimen. El futuro se puede predecir y los culpables son detenidos por la unidad de élite Precrime antes de que puedan delinquir. Las pruebas se basan en los \"precogs\", tres seres psíquicos cuyas visiones sobre los asesinatos nunca han fallado.",
@@ -27103,7 +27103,7 @@
       {
         "name": "Milagro en la Calle 34",
         "url": "http://144.217.70.79/VODS-M/1080P/Miracle%20on%2034th%20Street%201994.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/heYt5iHBemRHzeNCjGBy5u1YMlr.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/1mR1LcDKJpSeSdhxO8X26yPsJHH.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/oU0lGpUukjNOgZeuIqueNM3QiBE.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/y2ZlARB5McE8JWpzaIa9rOZIPyB.png",
         "type": "PELICULA",
@@ -27178,7 +27178,7 @@
         "descripcion": "Cuando un asesino amenaza el concurso de Miss Estados Unidos, el FBI decide enviar a una agente infiltrada como participante. La mejor candidata que encuentran para la misión es Gracie Hart, una agente de modales toscos y poco femeninos. Ante su total falta de glamour, el FBI decide buscarle un representante que le enseñe todos los trucos del mundo de la pasarela",
         "anio": "2000",
         "genero": "Comedia, Crimen, Acción",
-        "duracion": "111 min"
+        "duracion": "110 min"
       }
     ]
   },
@@ -27359,7 +27359,7 @@
         "name": "Misión a Marte",
         "url": "http://144.217.70.79/VODS-M/1080P/Mission%20to%20Mars%202000.mkv",
         "icono": "https://image.tmdb.org/t/p/original/fQM0eyV5b7jQefpSLvQS6b0e1yc.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/sEOUoGpJWIk1T58nU9qcXR398jY.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3No5nC3lwppGHxjcEbJGyFtTJvR.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/8S53cAQyPbCmYGis5N5TKnHArpH.png",
         "type": "PELICULA",
         "descripcion": "En el año 2020 el comandante Luke Graham es seleccionado para dirigir la primera misión tripulada de la NASA a Marte. Una vez en el planeta rojo, descubre una antigua estructura con forma de domo que parece ser una especie de baliza. El domo mata a la tripulación y deja herido a Luc. El coronel Jim McConnell, recientemente enviudado, encabezará la segunda misión de rescate.",
