@@ -1700,7 +1700,7 @@
     ]
   },
   {
-    "name": "Drama",
+    "name": "Historia",
     "samples": [
       {
         "name": "Un buen día en el vecindario",
@@ -1711,7 +1711,7 @@
         "type": "PELICULA",
         "descripcion": "Basada en hechos reales,  sigue la historia del reconocido periodista Tom Junod y su amistad con el icono de la cultura pop americana Fred Rogers. Todo empezó cuando un escéptico Junod aceptó escribir un artículo sobre Rogers. A raíz de esto comienzan a conocerse de cerca y cambiará la idea preconcebida que tenía sobre él.  En esta historia la amabilidad supera al cinismo, y está marcada por la empatía, y la decencia del vecino más querido de Estados Unidos.",
         "anio": "2019",
-        "genero": "Drama, Historia, Familia",
+        "genero": "Historia, Familia, Drama",
         "duracion": "109 min"
       }
     ]
@@ -1893,7 +1893,7 @@
         "name": "A través del universo",
         "url": "http://144.217.70.79/VODS-M/1080P/Across%20the%20Universe%202007.mkv",
         "icono": "https://image.tmdb.org/t/p/original/88EVxZwDUva6AaDXXSHUGs6z62i.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/uov0QRXGEaIsVGis2ttJ1ax32Kc.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/sXI5fukqu1Y5sqUk6RaUoW9LJYT.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/oICv5PK0SbyjkfKMqmIRHlkHYcg.png",
         "type": "PELICULA",
         "descripcion": "Cuando el joven trabajador portuario Jude deja Liverpool para encontrar a su padre separado en Estados Unidos, es arrastrado por las olas de cambio que están dando nueva forma a la nación. Jude se enamora de Lucy, una niña estadounidense rica pero protegida que se une al creciente movimiento contra la guerra en Greenwich Village de Nueva York. A medida que aumenta el recuento de cadáveres en Vietnam, las tensiones políticas en el hogar se descontrolan y los amantes cruzados se encuentran en un mundo psicodélico enloquecido.",
@@ -2760,7 +2760,7 @@
         "name": "Ambulance: Plan de huida",
         "url": "http://144.217.70.79/VODS-M/1080P/Ambulance%202022.mkv",
         "icono": "https://image.tmdb.org/t/p/original/y7Lnz3ayJyW9IWmbA0M19vpBbu4.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/vwp5ycCyynwDUb2b79yww1bSXAo.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/peJmavN1H3Js9SiqQbPNs8Hgwgr.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/cBJbuKICqF3fibaKeW1QNcD3Ndh.png",
         "type": "PELICULA",
         "descripcion": "El veterano Will Sharp, en un acto desesperado por conseguir dinero para cubrir las deudas médicas de su esposa, recurre a la única persona que sabe que no debería, su hermano adoptivo Danny. Danny le ofrece participar en un robo a un banco, el más grande en la historia de la ciudad. Will no puede decir que no. Cuando su intento de escape sale mal, los hermanos secuestran una ambulancia con un policía herido y una paramédica. Ahora deberán huir de un inmenso dispositivo de fuerzas de seguridad desplegado por toda la ciudad, mantener a sus rehenes con vida y de alguna forma tratar de no matarse entre ellos.",
@@ -3097,7 +3097,7 @@
     "name": "Comedia",
     "samples": [
       {
-        "name": "American Pie 4: El Reencuentro",
+        "name": "American Pie 8: El Reencuentro",
         "url": "http://144.217.70.79/VODS-M/1080P/American%20Reunion%202012.mkv",
         "icono": "https://image.tmdb.org/t/p/original/prurn3HioMykwlFMZdfvJ88iPlM.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/6YOTQGsF0e9IL1DDwM9zB2NDm4I.jpg",
@@ -3305,12 +3305,12 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Anaconda%201997.mkv",
         "icono": "https://image.tmdb.org/t/p/original/uj0ZYr2ZvAFT0uPuBdaLb9yYZQv.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/r0gCLDIPi0JWZ5sCzqKpWNGUNNh.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/7Hs8uBq0rhaQ0bRuTrdSzaqJsVW.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/9Sgiiinrs26mPnjqgAvOo3UJ87G.png",
         "type": "PELICULA",
         "descripcion": "Un equipo de documentalistas se traslada a la selva amazónica para localizar a la tribu indígena de los Shirishama. Al equipo se une como guía un misterioso ex sacerdote que se dedica a la caza y asegura saber dónde se encuentran los Shirishama. Pero, en realidad, lo que hace es guiarlos a la caza de un reptil único en el mundo: una inmensa serpiente anaconda de doce metros de largo.",
         "anio": "1997",
         "genero": "Aventura, Terror, Suspense",
-        "duracion": "89 min"
+        "duracion": "90 min"
       }
     ]
   },
@@ -4952,7 +4952,7 @@
       {
         "name": "Bad Boys para Siempre",
         "url": "http://144.217.70.79/VODS-M/1080P/Bad%20Boys%20For%20Life%202020.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/zXYARspjKpwN9vAOp2F9MF3NWa1.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/5XR7Pbo8qdwdpOIsFtWJOEiOJD6.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/eAIHqfS3kXm7kZl4j7ZBfdegyEz.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/12tlRLp0fD2GMbIcYSxkL41JzNE.png",
         "type": "PELICULA",
@@ -5275,7 +5275,7 @@
       {
         "name": "Batman versus Superman: El Origen de la Justicia",
         "url": "http://144.217.70.79/VODS-M/1080P/Batman%20v%20Superman%20Dawn%20of%20Justice%202016.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/mS3t9puIjLKgoex82cu9d6G0835.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/ogl7euSNTWPpnB7nnq9E6RDTHNK.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/5fX1oSGuYdKgwWmUTAN5MNSQGzr.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/w7X5fPB6y2oAWiIL21jeRayiUfF.png",
         "type": "PELICULA",
@@ -6364,7 +6364,7 @@
         "name": "Pantera Negra",
         "url": "http://144.217.70.79/VODS-M/1080P/Black%20Panther%202018.mkv",
         "icono": "https://image.tmdb.org/t/p/original/lAPzezdc5E6DFnttJwCWXZ9A9C6.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/AlFqBwJnokrp9zWTXOUv7uhkaeq.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/19Ed4XgjahPm4U8JT7SnntERIlt.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/hhSZl284wdgX7nY3lJXGS1e0sAL.png",
         "type": "PELICULA",
         "descripcion": "T’Challa regresa a su hogar en la apartada nación africana de Wakanda para servir como líder de su país. Tras suceder a su padre en el trono, pasa a convertirse en Pantera Negra, una sigilosa criatura de la noche, con agudos sentidos felinos y otras habilidades como súper fuerza e inteligencia, agilidad, estrategia o maestro del combate sin armas. Es bajo el liderazgo de T’Challa como Wakanda consigue convertirse en una de las naciones más ricas y tecnológicamente avanzadas del planeta.",
@@ -8251,7 +8251,7 @@
         "name": "Capitán América: Civil War",
         "url": "http://144.217.70.79/VODS-M/1080P/Captain%20America%20Civil%20War%202016.mkv",
         "icono": "https://image.tmdb.org/t/p/original/jPPy7tCfglppQo6J9nGwU6UmJ8X.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/kvRT3GwcnqGHzPjXIVrVPhUix7Z.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/wdwcOBMkt3zmPQuEMxB3FUtMio2.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/bll7gvbdNShLsRfnQqQj81u55fi.png",
         "type": "PELICULA",
         "descripcion": "Después de que otro incidente internacional involucre a Los Vengadores, causando varios daños colaterales, aumentan las presiones políticas para instaurar un sistema que exija más responsabilidades y que determine cuándo deben contratar los servicios del grupo de superhéroes. Esta nueva situación dividirá a Los Vengadores, mientras intentan proteger al mundo de un nuevo y terrible villano. Tercera entrega de la saga Capitán América.",
@@ -8783,7 +8783,7 @@
         "type": "PELICULA",
         "descripcion": "Una peculiar agencia de detectives dirigida por el multimillonario Charlie tiene en sus filas a Natalie (Cameron Diaz), Dylan (Drew Barrymore) y Alex (Lucy Liu), tres expertas en artes marciales, en disfraces y en la más avanzada tecnología. Juntas tendrán que ocuparse de un caso muy importante: el secuestro del genio de la informática Eric Knox (Sam Rockwell) por su rival Roger Corwin (Tim Curry). Si no consiguen liberarlo, quedaría destruida la intimidad de todo el mundo, incluido Charlie, su misterioso jefe.",
         "anio": "2000",
-        "genero": "Acción, Aventura, Comedia, Crimen, Suspense",
+        "genero": "Acción, Comedia, Aventura",
         "duracion": "98 min"
       }
     ]
@@ -9984,7 +9984,7 @@
       {
         "name": "Contrabando",
         "url": "http://144.217.70.79/VODS-M/1080P/Contraband%202012.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/bmIphBwlYwChptmUH8UYzBO6yBh.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/3Ftr7n5XuMSjlQJNyOFoP5vwLte.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/3se6YngJYOQ8rpbp7ZeNcnSKmmM.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/FrRbE6Z5eQK4vRYAOv8eX7YPbz.png",
         "type": "PELICULA",
@@ -15001,7 +15001,7 @@
         "url": "http://144.217.70.79/VODS-M/1080P/Fantasia%201940.mkv",
         "icono": "https://image.tmdb.org/t/p/original/qCaPIUrbKsUKKFPykmKxc6bPbo0.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/lyzI5uFJC2E7sIYCCdaU0oZkDw2.jpg",
-        "iconpng": "https://image.tmdb.org/t/p/original/A5EG46w9ZrSBYQ0cZldlqgbIyRd.png",
+        "iconpng": "https://image.tmdb.org/t/p/original/3R2aI5wnomS9CxA88wjPpjm5ixE.png",
         "type": "PELICULA",
         "descripcion": "Una colección de interpretaciones animadas de grandes obras de la música clásica occidental.",
         "anio": "1940",
@@ -15543,7 +15543,7 @@
       {
         "name": "Olé, el viaje de Ferdinand",
         "url": "http://144.217.70.79/VODS-M/1080P/Ferdinand%202017.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/hC5FyR149ZOnXUuXdIHQN5LAozW.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/h42pDKQSxeVZ7W4xxoKu1l1wMa3.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/sTOhZruocNubL0HxjvdouwCEL9I.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/kpEm1tQm49inMh757sjvx0LVX6t.png",
         "type": "PELICULA",
@@ -15663,7 +15663,7 @@
         "name": "El Club de la Pelea",
         "url": "http://144.217.70.79/VODS-M/1080P/Fight%20Club%201999.mkv",
         "icono": "https://image.tmdb.org/t/p/original/bI0BhpswEApC0B17RhLZtRVPZiQ.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/hZkgoQYus5vegHoetLkCJzb17zJ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/5TiwfWEaPSwD20uwXjCTUqpQX70.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/7Uqhv24pGJs4Ns31NoOPWFJGWNG.png",
         "type": "PELICULA",
         "descripcion": "Una bomba de relojería insomne y un escurridizo vendedor de jabones canalizan la agresividad masculina primitiva en una nueva y sorprendente forma de terapia. Su concepto se pone de moda y se forman \"clubes de pelea\" clandestinos en todas las ciudades, hasta que un excéntrico se interpone en el camino y desencadena una espiral fuera de control hacia el olvido.",
@@ -15679,7 +15679,7 @@
       {
         "name": "Luchando Con Mi Familia",
         "url": "http://144.217.70.79/VODS-M/1080P/Fighting%20with%20my%20family%202019.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/xDQDW2y0zpLlt5XS0vOtTgohCIp.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/bDJByekwfxboqCA122lf6VgVH4b.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/mYKP6qcDUimVMAHQWLOuDHjO19S.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/ukXJKdAYaXDpDi86gKTt1CfSi4G.png",
         "type": "PELICULA",
@@ -15895,19 +15895,19 @@
     ]
   },
   {
-    "name": "Documental",
+    "name": "Historia",
     "samples": [
       {
-        "name": "First Man",
+        "name": "El primer hombre en la Luna",
         "url": "http://144.217.70.79/VODS-M/1080P/First%20Man%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/pssF3UjE7vVgR6z35XFmQz9L44q.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/aRfVPTqvlgleDHM121Y4WuSJcB0.jpg",
-        "iconpng": "",
+        "icono": "https://image.tmdb.org/t/p/original/hLXDrsgBqdO0xJHoRlBBMMortWL.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/jrudoaXcoLyHRPdolyOGemXgPEs.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/iCUNX5H4ba9aiMlNZ5jCtbOQvcY.png",
         "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2017",
-        "genero": "Documental, Historia",
-        "duracion": "93 min"
+        "descripcion": "Cuenta la historia de la misión de la NASA que llevó al primer hombre a la luna, centrada en Neil Armstrong y el periodo comprendido entre los años 1961 y 1969. Un relato en primera persona, basado en la novela de James R. Hansen, que explora el sacrificio y el precio que representó, tanto para Armstrong como para Estados Unidos, una de las misiones más peligrosas de la historia.",
+        "anio": "2018",
+        "genero": "Historia, Drama",
+        "duracion": "141 min"
       }
     ]
   },
@@ -16870,7 +16870,7 @@
         "name": "Las Locuras de Dick y Jane",
         "url": "http://144.217.70.79/VODS-M/1080P/Fun%20with%20Dick%20and%20Jane%202005.mkv",
         "icono": "https://image.tmdb.org/t/p/original/AtUvZea8Uxou8ydgKr1x5H6nvKQ.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/fTguJk7abk8s9A4AXNGdVdtWBr1.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ooi2vJaIvqeq5byrT2tIe9xJCaP.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/zgR4cSWj4hrz0HZ3Op0Yl1czYkY.png",
         "type": "PELICULA",
         "descripcion": "Dick Harper, después de años de duro trabajo, es por fin ascendido a vicepresidente en Globodyne, empresa líder a nivel mundial en la consolidación de propiedades de medios de comunicación. Pero, al día siguiente de su nombramiento, un escándalo económino arruina la empresa. Entonces Dick y su mujer Jane ven horrorizados como su lujosa casa, sus ostentosos coches e incluso sus amistades se desvanecen como por arte de magia",
@@ -17941,7 +17941,7 @@
         "name": "Buenos Muchachos",
         "url": "http://144.217.70.79/VODS-M/1080P/GoodFellas%201990.mkv",
         "icono": "https://image.tmdb.org/t/p/original/nocvbyxKR5b1vxagy46SfEiMK3P.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/gILte6Zd7m1YneIr6MVhh30S9pr.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/7TF4p86ZafnxFuNqWdhpHXFO244.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/y3uMg4x3wLnTpv8wRfL4qABr3Uq.png",
         "type": "PELICULA",
         "descripcion": "Henry Hill, hijo de padre irlandés y madre siciliana, vive en Brooklyn y se siente fascinado por la vida que llevan los gángsters de su barrio, donde la mayoría de los vecinos son inmigrantes. Paul Cicero, el patriarca de la familia Pauline, es el protector del barrio. A los trece años, Henry decide abandonar la escuela y entrar a formar parte de la organización mafiosa como chico de los recados; muy pronto se gana la confianza de sus jefes, gracias a lo cual irá subiendo de categoría.",
@@ -18524,7 +18524,7 @@
         "type": "PELICULA",
         "descripcion": "En realidad no es una continuación de las andanzas del siniestro Michael Myers, pues de los films anteriores sólo toma prestado el título. Aquí, una pesadillas se vuelven realidad cuando un maníaco y propietario de una tienda de juguetes, Conal Cochran, empieza a fabricar unas máscaras que convierten las almas y los cuerpos de los niños en seres diabólicos.",
         "anio": "1982",
-        "genero": "Terror, Ciencia ficción",
+        "genero": "Terror, Ciencia ficción, Misterio",
         "duracion": "99 min"
       }
     ]
@@ -19029,7 +19029,7 @@
         "name": "Harry Potter y el cáliz de fuego",
         "url": "http://144.217.70.79/VODS-M/1080P/Harry%20Potter%20and%20the%20Goblet%20of%20Fire%202005.mkv",
         "icono": "https://image.tmdb.org/t/p/original/5hrrncgY7GfRHz6JmnhPlvJUONe.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/8f9dnOtpArDrOMEylpSN9Sc6fuz.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/5rrGVmRUuCKVbqUu41XIWTXJmNA.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/deaw0ZqB4AS5sUJnQGfiySQy5vp.png",
         "type": "PELICULA",
         "descripcion": "El Torneo de los Tres Magos llega a la escuela Hogwarts. Sin embargo, Harry Potter se convierte en un competidor, pero nunca presentó su nombre. A medida que avanza los juegos, poco a poco Harry descubre las intenciones detras de este torneo.",
@@ -19198,7 +19198,7 @@
       {
         "name": "Ojos de corazón",
         "url": "http://144.217.70.79/VODS-M/1080P/Heart%20Eyes%202025.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/x5uobF8LupqHBTOdgJ6eBnwLPt0.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/cQdfSHkmPnSS3AncCz13H0fCUoq.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/psCkHIvTQ9b0w4tx1ALhzVCRiYP.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/6hWGJOgpB83hzNUCCN3YByyAvZ2.png",
         "type": "PELICULA",
@@ -19895,7 +19895,7 @@
       {
         "name": "Venganza Implacable",
         "url": "http://144.217.70.79/VODS-M/1080P/Honest%20Thief%202020.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/9Kee2stO6c2JLgH2Q2ek67H7QTB.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/8C4TLb7ZblzdS7m15yHWk6pR8yC.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/2M2JxEv3HSpjnZWjY9NOdGgfUd.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/1928cINRcRAvL0EpgMHsHy4lf7e.png",
         "type": "PELICULA",
@@ -20031,7 +20031,7 @@
       {
         "name": "Quiero Matar a mi Jefe",
         "url": "http://144.217.70.79/VODS-M/1080P/Horrible%20Bosses%202011.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/rajhPyFtH3EJkb9S09d56cn3JiM.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/AgXxt7Zzn7dwubbTONOVrAkHwPo.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/9fkYHcOtaz4cKmlDWw7tqUr5TUt.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/6RWgnGsfVmuIe6WYdhgSHtDsFn5.png",
         "type": "PELICULA",
@@ -20609,7 +20609,7 @@
       {
         "name": "Misión submarino",
         "url": "http://144.217.70.79/VODS-M/1080P/Hunter%20Killer%202018.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/nzC37wvOkZr0utsuEvJjH0P9URV.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/4QlMJJDqozUD6gZaAXzkI5rMESi.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/gCIB3DdK00DyfwosVGf7pnFFdK3.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/9G2BuuBmBddlnYS3Dru5zoDd8Hn.png",
         "type": "PELICULA",
@@ -20695,7 +20695,7 @@
         "name": "Soy Leyenda",
         "url": "http://144.217.70.79/VODS-M/1080P/I%20Am%20Legend%202007.mkv",
         "icono": "https://image.tmdb.org/t/p/original/pO1SrJgf5BumqcIRkYviSGIFdmX.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ePgD1cwmklyrFBjl6z96IuixuSY.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/aTLq0TMKdsmIy1ZyFM1LfPs326d.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/5ffl0wnYvirnyEDut48ClJazV6z.png",
         "type": "PELICULA",
         "descripcion": "Año 2012. Robert Neville es el último hombre vivo que hay sobre la Tierra, pero no está solo. Los demás seres humanos se han convertido en unos mutantes nocturnos llamados “Darkseekers” y todos ansían beber su sangre. Durante el día vive en estado de alerta, como un cazador, y busca a los muertos vivientes mientras duermen; pero durante la noche debe esconderse de ellos y esperar el amanecer. Esta pesadilla empezó hace tres años: Neville era un brillante científico, pero no pudo impedir la expansión de un terrible virus creado por el hombre. Él ha sobrevivido porque es inmune al virus; todos los días envía mensajes por radio con la esperanza de que haya otros supervivientes, pero es inútil. Lo único que puede hacer es buscar una fórmula que le permita utilizar su sangre inmune para devolverles a los hombres su naturaleza. Pero está en inferioridad de condiciones y el tiempo se acaba.",
@@ -20780,7 +20780,7 @@
         "name": "Te veo",
         "url": "http://144.217.70.79/VODS-M/1080P/I%20See%20You%202019.mkv",
         "icono": "https://image.tmdb.org/t/p/original/gs91aIwM7dB152Wbg84LVrpFM2T.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/oIJenVsuK42zgfJd8E1hZqId3s5.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/ohauWbRAepKaORoTzB553mi0joR.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/wrnHJru6irvlTz6OXKguiJcQCob.png",
         "type": "PELICULA",
         "descripcion": "Un detective y su familia comienzan a sufrir sucesos paranormales mientras éste trata de averiguar el paradero de un niño de 10 años que ha desaparecido en un pequeño pueblo.",
@@ -20949,7 +20949,7 @@
       {
         "name": "La Era de Hielo: Las aventuras de Buck",
         "url": "http://144.217.70.79/VODS-M/1080P/Ice%20Age%20Adventures%20of%20Buck%20Wild%202022.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/cOdEBeFLcUv8mtQIagbQluXrUHn.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/nshJrmrpSJItl9KCW2vO6MZVxGk.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/qw02SUqrrdTjAOPCFJBPyKaVf4z.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/76zDB84YaR05guph3QjkIujErkf.png",
         "type": "PELICULA",
@@ -20983,7 +20983,7 @@
       {
         "name": "La era de hielo: Choque de mundos",
         "url": "http://144.217.70.79/VODS-M/1080P/Ice%20age%20collision%20course%202016.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/atny2pOR1h0emUjhI7wWquftAFb.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/fanzOE8x3biEMKriui7NwMmKyx.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/lyt9DYP0Suy1j8XnjJl0saVOs8K.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/60fJuJQaQ74VAm8DFscGCadNH3X.png",
         "type": "PELICULA",
@@ -21001,7 +21001,7 @@
         "name": "La era de hielo: La gran búsqueda de pascua",
         "url": "http://144.217.70.79/VODS-M/1080P/Ice%20age%20the%20great%20egg%20scapade%202016.mkv",
         "icono": "https://image.tmdb.org/t/p/original/3keUGumDsjg0lfV5igr48PeJQl3.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/oX9HI34raOr7Uk2GcRVneTsevZn.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/cwQ7IO6ZNBnlQ1b8zA7pXzkdT5S.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/jZkvbzbJeKBVCGUYGBGq5dfrNku.png",
         "type": "PELICULA",
         "descripcion": "Una madre-ave prehistórica acosada le confía a Sid su precioso huevo que pronto eclosionará. Cuando Ella lo recomienda a sus vecinos, el negocio crece con su nuevo servicio de 'cuidador de huevos'. Sin embargo, el cobarde conejito pirata, Squint, que busca vengarse de la manada, roba, camufla y esconde todos los huevos. Una vez más, con la ayuda del hermano gemelo de Squint, Manny, Diego y el resto de la pandilla vienen al rescate y emprenden una atrevida misión que se convierte en la primera búsqueda de huevos de Pascua del mundo.",
@@ -21476,7 +21476,7 @@
       {
         "name": "Bastardos sin gloria",
         "url": "http://144.217.70.79/VODS-M/1080P/Inglourious%20Basterds%202009.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/4ymuLRIua1yANq8vpUoS6qcpJZl.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/zO4RPoYUv8S0na2K1Sff9wU3Sg2.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/hwNtEmmugU5Yd7hpfprNWI0DGIn.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/jFuZv3m2uy2JmoZcupB9J5wpSBi.png",
         "type": "PELICULA",
@@ -21885,7 +21885,7 @@
         "name": "Iron Man 3",
         "url": "http://144.217.70.79/VODS-M/1080P/Iron%20Man%203%202013.mkv",
         "icono": "https://image.tmdb.org/t/p/original/cW0fOIZONkgeiMJDYzqUcgl4MUn.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/4TSqtluelcWByj8YZdqwzQVjI0O.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/iVped1djsF0tvGkvnHbzsE3ZPTF.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/tKbLuG9R3rZsDbo40qLcxIXijhP.png",
         "type": "PELICULA",
         "descripcion": "El descarado y brillante empresario Tony Stark/Iron Man se enfrentará a un enemigo cuyo poder no conoce límites. Cuando Stark comprende que su enemigo ha destruido su universo personal, se embarca en una angustiosa búsqueda para encontrar a los responsables. Este viaje pondrá a prueba su entereza una y otra vez. Acorralado, Stark tendrá que sobrevivir por sus propios medios, confiando en su ingenio y su instinto para proteger a las personas que quiere.",
@@ -22275,7 +22275,7 @@
       {
         "name": "Soldado anónimo",
         "url": "http://144.217.70.79/VODS-M/1080P/Jarhead%202005.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/5V5DMgwjJ5x40xbL4zbP3t9ex1H.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/q7vWE7KeC0wXbvcpVvGHPRk1KKh.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/bQ8fRUaitJvi54O2lUT6Ta7FVHK.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/mLadOyQnVtlRkKCPfr0e7fkNNVg.png",
         "type": "PELICULA",
@@ -23551,7 +23551,7 @@
         "name": "El informante",
         "url": "http://144.217.70.79/VODS-M/1080P/Killerman%202019.mkv",
         "icono": "https://image.tmdb.org/t/p/original/fzIuRQlq9LfRipziI4cfXsUBYWm.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/8oBiuB60t6FPloYZungL5fSMBcG.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/oAfSZDhBYyzs7wjcZ83iUTWgACE.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/4UuC9txgLLKxCloKl6YJaLtI43O.png",
         "type": "PELICULA",
         "descripcion": "En Nueva York, Moe Diamond (Liam Hemsworth) se dedica al blanqueo de dinero negro. Un día se verá buscando respuestas desesperadamente tras despertarse sin memoria, con un montón de dinero y drogas y un violento grupo de policías corruptos persiguiéndole.",
@@ -23874,7 +23874,7 @@
         "name": "Kung Fu Panda 3",
         "url": "http://144.217.70.79/VODS-M/1080P/Kung%20Fu%20Panda%203%202016.mkv",
         "icono": "https://image.tmdb.org/t/p/original/t11f8palNbICK9Ip5QLrUfhLJYq.jpg",
-        "iconoHorizontal": "https://image.tmdb.org/t/p/original/abQflaMAQGg81gWtu4kXrdyMSlI.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/zNNHlMa27EfymiYkhgcXANtD5vG.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/qtOdWDdgGNXTzjKP8lZ9yTjCnC3.png",
         "type": "PELICULA",
         "descripcion": "Mientras visita una aldea secreta de pandas con su padre, Po se ve obligado a improvisar un peculiar ejército para detener a un espíritu malvado que amenaza a toda China.",
@@ -24281,7 +24281,7 @@
       {
         "name": "El misterio de Soho",
         "url": "http://144.217.70.79/VODS-M/1080P/Last%20Night%20in%20Soho%202021.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/4eSJJsBZ00qMyoWLe98ulNGvGbC.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/mR2tbjiVieCpjLeXHVdf9vHsZQf.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/nPWy5KISy7BbUOQcg588dflKzTL.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/plZ6hBGZ4W7u05uU7bBRvgfojCe.png",
         "type": "PELICULA",
@@ -24803,7 +24803,7 @@
     ]
   },
   {
-    "name": "Aventura",
+    "name": "Acción",
     "samples": [
       {
         "name": "Arma Mortal",
@@ -24814,7 +24814,7 @@
         "type": "PELICULA",
         "descripcion": "Martin Riggs es un policía de Los Ángeles con tendencias suicidas. Su compañero Roger Murtaugh es un veterano y responsable policía y padre de familia. Juntos intentan frustrar una operación de contrabando de droga. Al mismo tiempo, a pesar de sus diferentes caracteres, se harán buenos amigos",
         "anio": "1987",
-        "genero": "Aventura, Acción, Comedia, Suspense, Crimen",
+        "genero": "Acción, Comedia, Suspense",
         "duracion": "110 min"
       }
     ]
@@ -26661,7 +26661,7 @@
       {
         "name": "Hombres de Negro 3",
         "url": "http://144.217.70.79/VODS-M/1080P/Men%20in%20Black%203%202012.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/rcVJtZCGnp39obbDKYred2mT9sE.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/dmd8Zw59x5RTQJ0R0JjBkhW3GUE.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/5AhpUb8CAP0jZ4Wrn7AsRUYjZxB.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/flrXAfLsvyEgEADBKjHXRUuYYwW.png",
         "type": "PELICULA",
@@ -27035,7 +27035,7 @@
       {
         "name": "Los Minions",
         "url": "http://144.217.70.79/VODS-M/1080P/Minions%202015.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/nmqLwaTfgyWLQWbYd82w159cAqJ.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/ayvvnNES3Y8tFosd1yr1vNZDWWS.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/wKrxeY6lbu7KFBsWVcMH6M8avwr.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/dhO1TopiBwjx1CywRgrtryyIDO5.png",
         "type": "PELICULA",
@@ -27052,7 +27052,7 @@
       {
         "name": "Minority report: Sentencia previa",
         "url": "http://144.217.70.79/VODS-M/1080P/Minority%20Report%202002.mkv",
-        "icono": "https://image.tmdb.org/t/p/original/pnzJEfXpRc1bknR5ASFG0MZcTvo.jpg",
+        "icono": "https://image.tmdb.org/t/p/original/q5qipy536mgsejg6AWPP9lmkGkG.jpg",
         "iconoHorizontal": "https://image.tmdb.org/t/p/original/PrMb3oeEluauy0q9ZO5xL33A6C.jpg",
         "iconpng": "https://image.tmdb.org/t/p/original/wR3kpYB0ycyKu0g30Fb8zqLBMgM.png",
         "type": "PELICULA",
