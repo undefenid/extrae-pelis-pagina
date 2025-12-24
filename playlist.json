@@ -34853,6 +34853,23 @@
         "name": "",
         "samples": [
             {
+                "name": "Santa Claws",
+                "url": "http://144.217.70.79/VODS-M/1080P/Santa%20Claws%202014.mkv",
+                "icono": "",
+                "iconoHorizontal": "",
+                "iconpng": "",
+                "type": "PELICULA",
+                "descripcion": "",
+                "anio": "2014",
+                "genero": "",
+                "duracion": ""
+            }
+        ]
+    },
+    {
+        "name": "",
+        "samples": [
+            {
                 "name": "Santana",
                 "url": "http://144.217.70.79/VODS-M/1080P/Santana%202020.mkv",
                 "icono": "",
