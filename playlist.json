@@ -18414,6 +18414,23 @@
         "name": "",
         "samples": [
             {
+                "name": "Guns Up",
+                "url": "http://144.217.70.79/VODS-M/1080P/Guns%20Up%202025.mkv",
+                "icono": "",
+                "iconoHorizontal": "",
+                "iconpng": "",
+                "type": "PELICULA",
+                "descripcion": "",
+                "anio": "2025",
+                "genero": "",
+                "duracion": ""
+            }
+        ]
+    },
+    {
+        "name": "",
+        "samples": [
+            {
                 "name": "Hachiko A Dogs Story",
                 "url": "http://144.217.70.79/VODS-M/1080P/Hachiko%20A%20Dogs%20Story%202009.mkv",
                 "icono": "",
