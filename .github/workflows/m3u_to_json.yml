@@ -1,0 +1,247 @@
+name: Convertir M3U (URL) a JSON + separar series
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      m3u_url:
+        description: "URL del archivo .m3u / .m3u8 (texto #EXTM3U)"
+        required: true
+      output_dir:
+        description: "Carpeta de salida en la raíz"
+        required: false
+        default: "m3u_convert"
+      chunk_size:
+        description: "Máx. cantidad de items (películas) por cada JSON part"
+        required: false
+        default: "2000"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install --no-cache-dir requests
+
+      - name: Convert M3U -> JSON + split series/movies
+        env:
+          M3U_URL: ${{ github.event.inputs.m3u_url }}
+          OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
+          CHUNK_SIZE: ${{ github.event.inputs.chunk_size }}
+        run: |
+          python <<'PY'
+          import os
+          import re
+          import json
+          import math
+          import requests
+          from collections import OrderedDict
+
+          M3U_URL = os.environ.get("M3U_URL", "").strip()
+          OUTPUT_DIR = os.environ.get("OUTPUT_DIR", "m3u_convert").strip()
+          CHUNK_SIZE = int((os.environ.get("CHUNK_SIZE") or "2000").strip())
+
+          if not M3U_URL:
+            raise SystemExit("Falta M3U_URL")
+
+          os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+          # --- Heurísticas para detectar series ---
+          SERIES_PATTERNS = [
+            re.compile(r"\b\d{1,2}x\d{1,3}\b", re.IGNORECASE),           # 1x01, 2x10
+            re.compile(r"\bs\d{1,2}\s*e\d{1,3}\b", re.IGNORECASE),       # S01E02, s1e3
+            re.compile(r"\bcap(?:itulo|ítulo)?\s*\d+\b", re.IGNORECASE), # capitulo 3
+            re.compile(r"\bepisodio\s*\d+\b", re.IGNORECASE),            # episodio 1
+            re.compile(r"\bep\s*0*\d+\b", re.IGNORECASE),                # ep01, EP 2
+            re.compile(r"\be\s*0*\d+\b", re.IGNORECASE),                 # e01, E2
+          ]
+
+          def looks_like_series(title: str, group_title: str) -> bool:
+            gt = (group_title or "").lower()
+            if "temporada" in gt:
+              return True
+            t = (title or "").lower()
+            # "s01" suelto suele indicar temporadas; lo consideramos serie si aparece como palabra
+            if re.search(r"\bs\d{1,2}\b", t, re.IGNORECASE):
+              return True
+            for p in SERIES_PATTERNS:
+              if p.search(title or ""):
+                return True
+            return False
+
+          # --- Parser de atributos EXTINF ---
+          # Ejemplo: #EXTINF:-1 tvg-logo="..." group-title="...",Titulo
+          ATTR_RE = re.compile(r'([\w-]+)\s*=\s*"([^"]*)"')
+
+          def parse_extinf(line: str):
+            # Devuelve: (attrs_dict, title_after_comma)
+            # line incluye "#EXTINF"
+            if "," in line:
+              left, title = line.split(",", 1)
+            else:
+              left, title = line, ""
+            attrs = dict(ATTR_RE.findall(left))
+            title = (title or "").strip()
+            return attrs, title
+
+          # --- Descargar M3U ---
+          resp = requests.get(M3U_URL, timeout=60)
+          resp.raise_for_status()
+          text = resp.text
+
+          lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+
+          movies_entries = []
+          series_entries = []
+
+          current_extinf = None
+          current_attrs = None
+          current_title = None
+
+          for ln in lines:
+            if ln.startswith("#EXTM3U"):
+              continue
+
+            if ln.startswith("#EXTINF"):
+              current_extinf = ln
+              current_attrs, current_title = parse_extinf(ln)
+              continue
+
+            # URL candidate (la línea siguiente a EXTINF)
+            if current_extinf and not ln.startswith("#"):
+              video_url = ln.strip()
+              group_title = (current_attrs.get("group-title") or "").strip()
+              tvg_logo = (current_attrs.get("tvg-logo") or "").strip()
+
+              # título: si viene vacío, usamos tvg-name si existe
+              title = (current_title or "").strip()
+              if not title:
+                title = (current_attrs.get("tvg-name") or current_attrs.get("tvg-id") or "").strip()
+
+              entry = {
+                "extinf": current_extinf,
+                "title": title,
+                "url": video_url,
+                "group_title": group_title,
+                "tvg_logo": tvg_logo
+              }
+
+              if looks_like_series(title, group_title):
+                series_entries.append(entry)
+              else:
+                movies_entries.append(entry)
+
+              current_extinf = None
+              current_attrs = None
+              current_title = None
+
+          # --- Generar M3U separados ---
+          def write_m3u(path, entries):
+            out = ["#EXTM3U"]
+            for e in entries:
+              out.append(e["extinf"])
+              out.append(e["url"])
+            with open(path, "w", encoding="utf-8") as f:
+              f.write("\n".join(out) + "\n")
+
+          write_m3u(os.path.join(OUTPUT_DIR, "peliculas.m3u"), movies_entries)
+          write_m3u(os.path.join(OUTPUT_DIR, "series.m3u"), series_entries)
+
+          # --- JSON: agrupar por group-title ---
+          def to_grouped_json(entries):
+            groups = OrderedDict()
+            for e in entries:
+              g = e["group_title"]  # puede ser ""
+              if g not in groups:
+                groups[g] = []
+              groups[g].append({
+                "name": e["title"],
+                "url": e["url"],
+                "icono": e["tvg_logo"]
+              })
+            records = [{"name": g, "samples": samples} for g, samples in groups.items()]
+            return records
+
+          movies_records = to_grouped_json(movies_entries)
+          series_records = to_grouped_json(series_entries)
+
+          # --- Split JSON de películas en partes (por cantidad total de items) ---
+          def count_samples(records):
+            return sum(len(r.get("samples", [])) for r in records)
+
+          def split_records_by_samples(records, max_samples):
+            parts = []
+            cur = []
+            cur_count = 0
+
+            for r in records:
+              s = r.get("samples", [])
+              if cur and (cur_count + len(s) > max_samples):
+                parts.append(cur)
+                cur = []
+                cur_count = 0
+              cur.append(r)
+              cur_count += len(s)
+
+            if cur:
+              parts.append(cur)
+            return parts
+
+          parts = split_records_by_samples(movies_records, CHUNK_SIZE)
+
+          # Guardar parts
+          if len(parts) == 1:
+            out_path = os.path.join(OUTPUT_DIR, "peliculas.json")
+            with open(out_path, "w", encoding="utf-8") as f:
+              json.dump(parts[0], f, indent=2, ensure_ascii=False)
+          else:
+            for i, part in enumerate(parts, start=1):
+              out_path = os.path.join(OUTPUT_DIR, f"peliculas_part{i:03d}.json")
+              with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(part, f, indent=2, ensure_ascii=False)
+
+            manifest = {
+              "total_parts": len(parts),
+              "chunk_size_samples": CHUNK_SIZE,
+              "files": [f"peliculas_part{i:03d}.json" for i in range(1, len(parts) + 1)]
+            }
+            with open(os.path.join(OUTPUT_DIR, "peliculas_manifest.json"), "w", encoding="utf-8") as f:
+              json.dump(manifest, f, indent=2, ensure_ascii=False)
+
+          # Series JSON (por si te sirve)
+          with open(os.path.join(OUTPUT_DIR, "series.json"), "w", encoding="utf-8") as f:
+            json.dump(series_records, f, indent=2, ensure_ascii=False)
+
+          # Log resumen
+          print(f"M3U URL: {M3U_URL}")
+          print(f"Películas: {len(movies_entries)} entries")
+          print(f"Series: {len(series_entries)} entries")
+          print(f"Películas JSON parts: {len(parts)} (chunk_size={CHUNK_SIZE})")
+          print(f"Salida en: {OUTPUT_DIR}")
+          PY
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ github.event.inputs.output_dir }}"
+          if ! git diff --cached --exit-code; then
+            git commit -m "Convertir M3U a JSON y separar series/peliculas"
+            git push
+          else
+            echo "No hay cambios"
+          fi
