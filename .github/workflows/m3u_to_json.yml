@@ -1,3 +1,4 @@
+# .github/workflows/m3u_to_json.yml
 name: Convertir M3U (URL) a JSON + separar series
 
 permissions:
@@ -7,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       m3u_url:
-        description: "URL del archivo .m3u / .m3u8 (texto #EXTM3U)"
+        description: "URL del archivo .m3u/.m3u8 (texto #EXTM3U)"
         required: true
       output_dir:
         description: "Carpeta de salida en la raíz"
@@ -47,7 +48,6 @@ jobs:
           import os
           import re
           import json
-          import math
           import requests
           from collections import OrderedDict
 
@@ -56,50 +56,111 @@ jobs:
           CHUNK_SIZE = int((os.environ.get("CHUNK_SIZE") or "2000").strip())
 
           if not M3U_URL:
-            raise SystemExit("Falta M3U_URL")
+              raise SystemExit("Falta M3U_URL")
 
           os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-          # --- Heurísticas para detectar series ---
-          SERIES_PATTERNS = [
-            re.compile(r"\b\d{1,2}x\d{1,3}\b", re.IGNORECASE),           # 1x01, 2x10
-            re.compile(r"\bs\d{1,2}\s*e\d{1,3}\b", re.IGNORECASE),       # S01E02, s1e3
-            re.compile(r"\bcap(?:itulo|ítulo)?\s*\d+\b", re.IGNORECASE), # capitulo 3
-            re.compile(r"\bepisodio\s*\d+\b", re.IGNORECASE),            # episodio 1
-            re.compile(r"\bep\s*0*\d+\b", re.IGNORECASE),                # ep01, EP 2
-            re.compile(r"\be\s*0*\d+\b", re.IGNORECASE),                 # e01, E2
+          # ---------- Año (si aparece en el titulo) ----------
+          YEAR_RE = re.compile(r"\b(19\d{2}|20\d{2})\b")
+
+          def extract_year(title: str) -> str:
+              if not title:
+                  return ""
+              yrs = YEAR_RE.findall(title)
+              return yrs[-1] if yrs else ""
+
+          # ---------- Heuristicas SERIES ----------
+          # group-title tipico: "TEMPORADA 1", "Season 2", "Series", etc.
+          SERIES_GROUP_HINTS = [
+              "temporada", "season", "serie", "series", "tv", "episodios", "capitulos", "capitulos",
+              "capitulo", "capitulo", "anime", "novela", "telenovela"
           ]
 
-          def looks_like_series(title: str, group_title: str) -> bool:
-            gt = (group_title or "").lower()
-            if "temporada" in gt:
-              return True
-            t = (title or "").lower()
-            # "s01" suelto suele indicar temporadas; lo consideramos serie si aparece como palabra
-            if re.search(r"\bs\d{1,2}\b", t, re.IGNORECASE):
-              return True
-            for p in SERIES_PATTERNS:
-              if p.search(title or ""):
-                return True
-            return False
+          # patrones fuertes de episodio/capitulo
+          SERIES_PATTERNS = [
+              re.compile(r"\b\d{1,2}x\d{1,3}\b", re.IGNORECASE),                 # 1x01, 2x10
+              re.compile(r"\bs\d{1,2}\s*e\d{1,3}\b", re.IGNORECASE),             # S01E02, s1e3
+              re.compile(r"\bcap(?:itulo|itulo)?\.?\s*\d+\b", re.IGNORECASE),    # capitulo 10 / cap. 10
+              re.compile(r"\bepisodio\.?\s*\d+\b", re.IGNORECASE),               # episodio 1
+              re.compile(r"\bep\.?\s*0*\d+\b", re.IGNORECASE),                   # ep01, EP 2
+              re.compile(r"\be\.?\s*0*\d+\b", re.IGNORECASE),                    # e01, E2
+              re.compile(r"\bchapter\.?\s*\d+\b", re.IGNORECASE),                # chapter 12
+              re.compile(r"\bpart(?:e)?\.?\s*\d+\b", re.IGNORECASE),             # parte 1 / part 2
+              re.compile(r"\bova\s*\d*\b", re.IGNORECASE),                       # ova / ova 1
+              re.compile(r"\b(oav|special|especial|extra)\b", re.IGNORECASE),    # especiales
+          ]
 
-          # --- Parser de atributos EXTINF ---
-          # Ejemplo: #EXTINF:-1 tvg-logo="..." group-title="...",Titulo
+          # TEMPORADA / SEASON / T01 / S01 (sueltos o con texto)
+          SEASON_IN_TITLE = [
+              re.compile(r"\btemporada\b", re.IGNORECASE),
+              re.compile(r"\bseason\b", re.IGNORECASE),
+              re.compile(r"\btemp\.?\s*\d+\b", re.IGNORECASE),                   # temp 1
+              re.compile(r"\bt\s*0?\d{1,2}\b", re.IGNORECASE),                    # T1 / T01
+              re.compile(r"\bs\s*0?\d{1,2}\b", re.IGNORECASE),                    # S1 / S01 (solo)
+          ]
+
+          # "10 - Nombre" / "01 - ..." / "02. ..." / "03) ..."
+          LEADING_EP_NUMBER = re.compile(r"^\s*\d{1,3}\s*[-–.)]\s+\S+", re.IGNORECASE)
+
+          # "01 02" / "01-02" / "01_02"
+          TWO_SHORT_NUMBERS = re.compile(r"\b0?\d{1,2}\s*[-_ ]\s*0?\d{1,2}\b")
+
+          # "S01" o "T01" pegado con separadores raros: "S01 -", "T02_"
+          LOOSE_SEASON_TOKEN = re.compile(r"(^|[\s._-])([st])\s*0?\d{1,2}($|[\s._-])", re.IGNORECASE)
+
+          def looks_like_series(title: str, group_title: str) -> bool:
+              t = (title or "").strip()
+              gt = (group_title or "").strip().lower()
+              tl = t.lower()
+
+              # 1) group-title fuerte
+              for hint in SERIES_GROUP_HINTS:
+                  if hint in gt:
+                      return True
+
+              # 2) menciones de temporada/season/Txx/Sxx en titulo
+              for p in SEASON_IN_TITLE:
+                  if p.search(t):
+                      return True
+
+              if LOOSE_SEASON_TOKEN.search(t):
+                  return True
+
+              # 3) patrones claros de episodio
+              for p in SERIES_PATTERNS:
+                  if p.search(t):
+                      return True
+
+              # 4) empieza con "10 - ..." "01 - ..." etc
+              if LEADING_EP_NUMBER.search(t):
+                  return True
+
+              # 5) "01 02" / "01-02" / "01_02"
+              # Evitamos falsos positivos exigiendo contexto
+              if TWO_SHORT_NUMBERS.search(t):
+                  if gt or len(t) <= 45 or any(k in tl for k in ["temp", "season", "cap", "epis", "ep ", "e0", "x"]):
+                      return True
+
+              # 6) otras palabras clave comunes
+              if any(k in tl for k in ["temporada", "season", "capitulo", "capítulo", "episodio", "episode"]):
+                  return True
+
+              return False
+
+          # ---------- Parser EXTINF ----------
+          # Ej: #EXTINF:-1 tvg-logo="..." group-title="...",Titulo
           ATTR_RE = re.compile(r'([\w-]+)\s*=\s*"([^"]*)"')
 
           def parse_extinf(line: str):
-            # Devuelve: (attrs_dict, title_after_comma)
-            # line incluye "#EXTINF"
-            if "," in line:
-              left, title = line.split(",", 1)
-            else:
-              left, title = line, ""
-            attrs = dict(ATTR_RE.findall(left))
-            title = (title or "").strip()
-            return attrs, title
+              if "," in line:
+                  left, title = line.split(",", 1)
+              else:
+                  left, title = line, ""
+              attrs = dict(ATTR_RE.findall(left))
+              return attrs, (title or "").strip()
 
-          # --- Descargar M3U ---
-          resp = requests.get(M3U_URL, timeout=60)
+          # ---------- Descargar M3U ----------
+          resp = requests.get(M3U_URL, timeout=90)
           resp.raise_for_status()
           text = resp.text
 
@@ -113,124 +174,127 @@ jobs:
           current_title = None
 
           for ln in lines:
-            if ln.startswith("#EXTM3U"):
-              continue
+              if ln.startswith("#EXTM3U"):
+                  continue
 
-            if ln.startswith("#EXTINF"):
-              current_extinf = ln
-              current_attrs, current_title = parse_extinf(ln)
-              continue
+              if ln.startswith("#EXTINF"):
+                  current_extinf = ln
+                  current_attrs, current_title = parse_extinf(ln)
+                  continue
 
-            # URL candidate (la línea siguiente a EXTINF)
-            if current_extinf and not ln.startswith("#"):
-              video_url = ln.strip()
-              group_title = (current_attrs.get("group-title") or "").strip()
-              tvg_logo = (current_attrs.get("tvg-logo") or "").strip()
+              # URL (linea siguiente al EXTINF)
+              if current_extinf and not ln.startswith("#"):
+                  video_url = ln.strip()
+                  group_title = (current_attrs.get("group-title") or "").strip()
+                  tvg_logo = (current_attrs.get("tvg-logo") or "").strip()
 
-              # título: si viene vacío, usamos tvg-name si existe
-              title = (current_title or "").strip()
-              if not title:
-                title = (current_attrs.get("tvg-name") or current_attrs.get("tvg-id") or "").strip()
+                  title = (current_title or "").strip()
+                  if not title:
+                      title = (current_attrs.get("tvg-name") or current_attrs.get("tvg-id") or "").strip()
 
-              entry = {
-                "extinf": current_extinf,
-                "title": title,
-                "url": video_url,
-                "group_title": group_title,
-                "tvg_logo": tvg_logo
-              }
+                  entry = {
+                      "extinf": current_extinf,
+                      "title": title,
+                      "url": video_url,
+                      "group_title": group_title,
+                      "tvg_logo": tvg_logo,
+                      "anio": extract_year(title),
+                  }
 
-              if looks_like_series(title, group_title):
-                series_entries.append(entry)
-              else:
-                movies_entries.append(entry)
+                  if looks_like_series(title, group_title):
+                      series_entries.append(entry)
+                  else:
+                      movies_entries.append(entry)
 
-              current_extinf = None
-              current_attrs = None
-              current_title = None
+                  current_extinf = None
+                  current_attrs = None
+                  current_title = None
 
-          # --- Generar M3U separados ---
+          # ---------- Escribir M3U separados ----------
           def write_m3u(path, entries):
-            out = ["#EXTM3U"]
-            for e in entries:
-              out.append(e["extinf"])
-              out.append(e["url"])
-            with open(path, "w", encoding="utf-8") as f:
-              f.write("\n".join(out) + "\n")
+              out = ["#EXTM3U"]
+              for e in entries:
+                  out.append(e["extinf"])
+                  out.append(e["url"])
+              with open(path, "w", encoding="utf-8") as f:
+                  f.write("\n".join(out) + "\n")
 
           write_m3u(os.path.join(OUTPUT_DIR, "peliculas.m3u"), movies_entries)
           write_m3u(os.path.join(OUTPUT_DIR, "series.m3u"), series_entries)
 
-          # --- JSON: agrupar por group-title ---
-          def to_grouped_json(entries):
-            groups = OrderedDict()
-            for e in entries:
-              g = e["group_title"]  # puede ser ""
-              if g not in groups:
-                groups[g] = []
-              groups[g].append({
-                "name": e["title"],
-                "url": e["url"],
-                "icono": e["tvg_logo"]
-              })
-            records = [{"name": g, "samples": samples} for g, samples in groups.items()]
-            return records
+          # ---------- JSON con TODOS los campos (como pediste) ----------
+          # record = { "name": group-title, "samples": [ { ...campos... } ] }
+          def sample_from_entry(e, tipo: str):
+              return {
+                  "name": e["title"],
+                  "url": e["url"],
+                  "icono": e["tvg_logo"] or "",          # tvg-logo -> icono
+                  "iconoHorizontal": "",
+                  "iconpng": "",
+                  "type": tipo,                          # PELICULA o SERIE
+                  "descripcion": "",
+                  "anio": e.get("anio") or "",
+                  "genero": "",
+                  "duracion": ""
+              }
 
-          movies_records = to_grouped_json(movies_entries)
-          series_records = to_grouped_json(series_entries)
+          def to_grouped_records(entries, tipo: str):
+              groups = OrderedDict()
+              for e in entries:
+                  g = e["group_title"]  # group-title -> record.name
+                  if g not in groups:
+                      groups[g] = []
+                  groups[g].append(sample_from_entry(e, tipo))
+              return [{"name": g, "samples": samples} for g, samples in groups.items()]
 
-          # --- Split JSON de películas en partes (por cantidad total de items) ---
-          def count_samples(records):
-            return sum(len(r.get("samples", [])) for r in records)
+          movies_records = to_grouped_records(movies_entries, "PELICULA")
+          series_records = to_grouped_records(series_entries, "SERIE")
 
+          # ---------- Split JSON de peliculas en partes ----------
           def split_records_by_samples(records, max_samples):
-            parts = []
-            cur = []
-            cur_count = 0
+              parts = []
+              cur = []
+              cur_count = 0
 
-            for r in records:
-              s = r.get("samples", [])
-              if cur and (cur_count + len(s) > max_samples):
-                parts.append(cur)
-                cur = []
-                cur_count = 0
-              cur.append(r)
-              cur_count += len(s)
+              for r in records:
+                  s = r.get("samples", [])
+                  if cur and (cur_count + len(s) > max_samples):
+                      parts.append(cur)
+                      cur = []
+                      cur_count = 0
+                  cur.append(r)
+                  cur_count += len(s)
 
-            if cur:
-              parts.append(cur)
-            return parts
+              if cur:
+                  parts.append(cur)
+              return parts
 
           parts = split_records_by_samples(movies_records, CHUNK_SIZE)
 
-          # Guardar parts
           if len(parts) == 1:
-            out_path = os.path.join(OUTPUT_DIR, "peliculas.json")
-            with open(out_path, "w", encoding="utf-8") as f:
-              json.dump(parts[0], f, indent=2, ensure_ascii=False)
+              with open(os.path.join(OUTPUT_DIR, "peliculas.json"), "w", encoding="utf-8") as f:
+                  json.dump(parts[0], f, indent=2, ensure_ascii=False)
           else:
-            for i, part in enumerate(parts, start=1):
-              out_path = os.path.join(OUTPUT_DIR, f"peliculas_part{i:03d}.json")
-              with open(out_path, "w", encoding="utf-8") as f:
-                json.dump(part, f, indent=2, ensure_ascii=False)
+              for i, part in enumerate(parts, start=1):
+                  with open(os.path.join(OUTPUT_DIR, f"peliculas_part{i:03d}.json"), "w", encoding="utf-8") as f:
+                      json.dump(part, f, indent=2, ensure_ascii=False)
 
-            manifest = {
-              "total_parts": len(parts),
-              "chunk_size_samples": CHUNK_SIZE,
-              "files": [f"peliculas_part{i:03d}.json" for i in range(1, len(parts) + 1)]
-            }
-            with open(os.path.join(OUTPUT_DIR, "peliculas_manifest.json"), "w", encoding="utf-8") as f:
-              json.dump(manifest, f, indent=2, ensure_ascii=False)
+              manifest = {
+                  "total_parts": len(parts),
+                  "chunk_size_samples": CHUNK_SIZE,
+                  "files": [f"peliculas_part{i:03d}.json" for i in range(1, len(parts) + 1)]
+              }
+              with open(os.path.join(OUTPUT_DIR, "peliculas_manifest.json"), "w", encoding="utf-8") as f:
+                  json.dump(manifest, f, indent=2, ensure_ascii=False)
 
-          # Series JSON (por si te sirve)
+          # Series JSON completo
           with open(os.path.join(OUTPUT_DIR, "series.json"), "w", encoding="utf-8") as f:
-            json.dump(series_records, f, indent=2, ensure_ascii=False)
+              json.dump(series_records, f, indent=2, ensure_ascii=False)
 
-          # Log resumen
           print(f"M3U URL: {M3U_URL}")
-          print(f"Películas: {len(movies_entries)} entries")
+          print(f"Peliculas: {len(movies_entries)} entries")
           print(f"Series: {len(series_entries)} entries")
-          print(f"Películas JSON parts: {len(parts)} (chunk_size={CHUNK_SIZE})")
+          print(f"Peliculas JSON parts: {len(parts)} (chunk_size={CHUNK_SIZE})")
           print(f"Salida en: {OUTPUT_DIR}")
           PY
 
