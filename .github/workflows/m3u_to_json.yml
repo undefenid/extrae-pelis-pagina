@@ -1,5 +1,5 @@
 # .github/workflows/m3u_to_json.yml
-name: Convertir M3U (URL) a JSON + separar series (con verificacion online)
+name: Convertir M3U (URL) a JSON + separar series (verificacion estricta)
 
 permissions:
   contents: write
@@ -21,15 +21,15 @@ on:
       verify_urls:
         description: "Verificar si la URL del video esta online (true/false). Si esta offline, se ignora."
         required: false
-        default: "false"
+        default: "true"
       verify_timeout:
         description: "Timeout por URL (segundos)"
         required: false
-        default: "6"
+        default: "8"
       verify_workers:
         description: "Cantidad de hilos para verificacion (concurrencia)"
         required: false
-        default: "30"
+        default: "25"
 
 jobs:
   build:
@@ -50,7 +50,7 @@ jobs:
         run: |
           pip install --no-cache-dir requests
 
-      - name: Convert M3U -> JSON + split series/movies (+ optional verify)
+      - name: Convert M3U -> JSON + split series/movies (+ strict verify)
         env:
           M3U_URL: ${{ github.event.inputs.m3u_url }}
           OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
@@ -63,7 +63,6 @@ jobs:
           import os
           import re
           import json
-          import time
           import requests
           from collections import OrderedDict
           from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -72,16 +71,16 @@ jobs:
           OUTPUT_DIR = os.environ.get("OUTPUT_DIR", "m3u_convert").strip()
           CHUNK_SIZE = int((os.environ.get("CHUNK_SIZE") or "2000").strip())
 
-          VERIFY_URLS = (os.environ.get("VERIFY_URLS", "false").strip().lower() == "true")
-          VERIFY_TIMEOUT = float(os.environ.get("VERIFY_TIMEOUT") or "6")
-          VERIFY_WORKERS = int(os.environ.get("VERIFY_WORKERS") or "30")
+          VERIFY_URLS = (os.environ.get("VERIFY_URLS", "true").strip().lower() == "true")
+          VERIFY_TIMEOUT = float(os.environ.get("VERIFY_TIMEOUT") or "8")
+          VERIFY_WORKERS = int(os.environ.get("VERIFY_WORKERS") or "25")
 
           if not M3U_URL:
               raise SystemExit("Falta M3U_URL")
 
           os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-          # ---------- Util: parse headers embebidos en URL (formato VLC/OTT) ----------
+          # ---------- Util: URL|headers (formato VLC/OTT) ----------
           # Ej: http://host/stream.m3u8|User-Agent=xxx&Referer=https://site
           def split_url_pipe_headers(raw_url: str):
               url = raw_url.strip()
@@ -89,7 +88,6 @@ jobs:
               if "|" not in url:
                   return url, headers
               base, meta = url.split("|", 1)
-              # meta: Key=Val&Key2=Val2 ...
               for part in meta.split("&"):
                   if "=" in part:
                       k, v = part.split("=", 1)
@@ -99,7 +97,7 @@ jobs:
                           headers[k] = v
               return base.strip(), headers
 
-          # ---------- Ano (si aparece en el titulo) ----------
+          # ---------- Anio ----------
           YEAR_RE = re.compile(r"\b(19\d{2}|20\d{2})\b")
 
           def extract_year(title: str) -> str:
@@ -114,41 +112,32 @@ jobs:
               "capitulo", "capítulo"
           ]
 
-          # patrones claros de episodio/capitulo
           SERIES_PATTERNS = [
-              re.compile(r"\b\d{1,2}x\d{1,3}\b", re.IGNORECASE),                 # 1x01, 2x10
+              re.compile(r"\b\d{1,2}x\d{1,3}\b", re.IGNORECASE),                 # 1x01
               re.compile(r"\bs\d{1,2}\s*e\d{1,3}\b", re.IGNORECASE),             # S01E02
-              re.compile(r"\bcap(?:itulo|ítulo)?\.?\s*\d+\b", re.IGNORECASE),    # capitulo 10 / cap. 10
+              re.compile(r"\bcap(?:itulo|ítulo)?\.?\s*\d+\b", re.IGNORECASE),    # capitulo 10
               re.compile(r"\bepisodio\.?\s*\d+\b", re.IGNORECASE),               # episodio 1
               re.compile(r"\bepisode\.?\s*\d+\b", re.IGNORECASE),                # episode 1
-              re.compile(r"\bep\.?\s*0*\d+\b", re.IGNORECASE),                   # ep01, EP 2
-              re.compile(r"\be\.?\s*0*\d+\b", re.IGNORECASE),                    # e01, E2
-              re.compile(r"\bova\s*\d*\b", re.IGNORECASE),                       # ova / ova 1
+              re.compile(r"\bep\.?\s*0*\d+\b", re.IGNORECASE),                   # ep01
+              re.compile(r"\be\.?\s*0*\d+\b", re.IGNORECASE),                    # e01
+              re.compile(r"\bova\s*\d*\b", re.IGNORECASE),                       # ova
               re.compile(r"\b(oav|special|especial|extra)\b", re.IGNORECASE),    # especiales
               re.compile(r"\btemporada\s*\d+\b", re.IGNORECASE),                 # temporada 1
               re.compile(r"\bseason\s*\d+\b", re.IGNORECASE),                    # season 2
               re.compile(r"^\s*\d{1,3}\b", re.IGNORECASE),
           ]
 
-          # TEMPORADA / SEASON / T01 / S01 sueltos
           SEASON_IN_TITLE = [
               re.compile(r"\btemporada\b", re.IGNORECASE),
               re.compile(r"\bseason\b", re.IGNORECASE),
               re.compile(r"\btemp\.?\s*\d+\b", re.IGNORECASE),                   # temp 1
-              re.compile(r"\bt\s*0?\d{1,2}\b", re.IGNORECASE),                    # T1 / T01
-              re.compile(r"\bs\s*0?\d{1,2}\b", re.IGNORECASE),                    # S1 / S01 (solo)
+              re.compile(r"\bt\s*0?\d{1,2}\b", re.IGNORECASE),                    # T01
+              re.compile(r"\bs\s*0?\d{1,2}\b", re.IGNORECASE),                    # S01
           ]
 
-          # "10 - Nombre" / "01 - ..." / "02. ..." / "03) ..." / "04 _ ..."
           LEADING_EP_NUMBER = re.compile(r"^\s*\d{1,3}\s*[-–._)]\s+\S+", re.IGNORECASE)
-
-          # "01 02" / "01-02" / "01_02" (dos numeros cortos seguidos)
           TWO_SHORT_NUMBERS = re.compile(r"\b0?\d{1,2}\s*[-_ ]\s*0?\d{1,2}\b")
-
-          # Solo numeros tipo "01" "02" o "001" al inicio (muy comun en listas de episodios)
           LEADING_ONLY_NUM = re.compile(r"^\s*0?\d{1,3}\b")
-
-          # Tokens sueltos S01/T01 entre separadores raros
           LOOSE_SEASON_TOKEN = re.compile(r"(^|[\s._-])([st])\s*0?\d{1,2}($|[\s._-])", re.IGNORECASE)
 
           def looks_like_series(title: str, group_title: str) -> bool:
@@ -156,12 +145,10 @@ jobs:
               gt = (group_title or "").strip().lower()
               tl = t.lower()
 
-              # 1) group-title fuerte
               for hint in SERIES_GROUP_HINTS:
                   if hint in gt:
                       return True
 
-              # 2) temporada/season/Txx/Sxx en titulo
               for p in SEASON_IN_TITLE:
                   if p.search(t):
                       return True
@@ -169,34 +156,27 @@ jobs:
               if LOOSE_SEASON_TOKEN.search(t):
                   return True
 
-              # 3) patrones claros de episodio
               for p in SERIES_PATTERNS:
                   if p.search(t):
                       return True
 
-              # 4) "10 - ..." al inicio
               if LEADING_EP_NUMBER.search(t):
                   return True
 
-              # 5) "01 02" / "01-02" / "01_02" con contexto
               if TWO_SHORT_NUMBERS.search(t):
                   if gt or len(t) <= 45 or any(k in tl for k in ["temp", "season", "cap", "epis", "episode", "ep ", "e0", "x"]):
                       return True
 
-              # 6) empieza con numero corto y el titulo es corto (tipico "01 - Titulo")
               if LEADING_ONLY_NUM.search(t) and len(t) <= 55:
-                  # Para no marcar peliculas tipo "1917", exigimos que NO sea anio aislado
                   if not re.fullmatch(r"(19\d{2}|20\d{2})", t.strip()):
                       return True
 
-              # 7) palabras clave
               if any(k in tl for k in ["temporada", "season", "capitulo", "capítulo", "episodio", "episode"]):
                   return True
 
               return False
 
           # ---------- Parser EXTINF ----------
-          # Ej: #EXTINF:-1 tvg-logo="..." group-title="...",Titulo
           ATTR_RE = re.compile(r'([\w-]+)\s*=\s*"([^"]*)"')
 
           def parse_extinf(line: str):
@@ -207,11 +187,8 @@ jobs:
               attrs = dict(ATTR_RE.findall(left))
               return attrs, (title or "").strip()
 
-          # ---------- Parse EXT Vlc Opt (headers) ----------
-          # Ej: #EXTVLCOPT:http-user-agent=...
-          #     #EXTVLCOPT:http-referrer=...
+          # ---------- Parser EXTVLCOPT ----------
           def parse_extvlcopt(line: str):
-              # retorna (k,v) o (None,None)
               prefix = "#EXTVLCOPT:"
               if not line.startswith(prefix):
                   return None, None
@@ -221,141 +198,113 @@ jobs:
               k, v = rest.split("=", 1)
               return k.strip().lower(), v.strip()
 
-          def build_verify_headers(entry):
-              # defaults
+          def build_verify_headers(user_agent: str, referer: str):
               headers = {
-                  "User-Agent": entry.get("user_agent") or "Mozilla/5.0",
+                  "User-Agent": user_agent or "Mozilla/5.0",
                   "Accept": "*/*",
                   "Connection": "close",
               }
-              ref = entry.get("referer") or ""
-              if ref:
-                  headers["Referer"] = ref
+              if referer:
+                  headers["Referer"] = referer
               return headers
 
-          # ---------- Verificacion online (HEAD + fallback GET Range) ----------
+          # ---------- Verificacion estricta (evita falsos 200 con HTML) ----------
           def _guess_kind_from_url(url: str) -> str:
-    u = (url or "").lower()
-    if ".m3u8" in u:
-        return "m3u8"
-    if ".mpd" in u:
-        return "mpd"
-    if any(ext in u for ext in [".mp4", ".m4v", ".mov"]):
-        return "mp4"
-    if ".mkv" in u:
-        return "mkv"
-    if ".webm" in u:
-        return "webm"
-    if ".ts" in u:
-        return "ts"
-    return "unknown"
+              u = (url or "").lower()
+              if ".m3u8" in u:
+                  return "m3u8"
+              if ".mpd" in u:
+                  return "mpd"
+              if any(ext in u for ext in [".mp4", ".m4v", ".mov"]):
+                  return "mp4"
+              if ".mkv" in u:
+                  return "mkv"
+              if ".webm" in u:
+                  return "webm"
+              if ".ts" in u:
+                  return "ts"
+              return "unknown"
 
-def _looks_like_media_bytes(kind: str, b: bytes) -> bool:
-    if not b:
-        return False
-    head = b[:256].lstrip()
+          def _looks_like_media_bytes(kind: str, b: bytes) -> bool:
+              if not b:
+                  return False
+              head = b[:256].lstrip()
 
-    # HLS
-    if kind == "m3u8":
-        return head.startswith(b"#EXTM3U")
-    # DASH
-    if kind == "mpd":
-        return head.startswith(b"<?xml") or b"<MPD" in head[:200] or head.startswith(b"<MPD")
-    # TS
-    if kind == "ts":
-        return b[:1] == b"\x47"
-    # MKV (EBML)
-    if kind == "mkv":
-        return b.startswith(b"\x1A\x45\xDF\xA3")
-    # MP4 / ISO BMFF: 'ftyp' suele estar en los primeros 4-16 bytes
-    if kind == "mp4":
-        return (b.find(b"ftyp", 0, 32) != -1)
-    # WEBM también es EBML (como MKV)
-    if kind == "webm":
-        return b.startswith(b"\x1A\x45\xDF\xA3")
+              if kind == "m3u8":
+                  return head.startswith(b"#EXTM3U")
+              if kind == "mpd":
+                  return head.startswith(b"<?xml") or head.startswith(b"<MPD") or (b"<MPD" in head[:220])
+              if kind == "ts":
+                  return b[:1] == b"\x47"
+              if kind == "mkv":
+                  return b.startswith(b"\x1A\x45\xDF\xA3")
+              if kind == "mp4":
+                  return (b.find(b"ftyp", 0, 32) != -1)
+              if kind == "webm":
+                  return b.startswith(b"\x1A\x45\xDF\xA3")
 
-    # Unknown: si no es texto/html al menos
-    return True
+              return True
 
-def _is_probably_html(content_type: str, b: bytes) -> bool:
-    ct = (content_type or "").lower()
-    if "text/html" in ct:
-        return True
-    # algunos devuelven text/plain con HTML
-    if ("text/" in ct or "application/xhtml" in ct) and b:
-        s = b[:200].lstrip().lower()
-        return s.startswith(b"<!doctype html") or s.startswith(b"<html") or b"<html" in s
-    return False
+          def _is_probably_html(content_type: str, b: bytes) -> bool:
+              ct = (content_type or "").lower()
+              if "text/html" in ct:
+                  return True
+              if ("text/" in ct or "application/xhtml" in ct) and b:
+                  s = b[:200].lstrip().lower()
+                  return s.startswith(b"<!doctype html") or s.startswith(b"<html") or (b"<html" in s)
+              # a veces ct viene vacio pero el body es html
+              if b:
+                  s = b[:200].lstrip().lower()
+                  if s.startswith(b"<!doctype html") or s.startswith(b"<html") or (b"<html" in s):
+                      return True
+              return False
 
-def is_url_online(url: str, headers: dict) -> bool:
-    """
-    Online = accesible Y parece ser media real (no HTML de error).
-    Estrategia:
-      1) HEAD (rápido) para redirecciones / status obvio
-      2) GET Range 0-1023 para validar contenido (Content-Type + magic bytes)
-    """
-    if not url:
-        return False
+          def is_url_online_strict(url: str, headers: dict) -> bool:
+              if not url:
+                  return False
 
-    kind = _guess_kind_from_url(url)
+              kind = _guess_kind_from_url(url)
+              headers = dict(headers or {})
+              headers.setdefault("User-Agent", "Mozilla/5.0")
+              headers.setdefault("Accept", "*/*")
+              headers.setdefault("Connection", "close")
 
-    # defaults seguros
-    headers = dict(headers or {})
-    headers.setdefault("User-Agent", "Mozilla/5.0")
-    headers.setdefault("Accept", "*/*")
-    headers.setdefault("Connection", "close")
+              # 1) HEAD (si responde 404/410 => offline)
+              try:
+                  r = requests.head(url, allow_redirects=True, timeout=VERIFY_TIMEOUT, headers=headers)
+                  code = r.status_code
+                  if code in (404, 410):
+                      return False
+                  # 401/403/405 => no usable, offline para tu caso
+                  if code in (401, 403, 405):
+                      return False
+              except requests.RequestException:
+                  pass
 
-    # 1) HEAD
-    try:
-        r = requests.head(url, allow_redirects=True, timeout=VERIFY_TIMEOUT, headers=headers)
-        code = r.status_code
+              # 2) GET minimo con Range para validar contenido real
+              try:
+                  headers2 = dict(headers)
+                  headers2["Range"] = "bytes=0-1023"
+                  r2 = requests.get(url, allow_redirects=True, timeout=VERIFY_TIMEOUT, headers=headers2, stream=True)
+                  if r2.status_code not in (200, 206):
+                      return False
 
-        # si es 404/410 -> offline
-        if code in (404, 410):
-            return False
+                  ct = r2.headers.get("Content-Type", "")
 
-        # si 2xx/3xx seguimos, pero validamos con GET
-        # si 401/403/405: NO lo damos por online (porque para vos "online" = usable)
-        if code in (401, 403, 405):
-            return False
+                  chunk = b""
+                  for part in r2.iter_content(chunk_size=1024):
+                      chunk = part or b""
+                      break
 
-        # si 5xx o otros raros -> fallback GET igual (a veces HEAD falla)
-    except requests.RequestException:
-        # HEAD falló, probamos GET
-        pass
+                  if _is_probably_html(ct, chunk):
+                      return False
 
-    # 2) GET mínimo con Range
-    try:
-        headers2 = dict(headers)
-        headers2["Range"] = "bytes=0-1023"
-        r2 = requests.get(url, allow_redirects=True, timeout=VERIFY_TIMEOUT, headers=headers2, stream=True)
-        code2 = r2.status_code
+                  if kind != "unknown":
+                      return _looks_like_media_bytes(kind, chunk)
 
-        # aceptamos 200/206 (206 típico por Range)
-        if code2 not in (200, 206):
-            return False
-
-        ct = r2.headers.get("Content-Type", "")
-        # leer un poco del body (sin bajar todo)
-        chunk = b""
-        for part in r2.iter_content(chunk_size=1024):
-            chunk = part or b""
-            break
-
-        # Si parece HTML (error page), descartamos
-        if _is_probably_html(ct, chunk):
-            return False
-
-        # Si es un tipo conocido, validamos firma/magic bytes
-        if kind != "unknown":
-            return _looks_like_media_bytes(kind, chunk)
-
-        # Unknown: si no es HTML, lo damos por válido
-        return True
-
-    except requests.RequestException:
-        return False
-
+                  return True
+              except requests.RequestException:
+                  return False
 
           # ---------- Descargar M3U ----------
           resp = requests.get(M3U_URL, timeout=120)
@@ -365,11 +314,10 @@ def is_url_online(url: str, headers: dict) -> bool:
           lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
 
           all_entries = []
-
           current_extinf = None
           current_attrs = None
           current_title = None
-          current_opts_lines = []   # para preservar en M3U
+          current_opts_lines = []
           current_user_agent = ""
           current_referer = ""
 
@@ -385,7 +333,6 @@ def is_url_online(url: str, headers: dict) -> bool:
                   current_referer = ""
                   continue
 
-              # headers opcionales entre EXTINF y URL
               if current_extinf and ln.startswith("#EXTVLCOPT:"):
                   k, v = parse_extvlcopt(ln)
                   if k and v:
@@ -396,14 +343,10 @@ def is_url_online(url: str, headers: dict) -> bool:
                           current_referer = v
                   continue
 
-              # URL (linea siguiente al EXTINF)
               if current_extinf and not ln.startswith("#"):
                   raw_url = ln.strip()
-
-                  # Soportar URL|headers
                   video_url, pipe_headers = split_url_pipe_headers(raw_url)
 
-                  # headers desde pipe si existen
                   if not current_user_agent and ("User-Agent" in pipe_headers or "user-agent" in pipe_headers):
                       current_user_agent = pipe_headers.get("User-Agent") or pipe_headers.get("user-agent") or ""
                   if not current_referer and ("Referer" in pipe_headers or "referer" in pipe_headers):
@@ -416,7 +359,7 @@ def is_url_online(url: str, headers: dict) -> bool:
                   if not title:
                       title = (current_attrs.get("tvg-name") or current_attrs.get("tvg-id") or "").strip()
 
-                  entry = {
+                  all_entries.append({
                       "extinf": current_extinf,
                       "opts_lines": list(current_opts_lines),
                       "title": title,
@@ -426,8 +369,7 @@ def is_url_online(url: str, headers: dict) -> bool:
                       "anio": extract_year(title),
                       "user_agent": current_user_agent,
                       "referer": current_referer,
-                  }
-                  all_entries.append(entry)
+                  })
 
                   current_extinf = None
                   current_attrs = None
@@ -438,28 +380,27 @@ def is_url_online(url: str, headers: dict) -> bool:
 
           # ---------- Verificar URLs (opcional) ----------
           if VERIFY_URLS and all_entries:
-              # clave por (url, ua, ref) para minimizar duplicados
-              unique_keys = OrderedDict()
+              # deduplicar por (url, ua, ref)
+              keys = []
+              seen = set()
               for e in all_entries:
                   key = (e["url"], e.get("user_agent") or "", e.get("referer") or "")
-                  unique_keys.setdefault(key, e)
-
-              results = {}
-              keys = list(unique_keys.keys())
+                  if key not in seen:
+                      seen.add(key)
+                      keys.append(key)
 
               print(f"Verificando URLs: {len(keys)} unicas (workers={VERIFY_WORKERS}, timeout={VERIFY_TIMEOUT}s)")
 
+              results = {}
               with ThreadPoolExecutor(max_workers=VERIFY_WORKERS) as ex:
-                  future_map = {}
-                  for key in keys:
-                      url, ua, ref = key
-                      tmp_entry = {"url": url, "user_agent": ua, "referer": ref}
-                      headers = build_verify_headers(tmp_entry)
-                      future_map[ex.submit(is_url_online, url, headers)] = key
+                  fut_map = {}
+                  for (url, ua, ref) in keys:
+                      headers = build_verify_headers(ua, ref)
+                      fut_map[ex.submit(is_url_online_strict, url, headers)] = (url, ua, ref)
 
                   done = 0
-                  for fut in as_completed(future_map):
-                      key = future_map[fut]
+                  for fut in as_completed(fut_map):
+                      key = fut_map[fut]
                       ok = False
                       try:
                           ok = bool(fut.result())
@@ -467,7 +408,7 @@ def is_url_online(url: str, headers: dict) -> bool:
                           ok = False
                       results[key] = ok
                       done += 1
-                      if done % 500 == 0:
+                      if done % 300 == 0:
                           print(f"  progreso: {done}/{len(keys)}")
 
               filtered = []
@@ -475,6 +416,7 @@ def is_url_online(url: str, headers: dict) -> bool:
                   key = (e["url"], e.get("user_agent") or "", e.get("referer") or "")
                   if results.get(key, False):
                       filtered.append(e)
+
               dropped = len(all_entries) - len(filtered)
               print(f"URLs offline ignoradas: {dropped}")
               all_entries = filtered
@@ -488,7 +430,7 @@ def is_url_online(url: str, headers: dict) -> bool:
               else:
                   movies_entries.append(e)
 
-          # ---------- Escribir M3U separados (preservando EXTVLCOPT si existia) ----------
+          # ---------- Escribir M3U separados (preservando EXTVLCOPT) ----------
           def write_m3u(path, entries):
               out = ["#EXTM3U"]
               for e in entries:
@@ -502,16 +444,15 @@ def is_url_online(url: str, headers: dict) -> bool:
           write_m3u(os.path.join(OUTPUT_DIR, "peliculas.m3u"), movies_entries)
           write_m3u(os.path.join(OUTPUT_DIR, "series.m3u"), series_entries)
 
-          # ---------- JSON con TODOS los campos (como pediste) ----------
-          # record = { "name": group-title, "samples": [{...}] }
+          # ---------- JSON con TODOS los campos ----------
           def sample_from_entry(e, tipo: str):
               return {
                   "name": e["title"],
                   "url": e["url"],
-                  "icono": e["tvg_logo"] or "",          # tvg-logo -> icono
+                  "icono": e["tvg_logo"] or "",
                   "iconoHorizontal": "",
                   "iconpng": "",
-                  "type": tipo,                          # PELICULA o SERIE
+                  "type": tipo,
                   "descripcion": "",
                   "anio": e.get("anio") or "",
                   "genero": "",
@@ -521,7 +462,7 @@ def is_url_online(url: str, headers: dict) -> bool:
           def to_grouped_records(entries, tipo: str):
               groups = OrderedDict()
               for e in entries:
-                  g = e["group_title"]  # group-title -> record.name
+                  g = e["group_title"]
                   if g not in groups:
                       groups[g] = []
                   groups[g].append(sample_from_entry(e, tipo))
@@ -530,7 +471,7 @@ def is_url_online(url: str, headers: dict) -> bool:
           movies_records = to_grouped_records(movies_entries, "PELICULA")
           series_records = to_grouped_records(series_entries, "SERIE")
 
-          # ---------- Split JSON de peliculas en partes ----------
+          # ---------- Split JSON peliculas ----------
           def split_records_by_samples(records, max_samples):
               parts = []
               cur = []
@@ -582,7 +523,7 @@ def is_url_online(url: str, headers: dict) -> bool:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "${{ github.event.inputs.output_dir }}"
           if ! git diff --cached --exit-code; then
-            git commit -m "Convertir M3U a JSON y separar series/peliculas (+verify opcional)"
+            git commit -m "Convertir M3U a JSON y separar series/peliculas (verify estricta)"
             git push
           else
             echo "No hay cambios"
