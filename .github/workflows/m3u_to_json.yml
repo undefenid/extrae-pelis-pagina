@@ -1,5 +1,5 @@
 # .github/workflows/m3u_to_json.yml
-name: Convertir M3U (URL) a JSON + separar series (afinada + validar URLs)
+name: Convertir M3U (URL) a JSON + separar series (con verificacion online)
 
 permissions:
   contents: write
@@ -11,25 +11,25 @@ on:
         description: "URL del archivo .m3u/.m3u8 (texto #EXTM3U)"
         required: true
       output_dir:
-        description: "Carpeta de salida en la raíz"
+        description: "Carpeta de salida en la raiz"
         required: false
         default: "m3u_convert"
       chunk_size:
-        description: "Máx. cantidad de items (películas) por cada JSON part"
+        description: "Max. cantidad de items (peliculas) por cada JSON part"
         required: false
         default: "2000"
-      check_urls:
-        description: "Verificar si la URL del video responde (si no, se ignora el item)"
+      verify_urls:
+        description: "Verificar si la URL del video esta online (true/false). Si esta offline, se ignora."
         required: false
-        default: "true"
-      max_workers:
-        description: "Cantidad de hilos para validar URLs (más rápido, pero más carga)"
-        required: false
-        default: "20"
-      timeout_sec:
+        default: "false"
+      verify_timeout:
         description: "Timeout por URL (segundos)"
         required: false
-        default: "8"
+        default: "6"
+      verify_workers:
+        description: "Cantidad de hilos para verificacion (concurrencia)"
+        required: false
+        default: "30"
 
 jobs:
   build:
@@ -50,21 +50,21 @@ jobs:
         run: |
           pip install --no-cache-dir requests
 
-      - name: Convert M3U -> JSON + split series/movies + url check
+      - name: Convert M3U -> JSON + split series/movies (+ optional verify)
         env:
           M3U_URL: ${{ github.event.inputs.m3u_url }}
           OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
           CHUNK_SIZE: ${{ github.event.inputs.chunk_size }}
-          CHECK_URLS: ${{ github.event.inputs.check_urls }}
-          MAX_WORKERS: ${{ github.event.inputs.max_workers }}
-          TIMEOUT_SEC: ${{ github.event.inputs.timeout_sec }}
+          VERIFY_URLS: ${{ github.event.inputs.verify_urls }}
+          VERIFY_TIMEOUT: ${{ github.event.inputs.verify_timeout }}
+          VERIFY_WORKERS: ${{ github.event.inputs.verify_workers }}
         run: |
           python <<'PY'
           import os
           import re
           import json
+          import time
           import requests
-          import unicodedata
           from collections import OrderedDict
           from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -72,22 +72,34 @@ jobs:
           OUTPUT_DIR = os.environ.get("OUTPUT_DIR", "m3u_convert").strip()
           CHUNK_SIZE = int((os.environ.get("CHUNK_SIZE") or "2000").strip())
 
-          CHECK_URLS = (os.environ.get("CHECK_URLS") or "true").strip().lower() in ("1", "true", "yes", "y", "si", "sí")
-          MAX_WORKERS = int((os.environ.get("MAX_WORKERS") or "20").strip())
-          TIMEOUT_SEC = float((os.environ.get("TIMEOUT_SEC") or "8").strip())
+          VERIFY_URLS = (os.environ.get("VERIFY_URLS", "false").strip().lower() == "true")
+          VERIFY_TIMEOUT = float(os.environ.get("VERIFY_TIMEOUT") or "6")
+          VERIFY_WORKERS = int(os.environ.get("VERIFY_WORKERS") or "30")
 
           if not M3U_URL:
               raise SystemExit("Falta M3U_URL")
 
           os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-          # ------------------ Helpers de texto ------------------
-          def norm(s: str) -> str:
-              s = s or ""
-              s = "".join(c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn")
-              return s.lower().strip()
+          # ---------- Util: parse headers embebidos en URL (formato VLC/OTT) ----------
+          # Ej: http://host/stream.m3u8|User-Agent=xxx&Referer=https://site
+          def split_url_pipe_headers(raw_url: str):
+              url = raw_url.strip()
+              headers = {}
+              if "|" not in url:
+                  return url, headers
+              base, meta = url.split("|", 1)
+              # meta: Key=Val&Key2=Val2 ...
+              for part in meta.split("&"):
+                  if "=" in part:
+                      k, v = part.split("=", 1)
+                      k = k.strip()
+                      v = v.strip()
+                      if k and v:
+                          headers[k] = v
+              return base.strip(), headers
 
-          # ------------------ Año (si aparece en el título) ------------------
+          # ---------- Ano (si aparece en el titulo) ----------
           YEAR_RE = re.compile(r"\b(19\d{2}|20\d{2})\b")
 
           def extract_year(title: str) -> str:
@@ -96,7 +108,94 @@ jobs:
               yrs = YEAR_RE.findall(title)
               return yrs[-1] if yrs else ""
 
-          # ------------------ Parser EXTINF ------------------
+          # ---------- Heuristicas SERIES ----------
+          SERIES_GROUP_HINTS = [
+              "temporada", "season", "serie", "series", "tv", "episodios", "capitulos", "capítulos",
+              "capitulo", "capítulo"
+          ]
+
+          # patrones claros de episodio/capitulo
+          SERIES_PATTERNS = [
+              re.compile(r"\b\d{1,2}x\d{1,3}\b", re.IGNORECASE),                 # 1x01, 2x10
+              re.compile(r"\bs\d{1,2}\s*e\d{1,3}\b", re.IGNORECASE),             # S01E02
+              re.compile(r"\bcap(?:itulo|ítulo)?\.?\s*\d+\b", re.IGNORECASE),    # capitulo 10 / cap. 10
+              re.compile(r"\bepisodio\.?\s*\d+\b", re.IGNORECASE),               # episodio 1
+              re.compile(r"\bepisode\.?\s*\d+\b", re.IGNORECASE),                # episode 1
+              re.compile(r"\bep\.?\s*0*\d+\b", re.IGNORECASE),                   # ep01, EP 2
+              re.compile(r"\be\.?\s*0*\d+\b", re.IGNORECASE),                    # e01, E2
+              re.compile(r"\bova\s*\d*\b", re.IGNORECASE),                       # ova / ova 1
+              re.compile(r"\b(oav|special|especial|extra)\b", re.IGNORECASE),    # especiales
+              re.compile(r"\btemporada\s*\d+\b", re.IGNORECASE),                 # temporada 1
+              re.compile(r"\bseason\s*\d+\b", re.IGNORECASE),                    # season 2
+              re.compile(r"^\s*\d{1,3}\b", re.IGNORECASE),
+          ]
+
+          # TEMPORADA / SEASON / T01 / S01 sueltos
+          SEASON_IN_TITLE = [
+              re.compile(r"\btemporada\b", re.IGNORECASE),
+              re.compile(r"\bseason\b", re.IGNORECASE),
+              re.compile(r"\btemp\.?\s*\d+\b", re.IGNORECASE),                   # temp 1
+              re.compile(r"\bt\s*0?\d{1,2}\b", re.IGNORECASE),                    # T1 / T01
+              re.compile(r"\bs\s*0?\d{1,2}\b", re.IGNORECASE),                    # S1 / S01 (solo)
+          ]
+
+          # "10 - Nombre" / "01 - ..." / "02. ..." / "03) ..." / "04 _ ..."
+          LEADING_EP_NUMBER = re.compile(r"^\s*\d{1,3}\s*[-–._)]\s+\S+", re.IGNORECASE)
+
+          # "01 02" / "01-02" / "01_02" (dos numeros cortos seguidos)
+          TWO_SHORT_NUMBERS = re.compile(r"\b0?\d{1,2}\s*[-_ ]\s*0?\d{1,2}\b")
+
+          # Solo numeros tipo "01" "02" o "001" al inicio (muy comun en listas de episodios)
+          LEADING_ONLY_NUM = re.compile(r"^\s*0?\d{1,3}\b")
+
+          # Tokens sueltos S01/T01 entre separadores raros
+          LOOSE_SEASON_TOKEN = re.compile(r"(^|[\s._-])([st])\s*0?\d{1,2}($|[\s._-])", re.IGNORECASE)
+
+          def looks_like_series(title: str, group_title: str) -> bool:
+              t = (title or "").strip()
+              gt = (group_title or "").strip().lower()
+              tl = t.lower()
+
+              # 1) group-title fuerte
+              for hint in SERIES_GROUP_HINTS:
+                  if hint in gt:
+                      return True
+
+              # 2) temporada/season/Txx/Sxx en titulo
+              for p in SEASON_IN_TITLE:
+                  if p.search(t):
+                      return True
+
+              if LOOSE_SEASON_TOKEN.search(t):
+                  return True
+
+              # 3) patrones claros de episodio
+              for p in SERIES_PATTERNS:
+                  if p.search(t):
+                      return True
+
+              # 4) "10 - ..." al inicio
+              if LEADING_EP_NUMBER.search(t):
+                  return True
+
+              # 5) "01 02" / "01-02" / "01_02" con contexto
+              if TWO_SHORT_NUMBERS.search(t):
+                  if gt or len(t) <= 45 or any(k in tl for k in ["temp", "season", "cap", "epis", "episode", "ep ", "e0", "x"]):
+                      return True
+
+              # 6) empieza con numero corto y el titulo es corto (tipico "01 - Titulo")
+              if LEADING_ONLY_NUM.search(t) and len(t) <= 55:
+                  # Para no marcar peliculas tipo "1917", exigimos que NO sea anio aislado
+                  if not re.fullmatch(r"(19\d{2}|20\d{2})", t.strip()):
+                      return True
+
+              # 7) palabras clave
+              if any(k in tl for k in ["temporada", "season", "capitulo", "capítulo", "episodio", "episode"]):
+                  return True
+
+              return False
+
+          # ---------- Parser EXTINF ----------
           # Ej: #EXTINF:-1 tvg-logo="..." group-title="...",Titulo
           ATTR_RE = re.compile(r'([\w-]+)\s*=\s*"([^"]*)"')
 
@@ -108,151 +207,82 @@ jobs:
               attrs = dict(ATTR_RE.findall(left))
               return attrs, (title or "").strip()
 
-          # ------------------ Clasificador SERIES vs PELÍCULAS (score) ------------------
-          # Hints en group-title
-          SERIES_GROUP_HINTS = [
-              "temporada", "season", "serie", "series", "tv", "tvshow", "episodios", "capitulos", "capitulo", "caps"
-          ]
-          MOVIE_GROUP_HINTS = [
-              "pelicula", "peliculas", "movie", "movies", "cine", "film", "films"
-          ]
+          # ---------- Parse EXT Vlc Opt (headers) ----------
+          # Ej: #EXTVLCOPT:http-user-agent=...
+          #     #EXTVLCOPT:http-referrer=...
+          def parse_extvlcopt(line: str):
+              # retorna (k,v) o (None,None)
+              prefix = "#EXTVLCOPT:"
+              if not line.startswith(prefix):
+                  return None, None
+              rest = line[len(prefix):].strip()
+              if "=" not in rest:
+                  return None, None
+              k, v = rest.split("=", 1)
+              return k.strip().lower(), v.strip()
 
-          # Señales fuertes de episodio
-          P_SXXEYY = re.compile(r"\bs\d{1,2}\s*e\d{1,3}\b", re.IGNORECASE)            # S01E02
-          P_XXxYY  = re.compile(r"\b\d{1,2}x\d{1,3}\b", re.IGNORECASE)               # 1x01
-          P_EP     = re.compile(r"\b(ep|episodio|episode)\s*\.?\s*0*\d+\b", re.IGNORECASE)  # ep01 / episodio 2
-          P_E      = re.compile(r"\b(e)\s*\.?\s*0*\d+\b", re.IGNORECASE)             # e01 (suave)
-          P_CAP    = re.compile(r"\b(cap|capitulo|capítulo|chapter)\s*\.?\s*\d+\b", re.IGNORECASE)
+          def build_verify_headers(entry):
+              # defaults
+              headers = {
+                  "User-Agent": entry.get("user_agent") or "Mozilla/5.0",
+                  "Accept": "*/*",
+                  "Connection": "close",
+              }
+              ref = entry.get("referer") or ""
+              if ref:
+                  headers["Referer"] = ref
+              return headers
 
-          # Temporada en título
-          P_TEMPORADA = re.compile(r"\b(temporada|season|temp)\b", re.IGNORECASE)
-          P_TNN = re.compile(r"(^|[\s._-])t\s*0?\d{1,2}($|[\s._-])", re.IGNORECASE)  # T1 / T01
-          P_SNN = re.compile(r"(^|[\s._-])s\s*0?\d{1,2}($|[\s._-])", re.IGNORECASE)  # S1 / S01 (solo)
-
-          # Formatos raros: "01 02" / "01-02" / "01_02"
-          P_TWO_SHORT = re.compile(r"\b0?\d{1,2}\s*[-_ ]\s*0?\d{1,2}\b")
-
-          # Numeración al inicio: "10 - Titulo", "01. Titulo", "02) Titulo"
-          P_LEADING_NUM = re.compile(r"^\s*\d{1,3}\s*[-–.)]\s+\S+", re.IGNORECASE)
-
-          # Solo número (ej: "01") o número con símbolos
-          P_ONLY_NUMBER = re.compile(r"^\s*\d{1,3}\s*$")
-          P_ONLY_NUMBER_NOISY = re.compile(r"^\s*0?\d{1,3}\s*[-–.)]?\s*$")
-
-          # Tags comunes de releases (más comunes en películas; resta un poco)
-          P_RELEASE_TAGS = re.compile(r"\b(1080p|720p|2160p|4k|bluray|brrip|webrip|web-dl|hdr|dvdrip|cam)\b", re.IGNORECASE)
-
-          def series_score(title: str, group_title: str) -> int:
-              t = title or ""
-              gt = group_title or ""
-              tn = norm(t)
-              gtn = norm(gt)
-
-              score = 0
-
-              # group-title hints
-              if any(h in gtn for h in SERIES_GROUP_HINTS):
-                  score += 4
-              if any(h in gtn for h in MOVIE_GROUP_HINTS):
-                  score -= 4
-
-              # title-only number: casi seguro episodio suelto
-              if P_ONLY_NUMBER.match(t) or P_ONLY_NUMBER_NOISY.match(t):
-                  score += 5
-
-              # temporada/season tokens
-              if P_TEMPORADA.search(t) or P_TNN.search(t) or P_SNN.search(t):
-                  score += 4
-
-              # patrones de episodio (fuertes)
-              if P_SXXEYY.search(t) or P_XXxYY.search(t):
-                  score += 5
-              if P_CAP.search(t) or P_EP.search(t):
-                  score += 4
-
-              # "E01" puede ser ambiguo, suma menos
-              if P_E.search(t):
-                  score += 2
-
-              # "01 02" / "01-02" etc
-              if P_TWO_SHORT.search(t):
-                  score += 2
-
-              # numeración al inicio: señal débil (solo suma poco)
-              if P_LEADING_NUM.search(t):
-                  score += 1
-
-              # tags típicos de releases: resta un poco (para evitar falsos positivos)
-              if P_RELEASE_TAGS.search(t):
-                  score -= 1
-
-              # si tiene un año, suele ser película (no siempre, pero ayuda)
-              if extract_year(t):
-                  score -= 1
-
-              return score
-
-          def looks_like_series(title: str, group_title: str) -> bool:
-              return series_score(title, group_title) >= 4
-
-          # ------------------ Validación URL online ------------------
-          def alive_status(code: int) -> bool:
-              return (200 <= code < 400) or code in (401, 403)
-
-          def is_url_alive(url: str) -> bool:
+          # ---------- Verificacion online (HEAD + fallback GET Range) ----------
+          def is_url_online(url: str, headers: dict) -> bool:
               if not url:
                   return False
-              u = url.strip()
-              if not (u.startswith("http://") or u.startswith("https://")):
-                  return False
-
-              headers_head = {
-                  "User-Agent": "Mozilla/5.0 (GitHubActions) m3u-check/1.0",
-                  "Accept": "*/*",
-              }
-              headers_get = {
-                  "User-Agent": "Mozilla/5.0 (GitHubActions) m3u-check/1.0",
-                  "Accept": "*/*",
-                  "Range": "bytes=0-0",
-              }
-
               try:
-                  r = requests.head(u, allow_redirects=True, timeout=(TIMEOUT_SEC, TIMEOUT_SEC), headers=headers_head)
-                  if alive_status(r.status_code):
+                  r = requests.head(url, allow_redirects=True, timeout=VERIFY_TIMEOUT, headers=headers)
+                  code = r.status_code
+
+                  # 2xx/3xx => online
+                  if 200 <= code < 400:
                       return True
-                  # algunos servidores no soportan HEAD
-                  if r.status_code in (400, 405, 501):
-                      pass
-                  else:
-                      return False
-              except requests.RequestException:
-                  # probamos GET minimizado
-                  pass
 
-              try:
-                  r = requests.get(u, allow_redirects=True, timeout=(TIMEOUT_SEC, TIMEOUT_SEC), headers=headers_get, stream=True)
-                  ok = alive_status(r.status_code)
-                  try:
-                      r.close()
-                  except Exception:
-                      pass
-                  return ok
+                  # 404 => offline
+                  if code == 404:
+                      return False
+
+                  # Muchos servers bloquean HEAD / auth pero estan vivos:
+                  # 401/403/405 => intentar GET mini
+                  if code in (401, 403, 405):
+                      headers2 = dict(headers)
+                      headers2["Range"] = "bytes=0-0"
+                      r2 = requests.get(url, allow_redirects=True, timeout=VERIFY_TIMEOUT, headers=headers2, stream=True)
+                      code2 = r2.status_code
+                      if 200 <= code2 < 400 or code2 == 206:
+                          return True
+                      # si vuelve 401/403 igual, lo consideramos "online" (host responde)
+                      if code2 in (401, 403):
+                          return True
+                      return False
+
+                  # 5xx / otros => considerar offline
+                  return False
               except requests.RequestException:
                   return False
 
-          # ------------------ Descargar M3U ------------------
-          resp = requests.get(M3U_URL, timeout=90)
+          # ---------- Descargar M3U ----------
+          resp = requests.get(M3U_URL, timeout=120)
           resp.raise_for_status()
           text = resp.text
 
           lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
 
-          movies_entries = []
-          series_entries = []
+          all_entries = []
 
           current_extinf = None
           current_attrs = None
           current_title = None
+          current_opts_lines = []   # para preservar en M3U
+          current_user_agent = ""
+          current_referer = ""
 
           for ln in lines:
               if ln.startswith("#EXTM3U"):
@@ -261,11 +291,35 @@ jobs:
               if ln.startswith("#EXTINF"):
                   current_extinf = ln
                   current_attrs, current_title = parse_extinf(ln)
+                  current_opts_lines = []
+                  current_user_agent = ""
+                  current_referer = ""
                   continue
 
-              # URL (línea siguiente al EXTINF)
+              # headers opcionales entre EXTINF y URL
+              if current_extinf and ln.startswith("#EXTVLCOPT:"):
+                  k, v = parse_extvlcopt(ln)
+                  if k and v:
+                      current_opts_lines.append(ln)
+                      if k == "http-user-agent":
+                          current_user_agent = v
+                      elif k == "http-referrer":
+                          current_referer = v
+                  continue
+
+              # URL (linea siguiente al EXTINF)
               if current_extinf and not ln.startswith("#"):
-                  video_url = ln.strip()
+                  raw_url = ln.strip()
+
+                  # Soportar URL|headers
+                  video_url, pipe_headers = split_url_pipe_headers(raw_url)
+
+                  # headers desde pipe si existen
+                  if not current_user_agent and ("User-Agent" in pipe_headers or "user-agent" in pipe_headers):
+                      current_user_agent = pipe_headers.get("User-Agent") or pipe_headers.get("user-agent") or ""
+                  if not current_referer and ("Referer" in pipe_headers or "referer" in pipe_headers):
+                      current_referer = pipe_headers.get("Referer") or pipe_headers.get("referer") or ""
+
                   group_title = (current_attrs.get("group-title") or "").strip()
                   tvg_logo = (current_attrs.get("tvg-logo") or "").strip()
 
@@ -273,66 +327,85 @@ jobs:
                   if not title:
                       title = (current_attrs.get("tvg-name") or current_attrs.get("tvg-id") or "").strip()
 
-                  # si no hay título o url, ignorar
-                  if not video_url or not title:
-                      current_extinf = None
-                      current_attrs = None
-                      current_title = None
-                      continue
-
                   entry = {
                       "extinf": current_extinf,
+                      "opts_lines": list(current_opts_lines),
                       "title": title,
                       "url": video_url,
                       "group_title": group_title,
                       "tvg_logo": tvg_logo,
                       "anio": extract_year(title),
+                      "user_agent": current_user_agent,
+                      "referer": current_referer,
                   }
-
-                  if looks_like_series(title, group_title):
-                      series_entries.append(entry)
-                  else:
-                      movies_entries.append(entry)
+                  all_entries.append(entry)
 
                   current_extinf = None
                   current_attrs = None
                   current_title = None
+                  current_opts_lines = []
+                  current_user_agent = ""
+                  current_referer = ""
 
-          # ------------------ Validar URLs y filtrar ------------------
-          if CHECK_URLS:
-              all_urls = {}
-              for e in movies_entries + series_entries:
-                  all_urls[e["url"]] = None
-
-              print(f"Validando URLs únicas: {len(all_urls)} (threads={MAX_WORKERS}, timeout={TIMEOUT_SEC}s)")
+          # ---------- Verificar URLs (opcional) ----------
+          if VERIFY_URLS and all_entries:
+              # clave por (url, ua, ref) para minimizar duplicados
+              unique_keys = OrderedDict()
+              for e in all_entries:
+                  key = (e["url"], e.get("user_agent") or "", e.get("referer") or "")
+                  unique_keys.setdefault(key, e)
 
               results = {}
-              with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-                  fut_map = {ex.submit(is_url_alive, u): u for u in all_urls.keys()}
-                  for fut in as_completed(fut_map):
-                      u = fut_map[fut]
+              keys = list(unique_keys.keys())
+
+              print(f"Verificando URLs: {len(keys)} unicas (workers={VERIFY_WORKERS}, timeout={VERIFY_TIMEOUT}s)")
+
+              with ThreadPoolExecutor(max_workers=VERIFY_WORKERS) as ex:
+                  future_map = {}
+                  for key in keys:
+                      url, ua, ref = key
+                      tmp_entry = {"url": url, "user_agent": ua, "referer": ref}
+                      headers = build_verify_headers(tmp_entry)
+                      future_map[ex.submit(is_url_online, url, headers)] = key
+
+                  done = 0
+                  for fut in as_completed(future_map):
+                      key = future_map[fut]
+                      ok = False
                       try:
-                          results[u] = bool(fut.result())
+                          ok = bool(fut.result())
                       except Exception:
-                          results[u] = False
+                          ok = False
+                      results[key] = ok
+                      done += 1
+                      if done % 500 == 0:
+                          print(f"  progreso: {done}/{len(keys)}")
 
-              def keep_alive(entries):
-                  kept = []
-                  for e in entries:
-                      if results.get(e["url"], False):
-                          kept.append(e)
-                  return kept
+              filtered = []
+              for e in all_entries:
+                  key = (e["url"], e.get("user_agent") or "", e.get("referer") or "")
+                  if results.get(key, False):
+                      filtered.append(e)
+              dropped = len(all_entries) - len(filtered)
+              print(f"URLs offline ignoradas: {dropped}")
+              all_entries = filtered
 
-              movies_entries = keep_alive(movies_entries)
-              series_entries = keep_alive(series_entries)
+          # ---------- Separar series/peliculas ----------
+          movies_entries = []
+          series_entries = []
+          for e in all_entries:
+              if looks_like_series(e["title"], e["group_title"]):
+                  series_entries.append(e)
+              else:
+                  movies_entries.append(e)
 
-              print(f"URLs vivas -> Películas: {len(movies_entries)} | Series: {len(series_entries)}")
-
-          # ------------------ Escribir M3U separados ------------------
+          # ---------- Escribir M3U separados (preservando EXTVLCOPT si existia) ----------
           def write_m3u(path, entries):
               out = ["#EXTM3U"]
               for e in entries:
                   out.append(e["extinf"])
+                  for opt in e.get("opts_lines", []):
+                      out.append(opt)
                   out.append(e["url"])
               with open(path, "w", encoding="utf-8") as f:
                   f.write("\n".join(out) + "\n")
@@ -340,15 +413,16 @@ jobs:
           write_m3u(os.path.join(OUTPUT_DIR, "peliculas.m3u"), movies_entries)
           write_m3u(os.path.join(OUTPUT_DIR, "series.m3u"), series_entries)
 
-          # ------------------ JSON con TODOS los campos (como pediste) ------------------
+          # ---------- JSON con TODOS los campos (como pediste) ----------
+          # record = { "name": group-title, "samples": [{...}] }
           def sample_from_entry(e, tipo: str):
               return {
                   "name": e["title"],
                   "url": e["url"],
-                  "icono": e["tvg_logo"] or "",     # tvg-logo -> icono
+                  "icono": e["tvg_logo"] or "",          # tvg-logo -> icono
                   "iconoHorizontal": "",
                   "iconpng": "",
-                  "type": tipo,                     # PELICULA o SERIE
+                  "type": tipo,                          # PELICULA o SERIE
                   "descripcion": "",
                   "anio": e.get("anio") or "",
                   "genero": "",
@@ -367,12 +441,11 @@ jobs:
           movies_records = to_grouped_records(movies_entries, "PELICULA")
           series_records = to_grouped_records(series_entries, "SERIE")
 
-          # ------------------ Split JSON de películas en partes ------------------
+          # ---------- Split JSON de peliculas en partes ----------
           def split_records_by_samples(records, max_samples):
               parts = []
               cur = []
               cur_count = 0
-
               for r in records:
                   s = r.get("samples", [])
                   if cur and (cur_count + len(s) > max_samples):
@@ -381,7 +454,6 @@ jobs:
                       cur_count = 0
                   cur.append(r)
                   cur_count += len(s)
-
               if cur:
                   parts.append(cur)
               return parts
@@ -395,7 +467,6 @@ jobs:
               for i, part in enumerate(parts, start=1):
                   with open(os.path.join(OUTPUT_DIR, f"peliculas_part{i:03d}.json"), "w", encoding="utf-8") as f:
                       json.dump(part, f, indent=2, ensure_ascii=False)
-
               manifest = {
                   "total_parts": len(parts),
                   "chunk_size_samples": CHUNK_SIZE,
@@ -409,9 +480,10 @@ jobs:
               json.dump(series_records, f, indent=2, ensure_ascii=False)
 
           print(f"M3U URL: {M3U_URL}")
-          print(f"Películas: {sum(len(r['samples']) for r in movies_records)} items (records={len(movies_records)})")
-          print(f"Series: {sum(len(r['samples']) for r in series_records)} items (records={len(series_records)})")
-          print(f"Películas JSON parts: {len(parts)} (chunk_size={CHUNK_SIZE})")
+          print(f"VERIFY_URLS: {VERIFY_URLS}")
+          print(f"Peliculas: {len(movies_entries)} entries")
+          print(f"Series: {len(series_entries)} entries")
+          print(f"Peliculas JSON parts: {len(parts)} (chunk_size={CHUNK_SIZE})")
           print(f"Salida en: {OUTPUT_DIR}")
           PY
 
@@ -421,7 +493,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "${{ github.event.inputs.output_dir }}"
           if ! git diff --cached --exit-code; then
-            git commit -m "Convertir M3U a JSON y separar series/peliculas (afinada + url check)"
+            git commit -m "Convertir M3U a JSON y separar series/peliculas (+verify opcional)"
             git push
           else
             echo "No hay cambios"
