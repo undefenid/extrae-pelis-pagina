@@ -234,39 +234,128 @@ jobs:
               return headers
 
           # ---------- Verificacion online (HEAD + fallback GET Range) ----------
-          def is_url_online(url: str, headers: dict) -> bool:
-              if not url:
-                  return False
-              try:
-                  r = requests.head(url, allow_redirects=True, timeout=VERIFY_TIMEOUT, headers=headers)
-                  code = r.status_code
+          def _guess_kind_from_url(url: str) -> str:
+    u = (url or "").lower()
+    if ".m3u8" in u:
+        return "m3u8"
+    if ".mpd" in u:
+        return "mpd"
+    if any(ext in u for ext in [".mp4", ".m4v", ".mov"]):
+        return "mp4"
+    if ".mkv" in u:
+        return "mkv"
+    if ".webm" in u:
+        return "webm"
+    if ".ts" in u:
+        return "ts"
+    return "unknown"
 
-                  # 2xx/3xx => online
-                  if 200 <= code < 400:
-                      return True
+def _looks_like_media_bytes(kind: str, b: bytes) -> bool:
+    if not b:
+        return False
+    head = b[:256].lstrip()
 
-                  # 404 => offline
-                  if code == 404:
-                      return False
+    # HLS
+    if kind == "m3u8":
+        return head.startswith(b"#EXTM3U")
+    # DASH
+    if kind == "mpd":
+        return head.startswith(b"<?xml") or b"<MPD" in head[:200] or head.startswith(b"<MPD")
+    # TS
+    if kind == "ts":
+        return b[:1] == b"\x47"
+    # MKV (EBML)
+    if kind == "mkv":
+        return b.startswith(b"\x1A\x45\xDF\xA3")
+    # MP4 / ISO BMFF: 'ftyp' suele estar en los primeros 4-16 bytes
+    if kind == "mp4":
+        return (b.find(b"ftyp", 0, 32) != -1)
+    # WEBM también es EBML (como MKV)
+    if kind == "webm":
+        return b.startswith(b"\x1A\x45\xDF\xA3")
 
-                  # Muchos servers bloquean HEAD / auth pero estan vivos:
-                  # 401/403/405 => intentar GET mini
-                  if code in (401, 403, 405):
-                      headers2 = dict(headers)
-                      headers2["Range"] = "bytes=0-0"
-                      r2 = requests.get(url, allow_redirects=True, timeout=VERIFY_TIMEOUT, headers=headers2, stream=True)
-                      code2 = r2.status_code
-                      if 200 <= code2 < 400 or code2 == 206:
-                          return True
-                      # si vuelve 401/403 igual, lo consideramos "online" (host responde)
-                      if code2 in (401, 403):
-                          return True
-                      return False
+    # Unknown: si no es texto/html al menos
+    return True
 
-                  # 5xx / otros => considerar offline
-                  return False
-              except requests.RequestException:
-                  return False
+def _is_probably_html(content_type: str, b: bytes) -> bool:
+    ct = (content_type or "").lower()
+    if "text/html" in ct:
+        return True
+    # algunos devuelven text/plain con HTML
+    if ("text/" in ct or "application/xhtml" in ct) and b:
+        s = b[:200].lstrip().lower()
+        return s.startswith(b"<!doctype html") or s.startswith(b"<html") or b"<html" in s
+    return False
+
+def is_url_online(url: str, headers: dict) -> bool:
+    """
+    Online = accesible Y parece ser media real (no HTML de error).
+    Estrategia:
+      1) HEAD (rápido) para redirecciones / status obvio
+      2) GET Range 0-1023 para validar contenido (Content-Type + magic bytes)
+    """
+    if not url:
+        return False
+
+    kind = _guess_kind_from_url(url)
+
+    # defaults seguros
+    headers = dict(headers or {})
+    headers.setdefault("User-Agent", "Mozilla/5.0")
+    headers.setdefault("Accept", "*/*")
+    headers.setdefault("Connection", "close")
+
+    # 1) HEAD
+    try:
+        r = requests.head(url, allow_redirects=True, timeout=VERIFY_TIMEOUT, headers=headers)
+        code = r.status_code
+
+        # si es 404/410 -> offline
+        if code in (404, 410):
+            return False
+
+        # si 2xx/3xx seguimos, pero validamos con GET
+        # si 401/403/405: NO lo damos por online (porque para vos "online" = usable)
+        if code in (401, 403, 405):
+            return False
+
+        # si 5xx o otros raros -> fallback GET igual (a veces HEAD falla)
+    except requests.RequestException:
+        # HEAD falló, probamos GET
+        pass
+
+    # 2) GET mínimo con Range
+    try:
+        headers2 = dict(headers)
+        headers2["Range"] = "bytes=0-1023"
+        r2 = requests.get(url, allow_redirects=True, timeout=VERIFY_TIMEOUT, headers=headers2, stream=True)
+        code2 = r2.status_code
+
+        # aceptamos 200/206 (206 típico por Range)
+        if code2 not in (200, 206):
+            return False
+
+        ct = r2.headers.get("Content-Type", "")
+        # leer un poco del body (sin bajar todo)
+        chunk = b""
+        for part in r2.iter_content(chunk_size=1024):
+            chunk = part or b""
+            break
+
+        # Si parece HTML (error page), descartamos
+        if _is_probably_html(ct, chunk):
+            return False
+
+        # Si es un tipo conocido, validamos firma/magic bytes
+        if kind != "unknown":
+            return _looks_like_media_bytes(kind, chunk)
+
+        # Unknown: si no es HTML, lo damos por válido
+        return True
+
+    except requests.RequestException:
+        return False
+
 
           # ---------- Descargar M3U ----------
           resp = requests.get(M3U_URL, timeout=120)
