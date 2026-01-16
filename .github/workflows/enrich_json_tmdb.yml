@@ -1,0 +1,481 @@
+# .github/workflows/enrich_json_tmdb.yml
+name: Enriquecer JSON con TMDB (es-MX) desde URL
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      json_url:
+        description: "URL del JSON a enriquecer (raw). Ej: peliculas.json o peliculas_part001.json"
+        required: true
+      output_dir:
+        description: "Carpeta de salida en la raiz"
+        required: false
+        default: "tmdb_enriched"
+      chunk_size:
+        description: "Max. cantidad de samples por archivo (para split)"
+        required: false
+        default: "2000"
+      language:
+        description: "Idioma preferido TMDB (LatAm recomendado: es-MX)"
+        required: false
+        default: "es-MX"
+      fallback_language:
+        description: "Idioma fallback para titulo/overview si es-MX viene vacio (ej: en-US)"
+        required: false
+        default: "en-US"
+      only_fill_empty:
+        description: "Solo rellenar campos vacios (true/false)"
+        required: false
+        default: "true"
+      min_delay_ms:
+        description: "Delay minimo entre requests TMDB (ms) para evitar rate-limit"
+        required: false
+        default: "150"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install --no-cache-dir requests
+
+      - name: Enrich JSON with TMDB
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          JSON_URL: ${{ github.event.inputs.json_url }}
+          OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
+          CHUNK_SIZE: ${{ github.event.inputs.chunk_size }}
+          LANGUAGE: ${{ github.event.inputs.language }}
+          FALLBACK_LANGUAGE: ${{ github.event.inputs.fallback_language }}
+          ONLY_FILL_EMPTY: ${{ github.event.inputs.only_fill_empty }}
+          MIN_DELAY_MS: ${{ github.event.inputs.min_delay_ms }}
+        run: |
+          python <<'PY'
+          import os
+          import re
+          import json
+          import time
+          import requests
+          from urllib.parse import urlparse
+          from collections import OrderedDict
+
+          API_KEY = os.environ.get("TMDB_API_KEY", "").strip()
+          JSON_URL = os.environ.get("JSON_URL", "").strip()
+          OUTPUT_DIR = os.environ.get("OUTPUT_DIR", "tmdb_enriched").strip()
+          CHUNK_SIZE = int((os.environ.get("CHUNK_SIZE") or "2000").strip())
+          LANGUAGE = (os.environ.get("LANGUAGE") or "es-MX").strip()
+          FALLBACK_LANGUAGE = (os.environ.get("FALLBACK_LANGUAGE") or "en-US").strip()
+          ONLY_FILL_EMPTY = (os.environ.get("ONLY_FILL_EMPTY", "true").strip().lower() == "true")
+          MIN_DELAY_MS = int((os.environ.get("MIN_DELAY_MS") or "150").strip())
+
+          if not API_KEY:
+              raise SystemExit("Falta secrets.TMDB_API_KEY")
+          if not JSON_URL:
+              raise SystemExit("Falta json_url")
+
+          os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+          TMDB_BASE = "https://api.themoviedb.org/3"
+          IMG_BASE = "https://image.tmdb.org/t/p/original"
+
+          # -----------------------
+          # Rate-limit soft throttle
+          # -----------------------
+          _last_call = 0.0
+          def _throttle():
+              global _last_call
+              now = time.time()
+              wait = (MIN_DELAY_MS / 1000.0) - (now - _last_call)
+              if wait > 0:
+                  time.sleep(wait)
+              _last_call = time.time()
+
+          def tmdb_get(path, params=None, retries=4):
+              url = TMDB_BASE + path
+              params = dict(params or {})
+              params["api_key"] = API_KEY
+
+              for attempt in range(retries):
+                  _throttle()
+                  try:
+                      r = requests.get(url, params=params, timeout=30)
+                  except requests.RequestException:
+                      if attempt == retries - 1:
+                          raise
+                      time.sleep(1.0 + attempt)
+                      continue
+
+                  if r.status_code == 429:
+                      # rate limit -> backoff
+                      retry_after = int(r.headers.get("Retry-After", "2") or "2")
+                      time.sleep(retry_after + (attempt * 1.5))
+                      continue
+
+                  if 500 <= r.status_code < 600:
+                      time.sleep(1.0 + attempt)
+                      continue
+
+                  r.raise_for_status()
+                  return r.json()
+
+              # ultimo intento si algo raro
+              r.raise_for_status()
+              return r.json()
+
+          # -----------------------
+          # Descarga JSON por URL
+          # -----------------------
+          raw = requests.get(JSON_URL, timeout=60)
+          raw.raise_for_status()
+          data = raw.json()
+
+          # Nombre base del archivo
+          def safe_basename_from_url(u: str) -> str:
+              try:
+                  p = urlparse(u)
+                  name = os.path.basename(p.path) or "input.json"
+              except Exception:
+                  name = "input.json"
+              if not name.lower().endswith(".json"):
+                  name += ".json"
+              return name
+
+          in_name = safe_basename_from_url(JSON_URL)
+          stem = re.sub(r"\.json$", "", in_name, flags=re.IGNORECASE)
+
+          # -----------------------
+          # Normalizacion del titulo (mejor matching)
+          # -----------------------
+          YEAR_RE = re.compile(r"\b(19\d{2}|20\d{2})\b")
+          JUNK_RE = re.compile(
+              r"(\b(1080p|720p|2160p|4k|hdr|sdr|webrip|web-dl|bluray|brrip|dvdrip|x264|x265|h\.?264|h\.?265|hevc|aac|ac3|dts|latino|castellano|subtitulado|sub|dual|multi|esp|eng|vose)\b)",
+              re.IGNORECASE,
+          )
+          BRACKETS_RE = re.compile(r"[\[\(\{].*?[\]\)\}]")
+          SEP_RE = re.compile(r"[._\-]+")
+          MULTISPACE_RE = re.compile(r"\s{2,}")
+
+          def extract_year(text: str) -> str:
+              if not text:
+                  return ""
+              yrs = YEAR_RE.findall(text)
+              return yrs[-1] if yrs else ""
+
+          def clean_title(name: str) -> str:
+              t = (name or "").strip()
+              if not t:
+                  return ""
+              t = BRACKETS_RE.sub(" ", t)
+              t = SEP_RE.sub(" ", t)
+              t = JUNK_RE.sub(" ", t)
+              # quitar año suelto del final (dejamos el año para params)
+              t = re.sub(r"\s+\b(19\d{2}|20\d{2})\b\s*$", "", t).strip()
+              t = MULTISPACE_RE.sub(" ", t).strip()
+              return t
+
+          # -----------------------
+          # TMDB Search + Details + Images
+          # -----------------------
+          def search_movie(query: str, year: str, lang: str):
+              params = {
+                  "language": lang,
+                  "query": query,
+                  "include_adult": "false",
+              }
+              if year:
+                  # TMDB soporta 'year' en search/movie
+                  params["year"] = year
+              res = tmdb_get("/search/movie", params=params)
+              return res.get("results", []) or []
+
+          def fetch_details(movie_id: int, lang: str):
+              det = tmdb_get(f"/movie/{movie_id}", params={"language": lang})
+              # images sin language por defecto; pedimos logos en es/en/null
+              imgs = tmdb_get(
+                  f"/movie/{movie_id}/images",
+                  params={"include_image_language": "es,en,null"}
+              )
+              return det, imgs
+
+          def pick_logo_url(imgs: dict) -> str:
+              logos = (imgs or {}).get("logos") or []
+              # prioridad: es -> en -> null -> primero
+              def score(x):
+                  iso = x.get("iso_639_1")
+                  if iso == "es":
+                      return 0
+                  if iso == "en":
+                      return 1
+                  if iso in (None, "", "null"):
+                      return 2
+                  return 3
+              logos_sorted = sorted(logos, key=score)
+              if not logos_sorted:
+                  return ""
+              fp = logos_sorted[0].get("file_path") or ""
+              return (IMG_BASE + fp) if fp else ""
+
+          def to_img_url(path: str) -> str:
+              return (IMG_BASE + path) if path else ""
+
+          # cache para no repetir queries
+          cache = {}  # key: (clean, year) -> enriched_fields or None
+
+          # -----------------------
+          # Relleno: solo si falta (o overwrite si ONLY_FILL_EMPTY=false)
+          # -----------------------
+          def should_set(current_val: str) -> bool:
+              if not ONLY_FILL_EMPTY:
+                  return True
+              return not (current_val or "").strip()
+
+          def enrich_sample(sample: dict) -> dict:
+              # Solo peliculas
+              tipo = (sample.get("type") or "").upper().strip()
+              if tipo and tipo != "PELICULA":
+                  return sample
+
+              orig_name = (sample.get("name") or "").strip()
+              orig_year = (sample.get("anio") or "").strip()
+
+              # si name vacio, nada que buscar
+              if not orig_name:
+                  return sample
+
+              q_clean = clean_title(orig_name)
+              year_for_search = orig_year or extract_year(orig_name)
+
+              cache_key = (q_clean.lower(), year_for_search)
+              if cache_key in cache:
+                  hit = cache[cache_key]
+              else:
+                  hit = None
+                  # 1) buscar en es-MX con year
+                  results = search_movie(q_clean, year_for_search, LANGUAGE)
+                  # 2) si no hay, sin year
+                  if not results and year_for_search:
+                      results = search_movie(q_clean, "", LANGUAGE)
+                  # 3) si no hay, buscar en en-US con year
+                  if not results:
+                      results = search_movie(q_clean, year_for_search, "en-US")
+                  # 4) si no hay, sin year en en-US
+                  if not results and year_for_search:
+                      results = search_movie(q_clean, "", "en-US")
+
+                  if results:
+                      # elegimos el primero (podrias ajustar scoring luego)
+                      movie = results[0]
+                      mid = movie.get("id")
+                      if mid:
+                          det, imgs = fetch_details(mid, LANGUAGE)
+
+                          # fallback details en otro idioma si viene muy vacio
+                          if FALLBACK_LANGUAGE and FALLBACK_LANGUAGE != LANGUAGE:
+                              det_fb = None
+                              try:
+                                  det_fb, _ = fetch_details(mid, FALLBACK_LANGUAGE)
+                              except Exception:
+                                  det_fb = None
+                          else:
+                              det_fb = None
+
+                          title_lang = (det.get("title") or "").strip()
+                          overview_lang = (det.get("overview") or "").strip()
+
+                          if det_fb:
+                              if not title_lang:
+                                  title_lang = (det_fb.get("title") or "").strip()
+                              if not overview_lang:
+                                  overview_lang = (det_fb.get("overview") or "").strip()
+
+                          release_date = (det.get("release_date") or "").strip()
+                          tmdb_year = release_date[:4] if release_date else ""
+                          runtime = det.get("runtime") or 0
+                          genres = [g.get("name","").strip() for g in (det.get("genres") or []) if g.get("name")]
+
+                          poster = to_img_url(det.get("poster_path") or "")
+                          backdrop = to_img_url(det.get("backdrop_path") or "")
+                          logo = pick_logo_url(imgs)
+
+                          hit = {
+                              "title": title_lang,
+                              "overview": overview_lang,
+                              "year": tmdb_year,
+                              "genres": ", ".join([g for g in genres if g]),
+                              "runtime": (f"{int(runtime)} min" if runtime else ""),
+                              "poster": poster,
+                              "backdrop": backdrop,
+                              "logo": logo,
+                              "genre_first": (genres[0] if genres else "")
+                          }
+
+                  cache[cache_key] = hit
+
+              if not hit:
+                  return sample
+
+              # aplicar sin pisar (segun ONLY_FILL_EMPTY)
+              if should_set(sample.get("name","")) and hit.get("title"):
+                  sample["name"] = hit["title"]
+
+              if should_set(sample.get("descripcion","")) and hit.get("overview"):
+                  sample["descripcion"] = hit["overview"]
+
+              if should_set(sample.get("anio","")) and hit.get("year"):
+                  sample["anio"] = hit["year"]
+
+              if should_set(sample.get("genero","")) and hit.get("genres"):
+                  sample["genero"] = hit["genres"]
+
+              if should_set(sample.get("duracion","")) and hit.get("runtime"):
+                  sample["duracion"] = hit["runtime"]
+
+              # iconos
+              if should_set(sample.get("icono","")) and hit.get("poster"):
+                  sample["icono"] = hit["poster"]
+
+              if should_set(sample.get("iconoHorizontal","")) and hit.get("backdrop"):
+                  sample["iconoHorizontal"] = hit["backdrop"]
+
+              if should_set(sample.get("iconpng","")) and hit.get("logo"):
+                  sample["iconpng"] = hit["logo"]
+
+              # asegurar campos existan (por si el json venia incompleto)
+              sample.setdefault("icono", sample.get("icono","") or "")
+              sample.setdefault("iconoHorizontal", sample.get("iconoHorizontal","") or "")
+              sample.setdefault("iconpng", sample.get("iconpng","") or "")
+              sample.setdefault("type", sample.get("type","") or "PELICULA")
+              sample.setdefault("descripcion", sample.get("descripcion","") or "")
+              sample.setdefault("anio", sample.get("anio","") or "")
+              sample.setdefault("genero", sample.get("genero","") or "")
+              sample.setdefault("duracion", sample.get("duracion","") or "")
+
+              return sample
+
+          # -----------------------
+          # Recorrer estructura: [{name, samples:[...]}]
+          # Rellenar record.name SOLO si esta vacio y hay genero
+          # -----------------------
+          total_samples = 0
+          enriched_samples = 0
+          skipped_samples = 0
+
+          for record in data:
+              samples = record.get("samples") or []
+              new_samples = []
+              for s in samples:
+                  total_samples += 1
+                  t = (s.get("type") or "").upper().strip()
+                  if t and t != "PELICULA":
+                      skipped_samples += 1
+                      new_samples.append(s)
+                      continue
+                  before = json.dumps(s, sort_keys=True, ensure_ascii=False)
+                  s2 = enrich_sample(s)
+                  after = json.dumps(s2, sort_keys=True, ensure_ascii=False)
+                  if before != after:
+                      enriched_samples += 1
+                  new_samples.append(s2)
+              record["samples"] = new_samples
+
+              if (not (record.get("name") or "").strip()):
+                  # si el record.name esta vacio, intentamos poner el primer genero del primer sample con genero
+                  g = ""
+                  for s in new_samples:
+                      g = (s.get("genero") or "").split(",")[0].strip()
+                      if g:
+                          break
+                  if g:
+                      record["name"] = g
+
+          # -----------------------
+          # Split por cantidad total de samples
+          # -----------------------
+          def split_records_by_samples(records, max_samples):
+              parts = []
+              cur = []
+              cur_count = 0
+              for r in records:
+                  s = r.get("samples", []) or []
+                  if cur and (cur_count + len(s) > max_samples):
+                      parts.append(cur)
+                      cur = []
+                      cur_count = 0
+                  cur.append(r)
+                  cur_count += len(s)
+              if cur:
+                  parts.append(cur)
+              return parts
+
+          parts = split_records_by_samples(data, CHUNK_SIZE)
+
+          # -----------------------
+          # Guardar salida
+          # -----------------------
+          if len(parts) == 1:
+              out_path = os.path.join(OUTPUT_DIR, f"{stem}.enriched.json")
+              with open(out_path, "w", encoding="utf-8") as f:
+                  json.dump(parts[0], f, indent=2, ensure_ascii=False)
+          else:
+              files = []
+              for i, part in enumerate(parts, start=1):
+                  fn = f"{stem}.enriched_part{i:03d}.json"
+                  files.append(fn)
+                  out_path = os.path.join(OUTPUT_DIR, fn)
+                  with open(out_path, "w", encoding="utf-8") as f:
+                      json.dump(part, f, indent=2, ensure_ascii=False)
+
+              manifest = {
+                  "source_url": JSON_URL,
+                  "total_parts": len(parts),
+                  "chunk_size_samples": CHUNK_SIZE,
+                  "files": files,
+                  "language": LANGUAGE,
+                  "fallback_language": FALLBACK_LANGUAGE,
+                  "only_fill_empty": ONLY_FILL_EMPTY
+              }
+              with open(os.path.join(OUTPUT_DIR, f"{stem}.enriched_manifest.json"), "w", encoding="utf-8") as f:
+                  json.dump(manifest, f, indent=2, ensure_ascii=False)
+
+          report = {
+              "source_url": JSON_URL,
+              "records": len(data),
+              "total_samples": total_samples,
+              "enriched_samples_changed": enriched_samples,
+              "skipped_non_movie_samples": skipped_samples,
+              "language": LANGUAGE,
+              "fallback_language": FALLBACK_LANGUAGE,
+              "only_fill_empty": ONLY_FILL_EMPTY
+          }
+          with open(os.path.join(OUTPUT_DIR, f"{stem}.report.json"), "w", encoding="utf-8") as f:
+              json.dump(report, f, indent=2, ensure_ascii=False)
+
+          print(json.dumps(report, indent=2, ensure_ascii=False))
+          PY
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ github.event.inputs.output_dir }}"
+          if ! git diff --cached --exit-code; then
+            git commit -m "Enriquecer JSON con TMDB (es-MX)"
+            git push
+          else
+            echo "No hay cambios"
+          fi
