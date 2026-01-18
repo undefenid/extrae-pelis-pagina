@@ -1,0 +1,13 @@
+# Una URL por linea (raw)
+# Puedes comentar con #
+
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_enriched_parte1/peliculas_part001.enriched_by_genre.json
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_enriched_parte2/peliculas_part002.enriched_by_genre_part001.json
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_enriched_parte2/peliculas_part002.enriched_by_genre_part002.json
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_enriched_p3/peliculas_part003.enriched_by_genre.json
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_enriched_p4/peliculas_part004.enriched_by_genre.json
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_enriched_p5/peliculas_part005.enriched_by_genre.json
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_retry_p1/peliculas_part001.unmatched.retry_enriched_by_genre.json
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_retry_p2/peliculas_part002.unmatched.retry_enriched_by_genre.json
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_retry_p4/peliculas_part004.unmatched.retry_enriched_by_genre.json
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_retry_p5/peliculas_part005.unmatched.retry_enriched_by_genre.json
