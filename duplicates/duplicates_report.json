@@ -1,0 +1,13 @@
+{
+  "source": "https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/movies/peliculas_merged.json",
+  "items_scanned": 6328,
+  "clusters_out": 1202,
+  "samples_out_total": 2719,
+  "similarity_threshold": 0.78,
+  "min_cluster_size": 2,
+  "notes": [
+    "identico: titulo normalizado estricto igual",
+    "base_exact: base_key igual (quita año/calidad/idioma/signos)",
+    "similar: jaccard(tokens(base_key)) >= threshold dentro de buckets"
+  ]
+}
