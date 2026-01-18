@@ -1,0 +1,68 @@
+name: Detectar Titulos Duplicados (identicos + similares) desde JSON general
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      merged_json_url:
+        description: "URL raw (o ruta local) del JSON general (merged). Ej: merged/peliculas_merged.json o URL raw"
+        required: true
+      output_dir:
+        description: "Carpeta de salida en la raiz"
+        required: false
+        default: "duplicates"
+      output_name:
+        description: "Nombre del JSON con duplicados"
+        required: false
+        default: "peliculas_duplicadas.json"
+      similarity_threshold:
+        description: "Umbral similitud (0.0-1.0) para agrupar similares"
+        required: false
+        default: "0.78"
+      min_cluster_size:
+        description: "Minimo de items para considerar duplicado (>=2)"
+        required: false
+        default: "2"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install --no-cache-dir requests
+
+      - name: Find duplicates
+        env:
+          MERGED_JSON_URL: ${{ github.event.inputs.merged_json_url }}
+          OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
+          OUTPUT_NAME: ${{ github.event.inputs.output_name }}
+          SIMILARITY_THRESHOLD: ${{ github.event.inputs.similarity_threshold }}
+          MIN_CLUSTER_SIZE: ${{ github.event.inputs.min_cluster_size }}
+        run: |
+          python scripts/find_duplicate_titles.py
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ github.event.inputs.output_dir }}"
+          if ! git diff --cached --exit-code; then
+            git commit -m "Generar JSON de titulos duplicados (identicos/similares)"
+            git push
+          else
+            echo "No hay cambios"
+          fi
