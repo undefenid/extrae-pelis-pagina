@@ -23,7 +23,7 @@ on:
         required: false
         default: "es-MX"
       fallback_language:
-        description: "Idioma fallback para titulo/overview si es-MX viene vacio (ej: en-US)"
+        description: "Idioma fallback para overview (ej: en-US)"
         required: false
         default: "en-US"
       only_fill_empty:
@@ -121,7 +121,6 @@ jobs:
                       continue
 
                   if r.status_code == 429:
-                      # rate limit -> backoff
                       retry_after = int(r.headers.get("Retry-After", "2") or "2")
                       time.sleep(retry_after + (attempt * 1.5))
                       continue
@@ -133,7 +132,6 @@ jobs:
                   r.raise_for_status()
                   return r.json()
 
-              # ultimo intento si algo raro
               r.raise_for_status()
               return r.json()
 
@@ -144,7 +142,6 @@ jobs:
           raw.raise_for_status()
           data = raw.json()
 
-          # Nombre base del archivo
           def safe_basename_from_url(u: str) -> str:
               try:
                   p = urlparse(u)
@@ -159,7 +156,7 @@ jobs:
           stem = re.sub(r"\.json$", "", in_name, flags=re.IGNORECASE)
 
           # -----------------------
-          # Normalizacion del titulo (mejor matching)
+          # Normalizacion del titulo
           # -----------------------
           YEAR_RE = re.compile(r"\b(19\d{2}|20\d{2})\b")
           JUNK_RE = re.compile(
@@ -183,29 +180,58 @@ jobs:
               t = BRACKETS_RE.sub(" ", t)
               t = SEP_RE.sub(" ", t)
               t = JUNK_RE.sub(" ", t)
-              # quitar año suelto del final (dejamos el año para params)
               t = re.sub(r"\s+\b(19\d{2}|20\d{2})\b\s*$", "", t).strip()
               t = MULTISPACE_RE.sub(" ", t).strip()
               return t
+
+          def norm_cmp(s: str) -> str:
+              s = (s or "").strip().lower()
+              s = re.sub(r"\s+", " ", s)
+              return s
+
+          # Heuristica simple: detectar si el titulo "ya parece español"
+          ES_CHARS_RE = re.compile(r"[áéíóúñü¿¡]", re.IGNORECASE)
+          ES_WORDS_RE = re.compile(r"\b(el|la|los|las|un|una|unos|unas|de|del|y|en|para|con|sin|por|mi|tu|su)\b", re.IGNORECASE)
+
+          def looks_spanish(s: str) -> bool:
+              t = (s or "").strip()
+              if not t:
+                  return False
+              if ES_CHARS_RE.search(t):
+                  return True
+              if ES_WORDS_RE.search(t):
+                  return True
+              return False
+
+          # Regla pedida:
+          # - Si el nombre actual parece EN (o al menos NO español),
+          #   y TMDB trae title en es-MX distinto -> reemplazamos.
+          # - Si TMDB no trae title es-MX (vacio) o es igual -> mantenemos.
+          def should_replace_title_with_es(orig_title: str, tmdb_title_es: str) -> bool:
+              if not orig_title or not tmdb_title_es:
+                  return False
+              if looks_spanish(orig_title):
+                  return False  # ya esta en español (o muy probable)
+              if norm_cmp(orig_title) == norm_cmp(tmdb_title_es):
+                  return False  # es el mismo titulo
+              # Si el tmdb es-MX "parece español" o al menos difiere, lo aceptamos
+              if looks_spanish(tmdb_title_es):
+                  return True
+              # Aun si no parece español (a veces TMDB no traduce), no reemplazamos
+              return False
 
           # -----------------------
           # TMDB Search + Details + Images
           # -----------------------
           def search_movie(query: str, year: str, lang: str):
-              params = {
-                  "language": lang,
-                  "query": query,
-                  "include_adult": "false",
-              }
+              params = {"language": lang, "query": query, "include_adult": "false"}
               if year:
-                  # TMDB soporta 'year' en search/movie
                   params["year"] = year
               res = tmdb_get("/search/movie", params=params)
               return res.get("results", []) or []
 
           def fetch_details(movie_id: int, lang: str):
               det = tmdb_get(f"/movie/{movie_id}", params={"language": lang})
-              # images sin language por defecto; pedimos logos en es/en/null
               imgs = tmdb_get(
                   f"/movie/{movie_id}/images",
                   params={"include_image_language": "es,en,null"}
@@ -214,7 +240,6 @@ jobs:
 
           def pick_logo_url(imgs: dict) -> str:
               logos = (imgs or {}).get("logos") or []
-              # prioridad: es -> en -> null -> primero
               def score(x):
                   iso = x.get("iso_639_1")
                   if iso == "es":
@@ -233,12 +258,8 @@ jobs:
           def to_img_url(path: str) -> str:
               return (IMG_BASE + path) if path else ""
 
-          # cache para no repetir queries
-          cache = {}  # key: (clean, year) -> enriched_fields or None
+          cache = {}  # key: (clean, year) -> hit dict or None
 
-          # -----------------------
-          # Relleno: solo si falta (o overwrite si ONLY_FILL_EMPTY=false)
-          # -----------------------
           def should_set(current_val: str) -> bool:
               if not ONLY_FILL_EMPTY:
                   return True
@@ -252,8 +273,6 @@ jobs:
 
               orig_name = (sample.get("name") or "").strip()
               orig_year = (sample.get("anio") or "").strip()
-
-              # si name vacio, nada que buscar
               if not orig_name:
                   return sample
 
@@ -261,67 +280,61 @@ jobs:
               year_for_search = orig_year or extract_year(orig_name)
 
               cache_key = (q_clean.lower(), year_for_search)
-              if cache_key in cache:
-                  hit = cache[cache_key]
-              else:
+              hit = cache.get(cache_key, None)
+
+              if cache_key not in cache:
                   hit = None
-                  # 1) buscar en es-MX con year
+
+                  # Busquedas (idioma preferido, luego en-US)
                   results = search_movie(q_clean, year_for_search, LANGUAGE)
-                  # 2) si no hay, sin year
                   if not results and year_for_search:
                       results = search_movie(q_clean, "", LANGUAGE)
-                  # 3) si no hay, buscar en en-US con year
                   if not results:
                       results = search_movie(q_clean, year_for_search, "en-US")
-                  # 4) si no hay, sin year en en-US
                   if not results and year_for_search:
                       results = search_movie(q_clean, "", "en-US")
 
                   if results:
-                      # elegimos el primero (podrias ajustar scoring luego)
                       movie = results[0]
                       mid = movie.get("id")
                       if mid:
-                          det, imgs = fetch_details(mid, LANGUAGE)
+                          det_es, imgs = fetch_details(mid, LANGUAGE)
 
-                          # fallback details en otro idioma si viene muy vacio
+                          det_fb = None
                           if FALLBACK_LANGUAGE and FALLBACK_LANGUAGE != LANGUAGE:
-                              det_fb = None
                               try:
                                   det_fb, _ = fetch_details(mid, FALLBACK_LANGUAGE)
                               except Exception:
                                   det_fb = None
-                          else:
-                              det_fb = None
 
-                          title_lang = (det.get("title") or "").strip()
-                          overview_lang = (det.get("overview") or "").strip()
+                          title_es = (det_es.get("title") or "").strip()
+                          overview_es = (det_es.get("overview") or "").strip()
 
-                          if det_fb:
-                              if not title_lang:
-                                  title_lang = (det_fb.get("title") or "").strip()
-                              if not overview_lang:
-                                  overview_lang = (det_fb.get("overview") or "").strip()
+                          title_fb = (det_fb.get("title") or "").strip() if det_fb else ""
+                          overview_fb = (det_fb.get("overview") or "").strip() if det_fb else ""
 
-                          release_date = (det.get("release_date") or "").strip()
+                          release_date = (det_es.get("release_date") or "").strip()
                           tmdb_year = release_date[:4] if release_date else ""
-                          runtime = det.get("runtime") or 0
-                          genres = [g.get("name","").strip() for g in (det.get("genres") or []) if g.get("name")]
+                          runtime = det_es.get("runtime") or 0
+                          genres = [g.get("name","").strip() for g in (det_es.get("genres") or []) if g.get("name")]
 
-                          poster = to_img_url(det.get("poster_path") or "")
-                          backdrop = to_img_url(det.get("backdrop_path") or "")
+                          poster = to_img_url(det_es.get("poster_path") or "")
+                          backdrop = to_img_url(det_es.get("backdrop_path") or "")
                           logo = pick_logo_url(imgs)
 
                           hit = {
-                              "title": title_lang,
-                              "overview": overview_lang,
+                              # Importante: guardamos separado el titulo ES y el fallback
+                              "title_es": title_es,
+                              "title_fb": title_fb,
+                              "overview_es": overview_es,
+                              "overview_fb": overview_fb,
+
                               "year": tmdb_year,
                               "genres": ", ".join([g for g in genres if g]),
                               "runtime": (f"{int(runtime)} min" if runtime else ""),
                               "poster": poster,
                               "backdrop": backdrop,
                               "logo": logo,
-                              "genre_first": (genres[0] if genres else "")
                           }
 
                   cache[cache_key] = hit
@@ -329,13 +342,28 @@ jobs:
               if not hit:
                   return sample
 
-              # aplicar sin pisar (segun ONLY_FILL_EMPTY)
-              if should_set(sample.get("name","")) and hit.get("title"):
-                  sample["name"] = hit["title"]
+              # --- TITULO (regla pedida) ---
+              # Caso 1: name vacio -> poner ES si existe, sino fallback
+              if should_set(sample.get("name","")):
+                  if hit.get("title_es"):
+                      sample["name"] = hit["title_es"]
+                  elif hit.get("title_fb"):
+                      sample["name"] = hit["title_fb"]
+              else:
+                  # Caso 2: name NO vacio -> si parece ingles y existe title_es distinto -> reemplazar
+                  if should_replace_title_with_es(orig_name, hit.get("title_es","")):
+                      sample["name"] = hit["title_es"]
+                  # caso contrario: se mantiene tal cual
 
-              if should_set(sample.get("descripcion","")) and hit.get("overview"):
-                  sample["descripcion"] = hit["overview"]
+              # --- DESCRIPCION ---
+              # Aca mantenemos la idea original: llenar vacio con es-MX, si es-MX vacio usar fallback
+              if should_set(sample.get("descripcion","")):
+                  if hit.get("overview_es"):
+                      sample["descripcion"] = hit["overview_es"]
+                  elif hit.get("overview_fb"):
+                      sample["descripcion"] = hit["overview_fb"]
 
+              # --- RESTO (solo si falta, o overwrite si ONLY_FILL_EMPTY=false) ---
               if should_set(sample.get("anio","")) and hit.get("year"):
                   sample["anio"] = hit["year"]
 
@@ -345,7 +373,6 @@ jobs:
               if should_set(sample.get("duracion","")) and hit.get("runtime"):
                   sample["duracion"] = hit["runtime"]
 
-              # iconos
               if should_set(sample.get("icono","")) and hit.get("poster"):
                   sample["icono"] = hit["poster"]
 
@@ -355,7 +382,7 @@ jobs:
               if should_set(sample.get("iconpng","")) and hit.get("logo"):
                   sample["iconpng"] = hit["logo"]
 
-              # asegurar campos existan (por si el json venia incompleto)
+              # asegurar campos existan
               sample.setdefault("icono", sample.get("icono","") or "")
               sample.setdefault("iconoHorizontal", sample.get("iconoHorizontal","") or "")
               sample.setdefault("iconpng", sample.get("iconpng","") or "")
@@ -368,8 +395,7 @@ jobs:
               return sample
 
           # -----------------------
-          # Recorrer estructura: [{name, samples:[...]}]
-          # Rellenar record.name SOLO si esta vacio y hay genero
+          # Recorrer estructura
           # -----------------------
           total_samples = 0
           enriched_samples = 0
@@ -393,8 +419,8 @@ jobs:
                   new_samples.append(s2)
               record["samples"] = new_samples
 
+              # Si record.name vacio, intentar poner primer genero
               if (not (record.get("name") or "").strip()):
-                  # si el record.name esta vacio, intentamos poner el primer genero del primer sample con genero
                   g = ""
                   for s in new_samples:
                       g = (s.get("genero") or "").split(",")[0].strip()
@@ -460,7 +486,8 @@ jobs:
               "skipped_non_movie_samples": skipped_samples,
               "language": LANGUAGE,
               "fallback_language": FALLBACK_LANGUAGE,
-              "only_fill_empty": ONLY_FILL_EMPTY
+              "only_fill_empty": ONLY_FILL_EMPTY,
+              "title_rule": "Si el titulo actual NO parece español y TMDB trae title_es distinto (es-MX), se reemplaza; si no, se mantiene."
           }
           with open(os.path.join(OUTPUT_DIR, f"{stem}.report.json"), "w", encoding="utf-8") as f:
               json.dump(report, f, indent=2, ensure_ascii=False)
