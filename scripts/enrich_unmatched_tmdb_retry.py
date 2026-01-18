@@ -608,4 +608,57 @@ def save_parts(parts_list, base_filename):
     files = []
     if len(parts_list) == 1:
         fn = f"{base_filename}.json"
-        with open(os.pat
+        with open(os.path.join(OUTPUT_DIR, fn), "w", encoding="utf-8") as f:
+            json.dump(parts_list[0], f, indent=2, ensure_ascii=False)
+        files.append(fn)
+        return files
+
+    for i, part in enumerate(parts_list, start=1):
+        fn = f"{base_filename}_part{i:03d}.json"
+        with open(os.path.join(OUTPUT_DIR, fn), "w", encoding="utf-8") as f:
+            json.dump(part, f, indent=2, ensure_ascii=False)
+        files.append(fn)
+
+    manifest = {
+        "total_parts": len(parts_list),
+        "chunk_size_samples": CHUNK_SIZE,
+        "files": files,
+    }
+    with open(os.path.join(OUTPUT_DIR, f"{base_filename}_manifest.json"), "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=2, ensure_ascii=False)
+
+    return files
+
+parts = split_records(records, CHUNK_SIZE)
+out_files = save_parts(parts, f"{stem}.retry_enriched_by_genre")
+
+still_unmatched_records = [{"name":"Sin información", "samples": still_unmatched}] if still_unmatched else []
+still_files = []
+if still_unmatched_records:
+    still_parts = split_records(still_unmatched_records, CHUNK_SIZE)
+    still_files = save_parts(still_parts, f"{stem}.still_unmatched")
+
+report = {
+    "source_url": JSON_URL,
+    "language": LANGUAGE,
+    "fallback_language": FALLBACK_LANGUAGE,
+    "only_fill_empty": ONLY_FILL_EMPTY,
+    "score_threshold": SCORE_THRESHOLD,
+    "use_wikipedia": USE_WIKIPEDIA,
+    "samples_in": len(all_movie_samples),
+    "matched_tmdb": matched,
+    "still_unmatched": len(still_unmatched),
+    "output_dir": OUTPUT_DIR,
+    "enriched_files": out_files,
+    "still_unmatched_files": still_files,
+    "notes": [
+        "Se intenta match con variantes: split por '|', sin acentos, sin puntos, sin calidad/idioma, secuelas (2/II).",
+        "El año se usa como bonus suave (no descarta si está mal).",
+        "Wikipedia es opcional y usa API (no scraping) para conseguir título en inglés."
+    ]
+}
+
+with open(os.path.join(OUTPUT_DIR, f"{stem}.retry_report.json"), "w", encoding="utf-8") as f:
+    json.dump(report, f, indent=2, ensure_ascii=False)
+
+print(json.dumps(report, indent=2, ensure_ascii=False))
