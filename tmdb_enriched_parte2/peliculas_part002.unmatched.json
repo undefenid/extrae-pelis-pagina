@@ -15,7 +15,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://archive.org/download/plapor/jacpor.png\" group-title=\"Quentin Tarantino\",Jackie Brown (1997)",
+        "name": "Jackie Brown (1997)",
         "url": "https://archive.org/download/gaseosa/gaseosa/gaseosa.avi",
         "icono": "",
         "iconoHorizontal": "",
@@ -27,19 +27,7 @@
         "duracion": ""
       },
       {
-        "name": "group-title=\"Quentin Tarantino\"Kill Bill vol.1 (2003)",
-        "url": "https://archive.org/download/agridulce1/agridulce/agridulce%201.avi",
-        "icono": "https://archive.org/download/jumpor/ki1por.png",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2003",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/plapor/ungpor.png\" group-title=\"Quentin Tarantino\",Bastardos sin gloria (2009)",
+        "name": "Bastardos sin gloria (2009)",
         "url": "https://archive.org/download/chocolate_202004/chocolate/chocolate.mkv",
         "icono": "",
         "iconoHorizontal": "",
@@ -71,90 +59,6 @@
         "type": "PELICULA",
         "descripcion": "",
         "anio": "2021",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "01 Asura (2025)",
-        "url": "https://archive.org/download/bflixasura-7asure/BFLIXasura%20%281%29.mp4",
-        "icono": "https://archive.org/download/bflixasura-7asure/asure%20tapa1.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2025",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "02 Asura (2025)",
-        "url": "https://archive.org/download/bflixasura-7asure/BFLIXasura%20%282%29.mp4",
-        "icono": "https://archive.org/download/bflixasura-7asure/asure%20tapa1.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2025",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "03 Asura (2025)",
-        "url": "https://archive.org/download/bflixasura-7asure/BFLIXasura%20%283%29.mp4",
-        "icono": "https://archive.org/download/bflixasura-7asure/asure%20tapa1.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2025",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "04 Asura (2025)",
-        "url": "https://archive.org/download/bflixasura-7asure/BFLIXasura%20%284%29.mp4",
-        "icono": "https://archive.org/download/bflixasura-7asure/asure%20tapa1.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2025",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "05 Asura (2025)",
-        "url": "https://archive.org/download/bflixasura-7asure/BFLIXasura%20%285%29.mp4",
-        "icono": "https://archive.org/download/bflixasura-7asure/asure%20tapa1.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2025",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "06 Asura (2025)",
-        "url": "https://archive.org/download/bflixasura-7asure/BFLIXasura%20%286%29.mp4",
-        "icono": "https://archive.org/download/bflixasura-7asure/asure%20tapa1.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2025",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "07 Asura (2025)",
-        "url": "https://archive.org/download/bflixasura-7asure/BFLIXasura%20%287%29.mp4",
-        "icono": "https://archive.org/download/bflixasura-7asure/asure%20tapa1.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2025",
         "genero": "",
         "duracion": ""
       },
@@ -219,7 +123,7 @@
         "duracion": ""
       },
       {
-        "name": "0,182,268_AL_.jpg\",AGUAS INVISIBLES",
+        "name": "AGUAS INVISIBLES",
         "url": "http://archive.org/download/009_20200823/002.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -231,7 +135,7 @@
         "duracion": ""
       },
       {
-        "name": "0,182,268_AL_.jpg\",LOS OCHENTA: LA MUSICA",
+        "name": "LOS OCHENTA: LA MUSICA",
         "url": "https://archive.org/download/documentales_202012/Los%20ochenta%203.%20La%20musica.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -243,7 +147,7 @@
         "duracion": ""
       },
       {
-        "name": "0,182,268_AL_.jpg\",Michael Jackson: The Life of an Icon 2011",
+        "name": "Michael Jackson: The Life of an Icon 2011",
         "url": "https://archive.org/download/michael-jackson-la-vida-de-un-idolo-2011/Michael%20Jackson%20La%20vida%20de%20un%20%C3%ADdolo%20%282011%29.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -255,7 +159,7 @@
         "duracion": ""
       },
       {
-        "name": "0,182,268_AL_.jpg\",Steve Jobs: Billion Dollar Hippy 2011",
+        "name": "Steve Jobs: Billion Dollar Hippy 2011",
         "url": "https://archive.org/download/documentales_202012/Steve%20jobs%20el%20hippie%20millonario.mp4.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -267,7 +171,7 @@
         "duracion": ""
       },
       {
-        "name": "0,182,268_AL_.jpg\",The Beatles Anthology",
+        "name": "The Beatles Anthology",
         "url": "https://archive.org/download/thebeatlesantologia_202012/THEBEATLESANTOLOGIA.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -303,7 +207,7 @@
         "duracion": ""
       },
       {
-        "name": "100 AN DE SOLEDAD (2024)",
+        "name": "100 Años DE SOLEDAD (2024)",
         "url": "https://archive.org/download/la-ninera-4/cienanods0l3dad.m3u",
         "icono": "https://image.tmdb.org/t/p/original/yZ0HCHe4rMFBWMEqmt1gGyjU7ZK.jpg",
         "iconoHorizontal": "",
@@ -318,174 +222,6 @@
         "name": "Family by Choice (2024)",
         "url": "https://raw.githubusercontent.com/tokio14-dot/cuentos/refs/heads/main/family",
         "icono": "https://image.tmdb.org/t/p/original/bCUcNIUvwtceuF3WdvlFfGll7Eo.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "1 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.1.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "2 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.2.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "3 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.3.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "4 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.4.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "5 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.5.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "6 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.6.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "7 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.7.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "8 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.8.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "9 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.9.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "10 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.10.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "11 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.11.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "12 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.12.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "13 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.13.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "2024",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "14 Family by Choice (2024)",
-        "url": "https://github.com/tokio14-dot/cuentos/releases/download/556855/1x.14.mp4",
-        "icono": "https://image.tmdb.org/t/p/original/26hCPlTtSqxnW6HMSzvir9umFCW.jpg",
         "iconoHorizontal": "",
         "iconpng": "",
         "type": "PELICULA",
@@ -519,31 +255,7 @@
         "duracion": ""
       },
       {
-        "name": "08 EL LODER",
-        "url": "https://dl.dropbox.com/scl/fi/4sf597lo64jlg54ju4y4x/8.mp4?rlkey=fv34cymca5zfq1ai0q72ezwx4&st=o0y15hn5&dl=0",
-        "icono": "https://image.tmdb.org/t/p/original/x1tomwnDNB7AeXTyEfacigNboo4.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "09 UN DIA CON SUERTE",
-        "url": "https://dl.dropbox.com/scl/fi/te6hhvrg695hp37j2tuf1/9.mp4?rlkey=cat0j4tf6ypgygw749d8z8uw5&st=vosa91sf&dl=0",
-        "icono": "https://image.tmdb.org/t/p/original/x1tomwnDNB7AeXTyEfacigNboo4.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "Barbie y Chelsea El CumpleaÃ±os Perdido 2021",
+        "name": "Barbie y Chelsea El Cumpleaños Perdido 2021",
         "url": "https://archive.org/download/01_20211011_20211011_2322/01.mp4",
         "icono": "http://image.tmdb.org/t/p/w500/fuV4ybeV2PRd4WjTsEYqxkcIpMy.jpg",
         "iconoHorizontal": "",
@@ -555,7 +267,7 @@
         "duracion": ""
       },
       {
-        "name": "Blush AppleTV 2021",
+        "name": "Blush 2021",
         "url": "https://archive.org/download/01_20211011_20211011_2327/01.mp4",
         "icono": "http://image.tmdb.org/t/p/w500/kgpSvuwiD03vk1gOQ4Pgb2y2wJp.jpg",
         "iconoHorizontal": "",
@@ -567,7 +279,7 @@
         "duracion": ""
       },
       {
-        "name": "Catalina la Catrina Especial DÃ­a de Muertos Blim",
+        "name": "Catalina la Catrina Especial Di­a de Muertos Blim",
         "url": "https://archive.org/download/01_20211011_20211011_2330/01.mp4",
         "icono": "http://image.tmdb.org/t/p/w500/siGmPNbxKdooHm7unHpiBSdfYpR.jpg",
         "iconoHorizontal": "",
@@ -579,7 +291,7 @@
         "duracion": ""
       },
       {
-        "name": "0,182,268_AL_.jpg\" group-title=\"Peliculas\",Nosotros Los Nobles (2013)",
+        "name": "Nosotros Los Nobles (2013)",
         "url": "https://archive.org/download/NoLoNoSRREGIO_20180212/NoLoNoSRREGIO.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -675,7 +387,7 @@
         "duracion": ""
       },
       {
-        "name": "las islas paradisíacas (2024)\" tvg-logo=\"https://i.ibb.co/3dkPykP/Tailandia.jpg\" group-title=\"Cine: Documentales\",Tailandia, las islas paradisíacas (2024)",
+        "name": "las islas paradisíacas (2024)",
         "url": "https://1a-1791.com/video/s8/2/f/G/Q/k/fGQkt.gaa.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -687,7 +399,7 @@
         "duracion": ""
       },
       {
-        "name": "¿El fin del crimen? (2018)\" tvg-logo=\"https://i.postimg.cc/XY8KDNG9/ADN.jpg\" group-title=\"Cine: Documentales\",ADN, ¿El fin del crimen? (2018)",
+        "name": "El fin del crimen? (2018)",
         "url": "https://1a-1791.com/video/s8/2/j/s/I/I/jsIIt.caa.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -699,7 +411,7 @@
         "duracion": ""
       },
       {
-        "name": "la vida en la arena (2023)\" tvg-logo=\"https://i.postimg.cc/cH99YGdV/Namibia-la-vida-en-la-arena.jpg\" group-title=\"Cine: Documentales\",Namibia, la vida en la arena (2023)",
+        "name": "la vida en la arena (2023)",
         "url": "https://1a-1791.com/video/s8/2/9/Z/Y/Q/9ZYQt.caa.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -771,7 +483,7 @@
         "duracion": ""
       },
       {
-        "name": "06 Liga de la Justicia x RWBY: Superhéroes y Cazadores: Parte 2 2023",
+        "name": "Liga de la Justicia x RWBY: Superhéroes y Cazadores: 2 (2023)",
         "url": "https://archive.org/download/9ca-63980c-1d-89606255fdba-6340bb-152_202310/%5Bwww.mega1080.com%5DLIG4DELAJUSTICIARWBYPART11HD1080P.mkv",
         "icono": "https://pics.filmaffinity.com/justice_league_x_rwby_super_heroes_and_huntsmen_part_two-545267274-large.jpg",
         "iconoHorizontal": "",
@@ -807,7 +519,7 @@
         "duracion": ""
       },
       {
-        "name": "0,100,148_.jpg\"group-title=\"\",Life:vida inteligente",
+        "name": "Life:vida inteligente",
         "url": "https://dl.dropbox.com/scl/fi/y36zjjmjeksdahsiu9ude/vida226689-4a42d184-e29f-46cc-be92-0995263d6f68-gbes-1897955-doodstream.mp4?rlkey=3ucssp4gfstl201pivtvcelcn&st=68v23y3t&dl=0",
         "icono": "",
         "iconoHorizontal": "",
@@ -819,7 +531,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/jf6Sq45/p0553.jpg\",Possessions (2024)",
+        "name": "Possessions (2024)",
         "url": "https://dl.dropbox.com/scl/fi/rqjvc7wtewcbf73aj0z57/P0ss3.mp4?rlkey=gqsqn5qs8haf4f1lyz7xlob01",
         "icono": "",
         "iconoHorizontal": "",
@@ -867,7 +579,7 @@
         "duracion": ""
       },
       {
-        "name": "Spider-Man: Lotus",
+        "name": "Spider Man: Lotus",
         "url": "https://archive.org/download/captura-de-pantalla-2023-10-18-10-51-45/Spider-Man%20-%20Lotus%20%282023%29.1080p.dual-lat.cinecalidad.com.mx.ia.mp4",
         "icono": "https://pics.filmaffinity.com/spider_man_lotus-901502282-large.jpg",
         "iconoHorizontal": "",
@@ -891,7 +603,7 @@
         "duracion": ""
       },
       {
-        "name": "06 Liga de la Justicia x RWBY: Superhéroes y Cazadores: Parte 2 2023",
+        "name": "Liga de la Justicia x RWBY: Superhéroes y Cazadores: Parte 2 2023",
         "url": "https://archive.org/download/9ca-63980c-1d-89606255fdba-6340bb-152_202310/%5Bwww.mega1080.com%5DLIG4DELAJUSTICIARWBYPART11HD1080P.mkv",
         "icono": "https://pics.filmaffinity.com/justice_league_x_rwby_super_heroes_and_huntsmen_part_two-545267274-large.jpg",
         "iconoHorizontal": "",
@@ -939,7 +651,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/wNQXCVj/argylle.jpg\",Argylle: agente secreto (2024)",
+        "name": "Argylle: agente secreto (2024)",
         "url": "https://dl.dropbox.com/scl/fi/t6rijs8arxg8yryc0jovi/4rgy.mp4?rlkey=hrx9ustmmc7zisfpqfdsxxuoj",
         "icono": "",
         "iconoHorizontal": "",
@@ -951,7 +663,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/NYBfrtt/road.jpg\",Road House (2024)",
+        "name": "Road House (2024)",
         "url": "https://dl.dropbox.com/scl/fi/omir5ir4001n3xyvhhnu6/R0AD-H0US3.mp4?rlkey=dnpz2b15z29ewsak8lpz7d6z2",
         "icono": "",
         "iconoHorizontal": "",
@@ -1047,7 +759,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/njrWZLw/simio4.jpg\",El planeta de los simios: Nuevo Reino (2024)",
+        "name": "El planeta de los simios: Nuevo Reino (2024)",
         "url": "https://dl.dropbox.com/scl/fi/92bo2gjmzqmmqvm9c97l4/PL4NT4S1MIOS14.mp4?rlkey=0fm2xctxm1c6qdtu86a6k2kq3",
         "icono": "",
         "iconoHorizontal": "",
@@ -1059,7 +771,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/Gc8Z8Yj/3.jpg\",El planeta de los simios: La guerra (2017)",
+        "name": "El planeta de los simios: La guerra (2017)",
         "url": "https://dl.dropbox.com/scl/fi/rdc61qiowklcq1ek7u9wi/PS1M10S3.mkv?rlkey=2l7q429g38k9qu43uom3r97oe",
         "icono": "",
         "iconoHorizontal": "",
@@ -1071,7 +783,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/wsmtw8M/2.jpg\",El planeta de los simios: Confrontación (2014)",
+        "name": "El planeta de los simios: Confrontación (2014)",
         "url": "https://dl.dropbox.com/scl/fi/9g5amlx0sb95g9vi7gbhr/PL4NT4S1MIOS2.mp4?rlkey=5rkn2xmaol55a6ca5ifkvchva",
         "icono": "",
         "iconoHorizontal": "",
@@ -1083,7 +795,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/HD02JTd/simio1.jpg\",El planeta de los simios: (R)evolución (2011)",
+        "name": "El planeta de los simios: (R)evolución (2011)",
         "url": "https://dl.dropbox.com/scl/fi/9gi3atcyjc8x24bf4qgiy/PL4NT4S1MIOS1.mp4?rlkey=gy4br2rkkqfqkadqwjaf4dfn0",
         "icono": "",
         "iconoHorizontal": "",
@@ -1095,7 +807,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/SsjJmZd/1.jpg\",El planeta de los simios (1968)",
+        "name": "El planeta de los simios (1968)",
         "url": "https://dl.dropbox.com/scl/fi/f1z1x2c08dsol92ow1qrn/S1M0S1.mp4?rlkey=dh0hn9hqrn8lbawlzoabye857",
         "icono": "",
         "iconoHorizontal": "",
@@ -1107,7 +819,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/6shkQ93/2.jpg\",Regreso al planeta de los simios (1970)",
+        "name": "Regreso al planeta de los simios (1970)",
         "url": "https://dl.dropbox.com/scl/fi/k25vmvr8e3c9t17ejqeq9/S1M0S2.mp4?rlkey=djldfxuuvlmzsh5uf49tro5vs",
         "icono": "",
         "iconoHorizontal": "",
@@ -1119,7 +831,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/dDZprJk/3.jpg\",Escape del planeta de los simios (1971)",
+        "name": "Escape del planeta de los simios (1971)",
         "url": "https://dl.dropbox.com/scl/fi/1j7d3c1pmc645jdkhrvwe/S1M0S3.mp4?rlkey=zg2unhuo2rrhxso31plnjcfga",
         "icono": "",
         "iconoHorizontal": "",
@@ -1131,7 +843,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/b2JSk1W/4.jpg\",Conquista del planeta del los simios (1972)",
+        "name": "Conquista del planeta del los simios (1972)",
         "url": "https://dl.dropbox.com/scl/fi/ilk9pzcnr0hpzvb4yftiw/S1M0S4.mp4?rlkey=ry8uj60scl5te1n83yzcejnel",
         "icono": "",
         "iconoHorizontal": "",
@@ -1143,7 +855,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/sPS821c/5.jpg\",Batalla por el planeta de los simios (1973)",
+        "name": "Batalla por el planeta de los simios (1973)",
         "url": "https://dl.dropbox.com/scl/fi/6fpsy8xoei3ssbfuvqlcy/S1M0S15.mp4?rlkey=105lns8v833o60jpzt8o9ubx3",
         "icono": "",
         "iconoHorizontal": "",
@@ -1155,7 +867,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/m0P0L5g/cohe.jpg\",Coherence (2013)",
+        "name": "Coherence (2013)",
         "url": "https://dl.dropbox.com/scl/fi/5iugl893rm3oukk3rjarl/c0h3r3nc3.mp4?rlkey=h5as5m6kmr9k6n4v5uef8wquc",
         "icono": "",
         "iconoHorizontal": "",
@@ -1167,7 +879,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/3fC9r7T/elem.jpg\",El quinto elemento (1997)",
+        "name": "El quinto elemento (1997)",
         "url": "https://dl.dropbox.com/scl/fi/fgo8zvlao6zpujti68mx9/5t03l3m3nt0.mp4?rlkey=hl1u631xax1mb6502fkneum4t",
         "icono": "",
         "iconoHorizontal": "",
@@ -1179,7 +891,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/ysLzjsk/GXK.jpg\",Godzilla y Kong: el nuevo imperio (2024)",
+        "name": "Godzilla y Kong: el nuevo imperio (2024)",
         "url": "https://dl.dropbox.com/scl/fi/lpkrr4s7p560zhgbyaz73/kxg0z.mkv?rlkey=hy9vm0v5o3m1lci3ld4tuh27a",
         "icono": "",
         "iconoHorizontal": "",
@@ -1191,7 +903,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/g3nZCcC/jupx.jpg\",El Destino de Jupiter (2015)",
+        "name": "El Destino de Jupiter (2015)",
         "url": "https://dl.dropbox.com/scl/fi/mf0rd8cj3tz8pk4a3pjbq/d3st1n0-ju.mp4?rlkey=sbkrbvipjf8bk8e0j162monfw&st=pcnc6ymt",
         "icono": "",
         "iconoHorizontal": "",
@@ -1203,7 +915,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/vwk3z9C/rebel2.jpg\",Rebel Moon - Parte 2: La guerrera que deja marca",
+        "name": "Rebel Moon - Parte 2: La guerrera que deja marca",
         "url": "https://dl.dropbox.com/scl/fi/2mg80s18zm8b40gde0rv5/r3b3lm00n2.mkv?rlkey=dyxccwgd7k5g27bkh3bkdyrkr&st=qbcd5ajb",
         "icono": "",
         "iconoHorizontal": "",
@@ -1215,7 +927,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/qm12Hwz/Dune2.jpg\",Dune: parte dos (2024)",
+        "name": "Dune: 2 (2024)",
         "url": "https://dl.dropbox.com/scl/fi/wg7nsgw6rc39mwj9df34q/dun32.mkv?rlkey=x4djul7r0hnulze7zq2w0k8n8&st=aaf488vs",
         "icono": "",
         "iconoHorizontal": "",
@@ -1227,7 +939,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/LSnf2pw/dune.jpg\",Dune: Parte uno (2021)",
+        "name": "Dune (2021)",
         "url": "https://dl.dropbox.com/scl/fi/zqwnpbym55ykisvwq5jy7/DUN3.mp4?rlkey=w2gc3gl1zewtcrg0d3rpvxwb9",
         "icono": "",
         "iconoHorizontal": "",
@@ -1239,7 +951,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/sjc74Nm/espace.jpg\",El Astronauta (2024)",
+        "name": "El Astronauta (2024)",
         "url": "https://dl.dropbox.com/scl/fi/55v3uus2molfb5bat1m14/4STR0N4U.mp4?rlkey=ulcaracibmvtz5r011nebn9z2",
         "icono": "",
         "iconoHorizontal": "",
@@ -1251,7 +963,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/GxfjqVr/god.jpg\",Godzilla Minus One (2023)",
+        "name": "Godzilla Minus One (2023)",
         "url": "https://dl.dropbox.com/scl/fi/nfxgtp9pzn45d8x9op1av/g0dz1ll4.mp4?rlkey=fjohzdpfnstd9rq0ng0rn9vye",
         "icono": "",
         "iconoHorizontal": "",
@@ -1263,7 +975,7 @@
         "duracion": ""
       },
       {
-        "name": "Obi-Wan Kenobi Patterson Cut (2023)",
+        "name": "ObiWan Kenobi Patterson Cut (2023)",
         "url": "https://dl.dropbox.com/scl/fi/0yy8fzh9ek2ga3frkqxmf/0B1W4N.mp4?rlkey=0xjaggovyhslntruukbufes3r",
         "icono": "https://i.ibb.co/0XzK9ys/obi.jpg",
         "iconoHorizontal": "",
@@ -1275,7 +987,7 @@
         "duracion": ""
       },
       {
-        "name": "Star Wars IV - New Hope (1977) Original",
+        "name": "Star Wars 4 - New Hope (1977)",
         "url": "https://dl.dropbox.com/s/rdf9wq7jbit6cno/Star%20Wars%20Episodio%20IV%20-%20Una%20nueva%20esperanza%20-%20Despecialized%20Edition%20%281977%29.mkv",
         "icono": "https://i.ibb.co/K6pnKhf/Star-Wars-New-Hope-Original.jpg",
         "iconoHorizontal": "",
@@ -1287,7 +999,7 @@
         "duracion": ""
       },
       {
-        "name": "Star Wars VI - Return of Jedi (1983) Original",
+        "name": "Star Wars 4 - Return of Jedi (1983) Original",
         "url": "https://dl.dropbox.com/s/pe0anvjtbyvy32g/Star%20Wars%20Episodio%20VI%20-%20El%20retorno%20del%20Jedi%20-%#EXTINF:-1 tvg-logo=\"https://archive.org/download/pip_20221231/PIP.png\",Total Recall",
         "icono": "https://i.ibb.co/D4PnFjM/Star-Wars-return-of-the-jedi.jpg",
         "iconoHorizontal": "",
@@ -1323,7 +1035,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/Qnzb9N8/Snack.jpg\",Snack Shack (2024)",
+        "name": "Snack Shack (2024)",
         "url": "https://dl.dropbox.com/scl/fi/grzb17xacvb8pa80flz8w/5n4ck.mp4?rlkey=jjmq989nh1thywikgaeobdacq",
         "icono": "",
         "iconoHorizontal": "",
@@ -1455,7 +1167,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/SnJjmMH/marley.jpg\",Bob Marley: One Love (2024)",
+        "name": "Bob Marley: One Love (2024)",
         "url": "https://dl.dropbox.com/scl/fi/77utwmwbjwek39kwa8gbi/B0b.mp4?rlkey=rozzuprqry951dz5zsrll9nlf",
         "icono": "",
         "iconoHorizontal": "",
@@ -1587,7 +1299,7 @@
         "duracion": ""
       },
       {
-        "name": "Lilo y Stitch 2: Stitch en corto circuito (2005)",
+        "name": "Lilo y Stitch 2 (2005)",
         "url": "https://ia601602.us.archive.org/28/items/l-1il-0o-stitch-2-hd-720p-1069968/L1il0o___Stitc%27h_2__HD__720p___1069968.mp4",
         "icono": "https://i.ibb.co/tX2rJQW/lilostich2.jpg",
         "iconoHorizontal": "",
@@ -1611,7 +1323,7 @@
         "duracion": ""
       },
       {
-        "name": "Jefe en Panales 2 Negocios Familiares (2021)",
+        "name": "Jefe en Pañales 2 Negocios Familiares (2021)",
         "url": "https://archive.org/download/manguera_20210707/Th3.B055.B4by2.mkv",
         "icono": "https://i.ibb.co/55PDRs8/bebe2.jpg",
         "iconoHorizontal": "",
@@ -1623,7 +1335,7 @@
         "duracion": ""
       },
       {
-        "name": "Raya y el último dragón Op. 2",
+        "name": "Raya y el último dragón",
         "url": "https://archive.org/download/videoplayback4_20210506/sub1d0_p4r4_5tr34ming_P5F11X/videoplayback28.mkv",
         "icono": "https://i.ibb.co/Ssq9NXk/rayaps3.png",
         "iconoHorizontal": "",
@@ -1671,7 +1383,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/Xx5x3CR/Madame.jpg\",Madame Web (2024)",
+        "name": "Madame Web (2024)",
         "url": "https://dl.dropbox.com/scl/fi/mbhpjo2uqqgknud03n0sy/m4d4m3.mkv?rlkey=cy5apm5gsrdx0agva08fm891p",
         "icono": "",
         "iconoHorizontal": "",
@@ -1683,7 +1395,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/Tc4Ts84/ligajusticia.jpg\",La Liga de la Justicia: Crisis en las Tierras Infinitas Parte 1 (2024)",
+        "name": "La Liga de la Justicia: Crisis en las Tierras Infinitas Parte 1 (2024)",
         "url": "https://dl.dropbox.com/scl/fi/0kc2bdbtyvgko3r5hp0ju/LIG4JUST2.mp4?rlkey=g9an453ustc7baa8bg5ngu3x0&st=ckv8htsq",
         "icono": "",
         "iconoHorizontal": "",
@@ -1743,7 +1455,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/jf6Sq45/p0553.jpg\",Possessions (2024)",
+        "name": "Possessions (2024)",
         "url": "https://dl.dropbox.com/scl/fi/rqjvc7wtewcbf73aj0z57/P0ss3.mp4?rlkey=gqsqn5qs8haf4f1lyz7xlob01",
         "icono": "",
         "iconoHorizontal": "",
@@ -1755,7 +1467,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/rxDfcdv/2.jpg\",El último exorcismo Parte II (2013)",
+        "name": "El último exorcismo 2 (2013)",
         "url": "https://dl.dropbox.com/scl/fi/p5bmwf49snp8z4jjjlgfh/3XORC2.mkv?rlkey=mt3l30jk6k1sk0aj25ovssdjh",
         "icono": "",
         "iconoHorizontal": "",
@@ -1767,7 +1479,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://i.ibb.co/cQZf2Kv/exor1.jpg\",El último exorcismo (2010)",
+        "name": "El último exorcismo (2010)",
         "url": "https://dl.dropbox.com/scl/fi/2p3yurj8sa2wcev81qpkw/3X0RC1S1.mp4?rlkey=6h8izj5oytfoz3may5zoivxmx",
         "icono": "",
         "iconoHorizontal": "",
@@ -1779,7 +1491,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"https://ia801302.us.archive.org/1/items/z_20240122/imagen/z.jpg\",Cosecha oscura (2023)",
+        "name": "Cosecha oscura (2023)",
         "url": "https://archive.org/download/cosecha-oscura/atardecer/Cosecha%20Oscura.mkv",
         "icono": "",
         "iconoHorizontal": "",
@@ -1815,7 +1527,7 @@
         "duracion": ""
       },
       {
-        "name": "La Niñera 2: Rina Letal(2020)",
+        "name": "La Niñera 2: Rina Letal (2020)",
         "url": "https://archive.org/download/videoplayback18_202011/sub1d0_p4r4_5tr34ming_P5F11X/videoplayback10.mkv",
         "icono": "https://i.ibb.co/GJVDcBn/Ni-era-reina-letal.jpg",
         "iconoHorizontal": "",
@@ -1875,81 +1587,9 @@
         "duracion": ""
       },
       {
-        "name": "¡Está Vivo! 2: El monstruo vuelve a nacer",
+        "name": "Está Vivo 2: El monstruo vuelve a nacer",
         "url": "http://archive.org/download/mio71_yopmail_3/2.mp4",
         "icono": "https://i.ibb.co/gTzGVYm/rgerg.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "1.El Camino del miedo",
-        "url": "https://dl.dropbox.com/scl/fi/2jwrlf54k6j4l07f1iq9g/1.mkv?rlkey=xmun8avjb9cdklddahpzp0ci6&st=4sxh32sy",
-        "icono": "https://i.ibb.co/ZLKfLSQ/1.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "2.El camino de la ira",
-        "url": "https://dl.dropbox.com/scl/fi/lcsxmtiu2qcfkr7fl72kd/2.mkv?rlkey=8cd6rx3dqkh3ahjlvyin3ntxf&st=phhyg4k7",
-        "icono": "https://i.ibb.co/9cL23cq/2.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "3.El camino del odio",
-        "url": "https://dl.dropbox.com/scl/fi/7d50q887f9r49wozhegwd/3.mkv?rlkey=lde3fopsmzaybmq3tan988cyl&st=notv2zwu",
-        "icono": "https://i.ibb.co/F4sqtnm/3.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "4.Dedicado",
-        "url": "https://dl.dropbox.com/scl/fi/5nuwf2gi5y8rcmqmz3gf3/4.mkv?rlkey=tndilb5fvnz06i0i6xpy86gx1&st=7rhxrt4f",
-        "icono": "https://i.ibb.co/kxVyBHf/4.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "5.Realizacion",
-        "url": "https://dl.dropbox.com/scl/fi/5pcn140njclzzaou3skir/5.mkv?rlkey=yid2e78acxy8n3u4i0k4lv2yq&st=ad5e0jcd",
-        "icono": "https://i.ibb.co/DMC2Lsf/5.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "6.El camino de la salida",
-        "url": "https://dl.dropbox.com/scl/fi/r054k8x7ctv8jq1noj0fq/6.mkv?rlkey=4b6fo7824m293z5g751afpr3g&st=rmxsr73w",
-        "icono": "https://i.ibb.co/FYZcLww/6.jpg",
         "iconoHorizontal": "",
         "iconpng": "",
         "type": "PELICULA",
@@ -2118,402 +1758,6 @@
         "name": "Dash y Lily",
         "url": "https://dl.dropbox.com/s/3sir70ztt00vflz/Dash%20y%20Lily%20%282020%29.m3u",
         "icono": "https://i.ibb.co/8N0qZ87/Image93.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch01.png\",001 Limosnero con garrote/El ropavejero/el peso",
-        "url": "https://archive.org/download/r11_20210414/ccc01.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch01.png\",002 Las tarifas del doctor/La fiesta de la buena vecindad",
-        "url": "https://archive.org/download/r11_20210414/ccc02.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch01.png\",003 El platillo volador/El boxeador/Los muebles de Don Ramon",
-        "url": "https://archive.org/download/r11_20210414/ccc03.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch01.png\",004 Se solicita secretario/Ensuciando la ropa a Quico/La gente debe hacer favores/Los globos",
-        "url": "https://archive.org/download/r11_20210414/ccc04.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch01.png\",005 El contrabando/Las nuevas vecinas 1 y 2",
-        "url": "https://archive.org/download/ccc05/ccc05.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch01.png\",006 La indigestion/El mosco es algo tosco/Las nuevas vecinas 3 los desmayados",
-        "url": "https://archive.org/download/ccc05/ccc06.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch01.png\",007 Bolsitas de papas/Los carpinteros/La cerbatana",
-        "url": "https://archive.org/download/ccc05/ccc07.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",001 La ventana abierta/El reventon de globos",
-        "url": "https://archive.org/download/leon01_202109/leon01.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",002 El mozo revoltoso/Don Ramon pintor",
-        "url": "https://archive.org/download/leon03_202109/leon02.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",003 Vendiendo paletas/El pastel de doña Clotilde",
-        "url": "https://archive.org/download/leon03_202109/leon03.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",004 El metichito/El sarampion",
-        "url": "https://archive.org/download/leon03_202109/leon04.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",005 El utilero Inutil/Los pescaditos de colores",
-        "url": "https://archive.org/download/leon03_202109/leon05.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",006 Ladrones en casa/La chirimoya",
-        "url": "https://archive.org/download/leon07/leon06.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",007 Las coplas rancheras/Pelea por el tendedero",
-        "url": "https://archive.org/download/leon07/leon07.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",008 La caja fuerte del comandante/Jugando a la escuelita",
-        "url": "https://archive.org/download/leon07/leon08.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",009 El desayuno del chavo",
-        "url": "https://archive.org/download/leon07/leon09.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",010 El nuevo jefe/Don Ramon lechero",
-        "url": "https://archive.org/download/leon07/leon010.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",011 El limosnero/Los niños faltan a clases",
-        "url": "https://archive.org/download/leon011/leon011.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",012 Don Ramon peluquero",
-        "url": "https://archive.org/download/leon011/leon012.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",013 La abuela policia/Los barquitos de papel",
-        "url": "https://archive.org/download/leon011/leon013.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",014 El marinero mareado/Noche de espantos",
-        "url": "https://archive.org/download/leon011/leon014.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",015 El traje del tio Jacinto",
-        "url": "https://archive.org/download/leon011/leon015.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",016 La fiesta de la buena vecindad",
-        "url": "https://archive.org/download/leon016/leon016.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",017 Los toreros (PERDIDO)",
-        "url": "https://archive.org/download/dificultades-tecnicas-simpsons-hd-animated/Dificultades%20t%C3%A9cnicas%20SIMPSONS%20HD%20ANIMATED.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",018 La independencia y los tronadores",
-        "url": "https://archive.org/download/leon016/leon018.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",019 Los insectos del chavo",
-        "url": "https://archive.org/download/leon016/leon019.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",020 Jugando a la orquesta",
-        "url": "https://archive.org/download/leon016/leon020.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",021 Satanas",
-        "url": "https://archive.org/download/leon016/leon021.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",022 La sobrina de Doña Clotilde",
-        "url": "https://archive.org/download/leon023/leon022.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",023 Don Ramon zapatero",
-        "url": "https://archive.org/download/leon023/leon023.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",024 Prohibido jugar futbol",
-        "url": "https://archive.org/download/leon023/leon024.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",025 Don Ramon atropellado",
-        "url": "https://archive.org/download/leon023/leon025.mp4",
-        "icono": "",
-        "iconoHorizontal": "",
-        "iconpng": "",
-        "type": "PELICULA",
-        "descripcion": "",
-        "anio": "",
-        "genero": "",
-        "duracion": ""
-      },
-      {
-        "name": "tvg-logo=\"https://archive.org/download/ch06_20210520/ch02.png\",026 La posada de la vecindad",
-        "url": "https://archive.org/download/leon023/leon026.mp4",
-        "icono": "",
         "iconoHorizontal": "",
         "iconpng": "",
         "type": "PELICULA",
@@ -5547,7 +4791,7 @@
         "duracion": ""
       },
       {
-        "name": "La Hija de Dios I Parte",
+        "name": "La Hija de Dios 1",
         "url": "https://archive.org/download/captura-de-pantalla-2023-10-05-025340/La.Hija.De.Dios.S01e01.2023.1080P-Dual-Lat.mp4",
         "icono": "https://archive.org/download/captura-de-pantalla-2023-10-05-025340/la-hija-diosjpg.jpg",
         "iconoHorizontal": "",
@@ -5559,7 +4803,7 @@
         "duracion": ""
       },
       {
-        "name": "La Hija de Dios II Parte",
+        "name": "La Hija de Dios 2",
         "url": "https://archive.org/download/captura-de-pantalla-2023-10-05-025340/La.Hija.De.Dios.S01e02.2023.1080P-Dual-Lat.mp4",
         "icono": "https://archive.org/download/captura-de-pantalla-2023-10-05-025340/la-hija-diosjpg.jpg",
         "iconoHorizontal": "",
@@ -5571,7 +4815,7 @@
         "duracion": ""
       },
       {
-        "name": "La Hija de Dios III Parte",
+        "name": "La Hija de Dios 3",
         "url": "https://archive.org/download/captura-de-pantalla-2023-10-05-025340/La.Hija.De.Dios.S01e03.2023.1080P-Dual-Lat.mp4",
         "icono": "https://archive.org/download/captura-de-pantalla-2023-10-05-025340/la-hija-diosjpg.jpg",
         "iconoHorizontal": "",
@@ -5583,7 +4827,7 @@
         "duracion": ""
       },
       {
-        "name": "[CARLOS]",
+        "name": "CARLOS",
         "url": "https://archive.org/download/captura-de-pantalla-2024-01-26-22-16-53/Carlos%20%28Olivier%20Assayas%2C%202010%29%20%5BDVDRip%20Dual%5D.avi",
         "icono": "https://pics.filmaffinity.com/Carlos-214973462-large.jpg",
         "iconoHorizontal": "",
@@ -5595,7 +4839,7 @@
         "duracion": ""
       },
       {
-        "name": "[LA LARGA NOCHE]",
+        "name": "LA LARGA NOCHE",
         "url": "https://archive.org/download/captura-de-pantalla-2024-01-26-22-16-53/La%20larga%20noche%20%28Joseph%20Losey%2C%201951%29%20%5BDVDRip%20Dual%5D.mkv",
         "icono": "https://pics.filmaffinity.com/La_larga_noche-281835305-large.jpg",
         "iconoHorizontal": "",
@@ -5607,7 +4851,7 @@
         "duracion": ""
       },
       {
-        "name": "[TAITA BOVES EL UROGALLO]",
+        "name": "TAITA BOVES EL UROGALLO",
         "url": "https://archive.org/download/y-2meta.app-zamora-la-pelicula-480p/Taita.Boves2010.UNSOLOCLIC.INFO.mkv",
         "icono": "https://pics.filmaffinity.com/taita_boves-445909033-large.jpg",
         "iconoHorizontal": "",
@@ -5619,7 +4863,7 @@
         "duracion": ""
       },
       {
-        "name": "[LA RED AVISPA 2019]",
+        "name": "LA RED AVISPA 2019",
         "url": "https://archive.org/download/captura-de-pantalla-2024-01-26-22-16-53/La%20Red%20Avispa%20%282019%29%20%5BBDRip%201080p%20VO%5D.mkv",
         "icono": "https://pics.filmaffinity.com/La_Red_Avispa-546869347-large.jpg",
         "iconoHorizontal": "",
@@ -5631,7 +4875,7 @@
         "duracion": ""
       },
       {
-        "name": "[EL GRAN DICTADOR]",
+        "name": "EL GRAN DICTADOR",
         "url": "https://archive.org/download/captura-de-pantalla-2024-01-26-22-16-53/El%20gran%20dictador%20%28Charles%20Chaplin%2C%201940%29%20%5BDVDRip%20Dual%5D.avi",
         "icono": "https://upload.wikimedia.org/wikipedia/commons/9/9d/The_Great_Dictator_%281940%29_poster.jpg",
         "iconoHorizontal": "",
@@ -5643,7 +4887,7 @@
         "duracion": ""
       },
       {
-        "name": "[GRITA LIBERTAD]",
+        "name": "GRITA LIBERTAD",
         "url": "https://archive.org/download/captura-de-pantalla-2024-01-26-22-16-53/Grita%20libertad%20%28Richard%20Attenborough%2C%201987%29%20%5BDVDRip%20Dual%5D.avi",
         "icono": "https://pics.filmaffinity.com/Grita_Libertad-665263870-large.jpg",
         "iconoHorizontal": "",
@@ -5823,7 +5067,7 @@
         "duracion": ""
       },
       {
-        "name": "06 Liga de la Justicia x RWBY: Superhéroes y Cazadores: Parte 2 2023",
+        "name": "Liga de la Justicia x RWBY: Superhéroes y Cazadores: Parte 2 2023",
         "url": "https://archive.org/download/9ca-63980c-1d-89606255fdba-6340bb-152_202310/%5Bwww.mega1080.com%5DLIG4DELAJUSTICIARWBYPART11HD1080P.mkv",
         "icono": "https://pics.filmaffinity.com/justice_league_x_rwby_super_heroes_and_huntsmen_part_two-545267274-large.jpg",
         "iconoHorizontal": "",
@@ -5859,7 +5103,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-Ua2rqqcUL-A/XnA46rPmdzI/AAAAAAAACH8/drYSYo9ob74YCH2-d2VoXmOWHMTgXL2qwCLcBGAsYHQ/s1600/dragon-ball-la-batalla-de-freezer-contra-padre-de-goku-dvd-D_NQ_NP_945843-MLM29061709847_122018-F.jpg\",Dragon Ball La Batalla de Freezer contra el Padre de Goku",
+        "name": "Dragon Ball La Batalla de Freezer contra el Padre de Goku",
         "url": "http://archive.org/download/231455/02/14.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -5871,7 +5115,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-1pSAHk_NsQw/XmwTR6tGTJI/AAAAAAAACCo/viZ7l1esNikjtmI2UnKvhYFgOSAxrrAZQCLcBGAsYHQ/s1600/3.jpg\",Dragon Ball La leyenda de sheng long",
+        "name": "Dragon Ball La leyenda de sheng long",
         "url": "http://archive.org/download/231455/01/01.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -5883,7 +5127,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-AiFdhBiOudA/XmwTSd4hPNI/AAAAAAAACCs/b7sXcu4dChoGL5lmu8Sfvn1uqZWe38HEgCLcBGAsYHQ/s1600/4.jpg\",Dragon Ball La princesa durmiente del castillo embrujado",
+        "name": "Dragon Ball La princesa durmiente del castillo embrujado",
         "url": "http://archive.org/download/231455/01/02.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -5895,7 +5139,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-u486yz2SSmQ/XmwTRYLrMgI/AAAAAAAACCg/b96UQYo3OGsPFLYYGLE9xtGhftykXJ5QQCLcBGAsYHQ/s1600/2.jpg\",Dragon Ball una aventura mistica",
+        "name": "Dragon Ball una aventura mistica",
         "url": "http://archive.org/download/231455/01/03.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -5907,7 +5151,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-iQAkLyga_OM/XmwTQkeJ-JI/AAAAAAAACCU/HG4FFHA6pY88-R1E3DMmUBaxZKDnZEAXwCLcBGAsYHQ/s1600/1.jpg\",Dragon Ball Camino hacia el poder",
+        "name": "Dragon Ball Camino hacia el poder",
         "url": "http://archive.org/download/231455/01/04.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -5919,7 +5163,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-9hEJDkWqm-A/XmwTQvgit4I/AAAAAAAACCY/4HpWf-rJSOgnkb5cg9HBnSF2PBByKu4awCLcBGAsYHQ/s1600/01-Garlic_Junior_Inmortal.jpg\",Dragon Ball Z Devuelveme a mi Gohan",
+        "name": "Dragon Ball Z Devuelveme a mi Gohan",
         "url": "http://archive.org/download/231455/02/01.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -5931,7 +5175,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-8cLc_OJ1TDc/XmwTQuMAFuI/AAAAAAAACCc/lKB2bDFWeKgqWyskQibP27PlDwqBm1XZgCLcBGAsYHQ/s1600/16-761x844.jpg\",Dragon Ball Z El hobre mas fuerte de este mundo",
+        "name": "Dragon Ball Z El hobre mas fuerte de este mundo",
         "url": "http://archive.org/download/231455/02/02.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -5943,7 +5187,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-GeHOwoQvJ08/XmwTS-0K72I/AAAAAAAACCw/iheM7zrX0H0mwwkyda6ZJngOMGLMeG0TACLcBGAsYHQ/s1600/DtWEe6-XcAA9NrQ.jpg\",DGB Z La batalla mas grande de este mundo esta por comenzar",
+        "name": "DGB Z La batalla mas grande de este mundo esta por comenzar",
         "url": "http://archive.org/download/231455/02/03.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -5955,7 +5199,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-CsUu-zS5td0/XmwTRriEevI/AAAAAAAACCk/xlwsiy0vGiU07LkC8QcQ8oWxof-L8To-ACLcBGAsYHQ/s1600/268x0w%2B%25281%2529.jpg\",Dragon Ball Z Goku es un super saiayin",
+        "name": "Dragon Ball Z Goku es un super saiayin",
         "url": "http://archive.org/download/231455/02/04.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -5967,7 +5211,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-TDHRqL0tjP4/XnA43SJT1aI/AAAAAAAACHk/bDQ2sqSte3Q-m93-r__xO4YWKXzYeoEQgCLcBGAsYHQ/s1600/05-los%2Brivales%2Bmas%2Bpoderosos.jpg\",Dragon Ball Z Los rivales más poderosos",
+        "name": "Dragon Ball Z Los rivales más poderosos",
         "url": "http://archive.org/download/231455/02/05.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -5979,7 +5223,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-8xmUSpYhGtw/XsiQIQYs6nI/AAAAAAAADhE/sLdBWidkQ-A33KKPc5COQKlRDDvuQdOHQCLcBGAsYHQ/w680/268x0w.jpg\",Dragon Ball Z Los guerreros más poderosos",
+        "name": "Dragon Ball Z Los guerreros más poderosos",
         "url": "http://archive.org/download/231455/02/06.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -5991,7 +5235,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-KO-uYNxiSZg/XnA462EJbmI/AAAAAAAACIE/rhfPma6_7wo-vLrRcWX4KrRj8SvHXCieACLcBGAsYHQ/s1600/dragon-ball-z-la-batalla-de-los-tres-3-super-saiyajin-dvd-D_NQ_NP_869395-MLM29055328808_122018-F.jpg\",Dragon Ball Z La pelea de los 3 Saiyajin",
+        "name": "Dragon Ball Z La pelea de los 3 Saiyajin",
         "url": "http://archive.org/download/231455/02/07.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6003,7 +5247,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-BK_sYOapUQQ/XnA46lMrNqI/AAAAAAAACIA/op9hHT8lutAH0XPMH263OfvVaJsjE9B6gCLcBGAsYHQ/s1600/dragon-ball-z-el-poder-invencible-1992-pelicula-dvd-D_NQ_NP_942979-MLM28297215341_102018-F.jpg\",Dragon Ball Z El poder invencible",
+        "name": "Dragon Ball Z El poder invencible",
         "url": "http://archive.org/download/231455/02/08.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6015,7 +5259,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-1g0KKmfb5nA/XnA47tlFn2I/AAAAAAAACIM/6W-NKS4dCpE0Z_zyuZfHtGNCGQit_IpvACLcBGAsYHQ/s1600/dragon-ball-z-los-ultimos-guerreros-z-gohan-y-trunks-dvd-D_NQ_NP_747837-MLM29055436199_122018-F.jpg\",Dragon Ball Los dos guerreros del futuro: Gohan y Trunks",
+        "name": "Dragon Ball Los dos guerreros del futuro: Gohan y Trunks",
         "url": "http://archive.org/download/231455/02/15.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6027,7 +5271,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-06d90DiYzpY/XnA46MNDIKI/AAAAAAAACH4/XD-hIkm_F5MlDKWSdKx0M_GyiesZ_KEcwCLcBGAsYHQ/s1600/a62dfd4f29a7c5aae60f6210858f6bc8.jpg\",Dragon Ball Z La galaxia corre peligro",
+        "name": "Dragon Ball Z La galaxia corre peligro",
         "url": "http://archive.org/download/231455/02/09.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6039,7 +5283,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-7VhZtIF1jZQ/XnA44RGdRqI/AAAAAAAACHo/Eh_o3e-jqKEEy7aj_oNDctGQjytCX_jmQCLcBGAsYHQ/s1600/924ce1385a843eb2dcdfe89cdc7f4d2d.jpg\",Dragon Ball Z El regreso del guerrero legendario",
+        "name": "Dragon Ball Z El regreso del guerrero legendario",
         "url": "http://archive.org/download/231455/02/10.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6051,7 +5295,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-OnH5EVqRaVQ/XnA44-oKFpI/AAAAAAAACHs/d_InlsyrvI0WJIuDG62D7aLPWA70vy5MgCLcBGAsYHQ/s1600/DBZ_Pel%25C3%25ADcula_11_p%25C3%25B3ster.png\",Dragon Ball Z El combate final",
+        "name": "Dragon Ball Z El combate final",
         "url": "http://archive.org/download/231455/02/11.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6063,7 +5307,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-Op29p0mp-pk/XnA45vt-y6I/AAAAAAAACH0/efIrImsRk9oFHE4I_JWLfcSDxscPdQDZACLcBGAsYHQ/s1600/DBZ_Pel%25C3%25ADcula_12_p%25C3%25B3ster.png\",Dragon Ball Z La fusión de Gokū y Vegeta",
+        "name": "Dragon Ball Z La fusión de Gokū y Vegeta",
         "url": "http://archive.org/download/231455/02/12.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6075,7 +5319,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-D_YdBqHEiRw/XnA45oLNkzI/AAAAAAAACHw/N0rRZY7tR3MBf3TnPqZmajOtfRh3m0IBACLcBGAsYHQ/s1600/Dragon_Ball_Z_El_ataque_del_drag_n-742764500-large.jpg\",Dragon Ball Z El ataque del Dragón",
+        "name": "Dragon Ball Z El ataque del Dragón",
         "url": "http://archive.org/download/231455/02/13.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6087,7 +5331,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-x21nka9SZXc/XnA7F_oY2kI/AAAAAAAACJI/k3mDMyJTh28ZyR3IZB5uEOUFNAyBGs8AwCLcBGAsYHQ/s1600/dgbgt%2Besfera.jpg\",Dragon Ball gt la legendaria esfera de 4 estrellas",
+        "name": "Dragon Ball gt la legendaria esfera de 4 estrellas",
         "url": "http://archive.org/download/231455/03/04.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6099,7 +5343,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-0d7eZYGjHVI/XnA48L1_3II/AAAAAAAACIU/PGrkewgBm7MStyX9hATvw2Bi3HWxpywvgCLcBGAsYHQ/s1600/goku%2By%2Bsus%2Bamigos.jpg\",Dragon Ball Goku y sus amigos regresan",
+        "name": "Dragon Ball Goku y sus amigos regresan",
         "url": "http://archive.org/download/231455/03/03.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6111,7 +5355,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-4EBw2DRokO8/XnA49ME7OoI/AAAAAAAACIc/Uqh3QYk95DEZJm1H8vIfzVgd3B2414ZawCLcBGAsYHQ/s1600/planparasaiayin.png\",Dragon Ball el plan para erradica a los super saiayians",
+        "name": "Dragon Ball el plan para erradica a los super saiayians",
         "url": "http://archive.org/download/231455/03/02.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6123,7 +5367,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/--Sk1jENG3yg/XnA470f7lLI/AAAAAAAACIQ/FWTnz0L2ZQYYj5-HnC3nIJTtd7Dj_DZ9wCLcBGAsYHQ/s1600/eisodio%2Bde%2Bbardock.jpg\",Dragon Ball El episodio de bardock",
+        "name": "Dragon Ball El episodio de bardock",
         "url": "http://archive.org/download/231455/03/01.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6135,7 +5379,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-qZto1SD9doA/XnA43S24lwI/AAAAAAAACHg/TcVW9VVeygw2gqgb3fsgwyvslFbCGc90wCLcBGAsYHQ/s1600/20394353.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg\",Dragon Ball Z La batalla de los Dioses",
+        "name": "Dragon Ball Z La batalla de los Dioses",
         "url": "http://archive.org/download/231455/02/16.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6147,7 +5391,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-L35Jgw4lAGo/XnA47S8nseI/AAAAAAAACII/pg0gsgR1bU4TytEMJ1ZtvZlttWbg2G_wwCLcBGAsYHQ/s1600/dragon-ball-z-la-resurreccic3b3n-de-freezer-poster-1.jpg\",Dragon Ball Z La resurrección de Freezer",
+        "name": "Dragon Ball Z La resurrección de Freezer",
         "url": "http://archive.org/download/231455/02/17.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6159,7 +5403,7 @@
         "duracion": ""
       },
       {
-        "name": "tvg-logo=\"http://1.bp.blogspot.com/-GCAoEbAc6TI/XnA49OemmBI/AAAAAAAACIY/hG0wDMna0FAaVJoFwkMoZqLCeTUPfwiCgCLcBGAsYHQ/s1600/poster-lona-vinilica-dragon-ball-super-broly-D_NQ_NP_796578-MLA30999189951_062019-Q.jpg\",Dragon Ball super Broly",
+        "name": "Dragon Ball super Broly",
         "url": "http://archive.org/download/231455/03/05.mp4",
         "icono": "",
         "iconoHorizontal": "",
@@ -6519,7 +5763,7 @@
         "duracion": ""
       },
       {
-        "name": "Mufasa El rey leon (2024) HDTS V1",
+        "name": "Mufasa El rey leon (2024)",
         "url": "https://1a-1791.com/video/s8/2/A/i/B/U/AiBUv.aaa.mp4",
         "icono": "https://image.tmdb.org/t/p/w300/nt4E7hZqKfIJbf8GOxZKCL1ahvG.jpg",
         "iconoHorizontal": "",
@@ -6531,7 +5775,7 @@
         "duracion": ""
       },
       {
-        "name": "SOLO LEVELING segundo despertar (2024) HDTS",
+        "name": "SOLO LEVELING segundo despertar (2024)",
         "url": "https://1a-1791.com/video/s8/2/o/S/3/v/oS3vv.aaa.mp4",
         "icono": "https://image.tmdb.org/t/p/w300/diPEcLFEb1uuUpApol1Bit6ck3l.jpg",
         "iconoHorizontal": "",
@@ -6543,7 +5787,7 @@
         "duracion": ""
       },
       {
-        "name": "Venom El ultimo baile (2024) WebDl",
+        "name": "Venom El ultimo baile (2024)",
         "url": "https://1a-1791.com/video/s8/2/z/K/J/u/zKJuv.aaa.mp4",
         "icono": "https://image.tmdb.org/t/p/w300/k42Owka8v91trK1qMYwCQCNwJKr.jpg",
         "iconoHorizontal": "",
@@ -6579,7 +5823,7 @@
         "duracion": ""
       },
       {
-        "name": "OVERLORD El Reino Sagrado (2024) HDTS",
+        "name": "OVERLORD El Reino Sagrado (2024)",
         "url": "https://1a-1791.com/video/s8/2/J/X/_/N/JX_Nu.aaa.mp4",
         "icono": "https://image.tmdb.org/t/p/w300/jEvytxNa5mfW7VAUmDWsZtIdATc.jpg",
         "iconoHorizontal": "",
