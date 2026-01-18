@@ -1,0 +1,89 @@
+name: Retry TMDB para Unmatched (permisivo + scoring + opcional Wikipedia)
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      json_url:
+        description: "URL del JSON UNMATCHED (raw). Ej: tmdb_enriched/peliculas.unmatched.json"
+        required: true
+      output_dir:
+        description: "Carpeta de salida en la raiz"
+        required: false
+        default: "tmdb_retry"
+      chunk_size:
+        description: "Max. cantidad de samples por archivo (para split)"
+        required: false
+        default: "2000"
+      language:
+        description: "Idioma preferido TMDB (LatAm recomendado: es-MX)"
+        required: false
+        default: "es-MX"
+      fallback_language:
+        description: "Idioma fallback para overview (ej: en-US)"
+        required: false
+        default: "en-US"
+      only_fill_empty:
+        description: "Solo rellenar campos vacios (true/false)"
+        required: false
+        default: "true"
+      min_delay_ms:
+        description: "Delay minimo entre requests TMDB (ms)"
+        required: false
+        default: "150"
+      score_threshold:
+        description: "Umbral score para aceptar match (0.0-1.0)"
+        required: false
+        default: "0.38"
+      use_wikipedia:
+        description: "Intentar obtener titulo en ingles via Wikipedia API si no match (true/false)"
+        required: false
+        default: "false"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install --no-cache-dir requests
+
+      - name: Retry enrichment
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          JSON_URL: ${{ github.event.inputs.json_url }}
+          OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
+          CHUNK_SIZE: ${{ github.event.inputs.chunk_size }}
+          LANGUAGE: ${{ github.event.inputs.language }}
+          FALLBACK_LANGUAGE: ${{ github.event.inputs.fallback_language }}
+          ONLY_FILL_EMPTY: ${{ github.event.inputs.only_fill_empty }}
+          MIN_DELAY_MS: ${{ github.event.inputs.min_delay_ms }}
+          SCORE_THRESHOLD: ${{ github.event.inputs.score_threshold }}
+          USE_WIKIPEDIA: ${{ github.event.inputs.use_wikipedia }}
+        run: |
+          python scripts/enrich_unmatched_tmdb_retry.py
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ github.event.inputs.output_dir }}"
+          if ! git diff --cached --exit-code; then
+            git commit -m "Retry TMDB para unmatched (permisivo + scoring)"
+            git push
+          else
+            echo "No hay cambios"
+          fi
