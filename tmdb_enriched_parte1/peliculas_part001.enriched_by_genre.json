@@ -6230,16 +6230,16 @@
         "duracion": ""
       },
       {
-        "name": "El mundo de Lucca (2025)",
+        "name": "Los dos hemisferios de Lucca (2025)",
         "url": "https://archive.org/download/bflixc-0mp-4n-3ra-1p-3rf-3cta/BFLIX%20Los2hemisferios1de1Lucca.ts",
         "icono": "https://image.tmdb.org/t/p/original/VZq0UExqBbST1LDYWJYsZ0qvMO.jpg",
-        "iconoHorizontal": "",
-        "iconpng": "",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/3LhAMOOYDkFGlupPnpDM9MDoWAg.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/q5c1Vpr1YHPyJHy2xtKs1ptMgjz.png",
         "type": "PELICULA",
-        "descripcion": "",
+        "descripcion": "Decidida a ayudar a su hijo con parálisis cerebral, Bárbara lleva a su familia a la India para probar un tratamiento experimental.",
         "anio": "2025",
-        "genero": "",
-        "duracion": ""
+        "genero": "Drama",
+        "duracion": "96 mim"
       }
     ]
   }
