@@ -1,0 +1,736 @@
+[
+  {
+    "name": "Acción",
+    "samples": [
+      {
+        "name": "13 Dias, 13 Noches",
+        "url": "https://dl.dropbox.com/scl/fi/z2iyadbmsw3no6qxmmgj0/sociales.mp4?rlkey=i7c4ip78mieenh1ct73f64jwv&st=tkyb2usl&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/vb4HmgQmjCUBWeY1KvoX7bqYraL.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/1zlHZDtV5KsX5VcBahNy5GDqUVt.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/kn7xi8RKyUf5X0QSGYqK5CSorF3.png",
+        "type": "PELICULA",
+        "descripcion": "Narra la caótica evacuación de la embajada francesa en Kabul, Afganistán, en agosto de 2021, cuando los talibanes tomaron el poder; el comandante Mohamed Bida y su equipo luchan contrarreloj para salvar a civiles atrapados, negociando con los talibanes y organizando un convoy hacia el aeropuerto en medio del caos, la violencia y la incertidumbre.",
+        "anio": "2025",
+        "genero": "Acción, Bélica, Suspense",
+        "duracion": "112 min"
+      },
+      {
+        "name": "Noche de paz: Cazadores de demonios",
+        "url": "https://dl.dropbox.com/scl/fi/fpidwwl9rrkasd2f76mfm/sociales-4.mp4?rlkey=mntiwryz0r2iv0qfav3y28j72&st=8ttkoz8s&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/v3Mo77Qjp6pctpD4eJaNT6kFRSB.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/5A01YSCPYoCOZOhh9tU7F3Htxkf.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/eEZsOybW4OKwNiUzkqUYda9Xm8x.png",
+        "type": "PELICULA",
+        "descripcion": "When a devil-worshipping criminal network plunges Seoul into chaos, the police turn to Holy Night—a trio of supernatural demon hunters—to restore order and defeat the rising evil.",
+        "anio": "2025",
+        "genero": "Acción, Fantasía, Terror, Suspense",
+        "duracion": "92 min"
+      },
+      {
+        "name": "¡Armados!",
+        "url": "https://pomf2.lain.la/f/j0w88gb2.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/jJshmHRXDH4PdythVz82fnSymo6.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/4bYpERIjVMfDJJPEKDONI784sRb.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/lhDkkDcCNiHwe07dnTuZQeZAuuz.png",
+        "type": "PELICULA",
+        "descripcion": "Un expolicía y padre de familia, que ha trabajado en secreto para la mafia, ve su vida y la de los suyos amenazada. Cuando un nuevo jefe en la banda se hace con el poder, tendrá una noche para sacarlos de la ciudad.",
+        "anio": "2025",
+        "genero": "Acción, Comedia, Crimen",
+        "duracion": "92 min"
+      }
+    ]
+  },
+  {
+    "name": "Animación",
+    "samples": [
+      {
+        "name": "Tom y Jerry: La Brújula Mágica",
+        "url": "https://pomf2.lain.la/f/d6ykix1k.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/eLomNIDmKBTuvtQtIFZ67N1mzsv.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/wmTBmCLPZSX5eAVAiBf8td8Hb9g.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/wslNqP0oL842OUcHA65Z9EuEMQv.png",
+        "type": "PELICULA",
+        "descripcion": "Tom y Jerry viajan en el tiempo. Tras una loca persecución en el Museo Metropolitan de Nueva York, un portal del tiempo los transporta a una ciudad dorada inspirada en la Antigua China, llena de magia, guerreros y criaturas sorprendentes. Para regresar a casa, viven una increíble aventura repleta de acción y humor, donde deben enfrentarse a nuevos enemigos… ¡y quizás aprender a trabajar juntos!",
+        "anio": "2025",
+        "genero": "Animación, Comedia, Familia",
+        "duracion": "104 min"
+      },
+      {
+        "name": "Demon Slayer: Kimetsu no Yaiba Castillo infinito",
+        "url": "https://dl.dropbox.com/scl/fi/y8d1okwnr7bzsvxtlldzm/sociales.mp4?rlkey=y2b4nk9e82qx30kmv3555nfsi&st=ei8ad0tw&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/6N21gcFbhT4ocdTU4MGREAaM5Vz.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/1RgPyOhN4DRs225BGTlHJqCudII.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/vYP6D7kcDRx4oalok672Xbh0Lmw.png",
+        "type": "PELICULA",
+        "descripcion": "Tanjirō Kamado es un chico que se unió a una organización dedicada a cazar demonios después de que su hermana menor, Nezuko, fuera convertida. Mientras los miembros de la organización y los Pilares participaban en un programa de entrenamiento grupal, como preparación para la inminente batalla contra los demonios, Muzan Kibutsuji aparece en la Mansión Ubuyashiki. Con el jefe de la organización en peligro, Tanjirō y los Pilares corren hacia la mansión, pero son arrastrados a un espacio misterioso por obra de Kibutsuji. El lugar al que han caído Tanjirō y los cazadores es el bastión de los demonios: el Castillo Infinito. Así, el campo de batalla queda establecido para dar fin a la guerra entre humanos y demonios.",
+        "anio": "2025",
+        "genero": "Animación, Acción, Fantasía",
+        "duracion": "155 min"
+      }
+    ]
+  },
+  {
+    "name": "Comedia",
+    "samples": [
+      {
+        "name": "Homo Argentum",
+        "url": "https://dl.dropbox.com/scl/fi/f31apqm1fej3o8y1hyd1t/fisica-1.mp4?rlkey=g7983lnewh8qmpudm498ng8ow&st=459jxa4s&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/7WtOgW25a1QHWBUeNo8JPWjAqqy.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/2fwoBrUYMK0PZVaFqesx2CoRF6H.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/lJs6whRd3hY6HohHKrHCJB90IFe.png",
+        "type": "PELICULA",
+        "descripcion": "El film está compuesto por 16 mini películas cuya duración varía entre 1 y 12 minutos, todas protagonizadas por Guillermo Francella en muy diferentes roles. Cada una es autónoma, pero la suma de todas ellas construye una reflexión sobre el presente en tono de comedia, con una aguda crítica social.",
+        "anio": "2025",
+        "genero": "Comedia",
+        "duracion": "110 min"
+      },
+      {
+        "name": "Homo Argentum",
+        "url": "https://dl.dropbox.com/scl/fi/52j2h46sdmd1z1vpqufz2/fisica-2.mp4?rlkey=vr3ow0qcmh841jj3w6otiqo5b&st=izk6oi2v&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/j7ecdUdWaFQjfyXMuJdYWRwXhmU.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/2fwoBrUYMK0PZVaFqesx2CoRF6H.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/lJs6whRd3hY6HohHKrHCJB90IFe.png",
+        "type": "PELICULA",
+        "descripcion": "El film está compuesto por 16 mini películas cuya duración varía entre 1 y 12 minutos, todas protagonizadas por Guillermo Francella en muy diferentes roles. Cada una es autónoma, pero la suma de todas ellas construye una reflexión sobre el presente en tono de comedia, con una aguda crítica social.",
+        "anio": "2025",
+        "genero": "Comedia",
+        "duracion": "110 min"
+      },
+      {
+        "name": "Asteroid City",
+        "url": "https://pomf2.lain.la/f/ps8qa87y.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/s7LIE7oNZ6WU4ajf1FaXWyMYdpX.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/iloUOSs3Rcq3aMr04CrGRWVVBkq.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/ssvYRmIAtGh2UjMsyv3kaIWI4No.png",
+        "type": "PELICULA",
+        "descripcion": "Un pueblo desértico de EE. UU. cerca del año 1955, el itinerario de una convención de jóvenes astrónomos y cadetes espaciales (organizada para reunir a estudiantes y padres de todo el país en busca de compañerismo y competencia académica) se ve espectacularmente interrumpido por eventos que cambiarán al mundo.",
+        "anio": "2023",
+        "genero": "Comedia, Drama",
+        "duracion": "104 min"
+      }
+    ]
+  },
+  {
+    "name": "Documental",
+    "samples": [
+      {
+        "name": "El misterio de la familia Carman",
+        "url": "https://pomf2.lain.la/f/icnw6vbi.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/kehV1PgXItaiPJS9o3YZPIVJcPT.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/7BzlM1VAL4lSoX93KmL9JKk8Vnc.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/ua5vZz3uKLCUZUWWNB0vaFCdBpf.png",
+        "type": "PELICULA",
+        "descripcion": "En esta serie documental sobre crímenes reales, un joven rescatado en el mar enfrenta duras acusaciones: haber asesinado a dos miembros de su adinerada familia de Nueva Inglaterra.",
+        "anio": "2025",
+        "genero": "Documental, Crimen",
+        "duracion": "91 min"
+      }
+    ]
+  },
+  {
+    "name": "Drama",
+    "samples": [
+      {
+        "name": "Manos milagrosas",
+        "url": "https://archive.org/download/manos-milagrosas_202511/Manos%20Milagrosas.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/ycScCKt45DPhpp7IiDWAqfA7SGn.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/xkaeirZBfs9nfz2TJoFHxyOLCcC.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/runZ8VbkakOXLzJQFvZotpsQGTD.png",
+        "type": "PELICULA",
+        "descripcion": "El joven Ben Carson tenía muy pocas posibilidades en la vida. Hijo de padres separados, criado en la pobreza y rodeado de prejuicios raciales, se volvió un niño irascible y mal estudiante. Aun así, su madre nunca perdió la confianza que tenía puesta en él. Insistiendo en que aprovechara las oportunidades que ella nunca había tenido, fomentó su imaginación, inteligencia y lo que es aún más importante, la confianza en sí mismo. Esa fe en sí mismo sería su don, el cual le llevaría a hacer realidad su sueño de convertirse en uno de los mejores neurocirujanos del mundo...",
+        "anio": "2009",
+        "genero": "Drama",
+        "duracion": "86 min"
+      }
+    ]
+  },
+  {
+    "name": "Familia",
+    "samples": [
+      {
+        "name": "School of Magical Animals 3",
+        "url": "https://dl.dropbox.com/scl/fi/cfzz6fablbcr8juw94p65/sociales.mp4?rlkey=p58v4sjwe9f25nah7fgj5cmxg&st=oivz3vqp&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/ymkmPr7xCphH50Dz0NVqxG5wZJo.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/hFjLNzQFA85vMVEDDupOnajkbkU.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/wc0ACYV5YpxbZ1WPZyk0BN15l6J.png",
+        "type": "PELICULA",
+        "descripcion": "Ida wants to perform with her class at the annual Forest Day to campaign for the protection of the local forest. Even Helene is there, as she hopes to use the footage of the performance to build up her influencer channel. What nobody knows is that Helene's family is on the verge of bankruptcy and Helene urgently needs followers to avert the threat of bankruptcy. Helene is also under pressure from the high expectations of her magical animal, Karajan the cat from Paris, who imagines a life of pure luxury.",
+        "anio": "2024",
+        "genero": "Familia, Fantasía, Comedia",
+        "duracion": "100 min"
+      }
+    ]
+  },
+  {
+    "name": "Fantasía",
+    "samples": [
+      {
+        "name": "Wicked: Por siempre",
+        "url": "https://dl.dropbox.com/scl/fi/b735nijp4vqism6mqxz2w/10.mp4?rlkey=4mhjyh4vtc2u46wzzgegfhzz4&st=tqu773b8&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/nyGp2Aysk951mmkSPrSEjRxW72X.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/cGbPBHKSFO7hSIjxkb3KOaGdOep.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/wVRN7Gv1ekKps94aNfZaR4jQrWT.png",
+        "type": "PELICULA",
+        "descripcion": "Mientras una turba enfurecida se levanta contra la Malvada Bruja, Glinda y Elphaba deberán reunirse por última vez. Con su singular amistad como el eje de su destino, deberán verse realmente, con honestidad y empatía, si quieren cambiarse a sí mismas… y cambiar Oz por siempre.",
+        "anio": "2025",
+        "genero": "Fantasía, Aventura, Romance",
+        "duracion": "137 min"
+      }
+    ]
+  },
+  {
+    "name": "Suspense",
+    "samples": [
+      {
+        "name": "Solitaria es la noche: Los crímenes de la familia Bansal",
+        "url": "https://pomf2.lain.la/f/tbdd8r6r.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/lYuHiEzoe0V4fDNzhApAdmYOs1d.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/tql3kTLmF2FFeSVIlafFJiZfcfk.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/2YNfN4xJuwoAPmRCzHxYRmrkQeh.png",
+        "type": "PELICULA",
+        "descripcion": "Tras los asesinatos en la familia Bansal, el inspector Jatil Yadav descubre un rastro de codicia, traición y secretos vinculado a un complot mortal.",
+        "anio": "2025",
+        "genero": "Suspense, Misterio, Crimen, Drama",
+        "duracion": "136 min"
+      }
+    ]
+  },
+  {
+    "name": "Terror",
+    "samples": [
+      {
+        "name": "Peter Pan: Pesadilla en la tierra del nunca jamás",
+        "url": "https://1a-1791.com/video/fww1/a3/s8/2/n/W/p/y/nWpyy.gaa.mp4?u=0",
+        "icono": "https://image.tmdb.org/t/p/original/m5jtX2J0VswgslOyx04l4edo3nJ.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/9uGxyklcNwpjlIe3Lim7HyPVns6.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/6pZCiIKk2iaQE5EMX8Psb1YoI3x.png",
+        "type": "PELICULA",
+        "descripcion": "Wendy Darling se adentra en un Nunca Jamás convertido en pesadilla para rescatar a su hermano, enfrentándose a un Peter Pan cruel y a una Campanilla consumida por una adicción autodestructiva.",
+        "anio": "2025",
+        "genero": "Terror, Suspense, Fantasía",
+        "duracion": "89 min"
+      }
+    ]
+  },
+  {
+    "name": "Sin información",
+    "samples": [
+      {
+        "name": "a Ni tan mal, Leo Harlem (2025)",
+        "url": "https://pomf2.lain.la/f/15fgrp11.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/1i6t9FjtcMLL4TQA3dgOIoAQwbD.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Los mufas: suerte para la desgracia",
+        "url": "https://raw.githubusercontent.com/tokio14-dot/anime-cortos/refs/heads/main/Los%20mufas%20suerte%20para%20la%20desgracia(2025)",
+        "icono": "https://image.tmdb.org/t/p/original/7aPIH2X6koSzyJxgmNK4h9qRqSn.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Chad Powers: Mariscal de campo",
+        "url": "https://raw.githubusercontent.com/tokio14-dot/anime-cortos/refs/heads/main/Chad%20Powers%20(2025)",
+        "icono": "https://image.tmdb.org/t/p/original/sS95o7rCnHeOLE0AxyysmIBI2Ko.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "JOSUÉ La Conquista De La Tierra Prometida",
+        "url": "https://archive.org/download/josue-2025-peli-cula-completa-la-conquista-de-la-tierra-prometida/JOSU%C3%89%20%282025%29%20%20PEL%C3%8DCULA%20COMPLETA%20%20La%20Conquista%20de%20la%20Tierra%20Prometida.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/ciY0RaYIzKwt2nEQfVAXJyoxv3c.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Noche Santa: Cazadores de demonios (2025)",
+        "url": "https://dl.dropbox.com/scl/fi/fpidwwl9rrkasd2f76mfm/sociales-4.mp4?rlkey=mntiwryz0r2iv0qfav3y28j72&st=8ttkoz8s&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/v3Mo77Qjp6pctpD4eJaNT6kFRSB.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "LEGO Star Wars Reconstruye la galaxia - Pedazos del pasado (2025)",
+        "url": "https://raw.githubusercontent.com/tokio14-dot/anime-cortos/refs/heads/main/LEGO%20Star%20Wars%20Reconstruye%20la%20galaxia%20-%20Pedazos%20del%20pasado%20(2025)",
+        "icono": "https://image.tmdb.org/t/p/original/ld6K4sIuTAlgAsIPYwW2yAvSz2m.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "LEGO Star Wars Reconstruye la galaxia (2024)",
+        "url": "https://raw.githubusercontent.com/tokio14-dot/anime-cortos/refs/heads/main/LEGO%20Star%20Wars%20Reconstruye%20la%20galaxia%20(2024)",
+        "icono": "https://image.tmdb.org/t/p/original/8bviGSTxUIjAS1oFUddA3DQ1XG0.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2024",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "La estación de las chicas perdidas (2025)",
+        "url": "https://raw.githubusercontent.com/tokio14-dot/anime-cortos/refs/heads/main/La%20estaci%C3%B3n%20de%20las%20chicas%20perdidas%20(2025)",
+        "icono": "https://image.tmdb.org/t/p/original/q80Eewm9cYFmuW62Eu3dopwIPiZ.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "La suerte Una serie de casualidades (2025)",
+        "url": "https://raw.githubusercontent.com/tokio14-dot/anime-cortos/refs/heads/main/La%20suerte%20Una%20serie%20de%20casualidades%20(2025)",
+        "icono": "https://image.tmdb.org/t/p/original/k9ibdbWVF0qptcQQN6nqz4NlRhC.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Los asesinatos de Breslau (2025)",
+        "url": "https://raw.githubusercontent.com/tokio14-dot/anime-cortos/refs/heads/main/Los%20asesinatos%20de%20Breslau%20(2025)",
+        "icono": "https://image.tmdb.org/t/p/original/q6i3mGilu3N85kJgjRh41oXQ3YH.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "La chica robada (2025)",
+        "url": "https://raw.githubusercontent.com/tokio14-dot/anime-cortos/refs/heads/main/La%20chica%20robada%20(2025)",
+        "icono": "https://image.tmdb.org/t/p/original/kapSJwIzMBJ81HQxCbAvHRUdn3h.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Mil golpes (2025)",
+        "url": "https://raw.githubusercontent.com/tokio14-dot/anime-cortos/refs/heads/main/Mil%20golpes%20(2025)",
+        "icono": "https://image.tmdb.org/t/p/original/ciC9rTPekPqzDyXwnITDU9xk46A.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "La mujer en la cabaña 10 (2025)",
+        "url": "https://dl.dropbox.com/scl/fi/2i8wpysr6w3h7cvg5qijr/matematica.mp4?rlkey=n61q379c78rxck2m18zdqc56x&st=gos43q9a&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/lUJIBUjEab71fJ8U9gs0NouUJ18.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "La casa portuguesa (2025)",
+        "url": "https://archive.org/download/ver-el-cuento-del-lobo-2025-online-hd-cuevana/Ver%20Una%20quinta%20portuguesa%202025%20online%20HD%20-%20Cuevana.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/xMAohXbCCxqWtCnJfNPsSeiyjAf.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "La pistola desnuda (2025)HD",
+        "url": "https://archive.org/download/ver-el-cuento-del-lobo-2025-online-hd-cuevana/ver%C2%BFY%20d%C3%B3nde%20est%C3%A1%20el%20polic%C3%ADa.cuevana.ia.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/6TJyHMmWfkjs7NLX7jrohc87AD5.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Planeta Único: Aventura Griega (2025)",
+        "url": "https://dl.dropbox.com/scl/fi/pglzqqprnd7q57m8t3x71/matematica.mp4?rlkey=71kgucp2haoad9tx82g19257v&st=al3plssu&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/fwXkQNBHRPpPUdRcCvd2BUXkElc.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Planeta Único: Aventura Griega (2025)",
+        "url": "https://dl.dropbox.com/scl/fi/pglzqqprnd7q57m8t3x71/matematica.mp4?rlkey=71kgucp2haoad9tx82g19257v&st=al3plssu&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/fwXkQNBHRPpPUdRcCvd2BUXkElc.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "El mundo de Lucca (2025)",
+        "url": "https://archive.org/download/bflixc-0mp-4n-3ra-1p-3rf-3cta/BFLIX%20Los2hemisferios1de1Lucca.ts",
+        "icono": "https://image.tmdb.org/t/p/original/VZq0UExqBbST1LDYWJYsZ0qvMO.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "cometierra (2025)",
+        "url": "https://raw.githubusercontent.com/tokio14-dot/anime-cortos/refs/heads/main/cometierra%20(2025)",
+        "icono": "https://image.tmdb.org/t/p/original/d8LYs7rSj5kmHDKBMgiqE1ACCoq.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Número desconocido: El bagre de la escuela secundaria (2025)",
+        "url": "https://dl.dropbox.com/scl/fi/536c40jwqlgm56mh67pxc/matematica.mp4?rlkey=russwx742evtdfarybyxi7076&st=ptpeh88z&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/7TrQb6A2W1SVNuDt9Qqmf0HgJp8.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Los diamantes de Amberes El robo del siglo.mp4 (2025)",
+        "url": "https://dl.dropbox.com/scl/fi/htunjlxpwyzryhes0sw2z/sociales.mp4?rlkey=1b1ddgp8yl5pncmnogn2c2bps&st=yycqdtk5&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/mWEUuLGcPNV69BpkbVl47VRYdqV.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Animales en primer plano con Bertie Gregory (2023)",
+        "url": "https://dl.dropbox.com/scl/fi/fk368t93he5r8o929l7f8/matematica.mp4?rlkey=45g5vneei4us0whlp1u612qom&st=04wtbz5v&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/uEKUeXNsklbMBkRsCgx1R60KMRv.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2023",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Riesgo de Vuelo (2025)",
+        "url": "https://dl.dropbox.com/scl/fi/iwlwuigiy2ur1509e0nu8/BFLIX.mp4?rlkey=7tnuzapzqxxrzhtygdqslhzup&st=410v4032&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/4cR3hImKd78dSs652PAkSAyJ5Cx.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Destino final: Lazos de sangre (2025)Add commentMore actions",
+        "url": "https://dl.dropbox.com/scl/fi/b8eshxhry7mk04waz37ht/df2025.mp4?rlkey=fxcp65qbfya4clbsz2816cama&st=yidf9fdk&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/frNkbclQpexf3aUzZrnixF3t5Hw.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Novocaine (2025)More actions",
+        "url": "https://archive.org/download/01_20250621_20250621_2307/08.ia.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/6YbTJhN5GJQOlZ1IyRiCyhKSiJE.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Una Ballena (2025)More actions",
+        "url": "https://archive.org/download/01_20250621_20250621_2307/07.ia.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/qwf9zfHVdpDRHqerMwZ2NtXItDY.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Deep Cover Acto EncubiertoMore actions",
+        "url": "https://archive.org/download/01_20250621_20250621_2307/06.ia.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/dpLNAIU8AjAxw39fZfSDt2AiwMs.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "The Uninvited (2025)More actions",
+        "url": "https://archive.org/download/03_20250619/06.ia.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/gt4MrNBa7BeQ27aO5ZwQnHUKKho.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "(M)Cómo entrenar a tu dragón (2025)More actions",
+        "url": "https://archive.org/download/03_20250619/03.ia.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/sGFO6VshDEQ9vX4tOSobLJpkNhq.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Fiasco : La tragedia del festival Astroworld (2025)More actions",
+        "url": "https://archive.org/download/03_20250619/04.ia.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/u8E4aR8ghCnc1gWJTyHxXseHvpy.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "¡Viva la vida! (2025)More actions",
+        "url": "https://archive.org/download/03_20250619/01.ia.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/kaHiddZ1XTK7YuSu8Aq8dCtmlKu.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Estás Cordialmente Invitado (2025)",
+        "url": "https://archive.org/download/bflixc-0mp-4n-3ra-1p-3rf-3cta/BFLIXCordi4lment41invit4dos.ts",
+        "icono": "https://image.tmdb.org/t/p/original/14jxZmclGIqAQ4xtYXYKhvRLTwx.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Loco Por Ella (2025)More actions",
+        "url": "https://dl.dropbox.com/scl/fi/qg700ee8x4ae9jmq9dtvh/loco.mp4?rlkey=krrvr1um6jz9edu1insdzzb7p&st=giby82mo&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/6PbSSN2BT22ZMsMaD7m8cGaqk3L.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Depredador:Cazador de Asesinos (2025) 720p latinoMore actions",
+        "url": "https://dl.dropbox.com/scl/fi/1lbof8fn6tjgm8l08fyb4/D31PR4E1DA1AD4OR.mkv?rlkey=pv9aw682l3s30q8xc1uo200b2&st=hc4l6wdj&",
+        "icono": "https://hackstore2.com/wp-content/uploads/thumbs/d14e615c8b437b488b0f1a8e66a9c35b_hd.webp",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "El capitán Sabertooth y la condesa de Grel (2025)",
+        "url": "https://pomf2.lain.la/f/zclwgnt9.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/2FEJ0fQsF4pCrem4aTNPbuX3oZ1.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "los pecadores (2025)More actions",
+        "url": "https://dl.dropbox.com/scl/fi/15233zxofnswbhmw8ecsu/P2015.mp4?rlkey=zzcyucht6gyizcnho9n0xbun3&st=02h6lxj2&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/gbK0XS34qIuidH4tIQm9CyTtgK7.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Unidad Especial - El Primer Asesinato (2025)",
+        "url": "https://dl.dropbox.com/scl/fi/9pb9q4kx7chy8141uglmw/fisica.mp4?rlkey=ovk6ta9tj41ci2cd66v7xp3jp&st=qlm9hxno&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/2V6dGTHGrq79U765qfnHYP7HFu0.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "caza de beujas (2025)",
+        "url": "https://dl.dropbox.com/scl/fi/12bo700lnt8knlfqvm8m5/f-sica.mp4?rlkey=6b1jem6ds6d7pyimqwpoyr9ft&st=otnwme02&dl=0",
+        "icono": "",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Riesgo de Vuelo (2025)",
+        "url": "https://dl.dropbox.com/scl/fi/iwlwuigiy2ur1509e0nu8/BFLIX.mp4?rlkey=7tnuzapzqxxrzhtygdqslhzup&st=410v4032&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/4cR3hImKd78dSs652PAkSAyJ5Cx.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Lego Disney Princess: Los villanos se unen (2025)",
+        "url": "https://dl.dropbox.com/scl/fi/6sty1kkflvlgwfd7mr92j/lengua-2.mp4?rlkey=xqyze4etg5g1d69xqj8pekvs7&st=3qik42xx&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/12kNMnNioZYl7J6tg8xOh406bkg.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Goosebumps La desaparicion (2025)",
+        "url": "https://archive.org/download/boku-no-hero-4/Goosebumps2025.m3u",
+        "icono": "https://image.tmdb.org/t/p/original/dGXo36FEk3eIN4aTijDQ3Rh9glJ.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "Estás Cordialmente Invitado (2025)",
+        "url": "https://archive.org/download/bflixc-0mp-4n-3ra-1p-3rf-3cta/BFLIXCordi4lment41invit4dos.ts",
+        "icono": "https://image.tmdb.org/t/p/original/14jxZmclGIqAQ4xtYXYKhvRLTwx.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      },
+      {
+        "name": "El mundo de Lucca (2025)",
+        "url": "https://archive.org/download/bflixc-0mp-4n-3ra-1p-3rf-3cta/BFLIX%20Los2hemisferios1de1Lucca.ts",
+        "icono": "https://image.tmdb.org/t/p/original/VZq0UExqBbST1LDYWJYsZ0qvMO.jpg",
+        "iconoHorizontal": "",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "",
+        "anio": "2025",
+        "genero": "",
+        "duracion": ""
+      }
+    ]
+  }
+]
