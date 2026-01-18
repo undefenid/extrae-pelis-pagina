@@ -1,0 +1,63 @@
+name: Unir JSONs de Peliculas (URLs -> 1 JSON)
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      sources_url:
+        description: "URL (raw) o ruta local al archivo que contiene la lista de URLs JSON (txt/json). Ej: sources/movie_json_urls.txt"
+        required: true
+      output_dir:
+        description: "Carpeta de salida en la raiz"
+        required: false
+        default: "merged"
+      output_name:
+        description: "Nombre del JSON final"
+        required: false
+        default: "peliculas_merged.json"
+      only_movies:
+        description: "Solo incluir samples type=PELICULA (true/false)"
+        required: false
+        default: "true"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install --no-cache-dir requests
+
+      - name: Merge JSONs
+        env:
+          SOURCES_URL: ${{ github.event.inputs.sources_url }}
+          OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
+          OUTPUT_NAME: ${{ github.event.inputs.output_name }}
+          ONLY_MOVIES: ${{ github.event.inputs.only_movies }}
+        run: |
+          python scripts/merge_movie_jsons.py
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ github.event.inputs.output_dir }}"
+          if ! git diff --cached --exit-code; then
+            git commit -m "Unir JSONs de peliculas en uno (ordenado + dedupe url)"
+            git push
+          else
+            echo "No hay cambios"
+          fi
