@@ -1,0 +1,10 @@
+{
+  "sources": 10,
+  "records_read": 142,
+  "samples_read": 8063,
+  "samples_kept": 6328,
+  "samples_skipped_empty_url": 0,
+  "samples_skipped_non_movie": 0,
+  "samples_dedup_dropped": 1735,
+  "groups_out": 19
+}
