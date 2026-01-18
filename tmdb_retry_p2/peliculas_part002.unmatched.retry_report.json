@@ -1,0 +1,23 @@
+{
+  "source_url": "https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_enriched_parte2/peliculas_part002.unmatched.json",
+  "language": "es-MX",
+  "fallback_language": "en-US",
+  "only_fill_empty": true,
+  "score_threshold": 0.34,
+  "use_wikipedia": false,
+  "samples_in": 523,
+  "matched_tmdb": 74,
+  "still_unmatched": 449,
+  "output_dir": "tmdb_retry_p2",
+  "enriched_files": [
+    "peliculas_part002.unmatched.retry_enriched_by_genre.json"
+  ],
+  "still_unmatched_files": [
+    "peliculas_part002.unmatched.still_unmatched.json"
+  ],
+  "notes": [
+    "Se intenta match con variantes: split por '|', sin acentos, sin puntos, sin calidad/idioma, secuelas (2/II).",
+    "El año se usa como bonus suave (no descarta si está mal).",
+    "Wikipedia es opcional y usa API (no scraping) para conseguir título en inglés."
+  ]
+}
