@@ -1,0 +1,21 @@
+{
+  "source_url": "https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/m3u_convert_1/peliculas.json",
+  "language": "es-MX",
+  "fallback_language": "en-US",
+  "only_fill_empty": true,
+  "records_in_input": 2,
+  "movie_samples_processed": 710,
+  "movie_samples_matched_tmdb": 662,
+  "movie_samples_unmatched": 48,
+  "non_movie_records": 0,
+  "output_dir": "tmdb_enriched_v2",
+  "enriched_files": [
+    "peliculas.enriched_by_genre.json"
+  ],
+  "unmatched_files": [
+    "peliculas.unmatched.json"
+  ],
+  "non_movie_files": [],
+  "grouping_rule": "record.name se reemplaza por el genero principal (TMDB es-MX). Unmatched queda en 'Sin información' al final.",
+  "title_rule": "Si el titulo actual NO parece español y TMDB trae title_es distinto, se reemplaza; si no, se mantiene."
+}
