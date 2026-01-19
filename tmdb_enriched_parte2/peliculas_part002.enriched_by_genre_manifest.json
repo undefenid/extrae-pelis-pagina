@@ -1,8 +1,0 @@
-{
-  "total_parts": 2,
-  "chunk_size_samples": 3000,
-  "files": [
-    "peliculas_part002.enriched_by_genre_part001.json",
-    "peliculas_part002.enriched_by_genre_part002.json"
-  ]
-}
