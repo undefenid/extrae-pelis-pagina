@@ -1,0 +1,8 @@
+{
+  "input_records": 19,
+  "input_samples": 6201,
+  "dropped_m3u": 134,
+  "kept_samples": 6067,
+  "empty_groups_removed": 0,
+  "only_movies": true
+}
