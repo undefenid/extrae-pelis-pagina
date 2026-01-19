@@ -1,0 +1,63 @@
+name: Filtrar JSON y eliminar URLs que terminan en .m3u (sin tocar .m3u8)
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      input_json:
+        description: "URL raw del JSON general o ruta local del repo (ej: merged/peliculas_merged.json)"
+        required: true
+      output_dir:
+        description: "Carpeta de salida en la raiz"
+        required: false
+        default: "filtered"
+      output_name:
+        description: "Nombre del JSON filtrado"
+        required: false
+        default: "peliculas_no_m3u.json"
+      only_movies:
+        description: "Solo filtrar items type=PELICULA (true/false)"
+        required: false
+        default: "true"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install --no-cache-dir requests
+
+      - name: Filter .m3u (keep .m3u8)
+        env:
+          INPUT_JSON: ${{ github.event.inputs.input_json }}
+          OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
+          OUTPUT_NAME: ${{ github.event.inputs.output_name }}
+          ONLY_MOVIES: ${{ github.event.inputs.only_movies }}
+        run: |
+          python scripts/filter_drop_m3u.py
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ github.event.inputs.output_dir }}"
+          if ! git diff --cached --exit-code; then
+            git commit -m "Filtrar JSON: eliminar urls .m3u (sin tocar .m3u8)"
+            git push
+          else
+            echo "No hay cambios"
+          fi
