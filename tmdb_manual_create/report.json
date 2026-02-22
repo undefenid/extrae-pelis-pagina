@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-02-22T04:10:11.823454Z",
+  "timestamp_utc": "2026-02-22T04:21:57.831496Z",
   "input": {
-    "url": "https://pomf2.lain.la/f/1giajdmj.mp4",
-    "nombre": "Anaconda 2025",
+    "url": "https://pomf2.lain.la/f/65x9gbag.mp4",
+    "nombre": "Heidi: Rescue of the Lynx",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 14,
+  "samples_total": 15,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }

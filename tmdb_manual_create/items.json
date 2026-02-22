@@ -169,6 +169,18 @@
         "anio": "2025",
         "genero": "Aventura, Comedia, Terror",
         "duracion": "100 min"
+      },
+      {
+        "name": "Heidi - Die Legende vom Luchs",
+        "url": "https://pomf2.lain.la/f/65x9gbag.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/64ZfqNxyFGql2Tc83PC3iOuxVQk.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/zfjbzbB9Y421DK62XxJCiL2yGhD.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/59YAGjuKqVUsZbpAuMGUuh3smdA.png",
+        "type": "PELICULA",
+        "descripcion": "When eight-year-old Heidi saves a lynx family and their home from a greedy businessman, she gets her grandfather to come clean with the village community, and she realizes that her beloved little lynx belongs with his family in the wild just as she belongs with her grandfather in the mountains.",
+        "anio": "2025",
+        "genero": "Animación, Aventura, Familia",
+        "duracion": "80 min"
       }
     ]
   }
