@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-02-22T04:08:28.979619Z",
+  "timestamp_utc": "2026-02-22T04:10:11.823454Z",
   "input": {
-    "url": "https://dl.dropbox.com/scl/fi/0le4bhrjrzr2ve213f3cu/fisica-2.mp4?rlkey=603m7krcqca3a1jlxt5re2thn&st=9leeaff9&dl=0",
-    "nombre": "Nazi Supersoldier",
+    "url": "https://pomf2.lain.la/f/1giajdmj.mp4",
+    "nombre": "Anaconda 2025",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 13,
+  "samples_total": 14,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }

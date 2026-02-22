@@ -157,6 +157,18 @@
         "anio": "2024",
         "genero": "Terror, Acción, Ciencia ficción",
         "duracion": "78 min"
+      },
+      {
+        "name": "Anaconda",
+        "url": "https://pomf2.lain.la/f/1giajdmj.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/hENLu86h3zljg0x8bdy8cOUxZF5.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/swxhEJsAWms6X1fDZ4HdbvYBSf9.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/6DMPieh2aNPVGsWRM3cZCPQXYdl.png",
+        "type": "PELICULA",
+        "descripcion": "Doug y Griff, amigos de toda la vida, atraviesan una crisis de mediana edad y deciden realizar el remake de su película favorita de su juventud: Anaconda (1997). Viajan a la selva amazónica para filmar su versión, pero pronto descubren que una anaconda real los acecha, convirtiendo su proyecto cinematográfico en una lucha por sobrevivir. La película combina comedia, acción y terror en una experiencia cinematográfica única.",
+        "anio": "2025",
+        "genero": "Aventura, Comedia, Terror",
+        "duracion": "100 min"
       }
     ]
   }
