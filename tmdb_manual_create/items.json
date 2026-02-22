@@ -49,6 +49,18 @@
         "anio": "2026",
         "genero": "Suspense, Drama",
         "duracion": "107 min"
+      },
+      {
+        "name": "De las cenizas: Bajo tierra",
+        "url": "http://live.detodotvplay.com:8080//movie/Risario8/Pineda13/462081.mkv",
+        "icono": "https://image.tmdb.org/t/p/original/jl3reSLwDzDKAdSkMXoUAcwqeMg.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/uiSaYXR0jLLWma0EPA1tcBhX6wT.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/43G24cbm9JCRgOlrgtGwxhR7gue.png",
+        "type": "PELICULA",
+        "descripcion": "Tras quedar atrapadas en un foso durante una tormenta, tres estudiantes de una escuela para chicas deben enfrentar sus conflictos personales mientras luchan por sobrevivir.",
+        "anio": "2026",
+        "genero": "Suspense, Drama",
+        "duracion": "88 min"
       }
     ]
   }

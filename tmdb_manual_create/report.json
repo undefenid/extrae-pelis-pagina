@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-02-22T03:23:39.708123Z",
+  "timestamp_utc": "2026-02-22T03:31:52.507889Z",
   "input": {
-    "url": "http://live.detodotvplay.com:8080//movie/Risario8/Pineda13/472982.mkv",
-    "nombre": "Cortafuego",
+    "url": "http://live.detodotvplay.com:8080//movie/Risario8/Pineda13/462081.mkv",
+    "nombre": "De las cenizas: Bajo tierra",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 4,
+  "samples_total": 5,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
