@@ -181,6 +181,18 @@
         "anio": "2025",
         "genero": "Animación, Aventura, Familia",
         "duracion": "80 min"
+      },
+      {
+        "name": "Harpía: Acecho maligno",
+        "url": "https://pomf2.lain.la/f/kfa3kxi2.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/A5DJQCDDSiZYNJtNiHuahPxKgwn.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/13TAaZVv3yrRntxsc01kuPFsAVI.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/2Ay5Winhcq0mL6l6WZBfsShSdSJ.png",
+        "type": "PELICULA",
+        "descripcion": "Cuando se quedó embarazada, Harper ya sabía que tener un hijo no iba a ser tarea fácil. Lo que no esperaba es, además, tener que lidiar con una presencia maligna que habita en la granja familiar desde hace generaciones.",
+        "anio": "2025",
+        "genero": "Terror",
+        "duracion": "85 min"
       }
     ]
   }
