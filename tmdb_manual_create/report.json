@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-02-22T04:01:14.654868Z",
+  "timestamp_utc": "2026-02-22T04:03:56.997821Z",
   "input": {
-    "url": "https://pomf2.lain.la/f/6ahhy620.mp4",
-    "nombre": "Stolen Children",
+    "url": "https://pomf2.lain.la/f/mwvltklh.mp4",
+    "nombre": "El Día del Fin del Mundo: Migración",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 10,
+  "samples_total": 11,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
