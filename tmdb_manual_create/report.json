@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-02-22T03:58:40.759540Z",
+  "timestamp_utc": "2026-02-22T03:59:56.983467Z",
   "input": {
-    "url": "https://pomf2.lain.la/f/vf826ovc.mp4",
-    "nombre": "Crónicas de Exorcismo: El Comienzo",
+    "url": "https://pomf2.lain.la/f/5kj6ss2d.mp4",
+    "nombre": "Soy Frankelda",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 8,
+  "samples_total": 9,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
