@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Ultimos agregados",
+    "samples": [
+      {
+        "name": "Depredador: Tierras salvajes",
+        "url": "http://live.detodotvplay.com:8080//movie/Risario8/Pineda13/463106.mkv",
+        "icono": "https://image.tmdb.org/t/p/original/r7TEWHLr1lsIsTkiEFwtM3hAWma.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/82lM4GJ9uuNvNDOEpxFy77uv4Ak.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/vipn5ZZ4QLWwCOjYiBaKFKKFCoK.png",
+        "type": "PELICULA",
+        "descripcion": "En el futuro, en un planeta remoto, un joven Depredador, marginado de su clan, encuentra un aliado inesperado en Thia y se embarca en un peligroso viaje en busca del adversario definitivo.",
+        "anio": "2025",
+        "genero": "Acción, Ciencia ficción, Aventura",
+        "duracion": "107 min"
+      }
+    ]
+  }
+]

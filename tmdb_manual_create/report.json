@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-02-22T03:20:50.019016Z",
+  "input": {
+    "url": "http://live.detodotvplay.com:8080//movie/Risario8/Pineda13/463106.mkv",
+    "nombre": "Depredador: Tierras salvajes",
+    "grupo": "Ultimos agregados"
+  },
+  "enriched": true,
+  "language": "es-MX",
+  "fallback_language": "en-US",
+  "groups_total": 1,
+  "samples_total": 1,
+  "replaced_existing_url": false,
+  "output_dir": "tmdb_manual_create"
+}
