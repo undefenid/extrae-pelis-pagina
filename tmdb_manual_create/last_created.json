@@ -2,16 +2,16 @@
   "name": "Ultimos agregados",
   "samples": [
     {
-      "name": "Soy Frankelda",
-      "url": "https://pomf2.lain.la/f/5kj6ss2d.mp4",
-      "icono": "https://image.tmdb.org/t/p/original/rh3HNzV7o8ouH4NnCuL76OFPFBF.jpg",
-      "iconoHorizontal": "https://image.tmdb.org/t/p/original/pme7D46PxaOdNWika46q5VUS2CR.jpg",
-      "iconpng": "https://image.tmdb.org/t/p/original/eFenGhKFWic2PMQvpzvWd5nlt01.png",
+      "name": "Stolen Children",
+      "url": "https://pomf2.lain.la/f/6ahhy620.mp4",
+      "icono": "https://image.tmdb.org/t/p/original/3JPrT7IWEizzt5gJOiHeR0xwZNj.jpg",
+      "iconoHorizontal": "https://image.tmdb.org/t/p/original/qmUOo4HY49Fd8YwEKAUE4xlFygP.jpg",
+      "iconpng": "https://image.tmdb.org/t/p/original/qo861WXfLLjxnEoFTnVAu9CCvWU.png",
       "type": "PELICULA",
-      "descripcion": "La joven escritora mexicana frustrada del siglo XIX, Frankela, viaja en forma de fantasma a un reino de su propia invención habitado por Espectros, unos monstruosos personajes que creó en sus relatos de terror.",
+      "descripcion": "¡Una historia que conmocionó Europa! El documental revela el escándalo del tráfico de bebés en Georgia, destapado por la periodista Tamuna Museridze.",
       "anio": "2025",
-      "genero": "Animación, Familia, Fantasía, Terror",
-      "duracion": "114 min"
+      "genero": "Documental",
+      "duracion": "97 min"
     }
   ]
 }

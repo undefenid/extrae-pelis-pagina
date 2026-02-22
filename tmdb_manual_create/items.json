@@ -109,6 +109,18 @@
         "anio": "2025",
         "genero": "Animación, Familia, Fantasía, Terror",
         "duracion": "114 min"
+      },
+      {
+        "name": "Stolen Children",
+        "url": "https://pomf2.lain.la/f/6ahhy620.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/3JPrT7IWEizzt5gJOiHeR0xwZNj.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/qmUOo4HY49Fd8YwEKAUE4xlFygP.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/qo861WXfLLjxnEoFTnVAu9CCvWU.png",
+        "type": "PELICULA",
+        "descripcion": "¡Una historia que conmocionó Europa! El documental revela el escándalo del tráfico de bebés en Georgia, destapado por la periodista Tamuna Museridze.",
+        "anio": "2025",
+        "genero": "Documental",
+        "duracion": "97 min"
       }
     ]
   }
