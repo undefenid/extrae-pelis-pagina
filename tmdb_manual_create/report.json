@@ -1,14 +1,14 @@
 {
-  "timestamp_utc": "2026-02-22T02:50:31.591554Z",
+  "timestamp_utc": "2026-02-22T02:53:20.864724Z",
   "input": {
-    "url": "http://live.detodotvplay.com:8080//movie/Risario8/Pineda13/463106.mkv",
-    "nombre": "Depredador: Tierras salvajes",
+    "url": "http://live.detodotvplay.com:8080//movie/Risario8/Pineda13/456439.mkv",
+    "nombre": "Zootopia 2",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
-  "items_total": 1,
+  "items_total": 2,
   "replaced_existing": false,
   "output_dir": "tmdb_manual_create"
 }
