@@ -73,6 +73,18 @@
         "anio": "2026",
         "genero": "Acción, Comedia, Crimen, Misterio",
         "duracion": "124 min"
+      },
+      {
+        "name": "La princesa Kaguya del cosmos",
+        "url": "https://pomf2.lain.la/f/0ia9tged.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/5qdBUtjTZIZA0vfnjb4FiQP9J5G.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/1jdPUUSy37Wzw3xuc8otI86X2gv.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/edik9PiOlEXguPImJwjhB6TxMb0.png",
+        "type": "PELICULA",
+        "descripcion": "La vida de Iroha se sale de órbita cuando Kaguya, una chica que viene de la Luna, se muda con ella y la convence de actuar juntas en un mundo virtual.",
+        "anio": "2026",
+        "genero": "Animación, Fantasía, Música, Ciencia ficción",
+        "duracion": "143 min"
       }
     ]
   }

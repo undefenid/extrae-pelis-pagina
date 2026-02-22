@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-02-22T03:53:52.867439Z",
+  "timestamp_utc": "2026-02-22T03:57:16.643451Z",
   "input": {
-    "url": "https://dl.dropbox.com/scl/fi/6erw0p1jqyhz2o1qo5mnr/sociales-5.mp4?rlkey=jiddw41itty318vox3qi062bw&st=iji6rixf&dl=1",
-    "nombre": "Equipo Demolición",
+    "url": "https://pomf2.lain.la/f/0ia9tged.mp4",
+    "nombre": "La princesa Kaguya del cosmos",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 6,
+  "samples_total": 7,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
