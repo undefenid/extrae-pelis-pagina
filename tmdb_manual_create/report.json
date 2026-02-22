@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-02-22T04:25:26.154286Z",
+  "timestamp_utc": "2026-02-22T04:28:06.679887Z",
   "input": {
-    "url": "https://dl.dropbox.com/scl/fi/qm2lo1jce5qcxq91pev8w/f-sica.mp4?rlkey=uwx643rkxg0yg20myzrhjrge5&st=b9zq5n2b&dl=0",
-    "nombre": "Christy",
+    "url": "https://dl.dropbox.com/scl/fi/ufvtrjb96nebx73bhywy3/f-sica-1.mp4?rlkey=j4w8jlv7vwkp4va5v5qvlyknu&st=emq9ubxk&dl=0",
+    "nombre": "El cautivo",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 17,
+  "samples_total": 18,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }

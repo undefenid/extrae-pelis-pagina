@@ -2,16 +2,16 @@
   "name": "Ultimos agregados",
   "samples": [
     {
-      "name": "Christy",
-      "url": "https://dl.dropbox.com/scl/fi/qm2lo1jce5qcxq91pev8w/f-sica.mp4?rlkey=uwx643rkxg0yg20myzrhjrge5&st=b9zq5n2b&dl=0",
-      "icono": "https://image.tmdb.org/t/p/original/ssy1uHGZkuXLkIWJWrtsBczPvVC.jpg",
-      "iconoHorizontal": "https://image.tmdb.org/t/p/original/d95WgAQXqDVlqbEHdLWfyvRG2ms.jpg",
-      "iconpng": "https://image.tmdb.org/t/p/original/yBE4DfntkIfl2DbjcmIoz7anSGp.png",
+      "name": "El cautivo",
+      "url": "https://dl.dropbox.com/scl/fi/ufvtrjb96nebx73bhywy3/f-sica-1.mp4?rlkey=j4w8jlv7vwkp4va5v5qvlyknu&st=emq9ubxk&dl=0",
+      "icono": "https://image.tmdb.org/t/p/original/2vfxMQ3WEA8goCH7LXlAzED9aed.jpg",
+      "iconoHorizontal": "https://image.tmdb.org/t/p/original/sBEM8U5l7jq0BH7XiC7Zzs4d8e2.jpg",
+      "iconpng": "https://image.tmdb.org/t/p/original/rf9NC7jT3b5cMRKs0llXFQuWHIZ.png",
       "type": "PELICULA",
-      "descripcion": "Biopic de Christy Martin, la boxeadora de más éxito de los años 90.",
+      "descripcion": "Argelia, 1575. El joven preso Miguel de Cervantes recurre a su ingenio y habilidades narrativas para sobrevivir al cautiverio y planear un escape arriesgado.",
       "anio": "2025",
-      "genero": "Historia, Drama",
-      "duracion": "135 min"
+      "genero": "Drama, Historia",
+      "duracion": "134 min"
     }
   ]
 }
