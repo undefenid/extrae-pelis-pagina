@@ -1,14 +1,14 @@
 {
-  "timestamp_utc": "2026-02-22T02:53:20.864724Z",
+  "timestamp_utc": "2026-02-22T02:55:41.379303Z",
   "input": {
-    "url": "http://live.detodotvplay.com:8080//movie/Risario8/Pineda13/456439.mkv",
-    "nombre": "Zootopia 2",
+    "url": "http://live.detodotvplay.com:8080//movie/Risario8/Pineda13/454213.mkv",
+    "nombre": "Los ilusionistas 3: Ahora me ves, ahora no",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
-  "items_total": 2,
+  "items_total": 3,
   "replaced_existing": false,
   "output_dir": "tmdb_manual_create"
 }

@@ -32,5 +32,22 @@
         "duracion": "107 min"
       }
     ]
+  },
+  {
+    "name": "Ultimos agregados",
+    "samples": [
+      {
+        "name": "Los ilusionistas 3: Ahora me ves, ahora no",
+        "url": "http://live.detodotvplay.com:8080//movie/Risario8/Pineda13/454213.mkv",
+        "icono": "https://image.tmdb.org/t/p/original/mnaQvOHu7Dl6Kdz2GPXKNFmnAgx.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/dHSz0tSFuO2CsXJ1CApSauP9Ncl.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/oqzW9RFVgRpnCUmWzc2baPYdhXR.png",
+        "type": "PELICULA",
+        "descripcion": "La historia remota un robo de diamantes que involucra a dos generaciones de ilusionistas, lo que forza a los Jinetes a salir de su retiro y unirse a los nuevos protagonistas para detener a un poderoso grupo de criminales.",
+        "anio": "2025",
+        "genero": "Suspense, Crimen, Misterio",
+        "duracion": "113 min"
+      }
+    ]
   }
 ]
