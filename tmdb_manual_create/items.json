@@ -133,6 +133,18 @@
         "anio": "2026",
         "genero": "Aventura, Suspense, Ciencia ficción",
         "duracion": "98 min"
+      },
+      {
+        "name": "El Día del Fin del Mundo: Migración",
+        "url": "https://pomf2.lain.la/f/iyy7z3y8.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/q7aijAKE98Fcp6dgR6oWiUkFO2g.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/tyjXlexbNZQ0ZT1KEJslQtBirqc.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/t3HNUHHAMK2GTNWfqjgxKR38Tjh.png",
+        "type": "PELICULA",
+        "descripcion": "La familia Garrity debe abandonar la seguridad del búnker de Groenlandia y embarcarse en un peligroso viaje a través del diezmado páramo helado de Europa para encontrar un nuevo hogar.",
+        "anio": "2026",
+        "genero": "Aventura, Suspense, Ciencia ficción",
+        "duracion": "98 min"
       }
     ]
   }

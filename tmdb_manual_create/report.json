@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-02-22T04:03:56.997821Z",
+  "timestamp_utc": "2026-02-22T04:06:39.545168Z",
   "input": {
-    "url": "https://pomf2.lain.la/f/mwvltklh.mp4",
-    "nombre": "El Día del Fin del Mundo: Migración",
+    "url": "https://pomf2.lain.la/f/iyy7z3y8.mp4",
+    "nombre": "El Día del Fin del Mundo",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 11,
+  "samples_total": 12,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
