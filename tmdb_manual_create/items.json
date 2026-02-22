@@ -193,6 +193,18 @@
         "anio": "2025",
         "genero": "Terror",
         "duracion": "85 min"
+      },
+      {
+        "name": "Christy",
+        "url": "https://dl.dropbox.com/scl/fi/qm2lo1jce5qcxq91pev8w/f-sica.mp4?rlkey=uwx643rkxg0yg20myzrhjrge5&st=b9zq5n2b&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/ssy1uHGZkuXLkIWJWrtsBczPvVC.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/d95WgAQXqDVlqbEHdLWfyvRG2ms.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/yBE4DfntkIfl2DbjcmIoz7anSGp.png",
+        "type": "PELICULA",
+        "descripcion": "Biopic de Christy Martin, la boxeadora de más éxito de los años 90.",
+        "anio": "2025",
+        "genero": "Historia, Drama",
+        "duracion": "135 min"
       }
     ]
   }
