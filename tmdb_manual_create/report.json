@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-02-22T04:06:39.545168Z",
+  "timestamp_utc": "2026-02-22T04:08:28.979619Z",
   "input": {
-    "url": "https://pomf2.lain.la/f/iyy7z3y8.mp4",
-    "nombre": "El Día del Fin del Mundo",
+    "url": "https://dl.dropbox.com/scl/fi/0le4bhrjrzr2ve213f3cu/fisica-2.mp4?rlkey=603m7krcqca3a1jlxt5re2thn&st=9leeaff9&dl=0",
+    "nombre": "Nazi Supersoldier",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 12,
+  "samples_total": 13,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
