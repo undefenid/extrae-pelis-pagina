@@ -61,6 +61,18 @@
         "anio": "2026",
         "genero": "Suspense, Drama",
         "duracion": "88 min"
+      },
+      {
+        "name": "Equipo Demolición",
+        "url": "https://dl.dropbox.com/scl/fi/6erw0p1jqyhz2o1qo5mnr/sociales-5.mp4?rlkey=jiddw41itty318vox3qi062bw&st=iji6rixf&dl=1",
+        "icono": "https://image.tmdb.org/t/p/original/pG39vgTEhHeYIlcPJtHpxNLdPPM.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/cz4vLJrmaV1zJlRYbxqtvLzeLWB.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/9pD9nn73WM2PwykHakspDzM4ea1.png",
+        "type": "PELICULA",
+        "descripcion": "Un improbable dúo de hermanastros, uno un impulsivo detective y el otro un disciplinado, se ven atraídos por el asesinato de su padre en Hawai, lo que les lleva a un peligroso viaje para desenmascarar una conspiración de largo alcance.",
+        "anio": "2026",
+        "genero": "Acción, Comedia, Crimen, Misterio",
+        "duracion": "124 min"
       }
     ]
   }

@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-02-22T03:31:52.507889Z",
+  "timestamp_utc": "2026-02-22T03:53:52.867439Z",
   "input": {
-    "url": "http://live.detodotvplay.com:8080//movie/Risario8/Pineda13/462081.mkv",
-    "nombre": "De las cenizas: Bajo tierra",
+    "url": "https://dl.dropbox.com/scl/fi/6erw0p1jqyhz2o1qo5mnr/sociales-5.mp4?rlkey=jiddw41itty318vox3qi062bw&st=iji6rixf&dl=1",
+    "nombre": "Equipo Demolición",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 5,
+  "samples_total": 6,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
