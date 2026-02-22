@@ -85,6 +85,18 @@
         "anio": "2026",
         "genero": "Animación, Fantasía, Música, Ciencia ficción",
         "duracion": "143 min"
+      },
+      {
+        "name": "Crónicas de Exorcismo: El Comienzo",
+        "url": "https://pomf2.lain.la/f/vf826ovc.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/5wClfej4a0c3wDqJD7B2wUVk6Qd.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/lDPiNMKFZUg2d1vfBpduYmzTMfs.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/8xLJNhLA5a8RuLGQVDYQ7QDaSTv.png",
+        "type": "PELICULA",
+        "descripcion": "El padre Park es un médico convertido en sacerdote que fue excomulgado por realizar exorcismos para una iglesia que negaba la existencia de males sobrenaturales. Cuando su viejo amigo, un monje de un templo secreto y lleno de magia, lo llama para proteger a un niño ingenuo, pero poderoso, de su malvado maestro, el padre Park deberá enfrentarse a su pasado.",
+        "anio": "2025",
+        "genero": "Animación, Fantasía, Terror, Acción",
+        "duracion": "85 min"
       }
     ]
   }
