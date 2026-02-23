@@ -1,0 +1,22 @@
+{
+  "source_url": "https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/2026%20v3/peliculas.json",
+  "language": "es-MX",
+  "fallback_language": "en-US",
+  "only_fill_empty": true,
+  "records_in_input": 3,
+  "movie_samples_processed": 1357,
+  "movie_samples_matched_tmdb": 1213,
+  "movie_samples_unmatched": 144,
+  "non_movie_records": 0,
+  "output_dir": "2026 V3 enriched",
+  "enriched_files": [
+    "peliculas.enriched_by_genre.json"
+  ],
+  "unmatched_files": [
+    "peliculas.unmatched.json"
+  ],
+  "non_movie_files": [],
+  "grouping_rule": "record.name se reemplaza por el genero principal (TMDB es-MX). Unmatched queda en 'Sin información' al final.",
+  "title_rule": "Se limpia query (brackets/calidad/dual/etc) + 'parte' si antecede a número. Si el titulo actual NO parece español y TMDB trae title_es distinto, se reemplaza; si no, se mantiene.",
+  "logo_rule": "icono/iconoHorizontal/iconpng se reemplazan siempre por TMDB si existen (poster/backdrop/logo)."
+}
