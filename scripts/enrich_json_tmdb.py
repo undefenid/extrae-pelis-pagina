@@ -3,6 +3,8 @@ import re
 import json
 import time
 import requests
+import unicodedata
+import difflib
 from urllib.parse import urlparse
 from collections import OrderedDict, defaultdict
 
@@ -93,13 +95,21 @@ stem = re.sub(r"\.json$", "", in_name, flags=re.IGNORECASE)
 # Normalizacion del titulo
 # -----------------------
 YEAR_RE = re.compile(r"\b(19\d{2}|20\d{2})\b")
+
+# tokens basura (calidad, idioma, flags, etc)
 JUNK_RE = re.compile(
-    r"(\b(1080p|720p|2160p|4k|hdr|sdr|webrip|web-dl|bluray|brrip|dvdrip|x264|x265|h\.?264|h\.?265|hevc|aac|ac3|dts|latino|castellano|subtitulado|sub|dual|multi|esp|eng|vose)\b)",
+    r"(\b(1080p|720p|2160p|4k|uhd|hdr|sdr|webrip|web\-?dl|bluray|brrip|dvdrip|x264|x265|h\.?264|h\.?265|hevc|aac|ac3|dts|"
+    r"latino|castellano|subtitulado|sub|dual|multi|esp|eng|vose|español|english)\b)",
     re.IGNORECASE,
 )
+
+# elimina TODO lo que esté entre (), [], {}
 BRACKETS_RE = re.compile(r"[\[\(\{].*?[\]\)\}]")
 SEP_RE = re.compile(r"[._\-]+")
 MULTISPACE_RE = re.compile(r"\s{2,}")
+
+# regla: remover la palabra "parte/part" SOLO si va pegada a un número (parte 1, part 2)
+PART_WORD_BEFORE_NUM_RE = re.compile(r"\b(parte|part)\b\s*(?=\d+\b)", re.IGNORECASE)
 
 def extract_year(text: str) -> str:
     if not text:
@@ -107,20 +117,69 @@ def extract_year(text: str) -> str:
     yrs = YEAR_RE.findall(text)
     return yrs[-1] if yrs else ""
 
+def _strip_accents(s: str) -> str:
+    if not s:
+        return ""
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(ch for ch in s if unicodedata.category(ch) != "Mn")
+    return s
+
+def _fix_broken_words_safe(t: str) -> str:
+    """
+    Arreglos MUY conservadores para no romper títulos:
+    - 'salvaci n' -> 'salvacion'
+    - 'rebeli n' -> 'rebelion'
+    - 'g nesis' -> 'genesis' (solo este caso exacto)
+    """
+    if not t:
+        return ""
+
+    # caso específico: g nesis -> genesis
+    t = re.sub(r"\b[gG]\s+nesis\b", "genesis", t)
+
+    # casos tipo "...ci n" / "...li n" al final de palabra -> "...cion" / "...lion"
+    # (sin acento, pero TMDB matchea igual)
+    t = re.sub(r"\b(\w+?)ci\s+n\b", r"\1cion", t, flags=re.IGNORECASE)
+    t = re.sub(r"\b(\w+?)li\s+n\b", r"\1lion", t, flags=re.IGNORECASE)
+
+    return t
+
 def clean_title(name: str) -> str:
     t = (name or "").strip()
     if not t:
         return ""
+
+    # primero arreglos de “palabras rotas” (antes de borrar separadores)
+    t = _fix_broken_words_safe(t)
+
+    # quitar cualquier cosa entre brackets (incluye (2024)[dual], etc)
     t = BRACKETS_RE.sub(" ", t)
+
+    # normalizar separadores
     t = SEP_RE.sub(" ", t)
+
+    # quitar tokens de calidad/idioma/etc
     t = JUNK_RE.sub(" ", t)
+
+    # quitar "parte/part" si precede a un número (mantiene el número)
+    t = PART_WORD_BEFORE_NUM_RE.sub(" ", t)
+
+    # si termina con año, quitarlo del query (el año se manda por param 'year')
     t = re.sub(r"\s+\b(19\d{2}|20\d{2})\b\s*$", "", t).strip()
+
     t = MULTISPACE_RE.sub(" ", t).strip()
     return t
 
 def norm_cmp(s: str) -> str:
     s = (s or "").strip().lower()
     s = re.sub(r"\s+", " ", s)
+    return s
+
+def norm_for_match(s: str) -> str:
+    s = (s or "").strip().lower()
+    s = _strip_accents(s)
+    s = re.sub(r"[^a-z0-9]+", " ", s)
+    s = MULTISPACE_RE.sub(" ", s).strip()
     return s
 
 ES_CHARS_RE = re.compile(r"[áéíóúñü¿¡]", re.IGNORECASE)
@@ -173,7 +232,6 @@ def to_img_url(path: str) -> str:
 
 def pick_logo_url(imgs: dict) -> str:
     logos = (imgs or {}).get("logos") or []
-    # prioridad: es -> en -> null -> resto
     def score(x):
         iso = x.get("iso_639_1")
         if iso == "es":
@@ -189,6 +247,69 @@ def pick_logo_url(imgs: dict) -> str:
     fp = logos_sorted[0].get("file_path") or ""
     return (IMG_BASE + fp) if fp else ""
 
+def _sim(a: str, b: str) -> float:
+    if not a or not b:
+        return 0.0
+    return difflib.SequenceMatcher(None, a, b).ratio()
+
+def choose_best_result(results: list, query_clean: str, year: str):
+    """
+    Elige mejor candidato para evitar falsos positivos:
+    - similitud entre query_clean y title/original_title
+    - bonus si coincide el año
+    """
+    qn = norm_for_match(query_clean)
+    if not qn:
+        return None, 0.0
+
+    best = None
+    best_score = 0.0
+
+    for r in (results or []):
+        rid = r.get("id")
+        if not rid:
+            continue
+
+        cand_year = (r.get("release_date") or "")[:4]
+        titles = []
+        if r.get("title"):
+            titles.append(r.get("title"))
+        if r.get("original_title"):
+            titles.append(r.get("original_title"))
+
+        pop = float(r.get("popularity") or 0.0)
+        pop_bonus = min(pop, 50.0) / 5.0  # 0..10
+
+        for tt in titles:
+            tt_clean = clean_title(tt)
+            tn = norm_for_match(tt_clean)
+            if not tn:
+                continue
+
+            sim = _sim(qn, tn) * 100.0
+            score = sim
+
+            if tn == qn:
+                score += 50.0
+
+            if year and cand_year == year:
+                score += 30.0
+
+            if tn.startswith(qn) or qn.startswith(tn):
+                score += 10.0
+
+            score += pop_bonus
+
+            if score > best_score:
+                best_score = score
+                best = r
+
+    # umbral suave (no muy alto para no perder matches)
+    if best and best_score >= 50.0:
+        return best, best_score
+
+    return None, best_score
+
 # Cache para no repetir queries
 cache = {}  # (clean_lower, year) -> hit dict or None
 
@@ -198,7 +319,6 @@ def should_set(current_val: str) -> bool:
     return not (current_val or "").strip()
 
 def ensure_sample_schema(sample: dict) -> dict:
-    # garantiza todos los campos existan
     sample.setdefault("name", sample.get("name","") or "")
     sample.setdefault("url", sample.get("url","") or "")
     sample.setdefault("icono", sample.get("icono","") or "")
@@ -219,7 +339,7 @@ def enrich_movie_sample(sample: dict):
 
     tipo = (sample.get("type") or "").upper().strip()
     if tipo and tipo != "PELICULA":
-        return sample, "", False  # no es peli
+        return sample, "", False
 
     orig_name = (sample.get("name") or "").strip()
     orig_year = (sample.get("anio") or "").strip()
@@ -235,20 +355,32 @@ def enrich_movie_sample(sample: dict):
     else:
         hit = None
 
-        # buscar primero en idioma preferido
-        results = search_movie(q_clean, year_for_search, LANGUAGE)
-        if not results and year_for_search:
-            results = search_movie(q_clean, "", LANGUAGE)
+        # Variantes de query (sin arriesgar demasiado)
+        variants = []
+        if q_clean:
+            variants.append(q_clean)
 
-        # fallback a en-US para matching
-        if not results:
-            results = search_movie(q_clean, year_for_search, "en-US")
-        if not results and year_for_search:
-            results = search_movie(q_clean, "", "en-US")
+        q_ascii = _strip_accents(q_clean)
+        if q_ascii and q_ascii.lower() != q_clean.lower():
+            variants.append(q_ascii)
 
-        if results:
-            movie = results[0]
-            mid = movie.get("id")
+        # Buscar en LANGUAGE y fallback en-US y elegir el mejor match
+        best_r = None
+        best_score = 0.0
+
+        for lang_try in (LANGUAGE, "en-US"):
+            for qv in variants:
+                results = search_movie(qv, year_for_search, lang_try)
+                if not results and year_for_search:
+                    results = search_movie(qv, "", lang_try)
+
+                cand, score = choose_best_result(results, qv, year_for_search)
+                if cand and score > best_score:
+                    best_score = score
+                    best_r = cand
+
+        if best_r:
+            mid = best_r.get("id")
             if mid:
                 det_es, imgs = fetch_details(mid, LANGUAGE)
 
@@ -310,7 +442,7 @@ def enrich_movie_sample(sample: dict):
         elif hit.get("overview_fb"):
             sample["descripcion"] = hit["overview_fb"]
 
-    # --- RESTO ---
+    # --- RESTO (respetando ONLY_FILL_EMPTY como antes) ---
     if should_set(sample.get("anio","")) and hit.get("year"):
         sample["anio"] = hit["year"]
 
@@ -320,17 +452,17 @@ def enrich_movie_sample(sample: dict):
     if should_set(sample.get("duracion","")) and hit.get("runtime"):
         sample["duracion"] = hit["runtime"]
 
-    if should_set(sample.get("icono","")) and hit.get("poster"):
+    # --- LOGOS: reemplazar SIEMPRE si TMDB trae (aunque ya exista en JSON) ---
+    if hit.get("poster"):
         sample["icono"] = hit["poster"]
 
-    if should_set(sample.get("iconoHorizontal","")) and hit.get("backdrop"):
+    if hit.get("backdrop"):
         sample["iconoHorizontal"] = hit["backdrop"]
 
-    if should_set(sample.get("iconpng","")) and hit.get("logo"):
+    if hit.get("logo"):
         sample["iconpng"] = hit["logo"]
 
     sample = ensure_sample_schema(sample)
-
     primary_genre = (hit.get("genres_list") or [""])[0] if hit.get("genres_list") else ""
     return sample, (primary_genre or ""), True
 
@@ -340,11 +472,8 @@ def enrich_movie_sample(sample: dict):
 movie_samples = []
 non_movie_records = []
 
-# data = [{name, samples:[...]}]
 for rec in (data or []):
     samples = rec.get("samples") or []
-    # preservamos no-pelis como estaban (por si el json trae series u otros)
-    # pero NO los mezclamos en categorias de peli
     non_movies_here = []
     for s in samples:
         t = (s.get("type") or "").upper().strip()
@@ -359,7 +488,7 @@ for rec in (data or []):
             "samples": non_movies_here
         })
 
-genre_groups = defaultdict(list)   # genre -> [sample...]
+genre_groups = defaultdict(list)
 unmatched_samples = []
 matched_count = 0
 processed_count = 0
@@ -372,7 +501,6 @@ for s in movie_samples:
         g = primary_genre.strip() or "Sin información"
         genre_groups[g].append(s2)
     else:
-        # no match: mandamos a Sin información
         s2 = ensure_sample_schema(s2)
         genre_groups["Sin información"].append(s2)
         unmatched_samples.append(s2)
@@ -383,7 +511,7 @@ for s in movie_samples:
 def ordered_genres(groups_dict):
     keys = list(groups_dict.keys())
     def ksort(x):
-        if x.strip().lower() == "sin información" or x.strip().lower() == "sin informacion":
+        if x.strip().lower() in ("sin información", "sin informacion"):
             return (1, x.lower())
         return (0, x.lower())
     return sorted(keys, key=ksort)
@@ -401,7 +529,7 @@ unmatched_records = [{
 }] if unmatched_samples else []
 
 # -----------------------
-# Split robusto (si un genero tiene demasiados samples, lo corta)
+# Split robusto
 # -----------------------
 def split_records(records_list, max_samples):
     parts = []
@@ -412,11 +540,9 @@ def split_records(records_list, max_samples):
         name = r.get("name","")
         samples = r.get("samples", []) or []
 
-        # si un record es gigante, lo partimos por dentro
         if len(samples) > max_samples:
             for i in range(0, len(samples), max_samples):
                 chunk = samples[i:i+max_samples]
-                # si el current part no tiene lugar, cerramos
                 if cur_part and (cur_count + len(chunk) > max_samples):
                     parts.append(cur_part)
                     cur_part = []
@@ -493,7 +619,8 @@ report = {
     "unmatched_files": unmatched_files,
     "non_movie_files": non_movie_files,
     "grouping_rule": "record.name se reemplaza por el genero principal (TMDB es-MX). Unmatched queda en 'Sin información' al final.",
-    "title_rule": "Si el titulo actual NO parece español y TMDB trae title_es distinto, se reemplaza; si no, se mantiene.",
+    "title_rule": "Se limpia query (brackets/calidad/dual/etc) + 'parte' si antecede a número. Si el titulo actual NO parece español y TMDB trae title_es distinto, se reemplaza; si no, se mantiene.",
+    "logo_rule": "icono/iconoHorizontal/iconpng se reemplazan siempre por TMDB si existen (poster/backdrop/logo).",
 }
 
 with open(os.path.join(OUTPUT_DIR, f"{stem}.report.json"), "w", encoding="utf-8") as f:
