@@ -1,0 +1,752 @@
+M3U: https://raw.githubusercontent.com/BTVSERVICIOS/LIS.ZALTV/refs/heads/main/README.m3u
+VERIFY_URLS: True
+OFFLINE_COUNT: 187
+
+- [] Animales fantásticos: los crímenes de Grindelwald (2018)
+  url: https://godna94.pp.ua/CONENIDO_1909AASSDD/SUBMENUS//_PROTECTOR_DE_ARCHIVOS_PARA_REPRODUCCION_DE_VIDEOS_GRACIAS_POR_VISITAR.php?v=aHR0cHM6Ly9kbC5kcm9wYm94LmNvbS9zL3pwNm5lcnNxNG42eHhxNy80TjFNNEwzUyUyMEY0TlQlMjAyLm1rdg==&f=.mp4
+  reason: head_404 | status: 404 | ct: text/html
+
+- [] Puente hasta Terabithia
+  url: https://godna94.pp.ua/CONENIDO_1909AASSDD/SUBMENUS//_PROTECTOR_DE_ARCHIVOS_PARA_REPRODUCCION_DE_VIDEOS_GRACIAS_POR_VISITAR.php?v=aHR0cHM6Ly9hcmNoaXZlLm9yZy9kb3dubG9hZC9tYW5hbmEyL21hJUMzJUIxYW5hMi5ta3Y=&f=.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: application/octet-stream
+
+- [] Pobres criaturas
+  url: https://archive.org/download/22222_202403/Pobres.criaturas.2023.720p-Dual-Lat.mkv
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Madame Web
+  url: https://archive.org/download/22222_202403/Madame.Web.2024.720p-Dual-Lat.mkv
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Bob Marley: La leyenda
+  url: https://archive.org/download/22222_202403/Bob.Marley.La.leyenda.2024.720p-Dual-Lat.mkv
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Novias en Guerra
+  url: https://archive.org/download/captura-de-pantalla-2024-01-31-09-23-09/Novias%20en%20Guerra%20%282023%29.1080p.lat.cinecalidad.com.mx.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Radical
+  url: https://archive.org/download/captura-de-pantalla-2024-01-27-11-06-20_202401/Radical.2023.720p-Dual-Lat.mkv
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Blade Runner 2049
+  url: https://archive.org/download/captura-de-pantalla-2024-01-27-11-06-20_202401/Blade.Runner.2049.2017.720p-Dual-Lat.mkv
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Los Menospreciados
+  url: https://archive.org/download/captura-de-pantalla-2024-01-27-11-06-20_202401/Los.Menospreciados.2024.720p-Dual-Lat.mkv
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Vivero
+  url: https://archive.org/download/238575ef-6f-92d-20796a-8b-75915fbffb-9-1/Vivarium.2019.720p-dual-lat.mkv
+  reason: get_status_401 | status: 401 | ct: application/octet-stream
+
+- [] Lift: Un robo de primera clase
+  url: https://archive.org/download/238575ef-6f-92d-20796a-8b-75915fbffb-9-1/Lift.Un.robo.de.primera.clase.2024.720p-Dual-Lat.mkv
+  reason: get_status_401 | status: 401 | ct: application/octet-stream
+
+- [] Titanic
+  url: https://archive.org/download/9edb-3e-054d-318eba-192c-07a-809315e-72/Titanic.1997.lati.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] El código enigma
+  url: https://archive.org/download/9edb-3e-054d-318eba-192c-07a-809315e-72/The.Imitation.Game.2014.lati.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Soul
+  url: https://archive.org/download/9edb-3e-054d-318eba-192c-07a-809315e-72/Soul.2020.lati.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Pearl
+  url: https://archive.org/download/9edb-3e-054d-318eba-192c-07a-809315e-72/Pearl.2022.lati.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [] Mazinger Z Infinity
+  url: https://archive.org/download/9edb-3e-054d-318eba-192c-07a-809315e-72/Mazinger.Z.Infinity.2017.1080p-dual-lat-cinecalidad.to.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [] Infinity (1996)
+  url: https://archive.org/download/captura-de-pantalla-2023-12-01-155804/Infinity.1996-DVDRip.XviD-DD.20-R%26H.mkv
+  reason: head_401 | status: 401 | ct: 
+
+- [] Glass Onion: Un misterio de Knives Out
+  url: https://archive.org/download/captura-de-pantalla-2023-12-01-155804/Glass.Onion.A.Knives.Out.Mystery.2022.lati.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Puñales por la espalda
+  url: https://archive.org/download/captura-de-pantalla-2023-09-08-184347/Knivess.Out.2019.lati.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Reptiles
+  url: https://archive.org/download/especial-de-navidad-feliz-navidad-a-todos-dibujos-animados-little-baby-bum-en-espanol/Reptile.2023.lati.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Los peludos
+  url: https://archive.org/download/especial-de-navidad-feliz-navidad-a-todos-dibujos-animados-little-baby-bum-en-espanol/Finnick.2022.lati.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Spider-Man: Lotus
+  url: https://archive.org/download/captura-de-pantalla-2023-10-18-10-51-45/Spider-Man%20-%20Lotus%20%282023%29.1080p.dual-lat.cinecalidad.com.mx.ia.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Gran Turismo: De jugador a corredor
+  url: https://archive.org/download/captura-de-pantalla-2023-10-18-10-51-45/Gran.Turismo.2023.lati.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Misión: Imposible: Sentencia mortal - Parte uno
+  url: https://archive.org/download/captura-de-pantalla-2023-10-18-10-51-45/Mission.Impossible.7.2023.lati.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] En Busca De La Felicidad
+  url: https://archive.org/download/captura-de-pantalla-2023-11-30-152632/En%20busca%20de%20la%20felicidad.%20%5BHDRip-XviD.AC3.%5D%5BTorrentmas.com%5D.avi
+  reason: head_401 | status: 401 | ct: 
+
+- [] Cosecha oscura
+  url: https://archive.org/download/captura-de-pantalla-2023-11-29-194014/Cosecha%20oscura.2023.1080p.dual-lat.cinecalidad.com.mx.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Possession (película de 1981)
+  url: https://archive.org/download/possession.-1981.1080p.-blu-ray.x-265/Possession.1981.1080p.BluRay.x265.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Hambre de Poder
+  url: https://archive.org/download/captura-de-pantalla-2023-11-02-151743/%5Bwww.mega1080.com%5DH0MBREDEP0DERHD1080P.mkv
+  reason: head_401 | status: 401 | ct: 
+
+- [] Imperfectos (2023)
+  url: https://archive.org/download/captura-de-pantalla-2023-11-02-151743/Imperfectos%20%282023%29.1080p.dual-lat.cinecalidad.com.mx.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Besa la Tierra (Agricultura Regenerativa)
+  url: https://archive.org/download/a3522df8fb4b515c583c68951fefd782/Besa%20el%20suelo.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [] Mortal Kombat Legends: Cage Match (Video 2023)
+  url: https://archive.org/download/9ca-63980c-1d-89606255fdba-6340bb-152/Mortal.Kombat.Legends.Cage.Match.2023.lati.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [] Prisoner's Daughter (2022)
+  url: https://archive.org/download/9ca-63980c-1d-89606255fdba-6340bb-152/Prisoners.Daughter.2022.lati.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [] The Ritual Killer (2023)
+  url: https://archive.org/download/9ca-63980c-1d-89606255fdba-6340bb-152/The.Ritual.Killer.2023.lati.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Angela (2023)
+  url: https://archive.org/download/31b-06776ceb-4b-9fc-1ea-84a-145b-235f-15/Angela.2023.lati.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Ballerina
+  url: https://archive.org/download/31b-06776ceb-4b-9fc-1ea-84a-145b-235f-15/Ballerina.2023.lati.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Khufiya (2023)
+  url: https://archive.org/download/31b-06776ceb-4b-9fc-1ea-84a-145b-235f-15/Khufiya.2023.lati.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Frankenweenie
+  url: https://archive.org/download/www.mega-1080.com-frank-3-nw-33-ni-3-hd-1080-p/%5Bwww.mega1080.com%5DFRANK3NW33NI3HD1080P.mkv
+  reason: get_status_401 | status: 401 | ct: application/octet-stream
+
+- [] La otra Zoey
+  url: https://archive.org/download/www.mega-1080.com-frank-3-nw-33-ni-3-hd-1080-p/%5Bwww.mega1080.com%5DLA0TRAZ03YHD1080P.mkv
+  reason: get_status_401 | status: 401 | ct: application/octet-stream
+
+- [] The Haunting of the Tower of London
+  url: https://archive.org/download/afe597a286618d157b2b433f2e69e7c1/The.Haunting.of.the.Tower.of.London.2022.720p-Dual-Lat.mkv
+  reason: get_status_401 | status: 401 | ct: application/octet-stream
+
+- [] Spider-man 2
+  url: https://dn721808.ca.archive.org/0/items/m-4n-spiter-20-1080p-3-2-gb/M4nSpiter%202%E2%81%B0%201080p%203%2C2%20GB.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Spider-man 3
+  url: https://dn720409.ca.archive.org/0/items/m-4n-spiter-30-1080p-3-18-gb/M4nSpiter%203%E2%81%B0%201080p%203%2C18%20GB.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Pantera Negra Wakanda por Siempre
+  url: https://archive.org/download/blu-ee-p-4anth-3r-fo-orever-720p-dual-2-45-gb/BluEe%20P4anth3r%20FoOrever%20720p%20DUAL%202%2C45%20GB.mkv
+  reason: head_401 | status: 401 | ct: 
+
+- [] Batman Regresa
+  url: https://archive.org/download/man-b-4t-ret-0rn-4n-1080p-dual-3.5-gb/manB4t%20Ret0rn4n%27%24%201080p%20DUAL%203.5%20GB.mkv
+  reason: get_status_401 | status: 401 | ct: application/octet-stream
+
+- [] Cómo si fuera la primera vez
+  url: https://dn721803.ca.archive.org/0/items/50-10-v-veez-z-2004-1080p-3-52-gb/50%201%E2%81%B0%20vVEezZ%20%282004%29%201080p%203%2C52%20GB.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [] 13 Fantasmas
+  url: https://dn720402.ca.archive.org/0/items/13-ffant-4-ssm-os-60fps-7.59-gb/13Ffant4SsmOs%2060fps%207.59%20GB.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] 12 Horas Para Sobrevivir
+  url: https://dn710205.ca.archive.org/0/items/12-hrss-xobevivir-1-720p-dual-1.27-gb/12HRSsXobevivir%201%20720p%20DUAL%201.27%20GB.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] No te Metas con Zohan
+  url: https://dn721905.ca.archive.org/0/items/zoo-ch-4n-1080p-lat-2-55-gb/ZOoCh4n%201080p%20LAT%202%2C55%20GB.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Titanic
+  url: https://dn721607.ca.archive.org/0/items/t-4t-4n-1c-720p-dual-2-91-gb/T4t4n1c%20720p%20DUAL%202%2C91%20GB.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Harry Potter y las Reliquias de la Muerte parte 1
+  url: https://dn721604.ca.archive.org/0/items/h-4rr-1y-p-0tt-3r-p-4rt-3-1-1080p-dual-4.69-gb/H4rr1y%20p0tt3r%20P4rt3%201%201080p%20DUAL%204.69%20GB.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Harry Potter y las Reliquias de la Muerte parte 2
+  url: https://dn721604.ca.archive.org/0/items/h-4rr-1y-p-0tt-3r-p-4rt-3-1-1080p-dual-4.69-gb/H4rr1y%20p0tt3r%20P4rt3%201%201080p%20DUAL%204.69%20GB.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Harry Potter 20 Aniversario
+  url: https://archive.org/download/h-4rr-1y-p-0tt-3r-p-4rt-3-1-1080p-dual-4.69-gb/H4rr1y%20p0tt3r%2020th%27s%201080p%20DUAL%202.24%20GB.mkv
+  reason: head_401 | status: 401 | ct: 
+
+- [] Selena
+  url: https://ia903405.us.archive.org/6/items/peliculaSELENA/selena.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Pelotas en juego
+  url: https://ia904703.us.archive.org/32/items/gamep-3l-0t-4s-hd-720p-1113493/Gamep3l0t4s_HD__720p___1113493.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Los locos Addams 2
+  url: https://ia904700.us.archive.org/30/items/l-0oc-0s-ad-2-1993-720p-0/L0oc0sAd2%20%5B1993%5D%20720p%20%280%29.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Garfield
+  url: https://ia904700.us.archive.org/10/items/gar-l-4-pel-hd-720p-1088022/GarL4Pel_HD__720p___1088022.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Nunca mas
+  url: https://ia902604.us.archive.org/15/items/bump-non-hd-720p-1225027/Bump_Non%2B_HD__720p___1225027.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Vaselina
+  url: https://ia804707.us.archive.org/12/items/bumper-1147405-v-4s-3l-1n-4-dv-d/Bumper_1147405_V4s3l1n4_DvD.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Las brujas (1990)
+  url: https://ia902606.us.archive.org/6/items/labruj-4s-hd-720p-1213055/Labruj4s_HD__720p___1213055.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Las brujas (2020)
+  url: https://ia902607.us.archive.org/1/items/labruj-4s-2020-hd-720p-1209357/Labruj4s__2020__HD__720p___1209357.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Gimme the Power (Molotov)
+  url: https://ia902607.us.archive.org/18/items/la-historia-politica-de-mexico-480-p/la%20historia%20politica%20de%20M%C3%A9xico%20%28480P%29.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Chilangolandia
+  url: https://ia902600.us.archive.org/9/items/ch-1lang-0land-1a-hd-720p-1409427/Ch1lang0land1a_HD__720p___1409427.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Triunfos Robados 2
+  url: https://ia801202.us.archive.org/3/items/r0b-4d-0s-2-otra-vez-1080p-dual-3-73-gb/R%E2%81%B0b4d0s%202%20Otra%20vez%201080p%20DUAL%203%2C73%20GB.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Queen
+  url: https://ia902202.us.archive.org/21/items/tt0093427/tt0093427.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Dulce Familia
+  url: https://ia902707.us.archive.org/17/items/dulc-3-fam-1-li-4-hd-720p-1009590/Dulc3_fam1Li4_HD__720p___1009590.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Mirreyes vs Godínez
+  url: https://ia802706.us.archive.org/6/items/mirr-3yes-vs-god-nez-2-el-retiro-hd-1080p-1524668/M1rrey3s_contr4_God_nez_HD_1_1080p___973934.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Mirreyes vs Godínez 2
+  url: https://ia802706.us.archive.org/6/items/mirr-3yes-vs-god-nez-2-el-retiro-hd-1080p-1524668/Mirr3yes_vs__God_nez_2__El_retiro_HD__1080p___1524668.mp4
+  reason: request_error | status: None | ct: 
+
+- [] Zoolander
+  url: https://ia601200.us.archive.org/19/items/z-00l-4nd-3r-2001-hd-1-37-gb/Z0%E2%81%B0l4nd3r%20%282001%29%20HD%201%2C37%20GB.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Casese Quién Pueda
+  url: https://archive.org/download/s-1-t-0v-13r-4-30-2004-1080p-3-47-gb/C4s3ce%20qu13n%20pu3d4%20720p%20LAT%201022%2C72%20MB.mkv
+  reason: bytes_not_mkv | status: 206 | ct: application/octet-stream
+
+- [] Bambi: Una vida en el bosque (2024)
+  url: https://archive.org/download/01_20250516_20250516_1817/TCPIP/03.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Wallace y Gromit La venganza se sirve con plumas 2025
+  url: https://archive.org/download/yo-kai-watch-la-pelicula-1-latino/Wallace%20y%20Gromit%20La%20venganza%20se%20sirve%20con%20plumas.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] La gran aventura de Billy & Mandy con el Coco (2007)
+  url: https://archive.org/download/la-gran-aventura-de-billy-y-mandy-contra-el-coco/La%20Gran%20Aventura%20de%20Billy%20y%20Mandy%20contra%20el%20Coco.avi
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] ¡mama, soy un pez! (2000)
+  url: https://archive.org/download/2000-mama-soy-un-pez/2000%20-%20Mam%C3%A1%2C%20soy%20un%20pez%21.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] La Leyenda de los Chaneques (2023)
+  url: https://archive.org/download/la-leyenda-de-los-chaneques-2023/La%20Leyenda%20de%20los%20Chaneques%20%282023%29.ia.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Las Leyendas: El Origen (2021)
+  url: https://archive.org/download/las-leyendas-el-origen-2022/Las%20Leyendas_El%20Origen%20%282022%29.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] El viaje de Xico (2020)
+  url: https://archive.org/download/ver-el-camino-de-xico-2020-online-gratis-en-espanol-latino-o-subtitulada/Ver%20El%20Camino%20De%20Xico%202020%20Online%20Gratis%20en%20Espa%C3%B1ol_%20Latino%20o%20Subtitulada.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Balto (1995)
+  url: https://archive.org/download/baltito/B4lt1t0/Baltito%201.avi
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Balto: Wolf Quest (2002)
+  url: https://archive.org/download/baltito/B4lt1t0/Baltito%202.avi
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Balto III: Wings of Change (2004)
+  url: https://archive.org/download/baltito/B4lt1t0/Baltito%203.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Tierra de osos (2003)
+  url: https://github.com/BrianRVP/lista.m3u/releases/download/Akdksj/Ver.Tierra.de.Osos.2003.online.HD.-.Cuevana.mp4
+  reason: bytes_not_m3u8 | status: 206 | ct: application/octet-stream
+
+- [] Mufasa: El rey león (2024)
+  url: https://archive.org/download/estrenos-2024/Mufasa%20-%20The%20Lion%20King%20%282024%29.ia.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] moana 2
+  url: https://archive.org/download/movies_20250123_2146/MOANA%20%282016%29.mkv
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] un cuento americano 4
+  url: https://archive.org/download/un-cuento-americano_202411/Un%20Cuento%20Americano%204.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] un cuento americano 3
+  url: https://archive.org/download/un-cuento-americano_202411/Un%20Cuento%20Americano%203.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] un cuento americano 2
+  url: https://archive.org/download/un-cuento-americano_202411/Un%20Cuento%20Americano%202.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] un cuento americano
+  url: https://archive.org/download/un-cuento-americano_202411/Un%20Cuento%20Americano.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] el arca de noe (1995)
+  url: https://archive.org/download/clasicos-encantados-el-arca-de-noe-1995/Cl%C3%A1sicos%20Encantados%20El%20Arca%20de%20No%C3%A9%20%281995%29.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] El patito feo (1997)
+  url: https://archive.org/download/the-uglt-duckling-1997-lsd/%5BLOST%20MEDIA%5D%20El%20Patito%20Feo%20%281997%29%20Espa%C3%B1ol%20Latino%20%28VHS%20RIP%29.mp4
+  reason: head_404 | status: 404 | ct: text/html; charset=utf-8
+
+- [] loa aristogatos (1970)
+  url: https://archive.org/download/aristocats-lat-spa/Los%20Aristogatos%20%281970%29.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Wall-e
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-6/wall-e.mp4
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] Hotel Transylvania 3
+  url: https://dl.dropboxusercontent.com/s/15wooe59jbibhye/SalynPM.H.T.3.V.M.mp4
+  reason: head_404 | status: 404 | ct: text/html
+
+- [] All hallows eve
+  url: https://cache010.peliscdn.online/newhls/f0f7f535ad43de0a9b51976ce458a3ad/EP.0.2.v0.1709689181.m3u8
+  reason: request_error | status: None | ct: 
+
+- [] Ted y tody
+  url: http://192.168.1.53:30001/file/MMifaokz/video.mp4
+  reason: request_error | status: None | ct: 
+
+- [] trasto
+  url: http://192.168.1.53:30001/file/ZoY5oOuL/video.mp4
+  reason: request_error | status: None | ct: 
+
+- [] el príncipe de Egipto
+  url: https://archive.org/download/vid-20240720-205041-368/VID_20240720_205041_368.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] MI VILLANO FAVORITO 4 (2024)
+  url: https://www.dropbox.com/scl/fi/29r2d21czdrjjf1myo3z0/22222.mp4?rlkey=ri90ypu3o2xlygxnb3yazgpu1&dl=0
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [] Intensamente 2(HD)
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/JUEGOS-LOS-HAMbRE/Inside.Out.2.2024.1080p.720p.DUAL.1.44.GB.mkv
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] Garfield Fuera De Casa
+  url: https://www.googleapis.com/drive/v3/files/12RjrlNhrmKSx9kg3-JJCSf6uJJWlZs-W?alt=media&key=AIzaSyDOh3TzVbUSrk1MKCPyFDt_PzcYBTVKz10
+  reason: head_404 | status: 404 | ct: application/json; charset=UTF-8
+
+- [] La Sirenita (2023)
+  url: https://dl.dropbox.com/s/z3yo7vzm3vzm0g1/S1R3N1T4.mp4
+  reason: head_404 | status: 404 | ct: text/html
+
+- [] Mario Bross (2023)
+  url: https://dl.dropbox.com/s/h74kmjrld88f96u/M4R10FULL.mp4
+  reason: head_404 | status: 404 | ct: text/html
+
+- [] ciao alberto (2021)
+  url: https://dl.dropbox.com/scl/fi/zfnjhkwhhon7p391p8b71/PS3MOVIE.mp4?rlkey=ovtbl13nrbn1lvyv9tn7eo01t&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Space Jam 2 Nueva Era (2021)
+  url: https://archive.org/download/manguera_20210716_1602/Nu3v4%203r4.mkv
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Space Jam el juego del siglo
+  url: https://dl.dropbox.com/s/p1l2cs9njbqbawk/space%20jam.mp4
+  reason: head_404 | status: 404 | ct: text/html
+
+- [] Tortugas Ninja: Caos mutante
+  url: https://archive.org/download/teenage.-mutant.-ninja.-turtles.-mutant.-mayhem.-2023.1080p.-amzn.-web-dl.-dd-2.0.-h.-264-lmhd/Teenage.Mutant.Ninja.Turtles.Mutant.Mayhem.2023.1080p.AMZN.WEB-DL.DD2.0.H.264-LMHD.mkv
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Moana:Un Mar de Aventuras (2016) 720p latino
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-6/Moana.2016.720p.DUAL.1.26.GB.mkv
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] V/H/S/HALLOWEEN (2025)
+  url: https://dl.dropbox.com/scl/fi/1in7ial3ksh7zcjec2t4q/fisica.mp4?rlkey=lk5i83g24x3kxks9m3zgbi5wp&st=9095vtr1&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Los extraños: Capítulo 2 (2025)
+  url: https://dl.dropbox.com/scl/fi/172ygp10fki25axvswmcg/sociales.mp4?rlkey=jpme6psvmvt9se51t1iikir6j&st=jj45772y&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Los extraños: Capítulo 1 (2024)
+  url: https://dl.dropbox.com/scl/fi/ggx3hhkb2dt3yd7gxr6yj/matematica.mp4?rlkey=tlkyfpggrtlt7249fwlcdo3cl&st=l4rv2sj8&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Los extraños cacería nocturna (2018)
+  url: https://dl.dropbox.com/scl/fi/mcdjq0d8dqnotv8yzfeu4/matematica-2.mp4?rlkey=h5d59pmrko2agj1loo9kqpmqt&st=tn0xhfsg&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Los extraños (2008)
+  url: https://dl.dropbox.com/scl/fi/jm80bn0nelb6obvcxt1y1/fisica.mp4?rlkey=b7j97u94jwyx4zcmqbu8jrl0w&st=gj5nqsk4&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] El conjuro últimos ritos (2025)
+  url: https://dl.dropbox.com/scl/fi/tpxkv8hpyx4s48jx8sklw/sociales.mp4?rlkey=pfyzv59ydy0z8b69038g70qu3&st=kjf3i7cr&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Rosario Herencia Maldita (2025)
+  url: https://archive.org/download/naturales-3_202510/naturales%20%286%29.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Un cuento oscuro (2025)
+  url: https://archive.org/download/naturales-3_202510/naturales%20%287%29.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Exorcismo El Ritual (2025)
+  url: https://archive.org/download/sociales-5_202509/sociales%20%282%29.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Trust (2025)
+  url: https://dl.dropbox.com/scl/fi/wkewoaiyhm5mdgf6ssn3l/naturales.mp4?rlkey=hindfb3rojxcjv74nnv32tx69&st=evupnsxz&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Bring Her Back (2025)
+  url: https://dl.dropbox.com/scl/fi/anpxnxi18ge8nhwnpogsy/matematica-2.mp4?rlkey=qbthf2iu0gr6hlfjb454c18l2&st=4b2x4kb2&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Esquina afilada (2025)
+  url: https://archive.org/download/ver-los-desenredos-del-amor-2025-online-gratis-espanol-pelisplus/La%20casa%20al%20final%20de%20la%20curva%20-%20Ver%20Online%20en%20Espa%C3%B1ol%20Latino.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Together (2025) HD
+  url: https://archive.org/download/ver-los-desenredos-del-amor-2025-online-gratis-espanol-pelisplus/Together%20Juntos%20hasta%20la%20muerte%20-%20Ver%20Online%20en%20Espa%C3%B1ol%20Latino.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] La hora de la desaparición (2025)
+  url: https://archive.org/download/ver-el-cuento-del-lobo-2025-online-hd-cuevana/Ver%20La%20hora%20de%20la%20desaparici%C3%B3n%20%282025%29%20Online%20Gratis%20Espa%C3%B1ol%20-%20Pelisplus.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] V/H/S/Beyond (2024)
+  url: https://dl.dropbox.com/scl/fi/ge3kgx698wjjohz1y6gd4/sociales.mp4?rlkey=apn8jpwvf042y7nubm7b3yewe&st=5iyv07i7&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] V/H/S/85 (2023)
+  url: https://dl.dropbox.com/scl/fi/bsdddvpbi88slcu0rp93t/sociales.mp4?rlkey=oxdgem0xb95h4xkuwo8x8uza1&st=cl7ia8b9&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] V/H/S/99 (2022)
+  url: https://dl.dropbox.com/scl/fi/yb8p47kogqmg4qyfwhx17/sociales.mp4?rlkey=ny4qfmpw2ujxeph11ccno7iac&st=9ky9rust&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] V/H/S/94 (2021)
+  url: https://dl.dropbox.com/scl/fi/f1nhecx02ebjgwv56i95r/sociales.mp4?rlkey=5u8iik5ozgo4b721ciqf1x6dz&st=jhds1kkk&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] V/H/S: Las crónicas del miedo 2 (2013)
+  url: https://dl.dropbox.com/scl/fi/3rvli0rlqs525bbfxpxjz/matematica.mp4?rlkey=uldopl87mkxj46hsf2a91d1dk&st=s1syyzf2&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] V/H/S Las crónicas del miedo (2012)
+  url: https://dl.dropbox.com/scl/fi/rgy3p798xr8q782jcil44/sociales.mp4?rlkey=2x3ords6rs0a39wxq5mlsapfj&st=ho9p8wly&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] V/H/S: Viral (2014)
+  url: https://dl.dropbox.com/scl/fi/20oatsxg0v2inzcr57ltb/sociales-5.mp4?rlkey=aop8evlwcxfd0gd95v3x6648h&st=pt9d015x&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] La monja (2018)
+  url: https://dl.dropbox.com/scl/fi/w6ojp61q3fufbjzlbumfo/matematica.mp4?rlkey=wwmp79ajf4az30y7ck9es1w2n&st=74z94jqv&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Annabelle: Creation (2017)
+  url: https://dl.dropbox.com/scl/fi/ciajkd3b1xoy2kvnjlqmm/sociales.mp4?rlkey=tutb88jh711b36qvi1gsk89on&st=8tgmpq4x&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] La monja II (2023)
+  url: https://dl.dropbox.com/scl/fi/66dcdiiyqxzqvdzj3d007/matematica.mp4?rlkey=ivab5kmylxvqvzi3lkigy8bcs&st=hviy92pk&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Annabelle (2014)
+  url: https://dl.dropbox.com/scl/fi/mv4ndptfec3nq6sp9detz/naturales.mp4?rlkey=zl86pr383do6vxnhwa9a61kgg&st=61ca58c1&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Annabelle vuelve a casa (2019)
+  url: https://dl.dropbox.com/scl/fi/d7iwir2pu6j40h0uz27rl/matematica-2.mp4?rlkey=e4wzlfzk6pt299jufzi4fglwk&st=g0wp2n33&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] La maldición de La Llorona (2019)
+  url: https://dl.dropbox.com/scl/fi/e1fjb28wllkv0oygsw34n/sociales-4.mp4?rlkey=g35lpvt1zs1hji174hayxf7k1&st=3ojw7rvw&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] El conjuro 2 (2016)
+  url: https://archive.org/download/e-2_20250817/E%20%282%29.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] El conjuro: últimos ritos (2025)
+  url: https://dl.dropbox.com/scl/fi/b9xishf02ktulvlbhmay6/sociales.mp4?rlkey=qdhfvhe5sqjh2bxh1wnscuph9&st=66gi4k5s&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Cube 2: Hypercube (2002)
+  url: https://dl.dropbox.com/scl/fi/eawmjvk9s0fanxug4o68t/sociales-2.mp4?rlkey=b3t83gbmkk5hnrgtjb9yzre8s&st=60du6fpp&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Instintos (2025)
+  url: https://dl.dropbox.com/scl/fi/k3jgc5owsb0d9tdf5yopf/social.mp4?rlkey=3radob5da7qljrumbtmcz1p22&st=g3f6rwsh&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Raw File (2025)
+  url: https://dl.dropbox.com/scl/fi/k5zig5mmhdfajuvlx738e/matematica.mp4?rlkey=1otd33qqnq9opwawoaaabwql5&st=2r5y32ur&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] No hay salida (2025)
+  url: https://dl.dropbox.com/scl/fi/3q8vc0uxj339zqpnj9lz3/sociales-5.mp4?rlkey=wxltdhp1wspjrphzya5kzjqd7&st=s7e6j9bp&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Piglets Return (2025)
+  url: https://www.dropbox.com/scl/fi/zvh7s1ghlnwcwaem35gwk/matematica.mp4?rlkey=85m7x12r5m70i5zc3xx7gy7hm&st=3n6064mr&dl=0
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [] la isla de los faisanes (2025)
+  url: https://dl.dropbox.com/scl/fi/8vjpbq1zvlx4gbbott388/sociales-1.mp4?rlkey=jf19rwjllj8biwqok1a9gradk&st=g9v79ac8&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Together (2025)
+  url: https://dl.dropbox.com/scl/fi/grscmskx15e8gj4t33vsq/matematica-2.mp4?rlkey=enppejlgo3kp779djfeefhpfi&st=09ajnlyd&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] se alimenta (2025)
+  url: https://archive.org/download/02_20250630_20250630_2006/er/05.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Peter Pan's Neverland Nightmare (2025)
+  url: https://archive.org/download/01_20250516_20250516_1817/TCPIP/02.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Fear Street: Prom Queen (2025)
+  url: https://archive.org/download/telematica_202505/matematicas/03.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Heretic (Hereje) (2024)
+  url: https://archive.org/download/hrj_20250712/HRJ.mp
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] La apariencia de las cosas (2021)
+  url: https://archive.org/download/la.-apariencia.de.-las.-cosas.-2021.720p.-webrip.x-264.-aac-yts.-mx/La.Apariencia.de.Las.Cosas.2021.720p.WEBRip.x264.AAC-%5BYTS.MX%5D.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] La bruja (2016)
+  url: https://archive.org/download/la-bruja-2015-ve/La%20Bruja%202015%20VE.avi
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] corre (2020)
+  url: https://archive.org/download/run-latino/Run%20Latino.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [] Los ojos del mal 2 (2014)
+  url: .https://archive.org/download/infeccion-2019/Infecci%C3%B3n%20%282019%29.mp4
+  reason: request_error | status: None | ct: 
+
+- [] El hoyo 2
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-6/El.hoyo.2.720p.DUALC.1.51.GB.mkv
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] Maleficio
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-6/Maleficio.720p.DUAL.1.12.GB.mkv
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] El legado del diablo
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-6/1_4940916719322398804.mp4
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] Gonjiam: hospital maldito
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-6/Gonjiam.hospital.maldito.720p.1.51.GB.mkv
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] La Niña Del Mar (2024)
+  url: (EXPEDIENTE WARREN)
+  reason: request_error | status: None | ct: 
+
+- [] El conjuro (2013)
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-Bflix-tv/el.conjuro.1.mp4
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] Annabelle
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-Bflix-tv/anabelle.1.mp4
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] El conjuro 2
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-Bflix-tv/el.conjuro.2.mp4
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] Annabelle: la creación
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-Bflix-tv/anabelle.2.mp4
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] La monja
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-Bflix-tv/la.monja.mp4
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] La maldición de la llorona
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-Bflix-tv/la.llorona.mp4
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] Annabelle vuelve a casa (2019)
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-Bflix-tv/anabelle.3.mp4
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] El conjuro 3: el diablo me obligó a hacerlo
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-Bflix-tv/el.conjuro.3.m4v
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] Vi el Brillo del Televisor I Saw the TV Glow(2024)
+  url: https://dl.dropbox.com/scl/fi/pvkcfczzrnfj0ce1ki8de/VID_20240810_220721_264.mp4.mkv?rlkey=pqcd719piov3swcd0s1ri2ypj&st=5m96g7hr&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/x-matroska
+
+- [] DF5
+  url: https://archive.org/download/df-5_20210525/ACCE%202/DF5.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] DF4
+  url: https://archive.org/download/df-5_20210525/ACCE%202/DF4.ts
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] DF3
+  url: https://archive.org/download/df-3_20210525/Acce/DF3.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] DF2
+  url: https://archive.org/download/df-3_20210525/Acce/DF2.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [] DF1
+  url: https://archive.org/download/df-3_20210525/Acce/DF1.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] All Hallows Eve:tricksters (2023)
+  url: https://archive.org/download/all-hallows-eve-trickster/All%20Hallows%27%20Eve_%20Trickster.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] the 9 circle Corto
+  url: https://archive.org/download/the-9th-circle-david-leone-2008-480-p/The%209th%20circle%20%20%20David%20Leone%202008%28480P%29.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] All hallows eve 1
+  url: https://archive.org/download/263947-2fd-1978d-1fda-4d-2a-aa-87-c-8dda-9c-80835-eewm-2307947-1fichier/263947--2fd1978d-1fda-4d2a-aa87-c8dda9c80835--eewm--2307947-1fichier.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] All hallows eve 2
+  url: https://archive.org/download/all-hallows-eve-2_202408/All%20Hallows%27%20Eve%202.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Holocausto canibal
+  url: https://github.com/HECTHINHOXD/BFLIX-PELIS/releases/download/Pelis-6/Holocausto.Canibal.HD.mp4
+  reason: head_404 | status: 404 | ct: text/plain; charset=utf-8
+
+- [] elevador gamer (2023)
+  url: https://archive.org/download/3l-3vator-g-4m-3e/3l3vator%20g4m3e.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] la primera profecía (2024)
+  url: https://archive.org/download/profecia_202407/profecia.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Carnada (2024)
+  url: https://archive.org/download/seg-1-v1-a1_202407/seg-1-v1-a1.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] No te preocupes cariño
+  url: https://dl.dropbox.com/scl/fi/vrllutr8m8soi19anc5io/DONTWORRY.mp4?rlkey=0iqqjnzidqbup3zha4mbuc705
+  reason: head_404 | status: 404 | ct: text/html
+
+- [] Pumpkinhead II
+  url: https://dl.dropbox.com/scl/fi/2hgt8ud6mtnlg421uoio7/Pumpkinhead-II-La-revancha.mp4?rlkey=h49eyda8tyzsgqvnf06e7y3ik&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Pumpkinhead
+  url: https://dl.dropbox.com/scl/fi/9tlhzy8yvcjbsie7xgy2l/Pumpkinhead.mp4?rlkey=trm256iwctqc3px532b3ua7ck&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] El estrangulador de boston
+  url: https://dl.dropbox.com/scl/fi/ntmw5q11np7y84mnypg5l/157529911467ix9.mp4?rlkey=c8hddtrl5rnailybgpe8rq2wp&dl=0
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [] Alicia país de las pesadillas (2024)
+  url: https://archive.org/download/vid-20240706-193635-556/VID_20240706_193635_556.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [] Winnie The Pooh: Miel y Sangre 2
+  url: https://archive.org/download/winnie-the-pooh-miel-y-sangre-2-2024-1080p-dual-1.53-gb/Winnie%20The%20Pooh%20Miel%20y%20Sangre%202%20%282024%29%201080p%20DUAL%201.53%20GB.mkv
+  reason: get_status_401 | status: 401 | ct: application/octet-stream
+
+- [] Jack en la caja maldita 3: El Ascenso
+  url: https://archive.org/download/jack-in-the-box-3-el-ascenso-720p-dualc-1.38-gb/Jack%20in%20the%20Box%203%20El%20ascenso%20720p%20DUALC%201.38%20GB.mkv
+  reason: head_401 | status: 401 | ct: 
+
+- [] (1)La calle del terror:1994(2021)
+  url: https://www.googleapis.com/drive/v3/files/140NjwG_6Qci-Efi0kV-e5eTPyZgIRDfF?alt=media&key=AIzaSyDOh3TzVbUSrk1MKCPyFDt_PzcYBTVKz10
+  reason: head_404 | status: 404 | ct: application/json; charset=UTF-8
+
+- [] (2)La calle del terror:1978(2021)
+  url: https://www.googleapis.com/drive/v3/files/14SSDL-m5c20gdHmKSsg6_lL3_M3IDp9Z?alt=media&key=AIzaSyDOh3TzVbUSrk1MKCPyFDt_PzcYBTVKz10
+  reason: head_404 | status: 404 | ct: application/json; charset=UTF-8
+
+- [] (3)La calle del terror:1966(2021)
+  url: https://www.googleapis.com/drive/v3/files/14kwqGToEKl04ainFKRzUluBruK1LhBQC?alt=media&key=AIzaSyDOh3TzVbUSrk1MKCPyFDt_PzcYBTVKz10
+  reason: head_404 | status: 404 | ct: application/json; charset=UTF-8
+
+- [] Halloween:H2O Veinte años despues
+  url: https://ia800505.us.archive.org/4/items/h-2-all-4-ow-4-een-h-42-o/H2ALL4OW4EEN%20H42O.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [] Dracula Mar de Sangre
+  url: https://archive.org/download/dracula-mar-de-sangre-2023_202310/Dra%CC%81cula%20Mar%20de%20sangre%20%282023%29.mkv
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
