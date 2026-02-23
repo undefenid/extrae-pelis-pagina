@@ -1,0 +1,148 @@
+M3U: https://raw.githubusercontent.com/a13xr0j45/Peliculas/refs/heads/main/Movies.m3u
+VERIFY_URLS: True
+OFFLINE_COUNT: 36
+
+- [Movies] Alicia En El Pais De Las Maravillas
+  url: https://archive.org/download/AEEPDLM/AEEPDLM.avi
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] atrapa sue os (2003)
+  url: https://www.dropbox.com/sh/mswfj0xnuux4u0w/aadetijzchvfvrolijtbx7oua?4tr4p4sue%c3%b1os+horror.mkv
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] death race
+  url: https://archive.org/download/100006_201909/100006.wmv
+  reason: unknown_bytes | status: 206 | ct: video/x-ms-wmv
+
+- [Movies] death race 2
+  url: https://archive.org/download/10007_202002/10007.wmv
+  reason: unknown_bytes | status: 206 | ct: video/x-ms-wmv
+
+- [Movies] el hotel gran budapest
+  url: https://www.dropbox.com/pri/get/the.grand.budapest.hotel.2014.bluray-latino-e-ingles-subt.mp4
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] este es el fin
+  url: https://archive.org/download/raul_20200212/raul.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [Movies] halloween vi (1995) la maldici n de michael myers
+  url: https://archive.org/download/097_20200608
+  reason: html_detected | status: 200 | ct: text/html; charset=UTF-8
+
+- [Movies] Ice Age 2: El deshielo
+  url: https://ia802803.us.archive.org/13/items/l4er4d3hi3l02/L4Er4d3hi3l0-2.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [Movies] jeepers creepers
+  url: http://archive.org/download/1_20200508_20200508_1806/1.mkv
+  reason: bytes_not_mkv | status: 206 | ct: application/octet-stream
+
+- [Movies] jeepers creepers 2
+  url: http://archive.org/download/1_20200508_20200508_1806/2.mkv
+  reason: bytes_not_mkv | status: 206 | ct: application/octet-stream
+
+- [Movies] jeepers creepers 3
+  url: http://archive.org/download/1_20200508_20200508_1806/3.mkv
+  reason: bytes_not_mkv | status: 206 | ct: application/octet-stream
+
+- [Movies] jefa por accidente
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/ecsig3dpn_5mt97ptrcarrgbwpavetsztrrhcf-bpskzbg?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] la marca de la horca
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/extym54v8c1ii7pfth-843gbebe_8sres8hvjby9mc6znw?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] leyenda urbana 2
+  url: http://archive.org/download/imagen-1_20200513/2.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] liga de la justicia: atrapados en el tiempo
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/ewc_ygi1ejjlvw2cjw0afmobbzu_anbdhfe3yp4dhwldxw?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] liga de la justicia: dioses y monstruos
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/ecl5-bl8p3jmupmmsqbk28wbney3uj1yjdqn2rmo5uuayq?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] liga de la justicia: el trono de atlantis
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/ex3rmihh8sxchv1ornhzuakbdqpxf8rw9lrvl8xoyiymva?e=9fzamq
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] liga de la justicia: la paradoja del tiempo
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/evf6wb0ybeppmwkbw7zyytcbdcmanvwcgsccnndu7mev8w?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] maid in manhattan
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/eblkakeard9dnhds556tkh8bvwfjlztdmlb5fgjfexxt1w?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] Mi pobre angelito
+  url: https://ia601509.us.archive.org/1/items/mipobreangelito2_201911/Mi%20Pobre%20Angelito%201.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] Mi pobre angelito 2: Perdido en Nueva York
+  url: https://ia601509.us.archive.org/1/items/mipobreangelito2_201911/mi%20pobre%20angelito%202.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] Mi pobre angelito 3
+  url: https://ia601509.us.archive.org/1/items/mipobreangelito2_201911/mi%20pobre%20angelito%203.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] Mi pobre angelito 4
+  url: https://ia601509.us.archive.org/1/items/mipobreangelito2_201911/mi%20pobre%20angelito%204.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] Mi Pobre Diablillo (1990)
+  url: https://archive.org/download/videoplayback10_20200326/sub1d0_p4r4_5tr34ming_P5F11X/videoplayback14.avi
+  reason: bytes_not_avi | status: 206 | ct: video/x-msvideo
+
+- [Movies] milf
+  url: https://dl.dropbox.com/s/4nhsuuvg8xwmj4p/milf.avi
+  reason: bytes_not_avi | status: 206 | ct: video/x-msvideo
+
+- [Movies] mulan 2020
+  url: http://archive.org/download/screenshot-20200831-121312/001.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] paw patrol la película
+  url: https://archive.org/download/00azucar/p0p4tr0.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [Movies] super cool
+  url: http://archive.org/download/plkbhgfhnhfssksklkzxjxks/plkbhgfhnhfssksklkzxjxks.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [Movies] the king of staten island (2020)
+  url: https://www.dropbox.com/s/f096jhwm57xt6tt/thekingofstatenisland.mp4?dl=0
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] thir13en ghosts (2001)
+  url: http://archive.org/download/img-20200601-105221-hdr/1.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] tio buck al rescate
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/etij8gkae0bnjv4k__pktcebjnogd4yqjvxp23o4bocsiw?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] vacaciones
+  url: http://archive.org/download/imagen-1_20200513/1.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] x-men 2
+  url: https://dl.dropbox.com/s/ijh9357wouvkduq/xm3n2.avi
+  reason: head_404 | status: 404 | ct: text/html
+
+- [Movies] x-men 3
+  url: https://dl.dropbox.com/s/rlbpbhz1s2qrffn/xm3n3.avi
+  reason: head_404 | status: 404 | ct: text/html
+
+- [Movies] x-men primera generaci n
+  url: https://dl.dropbox.com/s/lgdqczvpj610yd0/xm3n1r4g3n3r4c10n.avi
+  reason: head_404 | status: 404 | ct: text/html
+
+- [Movies] x-men wolverine
+  url: https://dl.dropbox.com/s/a2sxer2f6zbgffp/xm3n0r1g3n35w0lv3r1n3.avi
+  reason: head_404 | status: 404 | ct: text/html
+
