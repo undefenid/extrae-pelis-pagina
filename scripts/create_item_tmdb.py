@@ -154,9 +154,10 @@ def consolidate_groups(items):
 
 def upsert_sample(items, grupo: str, video_url: str, sample: dict):
     """
-    - Si la URL existe en cualquier grupo: la elimina de ese grupo (mover/actualizar)
-    - Luego inserta/actualiza en el grupo destino (por name normalizado)
-    - Finalmente consolida duplicados por seguridad
+    - Si la URL existe en cualquier grupo: la elimina (mover/actualizar)
+    - Inserta/actualiza en el grupo destino
+    - IMPORTANTE: el sample nuevo/actualizado queda SIEMPRE en samples[0]
+    - Si el grupo es nuevo, se crea en items[0]
     """
     target_key = norm_group(grupo)
     replaced = False
@@ -190,21 +191,36 @@ def upsert_sample(items, grupo: str, video_url: str, sample: dict):
             target_index = gi
             break
 
-    # 3) insertar/actualizar en destino
+    # 3) insertar/actualizar en destino (SIEMPRE AL INICIO)
     if target_index is None:
-        items.append({"name": grupo, "samples": [sample]})
+        # Grupo no existe -> crear y ponerlo primero
+        items.insert(0, {"name": grupo, "samples": [sample]})
     else:
         smps = items[target_index].get("samples") or []
-        updated_in_group = False
+
+        # ¿Ya estaba esta URL en este grupo?
+        existing_index = None
         for si, sm in enumerate(smps):
             if (sm.get("url") or "").strip() == video_url:
-                smps[si] = sample
-                updated_in_group = True
-                replaced = True
+                existing_index = si
                 break
-        if not updated_in_group:
-            smps.append(sample)
+
+        if existing_index is None:
+            # Nuevo sample -> al inicio
+            smps.insert(0, sample)
+        else:
+            # Update -> reemplazar y mover arriba
+            smps[existing_index] = sample
+            if existing_index != 0:
+                smps.pop(existing_index)
+                smps.insert(0, sample)
+            replaced = True
+
         items[target_index]["samples"] = smps
+
+        # (OPCIONAL) Si querés que el grupo "actualizado" suba a items[0], descomentá:
+        # g = items.pop(target_index)
+        # items.insert(0, g)
 
     # 4) consolidar por si ya venía roto
     items = consolidate_groups(items)
