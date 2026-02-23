@@ -1,0 +1,608 @@
+M3U: https://raw.githubusercontent.com/a13xr0j45/Peliculas/refs/heads/main/Movies.m3u
+VERIFY_URLS: True
+OFFLINE_COUNT: 151
+
+- [Movies] al interior (2007)
+  url: https://archive.org/download/instinto_20200524/instinto.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] Alicia En El Pais De Las Maravillas
+  url: https://archive.org/download/AEEPDLM/AEEPDLM.avi
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] alma de avión (locura en las alturas) español latino
+  url: http://archive.org/download/10kvr43n1454ltvr4s/10kvr4_3n_145_4ltvr4s.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] amor de gata
+  url: http://archive.org/download/movianpsn/6474.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] animatrix
+  url: https://archive.org/download/amt_20200306/thmtx/amt.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] atlantis el imperio perdido
+  url: http://archive.org/download/08y776/47l4n715l4p3l.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] atr pame si puedes (2002)
+  url: https://archive.org/download/cuaderno/cuaderno/cuaderno.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] atrapa sue os (2003)
+  url: https://www.dropbox.com/sh/mswfj0xnuux4u0w/aadetijzchvfvrolijtbx7oua?4tr4p4sue%c3%b1os+horror.mkv
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] bambi
+  url: http://archive.org/download/img-20200823-wa-0003/b4mb1.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] batalla los angeles
+  url: https://archive.org/download/005_20200426_202004/005.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] blanca nieves
+  url: http://archive.org/download/img029_202012/bl4nc4n13v35.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] colmillo blanco
+  url: https://archive.org/download/leocolmilloblanco548737374535735/leo%20colmilloblanco548737374535735.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] constantine
+  url: https://archive.org/download/thdg_20200308/cnstine/cnstine.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] constantine (op2)
+  url: https://archive.org/download/007_20200426/007.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] coraz n de dragon
+  url: https://dl.dropbox.com/s/bdkmf41nbf2o1ms/corazondedragon.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] cuatro hermanos
+  url: https://dl.dropbox.com/s/nq3dd6jqmfsnsyn/4brohters.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] danny the dog (2005)
+  url: https://archive.org/download/thdg_20200308/dn%20th%20dg/thdg.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] death race
+  url: https://archive.org/download/100006_201909/100006.wmv
+  reason: unknown_bytes | status: 206 | ct: video/x-ms-wmv
+
+- [Movies] death race 2
+  url: https://archive.org/download/10007_202002/10007.wmv
+  reason: unknown_bytes | status: 206 | ct: video/x-ms-wmv
+
+- [Movies] diamantes de sangre (2006)
+  url: https://archive.org/download/008_20200426/008.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] eclipse
+  url: https://dl.dropbox.com/s/tnug17ik30tc323/cr3pu5cul03.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el  ltimo castillo
+  url: https://archive.org/download/goratt/zgumx/goratt.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el  ltimo samurai
+  url: https://archive.org/download/1_20191226_20191226/1.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el analfabeto
+  url: https://archive.org/download/014_20200427/013.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el bombero at mico
+  url: https://archive.org/download/012_20200427/012.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el circo
+  url: https://archive.org/download/014_20200427/014.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el club de la pelea (1999)
+  url: https://archive.org/download/solf-12/onai/cdp.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el cuarto contacto (2009)
+  url: https://archive.org/download/00100_20200118/00100.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el exorcista (1973)
+  url: https://archive.org/download/045_20200519_202005/045.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el exorcista ii: el hereje (1977)
+  url: https://archive.org/download/045_20200519_202005/046.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el exorcista iii (1990)
+  url: https://archive.org/download/045_20200519_202005/047.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el hotel gran budapest
+  url: https://www.dropbox.com/pri/get/the.grand.budapest.hotel.2014.bluray-latino-e-ingles-subt.mp4
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] el incre ble hulk
+  url: https://archive.org/download/00200_201909/00200.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el increible hulk
+  url: http://archive.org/download/02_20201229_20201229_2258/4u7k.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el laberinto del fauno
+  url: https://archive.org/download/patas_202004/patas/patas.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el marine 1
+  url: https://archive.org/download/elmari2dvdlat/mrne/elmari1dvdlat.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el marine 2
+  url: https://archive.org/download/elmari2dvdlat/mrne/elmari2dvdlat.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el marine 3
+  url: https://archive.org/download/elmari2dvdlat/mrne/elmarin3dvdlat.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el marine 4
+  url: https://archive.org/download/elmari2dvdlat/mrne/elmarin4dvdlat.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el mundo perdido
+  url: https://archive.org/download/1_20191226_20191226/4.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el padrino (op. 2)
+  url: https://dl.dropbox.com/s/bnpgfv9yzowzv5y/ppppp.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el regreso a casa de madea (2022)
+  url: https://archive.org/download/ck-2_20210106/derty/3lr3gr3s0ac4s4.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [Movies] el regreso de los muertos vivientes
+  url: https://archive.org/download/ayer_20200214/ayer.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] el regreso de los muertos vivientes 3
+  url: https://archive.org/download/manana3/ma%c3%b1ana%203.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] El Señor De Los Anillos 1 : La Comunidad Del Anillo
+  url: https://archive.org/download/021_20200427/021.mkv
+  reason: head_401 | status: 401 | ct: 
+
+- [Movies] el señor fotógrafo (1953)
+  url: https://archive.org/download/ck-2_20210106/3334/carter.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [Movies] espias en manadas
+  url: http://archive.org/download/08y776/m4n4d4l4p3l.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] este es el fin
+  url: https://archive.org/download/raul_20200212/raul.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [Movies] expedientes secretos x
+  url: https://dl.dropbox.com/s/0dzynfvn6qyxxgc/expedientes%20secretos%20x.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] fin de semana en croacia (2022)
+  url: https://archive.org/download/ck-2_20210106/derty/f1nd3s3m4n.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [Movies] gladiador (op. 2)
+  url: https://dl.dropboxusercontent.com/s/ub1xsqooy57jbqm/gl4d14d0r.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] halloween vi (1995) la maldici n de michael myers
+  url: https://archive.org/download/097_20200608
+  reason: html_detected | status: 200 | ct: text/html; charset=UTF-8
+
+- [Movies] hellboy ii
+  url: https://archive.org/download/7at_20200608/hboy/painy.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] Ice Age 2: El deshielo
+  url: https://ia802803.us.archive.org/13/items/l4er4d3hi3l02/L4Er4d3hi3l0-2.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [Movies] jamaica bajo cero
+  url: https://archive.org/download/hielo_202004/hielo/hielo.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] jeepers creepers
+  url: http://archive.org/download/1_20200508_20200508_1806/1.mkv
+  reason: bytes_not_mkv | status: 206 | ct: application/octet-stream
+
+- [Movies] jeepers creepers 2
+  url: http://archive.org/download/1_20200508_20200508_1806/2.mkv
+  reason: bytes_not_mkv | status: 206 | ct: application/octet-stream
+
+- [Movies] jeepers creepers 3
+  url: http://archive.org/download/1_20200508_20200508_1806/3.mkv
+  reason: bytes_not_mkv | status: 206 | ct: application/octet-stream
+
+- [Movies] jefa por accidente
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/ecsig3dpn_5mt97ptrcarrgbwpavetsztrrhcf-bpskzbg?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] jurassic park
+  url: http://archive.org/download/1_20190715_20190715_2033/1.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] jurassic park ii
+  url: http://archive.org/download/000_20201228/jur4551cp4rk2.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] la bella y la bestia
+  url: http://archive.org/download/img-20200823-wa-0003/b3ll4.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] La Era de Hielo
+  url: https://archive.org/download/00100_20200108_2219/00100.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] la era de hielo
+  url: http://archive.org/download/000_20210108_202101/3r4d3h13l0.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] la era de hielo 2
+  url: http://archive.org/download/000_20210108_202101/3r4d3h13l02.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] la era de hielo 3
+  url: http://archive.org/download/000_20210108_202101/3r4d3h13l03.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] la era de hielo 5
+  url: https://archive.org/download/salvavidascr/3r4d3h13l05.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] la m scara
+  url: https://archive.org/download/029_20200428/029.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] la marca de la horca
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/extym54v8c1ii7pfth-843gbebe_8sres8hvjby9mc6znw?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] la nube
+  url: https://archive.org/download/00chayo/rt/l4nub.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [Movies] La odisea
+  url: https://archive.org/download/l732_20200213/L732.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] la otra missy
+  url: https://dl.dropbox.com/s/pbiw2p1y0bsnrk1/l%40_0tr4_m155y_.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] la vida secreta de tus mascotas
+  url: http://archive.org/download/salvavidascr/3l53cr370d3l45m45c0745.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] la zona
+  url: https://archive.org/download/00100_20200113_2207/00100.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] leyenda profesi n de la violencia
+  url: https://archive.org/download/pssi_20200515/fryu/llendale.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] leyenda urbana 2
+  url: http://archive.org/download/imagen-1_20200513/2.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] life of pi
+  url: https://archive.org/download/9781433670404/l1f30fp1.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] liga de la justicia: atrapados en el tiempo
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/ewc_ygi1ejjlvw2cjw0afmobbzu_anbdhfe3yp4dhwldxw?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] liga de la justicia: dioses y monstruos
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/ecl5-bl8p3jmupmmsqbk28wbney3uj1yjdqn2rmo5uuayq?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] liga de la justicia: el trono de atlantis
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/ex3rmihh8sxchv1ornhzuakbdqpxf8rw9lrvl8xoyiymva?e=9fzamq
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] liga de la justicia: la paradoja del tiempo
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/evf6wb0ybeppmwkbw7zyytcbdcmanvwcgsccnndu7mev8w?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] lo que una chica quiere
+  url: https://archive.org/download/00chayo/l0qu3ch1c4.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] los juegos del hambre
+  url: http://archive.org/download/gonzalez-narvaez/ju3605d3lh4mbr3.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] los renegados del diablo
+  url: https://archive.org/download/00pera/d3v1lr3.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] los tres caballeros
+  url: http://archive.org/download/img-20200823-wa-0003/3c4b4ll3r05.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] luna nueva
+  url: https://dl.dropbox.com/s/irfxi4idpcr69wm/cr3pu5cul02.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] mad max: furia en el camino
+  url: https://archive.org/download/029_20200428/030.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] maid in manhattan
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/eblkakeard9dnhds556tkh8bvwfjlztdmlb5fgjfexxt1w?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] matrix
+  url: https://archive.org/download/amt_20200306/thmtx/mt.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] matrix recargado
+  url: https://archive.org/download/amt_20200306/thmtx/mt2.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] matrix: revoluciones
+  url: https://archive.org/download/amt_20200306/thmtx/mt3.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] me enamore de un maniqui
+  url: http://archive.org/download/m-3-3nm-0r-3-d-3-vn-mn-1qu-1/m3%203n%40m0r3%20d3%20vn%20m%40n1qu1.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] meet joe black (1998)
+  url: https://archive.org/download/ck-2_20210106/3334/joebla.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [Movies] mexican gangster (2013)
+  url: https://archive.org/download/solf-12/onai/mgs.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] Mi pobre angelito
+  url: https://ia601509.us.archive.org/1/items/mipobreangelito2_201911/Mi%20Pobre%20Angelito%201.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] Mi pobre angelito 2: Perdido en Nueva York
+  url: https://ia601509.us.archive.org/1/items/mipobreangelito2_201911/mi%20pobre%20angelito%202.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] Mi pobre angelito 3
+  url: https://ia601509.us.archive.org/1/items/mipobreangelito2_201911/mi%20pobre%20angelito%203.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] Mi pobre angelito 4
+  url: https://ia601509.us.archive.org/1/items/mipobreangelito2_201911/mi%20pobre%20angelito%204.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] Mi villano favorito 2
+  url: https://archive.org/download/v177aN0_1/infa/v177aN0_2.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] Mi villano favorito 3
+  url: https://archive.org/download/v177aN0_1/infa/v177aN0_3.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] Milagro en la calle 8
+  url: https://archive.org/download/3l-4rt-3-d-3l-d-14bl-0-1/champurrado/M1l4gr0%203n%20l4%20C4ll3%208.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] mulan 2020
+  url: http://archive.org/download/screenshot-20200831-121312/001.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] my hero academia
+  url: http://archive.org/download/img029_202012/r11551n6.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] Nuestra Pandilla (1993)
+  url: https://archive.org/download/videoplayback10_202003/sub1d0_p4r4_5tr34ming_P5F11X/videoplayback32.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] Nuestra Pandilla 2(2005)
+  url: https://archive.org/download/videoplayback10_202003/sub1d0_p4r4_5tr34ming_P5F11X/videoplayback21.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] paw patrol la película
+  url: https://archive.org/download/00azucar/p0p4tr0.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [Movies] perdidos en el ártico (2022)
+  url: https://archive.org/download/ck-2_20210106/derty/p3rd1d0s.mp4
+  reason: head_401 | status: 401 | ct: 
+
+- [Movies] pinocho
+  url: http://archive.org/download/img029_202012/p1n0ch1000.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] piratas el último tesoro de la corona (2022)
+  url: https://archive.org/download/ck-2_20210106/derty/p1r4t4s.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [Movies] pitch perfect
+  url: https://archive.org/download/1_20191226_20191226/5.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] Pokémon: Mewtwo contraataca: Evolución
+  url: https://archive.org/download/pk_20200227/pk.mkv
+  reason: get_status_401 | status: 401 | ct: application/octet-stream
+
+- [Movies] polaroid (2019)
+  url: https://archive.org/download/ck-2_20210106/3334/pola125.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [Movies] pura energia (1995)
+  url: https://archive.org/download/kohbn/ptol/kohbn.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] quien perdio un panda?
+  url: http://archive.org/download/img-20200823-wa-0003/p3rd10p4nd4.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] requiem por un sue?o
+  url: https://dl.dropbox.com/s/thtxdmhw66wosvm/r3qu1em%20f0r%20a%20dr3am.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] resident evil capitulo final
+  url: http://archive.org/download/6_20190711_201907/6.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] resident evil ultratumba
+  url: http://archive.org/download/6_20190711_201907/4.mp4
+  reason: get_status_401 | status: 401 | ct: video/mp4
+
+- [Movies] scary movie 1
+  url: https://dl.dropbox.com/s/glpmkktp503d2ou/sk4r1m0v131.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] Shrek
+  url: https://archive.org/download/00100_20190920/00100.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] Shrek 2
+  url: https://archive.org/download/00200_20190920/00200.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] sonic 2
+  url: https://archive.org/download/dedede-92/sonic%202%20la%20pelicula.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] sube y baja
+  url: https://archive.org/download/018_20200427/018.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] super cool
+  url: http://archive.org/download/plkbhgfhnhfssksklkzxjxks/plkbhgfhnhfssksklkzxjxks.mp4
+  reason: bytes_not_mp4 | status: 206 | ct: video/mp4
+
+- [Movies] suspira 2018 (subtitulada)
+  url: http://archive.org/download/su1_20200421/su1/su1.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] terminator
+  url: http://archive.org/download/5_20190713_201907/1.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] terminator 3: la rebeli n de las m quinas
+  url: http://archive.org/download/5_20190713_201907/3.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] terminator 4: salvaci n
+  url: http://archive.org/download/5_20190713_201907/4.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] terminator: g nesis
+  url: http://archive.org/download/5_20190713_201907/5.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] the king of staten island (2020)
+  url: https://www.dropbox.com/s/f096jhwm57xt6tt/thekingofstatenisland.mp4?dl=0
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] the sand 2015
+  url: https://archive.org/download/00-sierte/th3sa4.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] the ten commandments (1956)
+  url: https://archive.org/download/mani_20200319/mani/mani.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] the wash
+  url: https://archive.org/download/00mang/th3w4.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] thir13en ghosts (2001)
+  url: http://archive.org/download/img-20200601-105221-hdr/1.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] tierra de osos
+  url: http://archive.org/download/000_20210108_202101/713rr4d30505.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] tierra de osos 2
+  url: http://archive.org/download/000_20210108_202101/713rr4d305052.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] tio buck al rescate
+  url: https://docentecoahuila-my.sharepoint.com/:v:/g/personal/franciscoorlando_robles_docentecoahuila_gob_mx/etij8gkae0bnjv4k__pktcebjnogd4yqjvxp23o4bocsiw?download=1
+  reason: html_detected | status: 200 | ct: text/html; charset=utf-8
+
+- [Movies] trascender
+  url: https://archive.org/download/tmbrder/trsndr/trsndr.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] twilight
+  url: https://dl.dropbox.com/s/s77vwgop9c8k5bb/cr3pu5cul01.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] twilight breaking dawn parte 2
+  url: https://dl.dropbox.com/s/jfmtmjozfz0uq2z/cr3pu5cul05.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] un ratoncito duro de cazar
+  url: https://archive.org/download/fdr_20210624/unr4t0n.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] una familia de tokyo
+  url: https://dl.dropbox.com/s/ayn6wxcuk736dy4/una%20familia%20de%20tokio%20%282013%29%20dvdrip%20castellano.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] up una aventura de altura
+  url: http://archive.org/download/img029_202012/uuuup0.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] vacaciones
+  url: http://archive.org/download/imagen-1_20200513/1.mp4
+  reason: head_403 | status: 403 | ct: text/html; charset=utf-8
+
+- [Movies] white boy rick
+  url: https://archive.org/download/7at_20200608/wht/wby.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] wolverine inmortal
+  url: https://dl.dropbox.com/s/3ctg9nkh2cl95jn/w0lv3r1n31nw0r74l.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] x-men - d as del futuro pasado
+  url: https://dl.dropbox.com/s/bgj4p1c8xn1o3d4/xm3nd14sd3lfu7ur0p45ad0.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] x-men 1
+  url: https://dl.dropbox.com/s/e3f642mdpiqjfef/xm3n1.avi
+  reason: unknown_bytes | status: 206 | ct: video/x-msvideo
+
+- [Movies] x-men 2
+  url: https://dl.dropbox.com/s/ijh9357wouvkduq/xm3n2.avi
+  reason: head_404 | status: 404 | ct: text/html
+
+- [Movies] x-men 3
+  url: https://dl.dropbox.com/s/rlbpbhz1s2qrffn/xm3n3.avi
+  reason: head_404 | status: 404 | ct: text/html
+
+- [Movies] x-men primera generaci n
+  url: https://dl.dropbox.com/s/lgdqczvpj610yd0/xm3n1r4g3n3r4c10n.avi
+  reason: head_404 | status: 404 | ct: text/html
+
+- [Movies] x-men wolverine
+  url: https://dl.dropbox.com/s/a2sxer2f6zbgffp/xm3n0r1g3n35w0lv3r1n3.avi
+  reason: head_404 | status: 404 | ct: text/html
+
