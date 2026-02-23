@@ -1,0 +1,72 @@
+name: Convertir M3U (URL) a JSON (verificacion estricta + reporte offline)
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      m3u_url:
+        description: "URL del archivo .m3u/.m3u8 (texto #EXTM3U)"
+        required: true
+      output_dir:
+        description: "Carpeta de salida en la raiz"
+        required: false
+        default: "m3u_convert"
+      chunk_size:
+        description: "Max. cantidad de items por cada JSON part"
+        required: false
+        default: "2000"
+      verify_urls:
+        description: "Verificar si la URL del video esta online (true/false). Si esta offline, se ignora, pero se reporta."
+        required: false
+        default: "true"
+      verify_timeout:
+        description: "Timeout por URL (segundos)"
+        required: false
+        default: "8"
+      verify_workers:
+        description: "Cantidad de hilos para verificacion (concurrencia)"
+        required: false
+        default: "25"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install --no-cache-dir requests
+
+      - name: Run converter
+        env:
+          M3U_URL: ${{ github.event.inputs.m3u_url }}
+          OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
+          CHUNK_SIZE: ${{ github.event.inputs.chunk_size }}
+          VERIFY_URLS: ${{ github.event.inputs.verify_urls }}
+          VERIFY_TIMEOUT: ${{ github.event.inputs.verify_timeout }}
+          VERIFY_WORKERS: ${{ github.event.inputs.verify_workers }}
+        run: |
+          python scripts/m3u_movie_json.py
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ github.event.inputs.output_dir }}"
+          if ! git diff --cached --exit-code; then
+            git commit -m "Actualizar conversion M3U->JSON (sin series + verify strict + offline report)"
+            git push
+          else
+            echo "No hay cambios"
+          fi
