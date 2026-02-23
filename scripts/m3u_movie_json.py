@@ -114,8 +114,7 @@ def _guess_kind_from_url(url: str) -> str:
     if ".ts" in u:
         return "ts"
     if ".avi" in u:
-    return "avi"
-    
+        return "avi"
     return "unknown"
 
 def _is_probably_html(content_type: str, b: bytes) -> bool:
@@ -163,6 +162,7 @@ def _detect_kind_from_bytes(b: bytes) -> str:
     return "unknown"
 
 def _looks_like_media_bytes(kind: str, b: bytes) -> bool:
+def _looks_like_media_bytes(kind: str, b: bytes) -> bool:
     if not b:
         return False
     head = b[:4096].lstrip()
@@ -183,6 +183,7 @@ def _looks_like_media_bytes(kind: str, b: bytes) -> bool:
     # unknown: NO aceptar por defecto (evita falsos positivos)
     detected = _detect_kind_from_bytes(b)
     return detected != "unknown"
+    
 
 def is_url_online_strict(url: str, headers: dict):
     """
