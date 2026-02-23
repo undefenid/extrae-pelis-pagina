@@ -25,7 +25,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 # Helpers: URL|headers
 # =========================
 def split_url_pipe_headers(raw_url: str):
-    url = raw_url.strip()
+    url = (raw_url or "").strip()
     headers = {}
     if "|" not in url:
         return url, headers
@@ -38,6 +38,16 @@ def split_url_pipe_headers(raw_url: str):
             if k and v:
                 headers[k] = v
     return base.strip(), headers
+
+def build_verify_headers(user_agent: str, referer: str):
+    headers = {
+        "User-Agent": user_agent or "Mozilla/5.0",
+        "Accept": "*/*",
+        "Connection": "close",
+    }
+    if referer:
+        headers["Referer"] = referer
+    return headers
 
 # =========================
 # Extract year
@@ -85,23 +95,11 @@ def parse_extvlcopt(line: str):
     return k.strip().lower(), v.strip()
 
 # =========================
-# Strict URL verification (más anti-falsos positivos)
+# Strict URL verification (anti falsos positivos)
 # =========================
-def build_verify_headers(user_agent: str, referer: str):
-    headers = {
-        "User-Agent": user_agent or "Mozilla/5.0",
-        "Accept": "*/*",
-        "Connection": "close",
-    }
-    if referer:
-        headers["Referer"] = referer
-    return headers
-
 def _guess_kind_from_url(url: str) -> str:
     u = (url or "").lower()
-    if ".m3u8" in u:
-        return "m3u8"
-    if ".m3u" in u:
+    if ".m3u8" in u or ".m3u" in u:
         return "m3u8"
     if ".mpd" in u:
         return "mpd"
@@ -133,6 +131,7 @@ def _is_probably_html(content_type: str, b: bytes) -> bool:
 def _detect_kind_from_bytes(b: bytes) -> str:
     if not b:
         return "unknown"
+
     head = b[:4096].lstrip()
 
     # playlist m3u8
@@ -147,7 +146,7 @@ def _detect_kind_from_bytes(b: bytes) -> str:
     if head.startswith(b"\x1A\x45\xDF\xA3"):
         return "mkv"
 
-     # AVI: "RIFF" .... "AVI "
+    # AVI: RIFF .... AVI
     if head.startswith(b"RIFF") and b"AVI " in head[8:16]:
         return "avi"
 
@@ -155,35 +154,39 @@ def _detect_kind_from_bytes(b: bytes) -> str:
     if b[:1] == b"\x47":
         return "ts"
 
-    # mp4 signature (ftyp en primeros 32)
+    # mp4 signature (ftyp en primeros 64)
     if b.find(b"ftyp", 0, 64) != -1:
         return "mp4"
 
     return "unknown"
 
 def _looks_like_media_bytes(kind: str, b: bytes) -> bool:
-def _looks_like_media_bytes(kind: str, b: bytes) -> bool:
     if not b:
         return False
+
     head = b[:4096].lstrip()
 
     if kind == "m3u8":
         return head.startswith(b"#EXTM3U")
+
     if kind == "mpd":
         return head.startswith(b"<?xml") or head.startswith(b"<MPD") or (b"<MPD" in head[:1200])
+
     if kind == "ts":
         return b[:1] == b"\x47"
+
     if kind in ("mkv", "webm"):
         return head.startswith(b"\x1A\x45\xDF\xA3")
+
     if kind == "mp4":
         return (b.find(b"ftyp", 0, 64) != -1)
+
     if kind == "avi":
         return b.startswith(b"RIFF") and (b"AVI " in b[8:16])
 
-    # unknown: NO aceptar por defecto (evita falsos positivos)
+    # unknown: NO aceptar por defecto
     detected = _detect_kind_from_bytes(b)
     return detected != "unknown"
-    
 
 def is_url_online_strict(url: str, headers: dict):
     """
@@ -208,13 +211,12 @@ def is_url_online_strict(url: str, headers: dict):
     headers.setdefault("Accept", "*/*")
     headers.setdefault("Connection", "close")
 
-    # 1) HEAD (rápido)
+    # 1) HEAD
     try:
         r = requests.head(url, allow_redirects=True, timeout=VERIFY_TIMEOUT, headers=headers)
         info["status_code"] = r.status_code
         info["final_url"] = getattr(r, "url", "") or ""
-        ct = r.headers.get("Content-Type", "") if hasattr(r, "headers") else ""
-        info["content_type"] = ct or ""
+        info["content_type"] = r.headers.get("Content-Type", "") if hasattr(r, "headers") else ""
 
         if r.status_code in (404, 410):
             info["reason"] = f"head_{r.status_code}"
@@ -222,12 +224,11 @@ def is_url_online_strict(url: str, headers: dict):
         if r.status_code in (401, 403):
             info["reason"] = f"head_{r.status_code}"
             return False, info
-        # 405: método no permitido -> seguimos con GET
+        # 405 -> seguimos con GET
     except requests.RequestException:
-        # sin head, seguimos con GET
         pass
 
-    # 2) GET con Range (validación de bytes)
+    # 2) GET Range
     try:
         headers2 = dict(headers)
         headers2["Range"] = "bytes=0-4095"
@@ -250,34 +251,30 @@ def is_url_online_strict(url: str, headers: dict):
             info["reason"] = "empty_body"
             return False, info
 
-        # anti-html
         if _is_probably_html(info["content_type"], chunk):
             info["reason"] = "html_detected"
             return False, info
 
-        # detect por bytes (más estricto)
         info["kind_detected"] = _detect_kind_from_bytes(chunk)
 
-        # si el tipo es conocido por URL, exigimos match por bytes
         kind = info["kind_guess"]
         if kind != "unknown":
             ok = _looks_like_media_bytes(kind, chunk)
             info["reason"] = "" if ok else f"bytes_not_{kind}"
             return ok, info
 
-        # si es unknown por URL, NO aceptamos por defecto: solo si detectamos algo real
         ok = _looks_like_media_bytes("unknown", chunk)
         info["reason"] = "" if ok else "unknown_bytes"
         return ok, info
 
-    except requests.RequestException as ex:
-        info["reason"] = f"request_error"
+    except requests.RequestException:
+        info["reason"] = "request_error"
         return False, info
 
 # =========================
 # Download & parse M3U
 # =========================
-resp = requests.get(M3U_URL, timeout=120)
+resp = requests.get(M3U_URL, timeout=120, headers={"User-Agent": "Mozilla/5.0"})
 resp.raise_for_status()
 text = resp.text
 
@@ -329,7 +326,6 @@ for ln in lines:
         if not title:
             title = (current_attrs.get("tvg-name") or current_attrs.get("tvg-id") or "").strip()
 
-        # --- FILTRO CAM ---
         if should_skip_title(title):
             current_extinf = None
             current_attrs = None
@@ -342,9 +338,9 @@ for ln in lines:
         all_entries.append({
             "extinf": current_extinf,
             "opts_lines": list(current_opts_lines),
-            "title": title,                   # ✅ nombre completo tal cual
+            "title": title,                   # nombre completo tal cual
             "url": video_url,
-            "group_title": group_title,       # ✅ grupo tal cual
+            "group_title": group_title,       # grupo tal cual
             "tvg_logo": tvg_logo,
             "anio": extract_year(title),
             "user_agent": current_user_agent,
@@ -362,7 +358,7 @@ for ln in lines:
 # Verify URLs (optional) + OFFLINE REPORT
 # =========================
 offline_items = []
-verify_details = {}  # key -> info dict
+verify_details = {}
 
 if VERIFY_URLS and all_entries:
     keys = []
@@ -424,9 +420,8 @@ if VERIFY_URLS and all_entries:
     print(f"URLs offline ignoradas (pero reportadas): {dropped}")
     all_entries = filtered
 
-# siempre escribir reporte (aunque esté vacío o verify=false)
 offline_json_path = os.path.join(OUTPUT_DIR, "offline_urls.json")
-offline_txt_path  = os.path.join(OUTPUT_DIR, "offline_urls.txt")
+offline_txt_path = os.path.join(OUTPUT_DIR, "offline_urls.txt")
 
 with open(offline_json_path, "w", encoding="utf-8") as f:
     json.dump({
@@ -445,13 +440,13 @@ with open(offline_txt_path, "w", encoding="utf-8") as f:
     for it in offline_items:
         f.write(f"- [{it.get('group','')}] {it.get('name','')}\n")
         f.write(f"  url: {it.get('url','')}\n")
-        reason = it.get("reason","")
+        reason = it.get("reason", "")
         sc = it.get("status_code", None)
-        ct = it.get("content_type","")
+        ct = it.get("content_type", "")
         f.write(f"  reason: {reason} | status: {sc} | ct: {ct}\n\n")
 
 # =========================
-# Write M3U output (TODO junto, sin series)
+# Write M3U output (todo junto, sin series)
 # =========================
 def write_m3u(path, entries):
     out = ["#EXTM3U"]
@@ -493,21 +488,21 @@ def to_grouped_records(entries, tipo: str):
 
 records = to_grouped_records(all_entries, "PELICULA")
 
-def split_records_by_samples(records, max_samples):
-    parts = []
+def split_records_by_samples(records_list, max_samples):
+    parts_local = []
     cur = []
     cur_count = 0
-    for r in records:
+    for r in records_list:
         s = r.get("samples", [])
         if cur and (cur_count + len(s) > max_samples):
-            parts.append(cur)
+            parts_local.append(cur)
             cur = []
             cur_count = 0
         cur.append(r)
         cur_count += len(s)
     if cur:
-        parts.append(cur)
-    return parts
+        parts_local.append(cur)
+    return parts_local
 
 parts = split_records_by_samples(records, CHUNK_SIZE)
 
@@ -527,9 +522,11 @@ else:
     with open(os.path.join(OUTPUT_DIR, "peliculas_manifest.json"), "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
 
+total_items = sum(len(r.get("samples", [])) for r in records)
+
 print(f"M3U URL: {M3U_URL}")
 print(f"VERIFY_URLS: {VERIFY_URLS}")
-print(f"Items (online): {sum(len(r['samples']) for r in records)}")
+print(f"Items (online): {total_items}")
 print(f"JSON parts: {len(parts)} (chunk_size={CHUNK_SIZE})")
 print(f"Offline report: {offline_json_path} / {offline_txt_path}")
 print(f"Salida en: {OUTPUT_DIR}")
