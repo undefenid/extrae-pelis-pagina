@@ -113,6 +113,10 @@ def _guess_kind_from_url(url: str) -> str:
         return "webm"
     if ".ts" in u:
         return "ts"
+
+    if ".avi" in u:
+    return "avi"
+    
     return "unknown"
 
 def _is_probably_html(content_type: str, b: bytes) -> bool:
@@ -145,6 +149,10 @@ def _detect_kind_from_bytes(b: bytes) -> str:
     if head.startswith(b"\x1A\x45\xDF\xA3"):
         return "mkv"
 
+     # AVI: "RIFF" .... "AVI "
+    if head.startswith(b"RIFF") and b"AVI " in head[8:16]:
+        return "avi"
+
     # ts sync byte
     if b[:1] == b"\x47":
         return "ts"
@@ -170,6 +178,9 @@ def _looks_like_media_bytes(kind: str, b: bytes) -> bool:
         return head.startswith(b"\x1A\x45\xDF\xA3")
     if kind == "mp4":
         return (b.find(b"ftyp", 0, 64) != -1)
+
+    if kind == "avi":
+    return b.startswith(b"RIFF") and (b"AVI " in b[8:16])
 
     # unknown: NO aceptar por defecto (evita falsos positivos)
     detected = _detect_kind_from_bytes(b)
