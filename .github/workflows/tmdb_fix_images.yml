@@ -1,0 +1,73 @@
+name: Fix JSON reemplazar imagenes no-TMDB + rellenar vacios (TMDB)
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      json_path:
+        description: "Ruta del JSON en el repo (ej: m3u_convert/peliculas.json)"
+        required: true
+      output_dir:
+        description: "Carpeta de salida en la raiz"
+        required: false
+        default: "tmdb_fix"
+      language:
+        description: "Idioma principal TMDB"
+        required: false
+        default: "es-MX"
+      fallback_language:
+        description: "Idioma fallback TMDB"
+        required: false
+        default: "en-US"
+      only_fill_empty:
+        description: "Solo llenar campos vacios (true/false). Imagenes no-TMDB se reemplazan igual si hay TMDB."
+        required: false
+        default: "true"
+      min_delay_ms:
+        description: "Delay minimo entre llamadas (ms) para evitar rate limit"
+        required: false
+        default: "150"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          pip install --no-cache-dir requests
+
+      - name: Run fixer
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          JSON_PATH: ${{ github.event.inputs.json_path }}
+          OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
+          LANGUAGE: ${{ github.event.inputs.language }}
+          FALLBACK_LANGUAGE: ${{ github.event.inputs.fallback_language }}
+          ONLY_FILL_EMPTY: ${{ github.event.inputs.only_fill_empty }}
+          MIN_DELAY_MS: ${{ github.event.inputs.min_delay_ms }}
+        run: |
+          python scripts/tmdb_fix_assets.py
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "${{ github.event.inputs.output_dir }}"
+          if ! git diff --cached --exit-code; then
+            git commit -m "TMDB: fix imagenes no-TMDB + rellenar vacios"
+            git push
+          else
+            echo "No hay cambios"
+          fi
