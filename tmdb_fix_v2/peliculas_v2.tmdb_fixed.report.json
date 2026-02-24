@@ -1,0 +1,18 @@
+{
+  "input_json": "movies/peliculas_v2.json",
+  "output_json": "tmdb_fix_v2/peliculas_v2.tmdb_fixed.json",
+  "language": "es-MX",
+  "fallback_language": "en-US",
+  "only_fill_empty": true,
+  "processed_samples": 6067,
+  "samples_changed": 3189,
+  "filled_fields": 21,
+  "filled_images": 108,
+  "replaced_images_not_tmdb": 3147,
+  "cache_size": 4721,
+  "search_failures": 0,
+  "details_failures": 0,
+  "tmdb_errors": 0,
+  "hard_errors_caught": 0,
+  "notes": "No se cae con 500/429: se reintenta y si falla se mantiene el item. '/' se normaliza para evitar queries raras."
+}
