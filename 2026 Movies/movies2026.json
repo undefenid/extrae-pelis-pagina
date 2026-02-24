@@ -63,19 +63,6 @@
                 "type": "PELICULA"
             },
             {
-                "name": "Terror en Silen Hill: regreso al infierno",
-                "url": "http://goovdme.967sd1f.homes/vod/9004C0DEC4A44CAB825CF23C1A2EDCE7_media.mp4",
-                "icono": "https://image.tmdb.org/t/p/original/5Y2TeCVEnwPbd4FDShGbkKYw6GE.jpg",
-                "iconoHorizontal": "https://image.tmdb.org/t/p/original/nTbO6UF944b0VZrgypMK5rFYRSW.jpg",
-                "iconpng": "https://image.tmdb.org/t/p/original/i1mVV78SIQdV7K7pxRUh47CSVn6.png",
-                "descripcion": "Impulsado por las sombras de su pasado, James Sunderland regresa a Silent Hill para encontrar a su amor perdido, Mary Crane. Pero el pequeño pueblo oscuro y deprimente ya no es el lugar de sus recuerdos. James se encuentra con personajes que le parecen demasiado familiares y que intentan distraerlo de su búsqueda de Mary. Cuanto más busca a Mary, más comienza a preguntarse si esto sigue siendo la realidad, o si ha caído en el oscuro inframundo de Jacob Crane.",
-                "anio": "2026",
-                "genero": "Terror, Misterio",
-                "duracion": "106 min",
-                "type": "PELICULA"
-            },
-
-			 {
                 "name": "Un fantasma util",
                 "url": "http://goovdme.967sd1f.homes/vod/6F5E547A731E4D508A28863E3770D7F1_media.mkv",
                 "icono": "https://image.tmdb.org/t/p/original/t1TwPiXtkE3WlkU5r7cqKwTth0C.jpg",
@@ -124,31 +111,6 @@
                 "type": "PELICULA"
             },
             {
-                "name": "Hermandad: Estado de terror",
-                "url": "http://goovdme.967sd1f.homes/vod/CB859EC759764E0E93F0D363D1C4805E_media.mkv",
-                "icono": "https://image.tmdb.org/t/p/original/xdyCFS4jUzp7kghoptaiYqir48X.jpg",
-                "iconoHorizontal": "https://image.tmdb.org/t/p/original/1Xdsq7U7bvJJd2X7Jg4qNaKVkYO.jpg",
-                "iconpng": "https://image.tmdb.org/t/p/original/Ro6GbJIouDmPopQunreLF15h7G.png",
-                "descripcion": "En medio de una ola de violencia inédita que sacude São Paulo, una abogada ligada al mundo criminal debe pactar con la policía para salvar a su sobrina secuestrada.",
-                "anio": "2026",
-                "genero": "Acción, Suspense, Crimen, Drama",
-                "duracion": "103 min",
-                "type": "PELICULA"
-            },
-
-			  {
-                "name": "Primate",
-                "url": "http://goovdme.967sd1f.homes/vod/D442454C84A04FDEA6AB6E53480AB5A3_media.mkv",
-                "icono": "https://image.tmdb.org/t/p/original/cyqEghDphEUunLfongtpmROjpID.jpg",
-                "iconoHorizontal": "https://image.tmdb.org/t/p/original/qca9e83DzC3zBexlFx3HKZMNawF.jpg",
-                "iconpng": "https://image.tmdb.org/t/p/w500/3lrUfCP2ftPb3TKIX2SNSISFXq3.png",
-                "descripcion": "Lucy, una estudiante universitaria, pasa las vacaciones con sus amigos en la casa de su familia en Hawái, donde vive con su mascota, un chimpancé llamado Ben. Sin embargo, cuando Ben contrae rabia tras ser mordido por un animal rabioso, el grupo debe luchar por su vida para evitar al ahora violento chimpancé.",
-                "anio": "2026",
-                "genero": "Terror, Suspense",
-                "duracion": "89 min",
-                "type": "PELICULA"
-            },
-            {
                 "name": "Patriotismo",
                 "url": "http://goovdme.967sd1f.homes/vod/88ABAE1228674C8BAF268F8F8CBF7060_media.mkv",
                 "icono": "https://image.tmdb.org/t/p/original/kOLkpkS2T4HAdA6J7uq4eipNTup.jpg",
@@ -160,11 +122,6 @@
                 "duracion": "212 min",
                 "type": "PELICULA"
             },
-			
-			
-			
-			
-			
 			{
                 "name": "Un juego de tres",
                 "url": "http://goovdme.967sd1f.homes/vod/FAE381D8CF154C4EBE7410C71F033934_media.mkv",
@@ -189,8 +146,6 @@
                 "duracion": "107 min",
                 "type": "PELICULA"
             },
-			
-			
 			{
                 "name": "Plan familiar 2",
                 "url": "http://goovdme.967sd1f.homes/vod/8BF122973C4B4BCB9C57E53E03822B86_media.mp4",
@@ -321,18 +276,6 @@
                 "anio": "2025",
                 "genero": "Romance, Drama",
                 "duracion": "119 min",
-                "type": "PELICULA"
-            },
-            {
-                "name": "Los ilusionistas 3",
-                "url": "http://goovdme.967sd1f.homes/vod/70AE2FE326AE40B6998D4C11454A9B7A_media.mkv",
-                "icono": "https://image.tmdb.org/t/p/original/Aspr0HcItNVbgLC8cV0ZAO0EBcc.jpg",
-                "iconoHorizontal": "https://image.tmdb.org/t/p/original/ufqytAlziHq5pljKByGJ8IKhtEZ.jpg",
-                "iconpng": "https://image.tmdb.org/t/p/w500/jPafOlusBqDNOqyNI7Ha94XOntD.png",
-                "descripcion": "Los Cuatro Jinetes regresan junto a una nueva generación de ilusionistas en una extraordinaria aventura que contiene giros asombrosos, sorpresas alucinantes y trucos de magia nunca vistos en la gran pantalla.",
-                "anio": "2025",
-                "genero": "Suspense, Crimen, Misterio",
-                "duracion": "112 min",
                 "type": "PELICULA"
             },
             {
