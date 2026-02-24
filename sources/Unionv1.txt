@@ -1,2 +1,2 @@
-https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/2026%20V3%20enriched/peliculas.enriched_by_genre.json
-https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/2026%20v5%20enriched/peliculas.enriched_by_genre.json
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/tmdb_fix_v2/peliculas_v2.tmdb_fixed.json
+https://raw.githubusercontent.com/undefenid/extrae-pelis-pagina/refs/heads/main/Union%202026%20v1/peliculasv1.json
