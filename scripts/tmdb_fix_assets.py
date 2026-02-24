@@ -40,37 +40,57 @@ def _throttle():
         time.sleep(wait)
     _last_call = time.time()
 
-def tmdb_get(path, params=None, retries=4):
+def tmdb_get(path, params=None, retries=6):
+    """
+    🔥 Cambio clave:
+    - NO levanta excepción si TMDB falla (500, 502, 503, 504, 429, etc) tras reintentos.
+    - Devuelve dict en éxito, o None en fallo.
+    """
     url = TMDB_BASE + path
     params = dict(params or {})
     params["api_key"] = API_KEY
 
     last_exc = None
+    last_resp = None
+
     for attempt in range(retries):
         _throttle()
         try:
             r = requests.get(url, params=params, timeout=30)
+            last_resp = r
         except requests.RequestException as e:
             last_exc = e
             time.sleep(1.0 + attempt)
             continue
 
+        # rate limit
         if r.status_code == 429:
             retry_after = int(r.headers.get("Retry-After", "2") or "2")
             time.sleep(retry_after + (attempt * 1.5))
             continue
 
-        if 500 <= r.status_code < 600:
+        # server errors: reintentar
+        if r.status_code in (500, 502, 503, 504):
             time.sleep(1.0 + attempt)
             continue
 
-        r.raise_for_status()
-        return r.json()
+        # otros 4xx: no reintentar infinito, cortar suave
+        if 400 <= r.status_code < 500:
+            return None
 
-    if last_exc:
-        raise last_exc
-    r.raise_for_status()
-    return r.json()
+        # éxito
+        try:
+            r.raise_for_status()
+        except requests.HTTPError:
+            return None
+
+        try:
+            return r.json()
+        except Exception:
+            return None
+
+    # agotó reintentos: no tumbar el workflow
+    return None
 
 # -----------------------
 # Utilidades JSON / schema
@@ -107,7 +127,9 @@ JUNK_RE = re.compile(
     re.IGNORECASE,
 )
 BRACKETS_RE = re.compile(r"[\[\(\{].*?[\]\)\}]")
-SEP_RE = re.compile(r"[._\-]+")
+
+# ✅ Cambio: agrego "/" como separador para evitar queries tipo "3/El ..."
+SEP_RE = re.compile(r"[._\-/]+")
 MULTISPACE_RE = re.compile(r"\s{2,}")
 PART_WORD_BEFORE_NUM_RE = re.compile(r"\b(parte|part)\b\s*(?=\d+\b)", re.IGNORECASE)
 
@@ -159,19 +181,26 @@ def _sim(a: str, b: str) -> float:
 # -----------------------
 # TMDB helpers
 # -----------------------
-def search_movie(query: str, year: str, lang: str):
+def search_movie(query: str, year: str, lang: str, stats: dict):
     params = {"language": lang, "query": query, "include_adult": "false"}
     if year:
         params["year"] = year
     res = tmdb_get("/search/movie", params=params)
+    if res is None:
+        stats["search_failures"] += 1
+        return []
     return res.get("results", []) or []
 
-def fetch_details(movie_id: int, lang: str):
+def fetch_details(movie_id: int, lang: str, stats: dict):
     det = tmdb_get(f"/movie/{movie_id}", params={"language": lang})
+    if det is None:
+        stats["details_failures"] += 1
+        return None, None
     imgs = tmdb_get(
         f"/movie/{movie_id}/images",
         params={"include_image_language": "es,en,null"}
     )
+    # imgs puede ser None; no pasa nada
     return det, imgs
 
 def to_img_url(path: str) -> str:
@@ -246,7 +275,7 @@ def choose_best_result(results: list, query_clean: str, year: str):
 # Cache para no repetir queries
 cache = {}  # (clean_lower, year) -> hit dict or None
 
-def build_hit_for_sample(orig_name: str, orig_year: str):
+def build_hit_for_sample(orig_name: str, orig_year: str, stats: dict):
     q_clean = clean_title(orig_name)
     year_for_search = (orig_year or "").strip() or extract_year(orig_name)
 
@@ -269,9 +298,9 @@ def build_hit_for_sample(orig_name: str, orig_year: str):
 
     for lang_try in (LANGUAGE, "en-US"):
         for qv in variants:
-            results = search_movie(qv, year_for_search, lang_try)
+            results = search_movie(qv, year_for_search, lang_try, stats)
             if not results and year_for_search:
-                results = search_movie(qv, "", lang_try)
+                results = search_movie(qv, "", lang_try, stats)
 
             cand, score = choose_best_result(results, qv, year_for_search)
             if cand and score > best_score:
@@ -281,14 +310,14 @@ def build_hit_for_sample(orig_name: str, orig_year: str):
     if best_r:
         mid = best_r.get("id")
         if mid:
-            det_es, imgs = fetch_details(mid, LANGUAGE)
+            det_es, imgs = fetch_details(mid, LANGUAGE, stats)
+            if det_es is None:
+                cache[cache_key] = None
+                return None
 
             det_fb = None
             if FALLBACK_LANGUAGE and FALLBACK_LANGUAGE != LANGUAGE:
-                try:
-                    det_fb, _ = fetch_details(mid, FALLBACK_LANGUAGE)
-                except Exception:
-                    det_fb = None
+                det_fb, _ = fetch_details(mid, FALLBACK_LANGUAGE, stats)
 
             title_es = (det_es.get("title") or "").strip()
             overview_es = (det_es.get("overview") or "").strip()
@@ -327,7 +356,7 @@ def enrich_sample_in_place(sample: dict, stats: dict):
 
     tipo = (sample.get("type") or "").upper().strip()
     if tipo and tipo != "PELICULA":
-        return sample, False  # no tocamos no-pelis
+        return sample, False
 
     orig_name = (sample.get("name") or "").strip()
     orig_year = (sample.get("anio") or "").strip()
@@ -335,87 +364,58 @@ def enrich_sample_in_place(sample: dict, stats: dict):
     if not orig_name:
         return sample, False
 
-    hit = build_hit_for_sample(orig_name, orig_year)
+    hit = build_hit_for_sample(orig_name, orig_year, stats)
     if not hit:
         return sample, False
 
     changed = False
 
-    # ---- Rellenar vacíos (TODOS los campos) ----
+    # Rellenar vacíos
     if should_set(sample.get("name","")):
         if hit.get("title_es"):
-            sample["name"] = hit["title_es"]
-            stats["filled_fields"] += 1
-            changed = True
+            sample["name"] = hit["title_es"]; stats["filled_fields"] += 1; changed = True
         elif hit.get("title_fb"):
-            sample["name"] = hit["title_fb"]
-            stats["filled_fields"] += 1
-            changed = True
+            sample["name"] = hit["title_fb"]; stats["filled_fields"] += 1; changed = True
 
     if should_set(sample.get("descripcion","")):
         if hit.get("overview_es"):
-            sample["descripcion"] = hit["overview_es"]
-            stats["filled_fields"] += 1
-            changed = True
+            sample["descripcion"] = hit["overview_es"]; stats["filled_fields"] += 1; changed = True
         elif hit.get("overview_fb"):
-            sample["descripcion"] = hit["overview_fb"]
-            stats["filled_fields"] += 1
-            changed = True
+            sample["descripcion"] = hit["overview_fb"]; stats["filled_fields"] += 1; changed = True
 
     if should_set(sample.get("anio","")) and hit.get("year"):
-        sample["anio"] = hit["year"]
-        stats["filled_fields"] += 1
-        changed = True
+        sample["anio"] = hit["year"]; stats["filled_fields"] += 1; changed = True
 
     if should_set(sample.get("genero","")) and hit.get("genres_str"):
-        sample["genero"] = hit["genres_str"]
-        stats["filled_fields"] += 1
-        changed = True
+        sample["genero"] = hit["genres_str"]; stats["filled_fields"] += 1; changed = True
 
     if should_set(sample.get("duracion","")) and hit.get("runtime"):
-        sample["duracion"] = hit["runtime"]
-        stats["filled_fields"] += 1
-        changed = True
+        sample["duracion"] = hit["runtime"]; stats["filled_fields"] += 1; changed = True
 
-    # ---- Imágenes: si ya es TMDB NO tocar. Si NO es TMDB -> reemplazar por TMDB si hay ----
-    # icono (poster)
+    # Imágenes: si ya es TMDB no tocar; si no es TMDB -> reemplazar si hay
     cur = sample.get("icono","") or ""
     if not cur.strip():
         if hit.get("poster"):
-            sample["icono"] = hit["poster"]
-            stats["filled_images"] += 1
-            changed = True
+            sample["icono"] = hit["poster"]; stats["filled_images"] += 1; changed = True
     else:
         if (not is_tmdb_image(cur)) and hit.get("poster"):
-            sample["icono"] = hit["poster"]
-            stats["replaced_images"] += 1
-            changed = True
+            sample["icono"] = hit["poster"]; stats["replaced_images"] += 1; changed = True
 
-    # iconoHorizontal (backdrop)
     cur = sample.get("iconoHorizontal","") or ""
     if not cur.strip():
         if hit.get("backdrop"):
-            sample["iconoHorizontal"] = hit["backdrop"]
-            stats["filled_images"] += 1
-            changed = True
+            sample["iconoHorizontal"] = hit["backdrop"]; stats["filled_images"] += 1; changed = True
     else:
         if (not is_tmdb_image(cur)) and hit.get("backdrop"):
-            sample["iconoHorizontal"] = hit["backdrop"]
-            stats["replaced_images"] += 1
-            changed = True
+            sample["iconoHorizontal"] = hit["backdrop"]; stats["replaced_images"] += 1; changed = True
 
-    # iconpng (logo)
     cur = sample.get("iconpng","") or ""
     if not cur.strip():
         if hit.get("logo"):
-            sample["iconpng"] = hit["logo"]
-            stats["filled_images"] += 1
-            changed = True
+            sample["iconpng"] = hit["logo"]; stats["filled_images"] += 1; changed = True
     else:
         if (not is_tmdb_image(cur)) and hit.get("logo"):
-            sample["iconpng"] = hit["logo"]
-            stats["replaced_images"] += 1
-            changed = True
+            sample["iconpng"] = hit["logo"]; stats["replaced_images"] += 1; changed = True
 
     sample = ensure_sample_schema(sample)
     return sample, changed
@@ -426,15 +426,15 @@ def enrich_sample_in_place(sample: dict, stats: dict):
 with open(JSON_PATH, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-# soporta:
-# A) lista de records: [{name, samples:[...]}, ...]
-# B) lista de samples: [{...}, ...]
-is_records = isinstance(data, list) and (len(data) == 0 or isinstance(data[0], dict) and "samples" in data[0])
+is_records = isinstance(data, list) and (len(data) == 0 or (isinstance(data[0], dict) and "samples" in data[0]))
 
 stats = defaultdict(int)
-unmatched = 0
 processed = 0
 changed_count = 0
+hard_errors = 0
+
+def _safe_json_dump(obj):
+    return json.dumps(obj, sort_keys=True, ensure_ascii=False)
 
 if is_records:
     for rec in data:
@@ -442,9 +442,14 @@ if is_records:
         for i in range(len(samples)):
             processed += 1
             s = samples[i]
-            before = json.dumps(s, sort_keys=True, ensure_ascii=False)
-            s2, changed = enrich_sample_in_place(s, stats)
-            after = json.dumps(s2, sort_keys=True, ensure_ascii=False)
+            before = _safe_json_dump(s)
+            try:
+                s2, changed = enrich_sample_in_place(s, stats)
+            except Exception:
+                hard_errors += 1
+                stats["tmdb_errors"] += 1
+                s2, changed = s, False
+            after = _safe_json_dump(s2)
             samples[i] = s2
             if changed or (before != after):
                 changed_count += 1
@@ -452,9 +457,14 @@ else:
     for i in range(len(data)):
         processed += 1
         s = data[i]
-        before = json.dumps(s, sort_keys=True, ensure_ascii=False)
-        s2, changed = enrich_sample_in_place(s, stats)
-        after = json.dumps(s2, sort_keys=True, ensure_ascii=False)
+        before = _safe_json_dump(s)
+        try:
+            s2, changed = enrich_sample_in_place(s, stats)
+        except Exception:
+            hard_errors += 1
+            stats["tmdb_errors"] += 1
+            s2, changed = s, False
+        after = _safe_json_dump(s2)
         data[i] = s2
         if changed or (before != after):
             changed_count += 1
@@ -483,7 +493,11 @@ report = {
     "filled_images": int(stats["filled_images"]),
     "replaced_images_not_tmdb": int(stats["replaced_images"]),
     "cache_size": len(cache),
-    "notes": "Imagenes: si ya es TMDB no se toca; si no es TMDB se reemplaza por TMDB si existe. Campos vacíos se rellenan con TMDB si hay match."
+    "search_failures": int(stats["search_failures"]),
+    "details_failures": int(stats["details_failures"]),
+    "tmdb_errors": int(stats["tmdb_errors"]),
+    "hard_errors_caught": hard_errors,
+    "notes": "No se cae con 500/429: se reintenta y si falla se mantiene el item. '/' se normaliza para evitar queries raras."
 }
 
 with open(out_report, "w", encoding="utf-8") as f:
