@@ -3,6 +3,18 @@
     "name": "Ultimos agregados",
     "samples": [
       {
+        "name": "Primate",
+        "url": "http://goovdme.967sd1f.homes/vod/D442454C84A04FDEA6AB6E53480AB5A3_media.mkv",
+        "icono": "https://image.tmdb.org/t/p/original/qhJDrPqvw8Dopwc11pCkrGgfhy.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/9uakM2woks0JV8HKIc4oatIVS88.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/ejpFMkKMjnMyx9HX4nII9gjbUyi.png",
+        "type": "PELICULA",
+        "descripcion": "De vuelta de la universidad, Lucy se reúne con su familia, incluyendo a su mascota, el chimpancé Ben. Sin embargo, Ben contrae rabia durante una fiesta en la piscina y se vuelve agresivo.",
+        "anio": "2026",
+        "genero": "Terror, Suspense",
+        "duracion": "89 min"
+      },
+      {
         "name": "Depredador: Tierras salvajes",
         "url": "https://pomf2.lain.la/f/4557groy.mp4",
         "icono": "https://image.tmdb.org/t/p/original/r7TEWHLr1lsIsTkiEFwtM3hAWma.jpg",

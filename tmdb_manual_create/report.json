@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-02-22T04:29:38.643017Z",
+  "timestamp_utc": "2026-02-24T08:44:36.189430Z",
   "input": {
-    "url": "https://dl.dropbox.com/scl/fi/poyal24fqln0a34euqo6s/fisica.mp4?rlkey=07i7co4ttg8t3wbws7x3cmnsq&st=4e8sx5hk&dl=0",
-    "nombre": "Anemone 2025",
+    "url": "http://goovdme.967sd1f.homes/vod/D442454C84A04FDEA6AB6E53480AB5A3_media.mkv",
+    "nombre": "Primate",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 19,
+  "samples_total": 20,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
