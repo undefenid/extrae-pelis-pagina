@@ -3,6 +3,18 @@
     "name": "Ultimos agregados",
     "samples": [
       {
+        "name": "Exterminio: El templo de huesos",
+        "url": "http://archive.org/download/temple_202602/temple.mkv",
+        "icono": "https://image.tmdb.org/t/p/original/6yUxfwcDYR0RRfbxwGA7rhwreWU.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/hHDNOlATHhre4eZ7aYz5cdyJLik.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/1xtNFKfTr0d5IqZ0i77E90cYYTP.png",
+        "type": "PELICULA",
+        "descripcion": "El Dr. Kelson se encuentra en una nueva relación impactante, con consecuencias que podrían cambiar el mundo tal como lo conocen, y el encuentro de Spike con Jimmy Crystal se convierte en una pesadilla de la que no puede escapar.",
+        "anio": "2026",
+        "genero": "Terror, Suspense, Ciencia ficción",
+        "duracion": "109 min"
+      },
+      {
         "name": "Primate",
         "url": "http://goovdme.967sd1f.homes/vod/D442454C84A04FDEA6AB6E53480AB5A3_media.mkv",
         "icono": "https://image.tmdb.org/t/p/original/qhJDrPqvw8Dopwc11pCkrGgfhy.jpg",
