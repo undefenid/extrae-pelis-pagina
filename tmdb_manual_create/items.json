@@ -3,6 +3,18 @@
     "name": "Ultimos agregados",
     "samples": [
       {
+        "name": "El vínculo sueco",
+        "url": "https://dl.dropbox.com/scl/fi/nj9asrnz7vfkf6xgdzpcb/sociales.mp4?rlkey=8l489vncu6h5odwaxprv3s2nv&st=yf5ot6jn&dl=0",
+        "icono": "https://image.tmdb.org/t/p/original/snlnvSB232OZwPCuO8zkWYJ6P7j.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/56VfTGANetZ5IIYQsXuciNePM28.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/gryskVQynynANW08TLevrUrvUsT.png",
+        "type": "PELICULA",
+        "descripcion": "En esta historia de la vida real poco conocida, un burócrata sueco se convierte en héroe al intentar salvar a judíos durante los días más oscuros de la Segunda Guerra Mundial.",
+        "anio": "2026",
+        "genero": "Drama, Historia, Bélica",
+        "duracion": "102 min"
+      },
+      {
         "name": "En un abrir y cerrar de ojos",
         "url": "https://dl.dropbox.com/scl/fi/9d85z8jw4nw71wcs1trzr/lengua.mp4?rlkey=yb1gi360kigphk2gqp6y74y09&st=d049teow&dl=1",
         "icono": "https://image.tmdb.org/t/p/original/r29MQ8wAe89iBhFdtTQb8vmtIsu.jpg",
