@@ -2,16 +2,16 @@
   "name": "Ultimos agregados",
   "samples": [
     {
-      "name": "Exterminio: El templo de huesos",
-      "url": "http://archive.org/download/temple_202602/temple.mkv",
-      "icono": "https://image.tmdb.org/t/p/original/6yUxfwcDYR0RRfbxwGA7rhwreWU.jpg",
-      "iconoHorizontal": "https://image.tmdb.org/t/p/original/hHDNOlATHhre4eZ7aYz5cdyJLik.jpg",
-      "iconpng": "https://image.tmdb.org/t/p/original/1xtNFKfTr0d5IqZ0i77E90cYYTP.png",
+      "name": "El engaño",
+      "url": "https://dl.dropbox.com/scl/fi/rvrw3upv77lcwz6gsh601/fisuxa.mp4?rlkey=wuyu1b75uudnow3g26f7rybue&st=pzsz9byg&dl=1",
+      "icono": "https://image.tmdb.org/t/p/original/uuIP7lRgzSjaZ4CT33WHfctLARs.jpg",
+      "iconoHorizontal": "https://image.tmdb.org/t/p/original/hYgUkH7TusddHRtelj53I6gFOWR.jpg",
+      "iconpng": "https://image.tmdb.org/t/p/original/lkhRvQv2Lm93JLZ30Wn28DoMEW8.png",
       "type": "PELICULA",
-      "descripcion": "El Dr. Kelson se encuentra en una nueva relación impactante, con consecuencias que podrían cambiar el mundo tal como lo conocen, y el encuentro de Spike con Jimmy Crystal se convierte en una pesadilla de la que no puede escapar.",
+      "descripcion": "Cuando su vida tranquila en una isla remota se ve truncada por el regreso de su vengativo excapitán, una hábil expirata debe enfrentarse a su sangriento pasado y dar rienda suelta a sus mortales talentos para salvar a su familia de un asedio despiadado.",
       "anio": "2026",
-      "genero": "Terror, Suspense, Ciencia ficción",
-      "duracion": "109 min"
+      "genero": "Acción, Suspense",
+      "duracion": "102 min"
     }
   ]
 }

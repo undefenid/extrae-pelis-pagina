@@ -3,6 +3,18 @@
     "name": "Ultimos agregados",
     "samples": [
       {
+        "name": "El engaño",
+        "url": "https://dl.dropbox.com/scl/fi/rvrw3upv77lcwz6gsh601/fisuxa.mp4?rlkey=wuyu1b75uudnow3g26f7rybue&st=pzsz9byg&dl=1",
+        "icono": "https://image.tmdb.org/t/p/original/uuIP7lRgzSjaZ4CT33WHfctLARs.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/hYgUkH7TusddHRtelj53I6gFOWR.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/lkhRvQv2Lm93JLZ30Wn28DoMEW8.png",
+        "type": "PELICULA",
+        "descripcion": "Cuando su vida tranquila en una isla remota se ve truncada por el regreso de su vengativo excapitán, una hábil expirata debe enfrentarse a su sangriento pasado y dar rienda suelta a sus mortales talentos para salvar a su familia de un asedio despiadado.",
+        "anio": "2026",
+        "genero": "Acción, Suspense",
+        "duracion": "102 min"
+      },
+      {
         "name": "Exterminio: El templo de huesos",
         "url": "http://archive.org/download/temple_202602/temple.mkv",
         "icono": "https://image.tmdb.org/t/p/original/6yUxfwcDYR0RRfbxwGA7rhwreWU.jpg",
