@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-03-02T04:00:20.754423Z",
+  "timestamp_utc": "2026-03-02T04:03:17.838695Z",
   "input": {
-    "url": "https://dl.dropbox.com/scl/fi/nj9asrnz7vfkf6xgdzpcb/sociales.mp4?rlkey=8l489vncu6h5odwaxprv3s2nv&st=yf5ot6jn&dl=0",
-    "nombre": "El vínculo sueco",
+    "url": "https://dl.dropbox.com/scl/fi/8zzh0f7abxqucveofo0bw/fisica.mp4?rlkey=huisdsyycpz8g7gdi0gb8qu2x&st=ipo0r7ym&dl=1",
+    "nombre": "Love Me, Love Me",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 26,
+  "samples_total": 27,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
