@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-03-14T08:46:10.606650Z",
+  "timestamp_utc": "2026-03-14T08:55:59.307926Z",
   "input": {
-    "url": "https://dl.dropbox.com/scl/fi/ss2fxrpgbsbiktamw7dof/sociales.mp4?rlkey=m8k6u4jenx6o2yajbl1r0rvfu&st=c5pegh2m&dl=1",
-    "nombre": "Instinto salvaje (2025)",
+    "url": "https://pomf2.lain.la/f/kir7xj4.mp4",
+    "nombre": "Whiteout 2025",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 34,
+  "samples_total": 35,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }

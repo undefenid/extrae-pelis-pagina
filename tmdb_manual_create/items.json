@@ -3,6 +3,18 @@
     "name": "Ultimos agregados",
     "samples": [
       {
+        "name": "Whiteout",
+        "url": "https://pomf2.lain.la/f/kir7xj4.mp4",
+        "icono": "https://image.tmdb.org/t/p/original/hrBFCzO6AehdjCJNgP6DB12LAw8.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/qNi4cEFgx8XeAr8r0CGx5QWhDgp.jpg",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "Tras escapar de un campo de trabajo ruso, tres hombres deben superar la traicionera naturaleza y superarse unos a otros, ya que su viaje de vuelta a casa se convierte en una brutal lucha por la supervivencia.",
+        "anio": "2025",
+        "genero": "Suspense, Drama, Crimen",
+        "duracion": "90 min"
+      },
+      {
         "name": "Instinto salvaje",
         "url": "https://dl.dropbox.com/scl/fi/ss2fxrpgbsbiktamw7dof/sociales.mp4?rlkey=m8k6u4jenx6o2yajbl1r0rvfu&st=c5pegh2m&dl=1",
         "icono": "https://image.tmdb.org/t/p/original/cv09iyQhL9jqYQ7G0p9KE7ccwCZ.jpg",
