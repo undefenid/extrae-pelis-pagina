@@ -3,6 +3,18 @@
     "name": "Ultimos agregados",
     "samples": [
       {
+        "name": "40 Acres",
+        "url": "https://dl.dropbox.com/scl/fi/97evt2uw57xvnhnu2se19/f-sica.mp4?rlkey=2z7qudu6qluw3hvrn9vskviob&st=p2d7ton2&dl=1",
+        "icono": "https://image.tmdb.org/t/p/original/3zCEo21Y9wVFBgGhgDVWCyvMZ47.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/6m3K1hizm5yoguOsAcIjNSECn5b.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/5eCkx33diYzRPj4ANX6sG0diX9Z.png",
+        "type": "PELICULA",
+        "descripcion": "Hailey Freeman y su familia son los últimos descendientes de granjeros afroamericanos que se establecieron en 1875 en las zonas rurales de Canadá tras la primera Guerra Civil. En un futuro diezmado por la hambruna, luchan por oponer su última resistencia a quienes pretenden arrebatarles su hogar.",
+        "anio": "2025",
+        "genero": "Acción, Suspense, Drama, Ciencia ficción",
+        "duracion": "113 min"
+      },
+      {
         "name": "Sesión fatal",
         "url": "https://dl.dropbox.com/scl/fi/ijptp7rxflyr1nyy90s22/lengua.mp4?rlkey=s6ue1dhd5hd9fgnhibu1bnl8n&st=2ylx9avu&dl=1",
         "icono": "https://image.tmdb.org/t/p/original/h6qerkxz26qpIs8uTq9BdyemXKW.jpg",

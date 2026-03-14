@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-03-02T04:09:08.687485Z",
+  "timestamp_utc": "2026-03-14T08:36:47.044736Z",
   "input": {
-    "url": "https://dl.dropbox.com/scl/fi/ijptp7rxflyr1nyy90s22/lengua.mp4?rlkey=s6ue1dhd5hd9fgnhibu1bnl8n&st=2ylx9avu&dl=1",
-    "nombre": "Sesión fatal",
+    "url": "https://dl.dropbox.com/scl/fi/97evt2uw57xvnhnu2se19/f-sica.mp4?rlkey=2z7qudu6qluw3hvrn9vskviob&st=p2d7ton2&dl=1",
+    "nombre": "40 Acres",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 30,
+  "samples_total": 31,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
