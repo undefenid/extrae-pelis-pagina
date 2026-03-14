@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-03-14T08:36:47.044736Z",
+  "timestamp_utc": "2026-03-14T08:39:26.535349Z",
   "input": {
-    "url": "https://dl.dropbox.com/scl/fi/97evt2uw57xvnhnu2se19/f-sica.mp4?rlkey=2z7qudu6qluw3hvrn9vskviob&st=p2d7ton2&dl=1",
-    "nombre": "40 Acres",
+    "url": "https://dl.dropbox.com/scl/fi/r26b9wmgw32f1n3pw1f6e/sociales.mp4?rlkey=ol1sssmmaedilo3otqpndw2ry&st=zfj4n3hu&dl=1",
+    "nombre": "Cuerno Azulado",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 31,
+  "samples_total": 32,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
