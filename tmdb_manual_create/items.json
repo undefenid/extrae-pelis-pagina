@@ -3,6 +3,18 @@
     "name": "Ultimos agregados",
     "samples": [
       {
+        "name": "Zero",
+        "url": "https://dl.dropbox.com/scl/fi/pbezsh7vrg6xq2n42l0r0/07.mp4?rlkey=5rlrc58eiy3z9vknf3ld0myln&st=tl7quotv&dl=1",
+        "icono": "https://image.tmdb.org/t/p/original/5bo30pUJGUpvNP8XS75T3Al8V1R.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/8h3Ev1xf3WBrzHD4fNOGs790GWZ.jpg",
+        "iconpng": "",
+        "type": "PELICULA",
+        "descripcion": "Dos estadounidenses acaban en Dakar, Senegal, con bombas atadas al pecho y diez horas para averiguar por qué.",
+        "anio": "2025",
+        "genero": "Acción, Suspense",
+        "duracion": "86 min"
+      },
+      {
         "name": "Cuerno Azulado",
         "url": "https://dl.dropbox.com/scl/fi/r26b9wmgw32f1n3pw1f6e/sociales.mp4?rlkey=ol1sssmmaedilo3otqpndw2ry&st=zfj4n3hu&dl=1",
         "icono": "https://image.tmdb.org/t/p/original/q0OveDlsh5BNq6ifZqNWKtLKiwb.jpg",
