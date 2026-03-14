@@ -2,16 +2,16 @@
   "name": "Ultimos agregados",
   "samples": [
     {
-      "name": "Whiteout",
-      "url": "https://pomf2.lain.la/f/kir7xj4.mp4",
-      "icono": "https://image.tmdb.org/t/p/original/hrBFCzO6AehdjCJNgP6DB12LAw8.jpg",
-      "iconoHorizontal": "https://image.tmdb.org/t/p/original/qNi4cEFgx8XeAr8r0CGx5QWhDgp.jpg",
-      "iconpng": "",
+      "name": "Un destino en Corea",
+      "url": "https://dl.dropbox.com/scl/fi/hlp2pm9i94s80pjvctooz/lengua.mp4?rlkey=tqjm4rzxx0n9vq4mek4qadcl2&st=quum79p0&dl=1",
+      "icono": "https://image.tmdb.org/t/p/original/foEObhyAMM3dxYeBEr242EdQDB7.jpg",
+      "iconoHorizontal": "https://image.tmdb.org/t/p/original/aOZlZ5ceIpUVjJaFBl0vQjGTieI.jpg",
+      "iconpng": "https://image.tmdb.org/t/p/original/noqcoHA6XuvZgPz8DJBWD5ZqLeP.png",
       "type": "PELICULA",
-      "descripcion": "Tras escapar de un campo de trabajo ruso, tres hombres deben superar la traicionera naturaleza y superarse unos a otros, ya que su viaje de vuelta a casa se convierte en una brutal lucha por la supervivencia.",
-      "anio": "2025",
-      "genero": "Suspense, Drama, Crimen",
-      "duracion": "90 min"
+      "descripcion": "Una mujer de un pueblito en Tamil Nadu, India, se muda a Corea del Sur, su país soñado, pero encontrar su lugar en esas nuevas tierras no le resulta tan fácil.",
+      "anio": "2026",
+      "genero": "Romance, Drama",
+      "duracion": "111 min"
     }
   ]
 }

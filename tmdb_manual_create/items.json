@@ -3,6 +3,18 @@
     "name": "Ultimos agregados",
     "samples": [
       {
+        "name": "Un destino en Corea",
+        "url": "https://dl.dropbox.com/scl/fi/hlp2pm9i94s80pjvctooz/lengua.mp4?rlkey=tqjm4rzxx0n9vq4mek4qadcl2&st=quum79p0&dl=1",
+        "icono": "https://image.tmdb.org/t/p/original/foEObhyAMM3dxYeBEr242EdQDB7.jpg",
+        "iconoHorizontal": "https://image.tmdb.org/t/p/original/aOZlZ5ceIpUVjJaFBl0vQjGTieI.jpg",
+        "iconpng": "https://image.tmdb.org/t/p/original/noqcoHA6XuvZgPz8DJBWD5ZqLeP.png",
+        "type": "PELICULA",
+        "descripcion": "Una mujer de un pueblito en Tamil Nadu, India, se muda a Corea del Sur, su país soñado, pero encontrar su lugar en esas nuevas tierras no le resulta tan fácil.",
+        "anio": "2026",
+        "genero": "Romance, Drama",
+        "duracion": "111 min"
+      },
+      {
         "name": "Whiteout",
         "url": "https://pomf2.lain.la/f/kir7xj4.mp4",
         "icono": "https://image.tmdb.org/t/p/original/hrBFCzO6AehdjCJNgP6DB12LAw8.jpg",
