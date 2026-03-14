@@ -1,15 +1,15 @@
 {
-  "timestamp_utc": "2026-03-14T08:41:45.167601Z",
+  "timestamp_utc": "2026-03-14T08:46:10.606650Z",
   "input": {
-    "url": "https://dl.dropbox.com/scl/fi/pbezsh7vrg6xq2n42l0r0/07.mp4?rlkey=5rlrc58eiy3z9vknf3ld0myln&st=tl7quotv&dl=1",
-    "nombre": "Zero (2025)",
+    "url": "https://dl.dropbox.com/scl/fi/ss2fxrpgbsbiktamw7dof/sociales.mp4?rlkey=m8k6u4jenx6o2yajbl1r0rvfu&st=c5pegh2m&dl=1",
+    "nombre": "Instinto salvaje (2025)",
     "grupo": "Ultimos agregados"
   },
   "enriched": true,
   "language": "es-MX",
   "fallback_language": "en-US",
   "groups_total": 1,
-  "samples_total": 33,
+  "samples_total": 34,
   "replaced_existing_url": false,
   "output_dir": "tmdb_manual_create"
 }
